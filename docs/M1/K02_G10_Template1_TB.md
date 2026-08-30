@@ -42,10 +42,11 @@ Lakukan analisis terhadap proses yang berjalan saat ini di dunia nyata, baik itu
 # BAB 2: Analisis Solusi
 
 ## 2.1 Deskripsi Perangkat Lunak
-Abstraksikan solusi perangkat lunak yang diusulkan dari sudut pandang pengguna. Jelaskan target platform yang akan digunakan (misalnya: desktop application) beserta alasan pemilihannya. Deskripsikan juga nilai unik (inovasi inti) dari perangkat lunak kalian dan apa yang membedakannya dari solusi yang sudah ada.
+Di aplikasi ini, pengguna dapat membuat laporan anonim dengan fitur one click SOS yang akan mengirimkan lokasi ke pihak polisi. Aplikasi juga akan menyediakan maps real time unutuk layanan terdekat yang berguna bagi korban, seperti RS atau konseling. Selain itu, bukti kekerasan dapat disimpan juga di aplikasi ini untuk membantu membuat kasus terhadap pelaku kekerasan. 
+Aplikasi ini akan berfokus untuk perangkat handphone seperti Android dan IoS untuk memudahkan penggunaan aplikasi ini secara praktis dan mudah dibandingkan seperti perangkat laptop yang tidak selalu dibawa. Perbedaan solusi yang ditawarkan melalui aplikasi ini adalah untuk memudahkan penyediaan semua fitur menjadi satu aplikasi yang hanya perlu dipantau oleh pengguna dibandingkan fitur-fitur yang perlu dipantau tersendiri.
 
 ## 2.2 Asumsi dan Batasan
-Definisikan secara tegas asumsi (baik teknis maupun dari sisi pengguna) yang menjadi dasar pengembangan. Tuliskan batasan seperti regulasi/hukum, keterbatasan sumber daya, dan ruang lingkup solusi.
+Batasannya pada regulasi hukum legal dan sumber daya waktu yang hanya disediakan selama 16 minggu,
 
 ---
 
