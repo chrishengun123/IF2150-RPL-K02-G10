@@ -14,16 +14,16 @@ TOPIC BRAINSTORMING
 Dipersiapkan oleh:
 | Informasi | Keterangan |
 | --- | --- |
-| Kelas | *\[Kelas\]* |
-| Kelompok | *\[Nomor Kelompok\]*  |
+| Nomor Kelompok | *10* |
+| Nama Kelompok | *RPL at 25* |
 
 | NIM | Nama |
 |---|---|
-| *[NIM 1]* | *[Nama Anggota 1]* |
-| *[NIM 2]* | *[Nama Anggota 2]* |
-| *[NIM 3]* | *[Nama Anggota 3]* |
-| *[NIM 4]* | *[Nama Anggota 4]* |
-| *[NIM 5]* | *[Nama Anggota 5]* |
+| *13525083* | *Natanael Chris Fabian Santoso* |
+| *13525131* | *Mirza Aryasatya Akmal* |
+| *13525149* | *Ferdinand Valentino Darmawan* |
+| *13525050* | *Jason Hartanto * |
+| *13525065* | *Christopher Hendrik Gunawan* |
 ---
 
 <br>
