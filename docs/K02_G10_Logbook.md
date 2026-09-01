@@ -7,7 +7,7 @@
 | Kelas | *02* |
 | Nomor Kelompok | *10* |
 | Nama Kelompok | *RPL at 25* |
-| Nama Perangkat Lunak | *[Nama P/L]* |
+| Nama Perangkat Lunak | *SafeShe* |
 
 **Anggota Kelompok:**
 
@@ -16,7 +16,7 @@
 | *13525083* | *Natanael Chris Fabian Santoso* |
 | *13525131* | *Mirza Aryasatya Akmal* |
 | *13525149* | *Ferdinand Valentino Darmawan* |
-| *13525050* | *Jason Hartanto * |
+| *13525050* | *Jason Hartanto* |
 | *13525065* | *Christopher Hendrik Gunawan* |
 
 ---
@@ -34,7 +34,10 @@
 | Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
 | :--- | :--- | :--- | :--- | :--- | :--- | 
 | *04-05-2026* | *[Nama Mahasiswa]* | *[Jelaskan Pekerjaan secara Singkat]* | *[Durasi Pengerjaan]* | *[On Progress/Done]* | [Kendala yang dialami, jika tidak ada cukup tandai "-"] | 
-| *05-05-2026* | *John Doe* | *Mendesain diagram kelas* | *3* | *Done* | *-* | 
+| *30-08-2026* | *Ferdinand Valentino Darmawan* | *Membuat draft awal untuk bab 2* | *1* | *Done* | *-* | 
+| *1-09-2026* | *Ferdinand Valentino Darmawan* | *Melengkapi teks untuk bab 2* | *1* | *Done* | *-* |
+| *1-09-2026* | *Ferdinand Valentino Darmawan* | *Menulis catatan asistensi Milestone 1* | *1* | *Done* | *-* |
+| *1-09-2026* | *Ferdinand Valentino Darmawan* | *Merapikan pengisian informasi awal setiap file* | *1* | *Done* | *-* |
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 1:**
