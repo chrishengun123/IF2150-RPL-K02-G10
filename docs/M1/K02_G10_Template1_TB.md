@@ -9,20 +9,20 @@ TOPIC BRAINSTORMING
 
 ## *Nama Perangkat Lunak*
 
-### Untuk: *[Nama Asisten]*
+### Untuk: *Aurelia Jennifer Gunawan*
 
 Dipersiapkan oleh:
 | Informasi | Keterangan |
 | --- | --- |
-| Nomor Kelompok | *10* |
-| Nama Kelompok | *RPL at 25* |
+| Kelas | *K2* |
+| Kelompok | *10*  |
 
 | NIM | Nama |
 |---|---|
 | *13525083* | *Natanael Chris Fabian Santoso* |
 | *13525131* | *Mirza Aryasatya Akmal* |
 | *13525149* | *Ferdinand Valentino Darmawan* |
-| *13525050* | *Jason Hartanto * |
+| *13525050* | *Jason Hartanto* |
 | *13525065* | *Christopher Hendrik Gunawan* |
 ---
 
