@@ -7,7 +7,7 @@
 | Kelas | *02* |
 | Nomor Kelompok | *10* |
 | Nama Kelompok | *RPL at 25* |
-| Nama Perangkat Lunak | *[Nama P/L]* |
+| Nama Perangkat Lunak | *SafeShe* |
 
 **Anggota Kelompok:**
 
@@ -36,7 +36,7 @@ Silakan catat penggunaan AI yang berdampak signifikan pada pengerjaan tugas (mis
 | Tool AI | Tujuan Penggunaan | Contoh Prompt Utama | Modifikasi & Validasi Manusia |
 | :--- | :--- | :--- | :--- |
 | *[Nama AI]* | *[Sertakan Tujuan Penggunaan]* | *[Tuliskan Prompt Utama]* | *[Tuliskan Keputusan Hasil Validasi]* |
-| *Gemini* | *Menentukkan fokus utama pada 9 fokus utama pada SDG 5* | *Pertanyaan awal untuk mengetahui 9 fokus utama pada SDG 5 dengan follow-up question untuk menentukkan mana yang paling harus diselesaikkan terlebih dahulu diIndonesia* | *AI memberi tahu bahwa poin tujuan ke2 merupakan poin dari SDG 5 yang harus diselesaikan terlebih dahulu diIndonesia, setelah melihat banyaknya berita dan data beredar mengenai poin tersebut kami memutuskan bahwa poin tersebut benar benar penting untuk dilihat lebih lanjut diIndonesia* |
+| *Gemini* | *Menentukkan fokus utama pada 9 fokus utama pada SDG 5* | *Pertanyaan awal untuk mengetahui 9 fokus utama pada SDG 5 dengan follow-up question untuk menentukkan mana yang paling harus diselesaikkan terlebih dahulu diIndonesia* | *AI memberi tahu bahwa poin tujuan ke 2 merupakan poin dari SDG 5 yang harus diselesaikan terlebih dahulu di Indonesia, setelah melihat banyaknya berita dan data beredar mengenai poin tersebut kami memutuskan bahwa poin tersebut benar benar penting untuk dilihat lebih lanjut diIndonesia* |
 | | | | | |
 
 ### Milestone 2
@@ -52,8 +52,8 @@ Kami yang bertanda tangan di bawah ini menyatakan bahwa seluruh log penggunaan A
 
 | Tanda Tangan | Nama Anggota |
 | :---: | :--- |
-| <img src="./assets/ttd-anggota1.png" width="100"> | **[NIM - Nama Anggota 1]** |
-| <img src="./assets/ttd-anggota2.png" width="100"> | **[NIM - Nama Anggota 2]** |
-| <img src="./assets/ttd-anggota3.png" width="100"> | **[NIM - Nama Anggota 3]** |
-| <img src="./assets/ttd-anggota4.png" width="100"> | **[NIM - Nama Anggota 4]** |
-| <img src="./assets/ttd-anggota5.png" width="100"> | **[NIM - Nama Anggota 5]** |
+| <img src="./assets/ttd-anggota1.png" width="100"> | **13525083 - Natanael Chris Fabian Santoso** |
+| <img src="./assets/ttd-anggota2.png" width="100"> | **13525131 - Mirza Aryasatya Akmal** |
+| <img src="./assets/ttd-anggota3.png" width="100"> | **13525149 - Ferdinand Valentino Darmawan** |
+| <img src="./assets/ttd-anggota4.jpeg" width="100"> | **13525050 - Jason Hartanto** |
+| <img src="./assets/ttd-anggota5.jpeg" width="100"> | **13525065 - Christopher Hendrik Gunawan** |
