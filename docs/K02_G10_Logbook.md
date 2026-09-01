@@ -38,6 +38,7 @@
 | *1-09-2026* | *Ferdinand Valentino Darmawan* | *Melengkapi teks untuk bab 2* | *1* | *Done* | *-* |
 | *1-09-2026* | *Ferdinand Valentino Darmawan* | *Menulis catatan asistensi Milestone 1* | *1* | *Done* | *-* |
 | *1-09-2026* | *Ferdinand Valentino Darmawan* | *Merapikan pengisian informasi awal setiap file* | *1* | *Done* | *-* |
+| *1-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat file bab 3 tersendiri dan mengisi bab 3.1* | *1* | *Done* | *-* |
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 1:**
