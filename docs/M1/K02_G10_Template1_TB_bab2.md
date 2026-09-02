@@ -1,9 +1,8 @@
 # BAB 2: Analisis Solusi
 
 ## 2.1 Deskripsi Perangkat Lunak
-// Perangkat lunak SafeShe adalah ... untuk menyelesaikan masalah ... 
 
-Di aplikasi ini, pengguna dapat membuat laporan anonim dengan fitur one click SOS yang akan mengirimkan lokasi ke pihak polisi. Fitur ini dapat digunakan dengan lebih mudah daripada telepon dalam keadaan mendesak tanpa diketahui pelaku kekerasan. Untuk semakin mempermudah akses fitur ini, tombol tersebut dapat juga ditaruh di handphone menggunakan widget. Selain itu, handphone juga akan merekam suara selama keadaan darurat untuk mendapat bukti kekerasan yang membantu dalam membuat kasus terhadap pelaku kekerasan.
+Perangkat lunak SafeShe adalah aplikasi laporan anonim untuk menyelesaikan masalah kekerasan terhadap perempuan. Laporan anonim tersebut menggunakan fitur one click SOS yang akan mengirimkan lokasi ke pihak polisi. Fitur ini dapat digunakan dengan lebih mudah daripada telepon dalam keadaan mendesak tanpa diketahui pelaku kekerasan. Untuk semakin mempermudah akses fitur ini, tombol tersebut dapat juga ditaruh di handphone menggunakan widget. Selain itu, handphone juga akan merekam suara selama keadaan darurat untuk mendapat bukti kekerasan yang membantu dalam membuat kasus terhadap pelaku kekerasan.
 
 Aplikasi juga akan menyediakan maps real time unutuk layanan terdekat yang berguna bagi korban, seperti RS atau konseling, serta kontak untuk menelepon layanan tersebut. 
 
@@ -12,6 +11,8 @@ Aplikasi ini akan berfokus untuk perangkat handphone seperti Android dan IoS unt
 ## 2.2 Asumsi dan Batasan
 // Asumsi --> asumsi dari pengguna dan bisa mengenai asumsi sumber daya yang tersedia dalam pengerjaan tubes
 
-Batasannya pada regulasi hukum legal yang diperbolehkan dalam penanganan kasus kekerasan seksual, seperti penanganan pengambilan serta penyimpanan bukti. Juga batasnya sumber daya waktu yang hanya disediakan selama 16 minggu untuk proses pengembangan aplikasi. Selain itu, aplikasi tidak dapat digunakan pada lock screen handphone, jadi pengguna perlu membuka handphonenya sebelum dapat menekan tombol SOS. Voice activation juga tidak dapat digunakan tanpa pengembangan aplikasi yang lebih mendalam. Batasan lainnya terletak pada kemauan dari pihak polisi untuk menerima notifikasi ketika SOS diberikan yang bisa saja, pengguna sebenarnya tidak sedang berada dalam situasi yang membahayakan. Hal ini berarti diperlukan kerja sama dengan pihak polisi untuk dapat merespons dengan baik ketika ada notifikasi SOS, termasuk ketika SOS tersebut sebenarnya tidak digunakan dengan semestinya. 
+Aplikasi ini dibuat dengan asumsi bahwa pihak polisi setuju untuk memantau signal SOS aplikasi SafeShe. Selain itu, juga ada asumsi bahwa terdapat api yang menyediakan data lokasi rs dan konseling, termasuk kontak telepon tempat tersebut.
+
+Batasannya pada regulasi hukum legal yang diperbolehkan dalam penanganan kasus kekerasan seksual, seperti penanganan pengambilan serta penyimpanan bukti. Selain itu, aplikasi tidak dapat digunakan pada lock screen handphone, jadi pengguna perlu membuka handphonenya sebelum dapat menekan tombol SOS. Batasan lainnya terletak pada kemauan dari pihak polisi untuk menerima notifikasi ketika SOS diberikan yang bisa saja, pengguna sebenarnya tidak sedang berada dalam situasi yang membahayakan. Hal ini berarti diperlukan kerja sama dengan pihak polisi untuk dapat merespons dengan baik ketika ada notifikasi SOS, termasuk ketika SOS tersebut sebenarnya tidak digunakan dengan semestinya. 
 
 ---
