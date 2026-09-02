@@ -9,7 +9,6 @@ Aplikasi juga akan menyediakan maps real time unutuk layanan terdekat yang bergu
 Aplikasi ini akan berfokus untuk perangkat handphone seperti Android dan IoS untuk memudahkan penggunaan aplikasi ini secara praktis dan mudah dibandingkan seperti perangkat laptop yang tidak selalu dibawa. Perbedaan solusi yang ditawarkan melalui aplikasi ini adalah untuk memudahkan penyediaan semua fitur menjadi satu aplikasi yang hanya perlu dipantau oleh pengguna dibandingkan fitur-fitur terpisah yang perlu dipantau tersendiri.
 
 ## 2.2 Asumsi dan Batasan
-// Asumsi --> asumsi dari pengguna dan bisa mengenai asumsi sumber daya yang tersedia dalam pengerjaan tubes
 
 Aplikasi ini dibuat dengan asumsi bahwa pihak polisi setuju untuk memantau signal SOS aplikasi SafeShe. Selain itu, juga ada asumsi bahwa terdapat api yang menyediakan data lokasi rs dan konseling, termasuk kontak telepon tempat tersebut.
 
