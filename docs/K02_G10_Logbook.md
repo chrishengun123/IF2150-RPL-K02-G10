@@ -46,6 +46,7 @@
 | *2-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi bab 2* | *1* | *Done* | - |
 | *1-09-2026* | *Natanael Chris Fabian Santoso* | *Merevisi bab 1 sesuai masukan dari asisten* | *~1 jam* | *Done* | *-* |
 | *2-09-2026* | *Natanael Chris Fabian Santoso* | *Lanjut merevisi bab 1, dilanjutkan merevisi bab 2 sesuai masukan dari asisten* | *2 jam* | *Done* | *-* | 
+| *31-08-2026* | *Christopher Hendrik Gunawan* | *Mengadakan meeting online dengan kelompok untuk menentukan arah kerja* | *1* | *Done* | *Perlu menunggu asistensi untuk melengkapi pemahaman tugas* |
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 1:**
