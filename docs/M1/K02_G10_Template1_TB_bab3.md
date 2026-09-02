@@ -14,8 +14,8 @@ Definisikan apa yang ingin dicapai oleh pengguna saat menggunakan sistem ini dal
 
 | ID | Aktor | Kebutuhan / Aktivitas | Tujuan / Nilai |
 | :--- | :--- | :--- | :--- |
-| US-01 | *Kasir* |  *Memindai barcode barang* | *Proses pembayaran berjalan cepat dan akurat* |
-| US-02 | *[Nama Aktor]* | *[Kebutuhan pengguna]* | *[Tujuan yang dicapai pengguna]* |
+| US-01 | *Korban* |  *Melapor kekerasan secara nyaman, anonim, dan diam-diam* | *Proses pelaporan reliable dan pelaku tidak mengetahui akan laporan* |
+| US-02 | *Polisi* | *Menerima laporan dengan data deskripsi kejadian, lokasi, dan waktu kejadian yang akurat* | *Data yang diterima lengkap agar dapat mengklasifikasi urgensi kasus dan bertindak sebagaimana mestinya* |
 | ... | ... | ... | ... |
 
 ## 3.3 Deskripsi Aktivitas
