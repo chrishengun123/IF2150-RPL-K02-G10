@@ -39,6 +39,9 @@
 | *1-09-2026* | *Ferdinand Valentino Darmawan* | *Menulis catatan asistensi Milestone 1* | *1* | *Done* | *-* |
 | *1-09-2026* | *Ferdinand Valentino Darmawan* | *Merapikan pengisian informasi awal setiap file* | *1* | *Done* | *-* |
 | *1-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat file bab 3 tersendiri dan mengisi bab 3.1* | *1* | *Done* | *-* |
+| *30-08-2026* | *Jason Hartanto* | *Melakukan brainstorming untuk menentukan fokus utama permasalahan dan menyarankannya memlaui group chat* | *1* | *Done* | *-* |
+| *30-08-2026* | *Jason Hartanto* | *Membentuk ide dasar perangkat lunak, beberapa fitur didalamnya* | *1* | *Done* | *-* |
+| *1-08-2026* | *Jason Hartanto* | *Memberikan lay out dan data data yang diperlukan untuk penyusunan BAB 1* | *2* | *Done* | *-* |
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 1:**
