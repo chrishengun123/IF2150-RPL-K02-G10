@@ -42,6 +42,8 @@
 | *30-08-2026* | *Jason Hartanto* | *Melakukan brainstorming untuk menentukan fokus utama permasalahan dan menyarankannya memlaui group chat* | *1* | *Done* | *-* |
 | *30-08-2026* | *Jason Hartanto* | *Membentuk ide dasar perangkat lunak, beberapa fitur didalamnya* | *1* | *Done* | *-* |
 | *1-08-2026* | *Jason Hartanto* | *Memberikan lay out dan data data yang diperlukan untuk penyusunan BAB 1* | *2* | *Done* | *-* |
+| *1-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi bab 2* | *2 jam* | *Done* | - |
+| *2-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi bab 2* | *0 jam* | *On Progress* | - |
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 1:**
