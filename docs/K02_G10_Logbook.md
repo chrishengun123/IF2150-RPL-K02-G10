@@ -43,7 +43,7 @@
 | *30-08-2026* | *Jason Hartanto* | *Membentuk ide dasar perangkat lunak, beberapa fitur didalamnya* | *1* | *Done* | *-* |
 | *1-08-2026* | *Jason Hartanto* | *Memberikan lay out dan data data yang diperlukan untuk penyusunan BAB 1* | *2* | *Done* | *-* |
 | *1-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi bab 2* | *2 jam* | *Done* | - |
-| *2-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi bab 2* | *1 jam* | *On Progress* | - |
+| *2-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi bab 2* | *1 jam* | *Done* | - |
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 1:**
