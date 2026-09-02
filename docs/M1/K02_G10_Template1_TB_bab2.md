@@ -12,6 +12,6 @@ Aplikasi ini akan berfokus untuk perangkat handphone seperti Android dan IoS unt
 
 Aplikasi ini dibuat dengan asumsi bahwa pihak polisi setuju untuk memantau signal SOS aplikasi SafeShe. Selain itu, juga ada asumsi bahwa terdapat api yang menyediakan data lokasi rs dan konseling, termasuk kontak telepon tempat tersebut.
 
-Batasannya pada regulasi hukum legal yang diperbolehkan dalam penanganan kasus kekerasan seksual, seperti penanganan pengambilan serta penyimpanan bukti. Selain itu, aplikasi tidak dapat digunakan pada lock screen handphone, jadi pengguna perlu membuka handphonenya sebelum dapat menekan tombol SOS. Batasan lainnya terletak pada kemauan dari pihak polisi untuk merespons dengan baik ketika ada notifikasi SOS, bahkan jika SOS tersebut tidak digunakan dengan semestinya.
+Batasannya pada regulasi hukum legal yang diperbolehkan dalam penanganan kasus kekerasan seksual, seperti penanganan pengambilan serta penyimpanan bukti. Selain itu, aplikasi tidak dapat digunakan pada lock screen handphone, jadi pengguna perlu membuka handphonenya sebelum dapat menekan tombol SOS. Batasan lainnya terletak pada kemauan dari pihak polisi untuk merespons dengan baik ketika ada notifikasi SOS, bahkan jika SOS tersebut tidak digunakan dengan semestinya. Akhirnya, jika tidak ada jaringan koneksi, signal SOS tidak dapat dikirim handphone.
 
 ---
