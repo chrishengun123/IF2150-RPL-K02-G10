@@ -49,6 +49,7 @@
 | *2-09-2026* | *Natanael Chris Fabian Santoso* | *Lanjut merevisi bab 1, dilanjutkan merevisi bab 2 sesuai masukan dari asisten* | *2 jam* | *Done* | *-* | 
 | *2-09-2026* | *Mirza Aryasatya Akmal* | *Membuat diagram untuk bab 3* | *1 jam* | *Done* | *-* |
 | *8-09-2026* | *Mirza Aryasatya Akmal* | *Mengisi subbab 2.3 RG* | *1 jam* | *Done* | *-* |  
+| *8-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi subbab 2.5* | *2 jam* | *Done* | *-* |  
 
 | | | | | | | |
 
