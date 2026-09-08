@@ -4,13 +4,13 @@
 
 | Informasi | Keterangan |
 | --- | --- |
-| **Hari** | *\[Hari\]* |
-| **Tanggal** | *\[DD/MM/YYYY\]* |
-| **Kelas** | *\[Kelas\]* |
-| **Nomor Kelompok** | *\[Nomor Kelompok\]*  |
-| **Nama Kelompok** | *\[Nama Kelompok\]*  |
-| **Nama Perangkat Lunak** | *\[Nama P/L\]*  |
-| **Dokumen** | *\[Nama Dokumen yang diasistensikan\]*  |
+| **Hari** | *Selasa* |
+| **Tanggal** | *08/09/2026* |
+| **Kelas** | *02* |
+| **Nomor Kelompok** | *10*  |
+| **Nama Kelompok** | *RPL at 25*  |
+| **Nama Perangkat Lunak** | *SafeShe*  |
+| **Dokumen** | *K02_G10_RG*  |
 
 ### Anggota Kelompok
 
