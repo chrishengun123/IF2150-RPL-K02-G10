@@ -57,5 +57,17 @@
 
 ---
 
+### Milestone 1
+**Periode:** [Tanggal Mulai] - [Tanggal Selesai]
+
+| Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
+| :--- | :--- | :--- | :--- | :--- | :--- | 
+| *07-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi deskripsi aktivitas untuk A01* | *1 jam* | *Done* | *-* | 
+| *08-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi deskripsi aktivitas untuk A02-A07 (sebelum asistensi)* | *2 jam* | *Done* | *-* | 
+| *08-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi informasi awal di setiap docs* | *1 jam* | *Done* | *-* | 
+| *08-09-2026* | *Ferdinand Valentino Darmawan* | *Mencatat hasil asistensi di form asistensi* | *1 jam* | *Done* | *-* | 
+| *08-09-2026* | *Ferdinand Valentino Darmawan* | *Melakukan revisi pada daftar perubahan dan deskripsi aktivitas berdasarkan asistensi* | *1 jam* | *Done* | *-* | 
+
+
 
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``
