@@ -48,8 +48,6 @@
 | *2-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi bab 2* | *1 jam* | *Done* | - |
 | *2-09-2026* | *Natanael Chris Fabian Santoso* | *Lanjut merevisi bab 1, dilanjutkan merevisi bab 2 sesuai masukan dari asisten* | *2 jam* | *Done* | *-* | 
 | *2-09-2026* | *Mirza Aryasatya Akmal* | *Membuat diagram untuk bab 3* | *1 jam* | *Done* | *-* |
-| *8-09-2026* | *Mirza Aryasatya Akmal* | *Mengisi subbab 2.3 RG* | *1 jam* | *Done* | *-* |  
-| *8-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi subbab 2.5* | *2 jam* | *Done* | *-* |  
 
 | | | | | | | |
 
@@ -58,7 +56,7 @@
 
 ---
 
-### Milestone 1
+### Milestone 2
 **Periode:** [Tanggal Mulai] - [Tanggal Selesai]
 
 | Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
@@ -68,6 +66,8 @@
 | *08-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi informasi awal di setiap docs* | *1 jam* | *Done* | *-* | 
 | *08-09-2026* | *Ferdinand Valentino Darmawan* | *Mencatat hasil asistensi di form asistensi* | *1 jam* | *Done* | *-* | 
 | *08-09-2026* | *Ferdinand Valentino Darmawan* | *Melakukan revisi pada daftar perubahan dan deskripsi aktivitas berdasarkan asistensi* | *1 jam* | *Done* | *-* | 
+| *8-09-2026* | *Mirza Aryasatya Akmal* | *Mengisi subbab 2.3 RG* | *1 jam* | *Done* | *-* |  
+| *8-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi subbab 2.5* | *2 jam* | *Done* | *-* |  
 
 
 
