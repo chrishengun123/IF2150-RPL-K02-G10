@@ -38,16 +38,16 @@
 | *30-08-2026* | *Jason Hartanto* | *Melakukan brainstorming untuk menentukan fokus utama permasalahan dan menyarankannya memlaui group chat* | *1 jam* | *Done* | *-* |
 | *30-08-2026* | *Jason Hartanto* | *Membentuk ide dasar perangkat lunak, beberapa fitur didalamnya* | *1 jam* | *Done* | *-* |
 | *31-08-2026* | *Christopher Hendrik Gunawan* | *Mengadakan meeting online dengan kelompok untuk menentukan arah kerja* | *1 jam* | *Done* | *Perlu menunggu asistensi untuk melengkapi pemahaman tugas* |
-| *1-09-2026* | *Ferdinand Valentino Darmawan* | *Melengkapi teks untuk bab 2* | *1 jam* | *Done* | *-* |
-| *1-09-2026* | *Ferdinand Valentino Darmawan* | *Menulis catatan asistensi Milestone 1* | *1 jam* | *Done* | *-* |
-| *1-09-2026* | *Ferdinand Valentino Darmawan* | *Merapikan pengisian informasi awal setiap file* | *1 jam* | *Done* | *-* |
-| *1-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat file bab 3 tersendiri dan mengisi bab 3.1* | *1 jam* | *Done* | *-* |
-| *1-08-2026* | *Jason Hartanto* | *Memberikan lay out dan data data yang diperlukan untuk penyusunan BAB 1* | *2 jam* | *Done* | *-* |
-| *1-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi bab 2* | *2 jam* | *Done* | - |
-| *1-09-2026* | *Natanael Chris Fabian Santoso* | *Merevisi bab 1 sesuai masukan dari asisten* | *1 jam* | *Done* | *-* |
-| *2-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi bab 2* | *1 jam* | *Done* | - |
-| *2-09-2026* | *Natanael Chris Fabian Santoso* | *Lanjut merevisi bab 1, dilanjutkan merevisi bab 2 sesuai masukan dari asisten* | *2 jam* | *Done* | *-* | 
-| *2-09-2026* | *Mirza Aryasatya Akmal* | *Membuat diagram untuk bab 3* | *1 jam* | *Done* | *-* |
+| *01-09-2026* | *Ferdinand Valentino Darmawan* | *Melengkapi teks untuk bab 2* | *1 jam* | *Done* | *-* |
+| *01-09-2026* | *Ferdinand Valentino Darmawan* | *Menulis catatan asistensi Milestone 1* | *1 jam* | *Done* | *-* |
+| *01-09-2026* | *Ferdinand Valentino Darmawan* | *Merapikan pengisian informasi awal setiap file* | *1 jam* | *Done* | *-* |
+| *01-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat file bab 3 tersendiri dan mengisi bab 3.1* | *1 jam* | *Done* | *-* |
+| *01-08-2026* | *Jason Hartanto* | *Memberikan lay out dan data data yang diperlukan untuk penyusunan BAB 1* | *2 jam* | *Done* | *-* |
+| *01-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi bab 2* | *2 jam* | *Done* | - |
+| *01-09-2026* | *Natanael Chris Fabian Santoso* | *Merevisi bab 1 sesuai masukan dari asisten* | *1 jam* | *Done* | *-* |
+| *02-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi bab 2* | *1 jam* | *Done* | - |
+| *02-09-2026* | *Natanael Chris Fabian Santoso* | *Lanjut merevisi bab 1, dilanjutkan merevisi bab 2 sesuai masukan dari asisten* | *2 jam* | *Done* | *-* | 
+| *02-09-2026* | *Mirza Aryasatya Akmal* | *Membuat diagram untuk bab 3* | *1 jam* | *Done* | *-* |
 
 | | | | | | | |
 
@@ -66,8 +66,8 @@
 | *08-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi informasi awal di setiap docs* | *1 jam* | *Done* | *-* | 
 | *08-09-2026* | *Ferdinand Valentino Darmawan* | *Mencatat hasil asistensi di form asistensi* | *1 jam* | *Done* | *-* | 
 | *08-09-2026* | *Ferdinand Valentino Darmawan* | *Melakukan revisi pada daftar perubahan dan deskripsi aktivitas berdasarkan asistensi* | *1 jam* | *Done* | *-* | 
-| *8-09-2026* | *Mirza Aryasatya Akmal* | *Mengisi subbab 2.3 RG* | *1 jam* | *Done* | *-* |  
-| *8-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi subbab 2.5* | *2 jam* | *Done* | *-* |  
+| *08-09-2026* | *Mirza Aryasatya Akmal* | *Mengisi subbab 2.3 RG* | *1 jam* | *Done* | *-* |  
+| *08-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi subbab 2.5* | *2 jam* | *Done* | *-* |  
 
 
 
