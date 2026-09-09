@@ -68,6 +68,7 @@
 | *08-09-2026* | *Ferdinand Valentino Darmawan* | *Melakukan revisi pada daftar perubahan dan deskripsi aktivitas berdasarkan asistensi* | *1 jam* | *Done* | *-* | 
 | *08-09-2026* | *Mirza Aryasatya Akmal* | *Mengisi subbab 2.3 RG* | *1 jam* | *Done* | *-* |  
 | *08-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi subbab 2.5* | *2 jam* | *Done* | *-* |  
+| *09-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi subbab 2.5* | *1 jam* | *In Progress* | *-* |  
 
 
 
