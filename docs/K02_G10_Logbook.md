@@ -69,7 +69,7 @@
 | *08-09-2026* | *Mirza Aryasatya Akmal* | *Mengisi subbab 2.3 RG* | *1 jam* | *Done* | *-* |  
 | *08-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi subbab 2.5* | *2 jam* | *Done* | *-* |  
 | *09-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi subbab 2.5* | *1 jam* | *In Progress* | *-* |  
-
+| *09-09-2026* | *Natanael Chris Fabian Santoso* | *Mengisi, merevisi, dan menyelesaikan subbab 2.4* | *1 jam* | *Done* | *-* |  
 
 
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``
