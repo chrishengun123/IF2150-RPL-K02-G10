@@ -70,6 +70,11 @@
 | *08-09-2026* | *Christopher Hendrik Gunawan* | *Mengisi subbab 2.5* | *2 jam* | *Done* | *-* |  
 | *09-09-2026* | *Christopher Hendrik Gunawan* | *Merevisi subbab 2.5* | *1 jam* | *In Progress* | *-* |  
 | *09-09-2026* | *Natanael Chris Fabian Santoso* | *Mengisi, merevisi, dan menyelesaikan subbab 2.4* | *1 jam* | *Done* | *-* |  
+| *07-09-2026* | *Jason Hartanto* | *Menyelesaikan subbab 1.2 dan 2.1* | *1 jam* | *Done* | *-* |  
+| *09-09-2026* | *Mirza Aryasatya Akmal* | *Menyelesaikan subbab 2.3 RG* | *30 menit* | *Done* | *-* |
+| *09-09-2026* | *Mirza Aryasatya Akmal* | *Merapikan template RG.md* | *10 menit* | *Done* | *-* |
+| *09-09-2026* | *Ferdinand Valentino Darmawan* | *Menambahkan subba 1.1* | *1 jam* | *Done* | *-* | 
+
 
 
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``
