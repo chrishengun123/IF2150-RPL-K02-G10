@@ -7,30 +7,30 @@ USE CASE & SCENARIO USE CASE
 </h1>
 <br>
 
-## *Nama Perangkat Lunak*
+## *SafeShe*
 
-### Untuk: *[Nama Asisten]*
+### Untuk: *Aurelia Jennifer Gunawan*
 
 Dipersiapkan oleh:
 | Informasi | Keterangan |
 | --- | --- |
-| Kelas | *\[Kelas\]* |
-| Kelompok | *\[Nomor Kelompok\]*  |
+| Kelas | *K2* |
+| Kelompok | *10*  |
 
 | NIM | Nama |
 |---|---|
-| *[NIM 1]* | *[Nama Anggota 1]* |
-| *[NIM 2]* | *[Nama Anggota 2]* |
-| *[NIM 3]* | *[Nama Anggota 3]* |
-| *[NIM 4]* | *[Nama Anggota 4]* |
-| *[NIM 5]* | *[Nama Anggota 5]* |
+| *13525083* | *Natanael Chris Fabian Santoso* |
+| *13525131* | *Mirza Aryasatya Akmal* |
+| *13525149* | *Ferdinand Valentino Darmawan* |
+| *13525050* | *Jason Hartanto* |
+| *13525065* | *Christopher Hendrik Gunawan* |
 ---
 
 ## Daftar Perubahan
 
 | Revisi | Deskripsi |
 | :--- | :--- |
-| *A* | *Deskripsikan perubahan yang dilakukan dari dokumen sebelumnya pada dokumen ini. Jika tidak terdapat perubahan, harap kosongkan tabel.* |
+| *A* | *Menambah penyedia layanan sebagai aktor di 3.1* |
 | *B* |  |
 | *C* |  |
 | ... |  |
@@ -39,7 +39,13 @@ Dipersiapkan oleh:
 <br>
 
 # BAB 1: Deskripsi Perangkat Lunak
-Bagian ini boleh disalin dari 1.1 Deskripsi Umum Sistem pada dokumen *Requirement Gathering*. Pastikan isinya memang membahas deskripsi perangkat lunak kalian, seperti fitur, fungsi utama, dan cakupan sistem.
+Fitur utama yang disediakan oleh aplikasi SafeShe adalah pelaporan anonim melalui *one-click SOS*. Fitur ini akan mengirimkan waktu dikirimnya dan lokasi korban ke pihak kepolisian yang anonim dan dapat dilakukan secara diam-diam. Fitur ini disertai dengan opsi untuk menambahkan tombol fitur ini melalui *widget* di handphone korban. Tujuannya dari penerapan fitur ini adalah untuk memudahkan korban membuat laporan yang tidak mudah terdeteksi oleh pelaku kekerasan. Ketika fitur ini dijalankan, handphone akan merekam suara sampai pihak kepolisian sampai di lokasi korban untuk membantu menangani kejadiannya. Tujuannya adalah untuk mendapatkan bukti kekerasan yang lebih konkrit dan dapat digunakan untuk membantu membuat kasus terhadap pelaku kekerasan yang akan ditangani oleh pihak kepolisian.
+
+Selain itu, aplikasi memiliki fitur untuk menampilkan peta *real-time* yang akan menampilkan layanan rumah sakit dan konseling yang terdekat bagi pengguna melalui simbol-simbol yang terdapat di peta. Korban juga dapat mendapatkan informasi kontak dari layanan dan dapat menghubunginya melalui aplikasi yang akan memasukkan nomor telepon ke aplikasi telepon pada handphone. Tujuan dari fitur ini adalah untuk menyediakan bantuan yang mudah dicari dan diakses oleh korban setelah terjadinya kejadian kekerasan.
+
+Lalu pihak kepolisian yang menerima laporan dari aplikasi akan menerima waktu terkirimnya SOS dan lokasi real-time dari handphone korban. Pihak kepolisian dapat melihat sebuah peta dari lokasinya korban selama pihak kepolisian belum sampai di lokasi korban. Setelah pihak kepolisian sudah sampai di lokasi korban, pihak kepolisian dapat mematikan SOS dan aplikasi akan berhenti mengirimkan lokasi real-time korban. Tujuan dari penerapannya adalah untuk memastikan agar pihak kepolisian dapat terus memantau lokasi asli korban selama belum sampai di lokasi korban dan menangani situasi yang terjadi.
+
+Setelah SOS dimatikan, pihak kepolisian juga akan menerima rekaman suara kejadian yang terjadi melalui aplikasi setelah korban mengirimkan SOS. Tujuannya adalah untuk memudahkan pihak kepolisian mendapatkan bukti yang konkrit untuk menangani dan membuat kasus terhadap pelaku kekerasan. 
 
 ---
 
@@ -48,9 +54,14 @@ Salin ulang **seluruh Kebutuhan Fungsional (KF)** yang telah didefinisikan pada 
 
 | ID KF | Kebutuhan | Penjelasan |
 | :--- | :--- | :--- |
-| *KF01* | *Menampilkan pilihan metode pembayaran* | *Perangkat lunak dapat menampilkan pilihan antarmuka metode pembayaran (transfer bank, e-wallet, kartu kredit) setelah pengguna melakukan checkout.* |
-| *KF02* | *Mengirim permintaan otorisasi pembayaran* | *Perangkat lunak dapat mengirimkan permintaan otorisasi transaksi ke API Payment Gateway beserta nominal tagihan dan ID Pesanan.* |
-| *...* | *...* | *...* |
+| *KF01* | *R01* | *Diberikan perangkat user memiliki fitur widget, ketika Peragkat Lunak diaktifkan, maka sistem menampilkan sebuah tombol one click SOS dalam bentuk widget aplikasi yang selalu ditampilkan di layar perangkat ketika perangkat aktif dan terbuka (tidak di-lock).* |
+| *KF02* | *R02* | *Ketika user melakukan pelaporan, sistem akan bekerja tanpa membuat perangkat user bersuara atau bergetar agar tidak diketahui pelaku kekerasan.* |
+| *KF03* | *R04* | *Ketika laporan awal dibuat, sistem akan mengenkripsi laporan tersebut secara end-to-end dan menyimpannya menggunakan blockchain-based timestamp.* |
+| *KF04* | *R05* | *Ketika perangkat user dalam kondisi mati atau terkunci, sistem akan menyembunyikan tombol one click SOS dalam bentuk widget aplikasi agar tidak dapat ditekan secara tidak sengaja.* |
+| *KF05* | *R06* | *Ketika user menekan tombol untuk menampilkan peta live, sistem akan menampilkan di seluruh layar sebuah peta live yang menampilkan fasilitas layanan terdekat, seperti rumah sakit, tempat konseling, dan area beresiko tinggi.* |
+| *KF06* | *R07* | *Diberikan terdapat API yang dapat menampilkan data lokasi rumah sakit dan tempat konseling, ketika sistem akan menampilkan peta live kepada user, sistem akan memanggil API tersebut untuk memperoleh data lokasi rumah sakit dan tempat konseling yang akurat.* |
+| *KF07* | *R09* | *Diberikan perangkat user memiliki sebuah mikrofon, ketika tombol one click SOS ditekan, sistem akan langsung mengaktifkan mikrofon perangkat user untuk merekam suara dalam keadaan darurat.* |
+| *KF08* | *R11* | *Ketika pihak kepolisian mengirimkan notifikasi kepada sistem sebagai wujud konfirmasi kepada korban, sistem akan menerima notifikasi tersebut dan menampilkan notifikasi tersebut di layar perangkat korban.* |
 
 <sub> ***Catatan***: *Jika ada KF dari ML2 yang berubah/bertambah/dihapus setelah asistensi, pastikan tabel ini konsisten dengan versi KF terbaru sebelum dikumpulkan.*
 <sub>
@@ -64,9 +75,9 @@ Daftarkan seluruh aktor yang terlibat dalam use case yang akan dimodelkan. Aktor
 
 | Aktor | Deskripsi |
 | :--- | :--- |
-| *Pelanggan* | *Pengguna yang melakukan transaksi pembelian dan pembayaran melalui sistem.* |
-| *Kasir* | *Pengguna internal toko yang memverifikasi status pembayaran pelanggan sebelum menyerahkan barang.* |
-| *...* | *...* |
+| *Korban* | *Pengguna ini bertindak sebagai pihak yang memerlukan bantuan karena telah mengalami kekerasan seksual. Karakteristik dari pengguna ini adalah mengutamakan keamanan, kecepatan, dan konfirmasi respons untuk bantuan dari pihak kepolisian.* |
+| *Polisi* | *Pengguna ini bertindak sebagai pihak yang memantau notifikasi SOS yang dikirimkan oleh korban. Karakteristik dari pengguna ini adalah menginginkan lokasi korban untuk memberi bantuan, mendapatkan bukti untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual, serta kemampuan untuk mengirimkan notifikasi kembali kepada korban bahwa SOS telah diterima dan bantuan sedang dalam perjalanan.* |
+| *Penyedia Layanan* | *Pengguna ini bertindak sebagai pihak yang menerima kontak dari pihak korban. Karakteristik dari pengguna ini adalah dapat menyediakan bantuan yang dibutuhkan pihak korban melalui sistem pengontakan yang dapat diandalkan untuk bekerja ketika digunakan oleh korban.* |
 
 
 
