@@ -80,9 +80,11 @@
 
 | Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
 | :--- | :--- | :--- | :--- | :--- | :--- | 
-| *15-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat use case 3.2* | *1 jam* | *Done* | *-* | 
-| *16-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat use case 3.3* | *1 jam* | *Done* | *-* | 
-| *15-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi* | *1 jam* | *Done* | *-* | 
+| *15-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat use case 3.4.2* | *1 jam* | *Done* | *-* | 
+| *16-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat use case 3.4.3* | *1 jam* | *Done* | *-* | 
+| *15-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi* | *1 jam* | *Done* | *-* |
+| *16-09-2026* | *Jason Hartanto* | *Membuat bagian 3.2 dan 3.4.3* | *1,5 jam* | *Done* | *-* |  
+| *16-09-2026* | *Natanael Chris Fabian Santoso* | *Menambahkan UC01, UC05, UC06, Menghapus instruksi template* | *3 jam* | *Done* | - |
 
 
 
