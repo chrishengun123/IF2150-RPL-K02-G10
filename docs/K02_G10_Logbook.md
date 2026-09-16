@@ -75,6 +75,15 @@
 | *09-09-2026* | *Mirza Aryasatya Akmal* | *Merapikan template RG.md* | *10 menit* | *Done* | *-* |
 | *09-09-2026* | *Ferdinand Valentino Darmawan* | *Menambahkan subba 1.1* | *1 jam* | *Done* | *-* | 
 
+### Milestone 3
+**Periode:** [Tanggal Mulai] - [Tanggal Selesai]
+
+| Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
+| :--- | :--- | :--- | :--- | :--- | :--- | 
+| *15-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat use case 3.2* | *1 jam* | *Done* | *-* | 
+| *16-09-2026* | *Ferdinand Valentino Darmawan* | *Membuat use case 3.3* | *1 jam* | *Done* | *-* | 
+| *15-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi* | *1 jam* | *Done* | *-* | 
+
 
 
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``
