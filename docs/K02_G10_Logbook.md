@@ -75,6 +75,13 @@
 | *09-09-2026* | *Mirza Aryasatya Akmal* | *Merapikan template RG.md* | *10 menit* | *Done* | *-* |
 | *09-09-2026* | *Ferdinand Valentino Darmawan* | *Menambahkan subba 1.1* | *1 jam* | *Done* | *-* | 
 
+| | | | | | | |
+
+**Catatan/Evaluasi Milestone 1:**
+* *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
+
+---
+
 ### Milestone 3
 **Periode:** [Tanggal Mulai] - [Tanggal Selesai]
 
@@ -87,6 +94,32 @@
 | *16-09-2026* | *Natanael Chris Fabian Santoso* | *Menambahkan UC01, UC05, UC06, Menghapus instruksi template* | *3 jam* | *Done* | - |
 | *15-09-2026* | *Christopher Hendrik Gunawan* | *Menbuat diagram* | *1 jam* | *Done* | - |
 
+| | | | | | | |
 
+**Catatan/Evaluasi Milestone 1:**
+* *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
+
+---
+
+### Milestone 4
+**Periode:** [Tanggal Mulai] - [Tanggal Selesai]
+
+| Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
+| :--- | :--- | :--- | :--- | :--- | :--- | 
+| *18-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi akbar* | *1 jam* | *Done* | *-* |
+| *21-09-2026* | *Ferdinand Valentino Darmawan* | *Menambah deskripsi daftar perubahan, melakukan revisi A di daftar perubahan, menyalin informasi dari milestone sebelumnya untuk informasi awal grup dan dasar bab 1 sampai 3* | *1 jam* | *Done* | *-* | 
+| *22-09-2026* | *Ferdinand Valentino Darmawan* | *Menambah template daftar kelas untuk 4.2, mengerjakan 4.2.4, dan menambah C03 sampai C07* | *1,5 jam* | *Done* | *-* | 
+| *2-09-2026* | *Christopher Hendrik Gunawan* | *...* | *...* | *Done* | - |
+| *2-09-2026* | *Natanael Chris Fabian Santoso* | *...* | *...* | *Done* | - |
+| *2-09-2026* | *Jason Hartanto* | *...* | *...* | *Done* | *-* |  
+| *2-09-2026* | *Mirza Aryasatya Akmal* | *...* | *...* | *Done* | *-* |
+
+
+| | | | | | | |
+
+**Catatan/Evaluasi Milestone 1:**
+* *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
+
+---
 
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``
