@@ -110,7 +110,7 @@
 | *21-09-2026* | *Ferdinand Valentino Darmawan* | *Menambah deskripsi daftar perubahan A sampai D, melakukan revisi A di daftar perubahan, menyalin informasi dari milestone sebelumnya untuk informasi awal grup dan dasar bab 1 sampai 3* | *1 jam* | *Done* | *-* | 
 | *22-09-2026* | *Ferdinand Valentino Darmawan* | *Menambah template daftar kelas untuk 4.2, mengerjakan 4.2.4, dan menambah C03 sampai C07* | *1,5 jam* | *Done* | *-* |
 | *22-09-2026* | *Mirza Aryasatya Akmal* | *Konsepsi KF baru untuk beberapa Use Case* | *45 menit* | *Ongoing* | *-* | 
-| *2-09-2026* | *Christopher Hendrik Gunawan* | *...* | *...* | *Done* | - |
+| *22-09-2026* | *Christopher Hendrik Gunawan* | *Membuat identifikasi C01 dan C02* | *1 jam* | *Done* | *-* |
 | *2-09-2026* | *Natanael Chris Fabian Santoso* | *...* | *...* | *Done* | - |
 | *2-09-2026* | *Jason Hartanto* | *...* | *...* | *Done* | *-* |  
 | *2-09-2026* | *Mirza Aryasatya Akmal* | *...* | *...* | *Done* | *-* |
@@ -122,5 +122,6 @@
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
 ---
+
 
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``
