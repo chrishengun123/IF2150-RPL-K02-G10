@@ -107,7 +107,7 @@
 | Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
 | :--- | :--- | :--- | :--- | :--- | :--- | 
 | *18-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi akbar* | *1 jam* | *Done* | *-* |
-| *21-09-2026* | *Ferdinand Valentino Darmawan* | *Menambah deskripsi daftar perubahan, melakukan revisi A di daftar perubahan, menyalin informasi dari milestone sebelumnya untuk informasi awal grup dan dasar bab 1 sampai 3* | *1 jam* | *Done* | *-* | 
+| *21-09-2026* | *Ferdinand Valentino Darmawan* | *Menambah deskripsi daftar perubahan A sampai D, melakukan revisi A di daftar perubahan, menyalin informasi dari milestone sebelumnya untuk informasi awal grup dan dasar bab 1 sampai 3* | *1 jam* | *Done* | *-* | 
 | *22-09-2026* | *Ferdinand Valentino Darmawan* | *Menambah template daftar kelas untuk 4.2, mengerjakan 4.2.4, dan menambah C03 sampai C07* | *1,5 jam* | *Done* | *-* | 
 | *2-09-2026* | *Christopher Hendrik Gunawan* | *...* | *...* | *Done* | - |
 | *2-09-2026* | *Natanael Chris Fabian Santoso* | *...* | *...* | *Done* | - |
