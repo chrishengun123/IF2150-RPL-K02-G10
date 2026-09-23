@@ -92,7 +92,7 @@
 | *15-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi* | *1 jam* | *Done* | *-* |
 | *16-09-2026* | *Jason Hartanto* | *Membuat bagian 3.2 dan 3.4.3* | *1,5 jam* | *Done* | *-* |  
 | *16-09-2026* | *Natanael Chris Fabian Santoso* | *Menambahkan UC01, UC05, UC06, Menghapus instruksi template* | *3 jam* | *Done* | - |
-| *15-09-2026* | *Christopher Hendrik Gunawan* | *Menbuat diagram* | *1 jam* | *Done* | - |
+| *15-09-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram* | *1 jam* | *Done* | - |
 
 | | | | | | | |
 
