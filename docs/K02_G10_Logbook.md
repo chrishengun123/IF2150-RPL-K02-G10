@@ -115,6 +115,8 @@
 | *23-09-2026* | *Christopher Hendrik Gunawan* | *Membuat identifikasi UC1* | *2 jam* | *Done* | *-* |
 | *23-09-2026* | *Christopher Hendrik Gunawan* | *Melengkapi identifikasi kelas untuk UC01 dan UC07* | *1 jam* | *Done* | *-* |
 | *23-09-2026* | *Natanael Chris Fabian Santoso* | *Membuat class diagram UC06, dan kelas C09* | *1,5 jam* | *Done* | *-* |
+| *22-09-2026* | *Jason Hartanto* | *Membuat kasus UC 5  3.4.5* | *1 Jam* | *Done* | *-* | 
+| *22-09-2026* | *Jason Hartanto* | *Membuat class diagram 2&3* | *1 Jam* | *Done* | *-* | 
 | *22-09-2026* | *Mirza Aryasatya Akmal* | *Membuat KF baru untuk Use Case baru* | *1 Jam* | *Done* | *-* | 
 | *23-09-2026* | *Christopher Hendrik Gunawan* | *Melengkapi dan mengisi beberapa bab md* | *2 jam* | *Done* | *-* |
 | *22-09-2026* | *Mirza Aryasatya Akmal* | *Menyesuaikan KF baru dengan UC* | *30 menit* | *Done* | *-* | 
