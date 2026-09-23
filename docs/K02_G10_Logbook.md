@@ -117,11 +117,12 @@
 | *23-09-2026* | *Natanael Chris Fabian Santoso* | *Membuat class diagram UC06, dan kelas C09* | *1,5 jam* | *Done* | *-* |
 | *22-09-2026* | *Mirza Aryasatya Akmal* | *Membuat KF baru untuk Use Case baru* | *1 Jam* | *Ongoing* | *-* | 
 | *23-09-2026* | *Christopher Hendrik Gunawan* | *Melengkapi dan mengisi beberapa bab md* | *2 jam* | *Ongoing* | *-* |
+| *22-09-2026* | *Ferdinand Valentino Darmawan* | *Mengerjakan 4.2.5, melengkapi deskripsi revisi di daftar perubahan, dan memastikan setiap kelas memiliki atribut dan metode yang sama* | *1 jam* | *Done* | *-* |
 
 
 | | | | | | | |
 
-**Catatan/Evaluasi Milestone 1:**
+**Catatan/Evaluasi Milestone 4:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
 ---
