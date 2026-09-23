@@ -111,8 +111,10 @@
 | *22-09-2026* | *Ferdinand Valentino Darmawan* | *Menambah template daftar kelas untuk 4.2, mengerjakan 4.2.4, dan menambah C03 sampai C07* | *1,5 jam* | *Done* | *-* |
 | *22-09-2026* | *Mirza Aryasatya Akmal* | *Konsepsi KF baru untuk beberapa Use Case* | *45 menit* | *Ongoing* | *-* | 
 | *22-09-2026* | *Christopher Hendrik Gunawan* | *Membuat identifikasi C01 dan C02* | *1 jam* | *Done* | *-* |
+| *22-09-2026* | *Natanael Chris Fabian Santoso* | *Menambahkan detail UC01 yang hilang akibat merge conflict di dokumen K02_G10_UC* | *1 jam* | *Done* | *-* |
 | *23-09-2026* | *Christopher Hendrik Gunawan* | *Membuat identifikasi UC1* | *2 jam* | *Done* | *-* |
 | *23-09-2026* | *Christopher Hendrik Gunawan* | *Melengkapi identifikasi kelas untuk UC01 dan UC07* | *1 jam* | *In Progress* | *-* |
+| *23-09-2026* | *Natanael Chris Fabian Santoso* | *Membuat class diagram UC06, dan kelas C09* | *1,5 jam* | *Done* | *-* |
 
 
 | | | | | | | |
