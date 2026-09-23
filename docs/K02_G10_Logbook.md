@@ -92,7 +92,7 @@
 | *15-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi* | *1 jam* | *Done* | *-* |
 | *16-09-2026* | *Jason Hartanto* | *Membuat bagian 3.2 dan 3.4.3* | *1,5 jam* | *Done* | *-* |  
 | *16-09-2026* | *Natanael Chris Fabian Santoso* | *Menambahkan UC01, UC05, UC06, Menghapus instruksi template* | *3 jam* | *Done* | - |
-| *15-09-2026* | *Christopher Hendrik Gunawan* | *Menbuat diagram* | *1 jam* | *Done* | - |
+| *15-09-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram* | *1 jam* | *Done* | - |
 
 | | | | | | | |
 
@@ -113,11 +113,19 @@
 | *22-09-2026* | *Christopher Hendrik Gunawan* | *Membuat identifikasi C01 dan C02* | *1 jam* | *Done* | *-* |
 | *22-09-2026* | *Natanael Chris Fabian Santoso* | *Menambahkan detail UC01 yang hilang akibat merge conflict di dokumen K02_G10_UC* | *1 jam* | *Done* | *-* |
 | *23-09-2026* | *Christopher Hendrik Gunawan* | *Membuat identifikasi UC1* | *2 jam* | *Done* | *-* |
-| *23-09-2026* | *Christopher Hendrik Gunawan* | *Melengkapi identifikasi kelas untuk UC01 dan UC07* | *1 jam* | *In Progress* | *-* |
+| *23-09-2026* | *Christopher Hendrik Gunawan* | *Melengkapi identifikasi kelas untuk UC01 dan UC07* | *1 jam* | *Done* | *-* |
 | *23-09-2026* | *Natanael Chris Fabian Santoso* | *Membuat class diagram UC06, dan kelas C09* | *1,5 jam* | *Done* | *-* |
+<<<<<<< HEAD
 | *22-09-2026* | *Mirza Aryasatya Akmal* | *Membuat KF baru untuk Use Case baru* | *1 Jam* | *Ongoing* | *-* | 
 | *22-09-2026* | *Jason Hartanto* | *Membuat kasus UC 5  3.4.5* | *1 Jam* | *Done* | *-* | 
 | *22-09-2026* | *Jason Hartanto* | *Membuat class diagram 2&3* | *1 Jam* | *Done* | *-* | 
+=======
+| *22-09-2026* | *Mirza Aryasatya Akmal* | *Membuat KF baru untuk Use Case baru* | *1 Jam* | *Done* | *-* | 
+| *23-09-2026* | *Christopher Hendrik Gunawan* | *Melengkapi dan mengisi beberapa bab md* | *2 jam* | *Ongoing* | *-* |
+| *22-09-2026* | *Mirza Aryasatya Akmal* | *Menyesuaikan KF baru dengan UC* | *30 menit* | *Done* | *-* | 
+
+
+>>>>>>> bad890b3fa7bed8b3c8490e866d8130833612564
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 1:**
