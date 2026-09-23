@@ -119,7 +119,7 @@
 | *22-09-2026* | *Jason Hartanto* | *Membuat class diagram 2&3* | *1 Jam* | *Done* | *-* | 
 | *22-09-2026* | *Mirza Aryasatya Akmal* | *Membuat KF baru untuk Use Case baru* | *1 Jam* | *Done* | *-* | 
 | *23-09-2026* | *Christopher Hendrik Gunawan* | *Melengkapi dan mengisi beberapa bab md* | *2 jam* | *Done* | *-* |
-| *22-09-2026* | *Mirza Aryasatya Akmal* | *Menyesuaikan KF baru dengan UC* | *30 menit* | *Done* | *-* | 
+| *22-09-2026* | *Mirza Aryasatya Akmal* | *Menyesuaikan KF baru dengan UC* | *0,5 jam* | *Done* | *-* | 
 | *22-09-2026* | *Ferdinand Valentino Darmawan* | *Mengerjakan 4.2.5, melengkapi deskripsi revisi di daftar perubahan, dan memastikan setiap kelas memiliki atribut dan metode yang sama* | *1 jam* | *Done* | *-* |
 
 
