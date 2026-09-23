@@ -112,9 +112,7 @@
 | *22-09-2026* | *Mirza Aryasatya Akmal* | *Konsepsi KF baru untuk beberapa Use Case* | *45 menit* | *Ongoing* | *-* | 
 | *22-09-2026* | *Christopher Hendrik Gunawan* | *Membuat identifikasi C01 dan C02* | *1 jam* | *Done* | *-* |
 | *23-09-2026* | *Christopher Hendrik Gunawan* | *Membuat identifikasi UC1* | *2 jam* | *Done* | *-* |
-| *2-09-2026* | *Natanael Chris Fabian Santoso* | *...* | *...* | *Done* | - |
-| *2-09-2026* | *Jason Hartanto* | *...* | *...* | *Done* | *-* |  
-| *2-09-2026* | *Mirza Aryasatya Akmal* | *...* | *...* | *Done* | *-* |
+| *23-09-2026* | *Christopher Hendrik Gunawan* | *Melengkapi identifikasi kelas untuk UC01 dan UC07* | *1 jam* | *In Progress* | *-* |
 
 
 | | | | | | | |
