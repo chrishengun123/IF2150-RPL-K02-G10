@@ -130,5 +130,27 @@
 
 ---
 
+### Milestone 5
+**Periode:** [Tanggal Mulai] - [Tanggal Selesai]
+
+| Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
+| :--- | :--- | :--- | :--- | :--- | :--- | 
+| *26-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
+| *22-09-2026* | *Ferdinand Valentino Darmawan* | ** | ** | *Done* | *-* |
+| *22-09-2026* | *Mirza Aryasatya Akmal* | ** | ** | *Done* | *-* | 
+| *22-09-2026* | *Christopher Hendrik Gunawan* | ** | ** | *Done* | *-* |
+| *22-09-2026* | *Natanael Chris Fabian Santoso* | ** | ** | *Done* | *-* |
+| *23-09-2026* | *Christopher Hendrik Gunawan* | ** | ** | *Done* | *-* |
+
+
+
+| | | | | | | |
+
+**Catatan/Evaluasi Milestone 4:**
+* *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
+
+---
+
+
 
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``
