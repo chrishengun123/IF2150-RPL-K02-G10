@@ -26,7 +26,7 @@
 
 | Catatan |
 | --- |
-| 1. Di bagian 2.1 sebelum diagram bisa tambahkan tabel identifikasi aktivitas dan pemetaan kebutuhan, lalu di bagian kebutuhan pengguna, boleh saling tabel KF dengan tambahan ID yang baru.  |
+| 1. Di bagian 2.1 sebelum diagram bisa tambahkan tabel identifikasi aktivitas dan pemetaan kebutuhan, lalu di bagian kebutuhan pengguna, boleh salin tabel KF dengan tambahan ID yang baru.  |
 | 2. Di bagian 1.3, kalau tidak ada istilah yang terlalu teknis bisa saja pake yang template, tapi boleh juga nambahin yang SOS. |
 | 3. Di bagian 1.5, di Milestone ini ngereference ke Milestone sebelumnya jadi bisa reference itu buat kaya diagramnya, atau dari buku luar kalau memang dipake dalam pengerjaan Milestone lain. |
 | 4. Di bagian 1.6, itu spesifik ke yang dibahas di SKPL (Milestone 5). |
