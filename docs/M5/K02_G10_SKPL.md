@@ -205,10 +205,10 @@ Identifikasi seluruh use case yang mencakup Kebutuhan Fungsional pada BAB 2. Sat
 | *UC01* | *Mengaktifkan one click SOS* | *Korban menekan tombol SOS untuk mengirimkan laporan dan lokasi dengan cepat, sistem otomatis mulai merekam suara, polisi akan mengupdate status laoran setelah menapatkan laporannya* | *Korban, Polisi* | *KF01,KF02,KF03,KF04,KF07,KF08* |
 | *UC02* | *Melihat Peta Layanan Terdekat* | *Korban membuka peta yang menampilkan fasilitas layanan terdekat* | *Korban* | *KF05, KF06* |
 | *UC03* | *Memilih Layanan Terdekat* | *Korban memilih layanan terdekat dengan menekan simbol fasilitas* | *Korban* | *KF05, KF06* |
-| *UC04* | *Menghubungi Layanan Terdekat* | *Korban melihat informasi kontak fasilitas layanan pada peta dan dapat menghubungi secara langsung melalui aplikasi* | *Korban, Penyedia layanan* | *KFxxx* |
-| *UC05* | *Membuat Laporan Kekerasan* | *Korban melakukan pelaporan tindakan kekerasan melalui form dengan opsi anonim/teridentifikasi yang kemudian diproses sistem* | *Korban, Penyedia layanan* | *KF* |
-| *UC06* | *Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* | *Sistem menyalakan mikrofon gawai korban secara otomatis ketika One Click SOS Diaktifkan* | *Korban* | *KF* |
-| *UC07* | *Mengirim Notifikasi Konfirmasi Polisi Ke Korban* | *Sistem mengirimkan notifikasi kepada korban ketika polisi menerima informasi keadaan darurat dan mengonfirmasi hal tersebut* | *Korban, Polisi* | *KF* |
+| *UC04* | *Menghubungi Layanan Terdekat* | *Korban melihat informasi kontak fasilitas layanan pada peta dan dapat menghubungi secara langsung melalui aplikasi* | *Korban* | *KF12* |
+| *UC05* | *Membuat Laporan Kekerasan* | *Korban melakukan pelaporan tindakan kekerasan melalui form dengan opsi anonim/teridentifikasi yang kemudian diproses sistem* | *Korban* | *KF02, KF03* |
+| *UC06* | *Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* | *Sistem menyalakan mikrofon gawai korban secara otomatis ketika One Click SOS Diaktifkan* | *Korban* | *KF07,KF11* |
+| *UC07* | *Mengirim Notifikasi Konfirmasi Polisi Ke Korban* | *Sistem mengirimkan notifikasi kepada korban ketika polisi menerima informasi keadaan darurat dan mengonfirmasi hal tersebut* | *Korban, Polisi* | *KF08* |
 
 ## 4.3 Use Case Diagram
 <br>
@@ -359,14 +359,14 @@ Format tabel skenario: kolom **Aksi Aktor** berisi apa yang dilakukan/diinput ak
 | No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
 | 1 | *Polisi menunggu notifikasi informasi terkait kejadian darurat* | *Sistem mengirimkan notifikasi kepada polisi tentang kejadian darurat* |
-| 2 | *Polisi menerima infomasi, lalu mengirimkan notifikasi konfirmasi kepada korban* | *Sistem meneruskan dan menampilkan notifikasi konfirmasi tersebut di gawai korban* |
+| 2 | *Polisi menerima informasi, lalu mengirimkan notifikasi konfirmasi kepada korban* | *Sistem meneruskan dan menampilkan notifikasi konfirmasi tersebut di gawai korban* |
 
 **Skenario Alternatif 1: Kendala Jaringan dan Gagal Terhubung Ke Server**
 
 | No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
 | 1 | *Polisi menunggu notifikasi informasi terkait kejadian darurat* | *Sistem mengirimkan notifikasi kepada polisi tentang kejadian darurat* |
-| 2 | *Polisi menerima infomasi, lalu mengirimkan notifikasi konfirmasi kepada korban* | *Karena kendala jaringan, sistem mengirimkan notifikasi bahwa notifikasi konfirmasi gagal dikirimkan. Lalu, melajutkan langkah ke langkah 2 skenario normal* |
+| 2 | *Polisi menerima infomasi, lalu mengirimkan notifikasi konfirmasi kepada korban* | *Karena kendala jaringan, sistem mengirimkan notifikasi bahwa notifikasi konfirmasi gagal dikirimkan. Lalu, melanjutkan langkah ke langkah 2 skenario normal* |
 
 ---
 
