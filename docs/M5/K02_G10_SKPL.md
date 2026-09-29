@@ -98,20 +98,9 @@ Setelah SOS dimatikan, pihak kepolisian juga akan menerima rekaman suara kejadia
 </p>
 
 ## 2.2 Deskripsi Umum Perangkat Lunak
-Perangkat lunak SafeShe adalah aplikasi laporan anonim yang diharapkan menjadi sebuah solusi masalah kekerasan terhadap perempuan. SafeShe berinteraksi dengan  
-
+Perangkat lunak SafeShe adalah aplikasi laporan anonim yang diharapkan menjadi sebuah solusi masalah kekerasan terhadap perempuan. SafeShe berinteraksi dengan *One-click SOS* untuk mengirimkan informasi waktu dan lokasi *Korban* ke *Polisi* serta untuk menyalakan perekaman suara. SafeShe akan menerima konfirmasi SOS telah diterima dan bantuan telah dikirim dari *Polisi* dan akan menampilkan notifikasinya kepada *Korban*. Setelah *Polisi* mematikan penerimaan informasi live korban, SafeShe akan mengirimkan *Rekaman Suara* yang telah dikirim ke pihak *Polisi* sebagai sebuah bukti dari kejadian kekerasan seksual yang telah terjadi. SafeShe juga berinteraksi dengan *Sistem Pelaporan* untuk menyediakan pelaporan kekerasan seksual yang dialami *Korban* yang diamankan dengan *Enkripsi End-to-end* setiap kali laporan dibuat yang diteruskan ke *Polisi*. SafeShe dapat berinteraksi dengan *Peta Real-time* untuk menampilkan lokasi live dari *Korban* mengenai berbagai *Fasilitas Lyananan* yang tersedia di sekitarnya. Lalu, SafeShe dapat berinteraksi dengan sebuah *Fasilitas Layanan* untuk menampilkan informasi lokasi dan kontak layanan tersebut, serta agar *Korban* dapat menghubunginya melalui *Aplikasi Telepon* yang terdapat pada handphone *Korban*.
 (Harus mengikuti template untuk format penulisannya dan dihubungkan dengan kayanya swimlane diagram deh)
 
-Laporan anonim tersebut diwujudkan dengan menggunakan fitur *one-click SOS* yang akan mengirimkan lokasi ke pihak kepolisian. Fitur ini dapat digunakan dengan lebih mudah, anonim, dan diam-diam agar lebih sulit diketahui pelaku kekerasan. Untuk semakin mempermudah akses fitur ini, tombol tersebut dapat diletakkan dalam handphone sebagai sebuah *widget*. Selain itu, handphone juga akan merekam suara selama keadaan darurat untuk mendapat bukti kekerasan yang membantu dalam membuat kasus terhadap pelaku kekerasan.
-
-Aplikasi juga akan menyediakan peta secara *real-time* untuk layanan terdekat yang berguna bagi korban, seperti rumah sakit atau konseling, serta kontak untuk menelepon layanan tersebut.
-
-Aplikasi ini akan berfokus untuk perangkat handphone seperti perangkat Android dan IoS untuk memudahkan penggunaan aplikasi ini. Menggunakan handphone praktis dan mudah dibandingkan perangkat yang lebih besar seperti laptop yang tidak selalu dibawa. Perbedaan solusi yang ditawarkan melalui aplikasi ini adalah untuk memudahkan penyediaan semua fitur menjadi satu aplikasi yang hanya perlu dipantau oleh pengguna dibandingkan fitur-fitur terpisah yang perlu dipantau secara terpisah dan tersendiri.
-
-Diisi dengan deskripsi umum perangkat lunak untuk mendukung proses bisnis yang telah diuraikan pada sub-bab sebelumnya. Uraian harus menunjukkan lingkup perangkat lunak, mencakup keterkaitan perangkat lunak dengan sistem lain di luar (misalnya *Payment Gateway* atau layanan pihak ketiga lain yang dipakai).
-
-
-*Contoh narasi:* "*[Nama P/L]* merupakan aplikasi *[deskripsi singkat]* yang berinteraksi dengan *Payment Gateway (dummy)* untuk memproses otorisasi pembayaran. Sistem menerima input dari *Pelanggan* melalui antarmuka aplikasi dan mengirimkan permintaan transaksi ke *Payment Gateway* setiap kali pelanggan melakukan checkout."
 
 ## 2.3 Pengguna dan Kebutuhan Pengguna Perangkat Lunak
 | Aktor | Deskripsi |
