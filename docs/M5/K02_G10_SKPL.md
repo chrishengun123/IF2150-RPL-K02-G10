@@ -178,7 +178,7 @@ Identifikasi seluruh use case yang mencakup Kebutuhan Fungsional pada BAB 2. Sat
 
 | ID UC | Nama Use Case | Deskripsi Singkat | Aktor Terlibat | ID KF Terkait |
 | :--- | :--- | :--- | :--- | :--- |
-| *UC01* | *Mengaktifkan one click SOS* | *Korban menekan tombol SOS untuk mengirimkan laporan dan lokasi dengan cepat, sistem otomatis mulai merekam suara, polisi akan mengupdate status laoran setelah menapatkan laporannya* | *Korban, Polisi* | *KF01,KF02,KF03,KF04,KF07,KF08* |
+| *UC01* | *Mengaktifkan one click SOS* | *Korban menekan tombol SOS untuk mengirimkan laporan dan lokasi dengan cepat, sistem otomatis mulai merekam suara, polisi akan mengupdate status laoran setelah menapatkan laporannya* | *Korban, Polisi* | *KF01, KF02, KF03, KF04, KF07, KF08, KF09, KF10* |
 | *UC02* | *Melihat Peta Layanan Terdekat* | *Korban membuka peta yang menampilkan fasilitas layanan terdekat* | *Korban* | *KF05, KF06* |
 | *UC03* | *Memilih Layanan Terdekat* | *Korban memilih layanan terdekat dengan menekan simbol fasilitas* | *Korban* | *KF05, KF06* |
 | *UC04* | *Menghubungi Layanan Terdekat* | *Korban melihat informasi kontak fasilitas layanan pada peta dan dapat menghubungi secara langsung melalui aplikasi* | *Korban* | *KF12* |
@@ -614,14 +614,14 @@ Salin ulang tabel Traceability dari BAB 5 dokumen *Class Diagram*, cocokkan seti
 
 | ID Kelas | ID Use Case | ID KF |
 | :--- | :--- | :--- |
-| *C01* | *UC01, UC06, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08* |
-| *C02* | *UC01, UC06, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08* |
-| *C03* | *UC01, UC04, UC05, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08, KF12* |
+| *C01* | *UC01, UC06, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08, KF09, KF10* |
+| *C02* | *UC01, UC06, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08, KF09, KF10* |
+| *C03* | *UC01, UC04, UC05, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08, KF09, KF10, KF12* |
 | *C04* | *UC02, UC03, UC04* | *KF05, KF06, KF12* |
 | *C05* | *UC02, UC03, UC04* | *KF05, KF06, KF12* |
 | *C06* | *UC02, UC03, UC04* | *KF05, KF06, KF12* |
 | *C07* | *UC04* | *KF12* |
-| *C08* | *UC01, UC05, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08* |
+| *C08* | *UC01, UC05, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08, KF09, KF10* |
 | *C09* | *UC06* | *KF07, KF11* |
 | *C10* | *UC05* | *KF03* |
 
