@@ -81,24 +81,20 @@ BAB 1 membahas pendahuluan dokumen berupa informasi umum dari dokumen, BAB 2 mem
 # BAB 2: Deskripsi Perangkat Lunak
 
 ## 2.1 Deskripsi Umum Sistem
-Saat ini, Indonesia masih menghadapi krisis Kekerasan Berbasis Gender terhadap perempuan (KBGtP). Berdasarkan catatan tahunan 2025 yang dirilis oleh Komisi Nasional Anti Kekerasan terhadap Perempuan, sepanjang 2025 tercatat 376.529 kasus KBGtP, yang meningkat 14,07% dibandingkan tahun sebelumnya dan juga menjadi angka tertinggi dalam 10 tahun terakhir. Dari total kasus tersebut, 9,76% di antaranya terjadi di ranah personal, seperti rumah tangga dan hubungan personal. Hal tersebut menunjukkan bahwa ruang yang seharusnya paling aman justru sering kali menjadi ruang paling rentan bagi perempuan.
 
-Bentuk kekerasan yang paling banyak dilaporkan adalah kekerasan seksual sebanyak 37,51%, diikuti kekerasan psikis sebesar 32,48%, fisik sebesar 18,93%, dan ekonomi sebanyak 11,07%. Selain itu, jumlah korban terbanyak berada di kelompok usia 18–24 tahun, dengan jumlah kasus yang dilaporkan adalah 1.453 kasus dari pengaduan langsung ke Komnas Perempuan. Fakta ini menunjukkan bahwa kerentanan tinggi pada perempuan muda adalah dalam fase pendidikan dan awal kedewasaan.
+Fitur utama yang disediakan oleh aplikasi SafeShe adalah pelaporan anonim melalui *one-click SOS*. Fitur ini akan mengirimkan waktu dikirimnya dan lokasi korban ke pihak kepolisian yang anonim dan dapat dilakukan secara diam-diam. Fitur ini disertai dengan opsi untuk menambahkan tombol fitur ini melalui *widget* di handphone korban. Tujuannya dari penerapan fitur ini adalah untuk memudahkan korban membuat laporan yang tidak mudah terdeteksi oleh pelaku kekerasan. Ketika fitur ini dijalankan, handphone akan merekam suara sampai pihak kepolisian sampai di lokasi korban untuk membantu menangani kejadiannya. Tujuannya adalah untuk mendapatkan bukti kekerasan yang lebih konkrit dan dapat digunakan untuk membantu membuat kasus terhadap pelaku kekerasan yang akan ditangani oleh pihak kepolisian.
 
-Meskipun Undang-Undang Nomor 12 Tahun 2022 tentang Tindak Pidana Kekerasan Seksual (UU TPKS) telah memberikan landasan hukum yang lebih kuat, implementasi aktualnya masih terhambat. Deputi KemenPPPA, Amurwani Dwi Lestariningsih, menyatakan bahwa aparat penegak hukum masih menggunakan ketentuan KUHP dibandingkan UU TPKS sehingga perlindungan terhadap korban belum optimal. Selain itu, fenomena 'gunung es' masih menjadi tantangan besar di mana banyak korban tidak berani melapor karena stigma, ketakutan, dan ketimpangan relasi kuasa.
+Selain itu, aplikasi memiliki fitur untuk menampilkan peta *real-time* yang akan menampilkan layanan rumah sakit dan konseling yang terdekat bagi pengguna melalui simbol-simbol yang terdapat di peta. Korban juga dapat mendapatkan informasi kontak dari layanan dan dapat menghubunginya melalui aplikasi yang akan memasukkan nomor telepon ke aplikasi telepon pada handphone. Tujuan dari fitur ini adalah untuk menyediakan bantuan yang mudah dicari dan diakses oleh korban setelah terjadinya kejadian kekerasan.
 
-Permasalahan yang diangkat disini berkaitan dengan SDGs nomor 5 yaitu Kesetaraan Gender, dan khususnya target 5.2 "Eliminate all forms of violence against all women and girls in the public and private spheres", serta target 5.C "Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels". 
+Lalu pihak kepolisian yang menerima laporan dari aplikasi akan menerima waktu terkirimnya SOS dan lokasi real-time dari handphone korban. Pihak kepolisian dapat melihat sebuah peta dari lokasinya korban selama pihak kepolisian belum sampai di lokasi korban. Setelah pihak kepolisian sudah sampai di lokasi korban, pihak kepolisian dapat mematikan SOS dan aplikasi akan berhenti mengirimkan lokasi real-time korban. Tujuan dari penerapannya adalah untuk memastikan agar pihak kepolisian dapat terus memantau lokasi asli korban selama belum sampai di lokasi korban dan menangani situasi yang terjadi.
 
-Urgensi solusi masalah ini tinggi karena angka kekerasan terus meningkat setiap tahun dan mencapai puncak tertinggi dalam dekade terakhir, ruang digital yang juga semakin menjadi medan baru kekerasan, dan sistem pendampingan korban masih terfragmentasi antara lembaga pemerintah, LSM, dan layanan kesehatan, serta korban kekerasan seringkali tidak mengetahui akses layanan terdekat dan prosedur pelaporan.
-
-
-Bagian ini dapat disalin dari BAB 1.1 *Deskripsi Umum Sistem* pada dokumen *Requirement Gathering*, disesuaikan bila ada perubahan alur bisnis. Lengkapi dengan gambaran proses bisnis dalam bentuk *Activity Diagram* (boleh disalin dan diperbarui dari 3.3 *Model Proses Bisnis* pada dokumen *Topic Brainstorming*).
+Setelah SOS dimatikan, pihak kepolisian juga akan menerima rekaman suara kejadian yang terjadi melalui aplikasi setelah korban mengirimkan SOS. Tujuannya adalah untuk memudahkan pihak kepolisian mendapatkan bukti yang konkrit untuk menangani dan membuat kasus terhadap pelaku kekerasan. 
 
 <p align="center">
-<img alt="Contoh Activity Diagram" src="./assets/diagram/diagram-act-1.avif" width="70%">
+<img alt="Contoh Activity Diagram" src="./assets/diagram/SafeShe_swimlane_diagram.png" width="70%">
 </p>
 <p align="center">
-<i>Gambar 1. Contoh Activity Diagram Proses Bisnis</i>
+<i>Gambar 1. Swimlane Diagram SafeShe</i>
 </p>
 
 ## 2.2 Deskripsi Umum Perangkat Lunak
@@ -126,7 +122,6 @@ Dengan permasalahan dan celah yang ada dalam sistem yang ada saat ini, perangkat
 | :--- | :--- |
 | *Korban* | *Pengguna ini bertindak sebagai pihak yang memerlukan bantuan karena telah mengalami kekerasan seksual. Karakteristik dari pengguna ini adalah mengutamakan keamanan, kecepatan, dan konfirmasi respons untuk bantuan dari pihak kepolisian.* |
 | *Polisi* | *Pengguna ini bertindak sebagai pihak yang memantau notifikasi SOS yang dikirimkan oleh korban. Karakteristik dari pengguna ini adalah menginginkan lokasi korban untuk memberi bantuan, mendapatkan bukti untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual, serta kemampuan untuk mengirimkan notifikasi kembali kepada korban bahwa SOS telah diterima dan bantuan sedang dalam perjalanan.* |
-| *Penyedia Layanan* | *Pengguna ini bertindak sebagai pihak yang menerima kontak dari pihak korban. Karakteristik dari pengguna ini adalah dapat menyediakan bantuan yang dibutuhkan pihak korban melalui sistem pengontakan yang dapat diandalkan untuk bekerja ketika digunakan oleh korban.* |
 
 
 Tuliskan seluruh jenis pengguna (*role*/aktor) yang terlibat dalam perangkat lunak (P/L), beserta kebutuhannya secara umum. Bagian ini dapat disalin dari 1.2 *Deskripsi Pengguna Perangkat Lunak* (dokumen Requirement Gathering) atau 3.1 *Identifikasi Aktor* (dokumen Use Case), pastikan sudah konsisten dengan aktor final yang dipakai di BAB 4.
@@ -213,7 +208,7 @@ Identifikasi seluruh use case yang mencakup Kebutuhan Fungsional pada BAB 2. Sat
 ## 4.3 Use Case Diagram
 <br>
 <p align="center">
-<img alt="SafeShe Use Case Diagram Diagram" src="./assets/diagram/SafeShe_Use_Case_Diagram" width="70%">
+<img alt="SafeShe Use Case Diagram Diagram" src="./assets/diagram/SafeShe_Use_Case_Diagram.png" width="70%">
 </p>
 <p align="center">
 <i>Gambar 1. Contoh Use Case Diagram</i>
@@ -497,8 +492,6 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 | ID Kelas | Nama Kelas | Deskripsi Kelas |
 | :--- | :--- | :--- |
 | *C03* | *Korban* | *Menyimpan data korban yang melakukan panggilan SOS.* |
-| *C04* | *Peta* | *Menyediakan data peta dari lokasi di sekitar korban.* |
-| *C05* | *ListLayanan* | *Menyimpan kumpulan data layanan yang tersedia di sekitar lokasi korban.* |
 | *C06* | *Layanan* | *Menyimpan data dari sebuah layanan.* |
 | *C07* | *AntarmukaTelepon* | *Mengendalikan pemasukan nomor telepon ke aplikasi telepon pada handphone korban.* |
 
@@ -517,8 +510,6 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
 | *C03* | *Korban* | *lokasiKorban, namaKorban* | *lokasiKorbanSekarang(), panggilSOS(oneclicksos), pilihLayanan(layanan), teleponLayanan(layanan)* |
-| *C04* | *Peta*  | *lokasiPeta* | *lokasiPetaSekarang(), lokasiSekitar(korban), tampilkanLayanan(listLayanan)* | 
-| *C05* | *ListLayanan* | *kumpulanLayanan* | *ambilLayananTersedia(peta)* |
 | *C06* | *Layanan* | *namalayanan, lokasiLayanan, kontakLayanan* | *ambilDataLayanan(ListLayanan), ambilKontak(), ambilLokasi(), ambilNama()* |
 | *C07* | *AntarmukaTelepon* | *-* | *masukkanNomorLayanan(layanan)* |
 
