@@ -82,6 +82,17 @@ BAB 1 membahas pendahuluan dokumen berupa informasi umum dari dokumen, BAB 2 mem
 # BAB 2: Deskripsi Perangkat Lunak
 
 ## 2.1 Deskripsi Umum Sistem
+Saat ini, Indonesia masih menghadapi krisis Kekerasan Berbasis Gender terhadap perempuan (KBGtP). Berdasarkan catatan tahunan 2025 yang dirilis oleh Komisi Nasional Anti Kekerasan terhadap Perempuan, sepanjang 2025 tercatat 376.529 kasus KBGtP, yang meningkat 14,07% dibandingkan tahun sebelumnya dan juga menjadi angka tertinggi dalam 10 tahun terakhir. Dari total kasus tersebut, 9,76% di antaranya terjadi di ranah personal, seperti rumah tangga dan hubungan personal. Hal tersebut menunjukkan bahwa ruang yang seharusnya paling aman justru sering kali menjadi ruang paling rentan bagi perempuan.
+
+Bentuk kekerasan yang paling banyak dilaporkan adalah kekerasan seksual sebanyak 37,51%, diikuti kekerasan psikis sebesar 32,48%, fisik sebesar 18,93%, dan ekonomi sebanyak 11,07%. Selain itu, jumlah korban terbanyak berada di kelompok usia 18–24 tahun, dengan jumlah kasus yang dilaporkan adalah 1.453 kasus dari pengaduan langsung ke Komnas Perempuan. Fakta ini menunjukkan bahwa kerentanan tinggi pada perempuan muda adalah dalam fase pendidikan dan awal kedewasaan.
+
+Meskipun Undang-Undang Nomor 12 Tahun 2022 tentang Tindak Pidana Kekerasan Seksual (UU TPKS) telah memberikan landasan hukum yang lebih kuat, implementasi aktualnya masih terhambat. Deputi KemenPPPA, Amurwani Dwi Lestariningsih, menyatakan bahwa aparat penegak hukum masih menggunakan ketentuan KUHP dibandingkan UU TPKS sehingga perlindungan terhadap korban belum optimal. Selain itu, fenomena 'gunung es' masih menjadi tantangan besar di mana banyak korban tidak berani melapor karena stigma, ketakutan, dan ketimpangan relasi kuasa.
+
+Permasalahan yang diangkat disini berkaitan dengan SDGs nomor 5 yaitu Kesetaraan Gender, dan khususnya target 5.2 "Eliminate all forms of violence against all women and girls in the public and private spheres", serta target 5.C "Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels". 
+
+Urgensi solusi masalah ini tinggi karena angka kekerasan terus meningkat setiap tahun dan mencapai puncak tertinggi dalam dekade terakhir, ruang digital yang juga semakin menjadi medan baru kekerasan, dan sistem pendampingan korban masih terfragmentasi antara lembaga pemerintah, LSM, dan layanan kesehatan, serta korban kekerasan seringkali tidak mengetahui akses layanan terdekat dan prosedur pelaporan.
+
+
 Bagian ini dapat disalin dari BAB 1.1 *Deskripsi Umum Sistem* pada dokumen *Requirement Gathering*, disesuaikan bila ada perubahan alur bisnis. Lengkapi dengan gambaran proses bisnis dalam bentuk *Activity Diagram* (boleh disalin dan diperbarui dari 3.3 *Model Proses Bisnis* pada dokumen *Topic Brainstorming*).
 
 <p align="center">
@@ -92,11 +103,33 @@ Bagian ini dapat disalin dari BAB 1.1 *Deskripsi Umum Sistem* pada dokumen *Requ
 </p>
 
 ## 2.2 Deskripsi Umum Perangkat Lunak
+Perangkat lunak SafeShe adalah aplikasi laporan anonim yang diharapkan menjadi sebuah solusi masalah kekerasan terhadap perempuan. Laporan anonim tersebut diwujudkan dengan menggunakan fitur *one-click SOS* yang akan mengirimkan lokasi ke pihak kepolisian. Fitur ini dapat digunakan dengan lebih mudah, anonim, dan diam-diam agar lebih sulit diketahui pelaku kekerasan. Untuk semakin mempermudah akses fitur ini, tombol tersebut dapat diletakkan dalam handphone sebagai sebuah *widget*. Selain itu, handphone juga akan merekam suara selama keadaan darurat untuk mendapat bukti kekerasan yang membantu dalam membuat kasus terhadap pelaku kekerasan.
+
+Aplikasi juga akan menyediakan peta secara *real-time* untuk layanan terdekat yang berguna bagi korban, seperti rumah sakit atau konseling, serta kontak untuk menelepon layanan tersebut.
+
+Aplikasi ini akan berfokus untuk perangkat handphone seperti perangkat Android dan IoS untuk memudahkan penggunaan aplikasi ini. Menggunakan handphone praktis dan mudah dibandingkan perangkat yang lebih besar seperti laptop yang tidak selalu dibawa. Perbedaan solusi yang ditawarkan melalui aplikasi ini adalah untuk memudahkan penyediaan semua fitur menjadi satu aplikasi yang hanya perlu dipantau oleh pengguna dibandingkan fitur-fitur terpisah yang perlu dipantau secara terpisah dan tersendiri.
+
 Diisi dengan deskripsi umum perangkat lunak untuk mendukung proses bisnis yang telah diuraikan pada sub-bab sebelumnya. Uraian harus menunjukkan lingkup perangkat lunak, mencakup keterkaitan perangkat lunak dengan sistem lain di luar (misalnya *Payment Gateway* atau layanan pihak ketiga lain yang dipakai).
+
 
 *Contoh narasi:* "*[Nama P/L]* merupakan aplikasi *[deskripsi singkat]* yang berinteraksi dengan *Payment Gateway (dummy)* untuk memproses otorisasi pembayaran. Sistem menerima input dari *Pelanggan* melalui antarmuka aplikasi dan mengirimkan permintaan transaksi ke *Payment Gateway* setiap kali pelanggan melakukan checkout."
 
 ## 2.3 Pengguna dan Kebutuhan Pengguna Perangkat Lunak
+Saat ini, proses pelaporan dan pendampingan korban KBGtP di Indonesia masih reaktif, terpecah, dan tidak terintegrasi digital. 
+
+Sistem yang sudah ada saat ini adalah SIMFONI PPA, Layanan 129, Aplikasi SAPA, dan Layanan P2TP2A. SIMFONI PPA (Sistem Informasi Online Perlindungan Perempuan dan Anak) memiliki fungsi sebagai channel pelaporan, tetapi terbatas pada bata agregat dan belum dapat menyediakan pendampingan *real-time* berbasis lokasi. Layanan 129 (Call Center KemenPPPA) menyediakan hotline telepon, tetapi kapasitasnya terbatas dan tidak memiliki sistem triase untuk mementukan prioritas kasus. Aplikasi SAPA menyediakan channel pengaduan, tetapi belum terintegrasi dengan peta layanan terdekat dan sistem rujukan multilembaga secara otomatis. Layanan P2TP2A (Pusat Pelayanan Terpadu Pemberdayaan Perempuan dan Anak) memiliki sistem yang tersebar secara fisik dan tidak semua daerah memiliki fasilitas yang memadai.
+
+Hasil analisis dari keempat sistem yang sudah ada mengungkap beberapa masalah dari keempat sistem tersebut. Pertama, tidak adanya sistem triase yang otomatis. Petugas layanan tidak memiliki alat bantu untuk mengkategorikan urgensi kasus secara objektif dan konsisten, sehingga menyebabkan kasus darurat sering tertunda. Kedua, data dan layanan tidak memiliki sinkronisasi yang baik. Korban harus mencari sendiri informasi tentang rumah sakit rujukan, konseling psikologis, bantuan hukum, dan pendampingan. Ketiga, kurangnya peta keamanan *real-time*. Tidak ada sistem yang memetakan area berisiko tinggi atau area aman terdekat, sehingga korban sulit membuat keputusan evakuasi yang cepat dan aman. Keempat, stigma dan hambatan akses. Banyak korban terutama di daerah terpencil yang tidak mengetahui cara melapor atau merasa tidak aman melapor secara terbukan karena kurangnya opsi anonimitas yang terjamin. Terakhir, keterbatasan dokumentasi digital. Bukti digital seperti chat, foto, dan rekaman, sering tidak terdokumentasi dengan aman dan terstruktur untuk keperluan proses hukum.
+
+Dengan permasalahan dan celah yang ada dalam sistem yang ada saat ini, perangkat lunak kami akan dirancang untuk mengatasi permasalahan tersebut. Perangkat lunak kami yang disebut SafeShe akan menyediakan satu platform terpadu yang mengintegrasikan pelaporan anonim yang teridentifikasi dengan enkripsi *end-to-end*. SafeShe juga dirancang dengan triase berbasis AI untuk menentukan tingkat urgensi dan jenis layanan yang dibutuhkan, serta mapping geospasial yang menunjukkan area berisiko dan fasilitas layanan terdekat. Safeshe akan memiliki sistem rujukan otomatis ke jaringan mitra, seperti RS, psikolog, dan pengacara. Selain itu, SafeShe juga akan memiliki arsip digital terenkripsi untuk menyimpan bukti dengan *blockchain-based timestamp* untuk keabsahan hukum.
+
+| Aktor | Deskripsi |
+| :--- | :--- |
+| *Korban* | *Pengguna ini bertindak sebagai pihak yang memerlukan bantuan karena telah mengalami kekerasan seksual. Karakteristik dari pengguna ini adalah mengutamakan keamanan, kecepatan, dan konfirmasi respons untuk bantuan dari pihak kepolisian.* |
+| *Polisi* | *Pengguna ini bertindak sebagai pihak yang memantau notifikasi SOS yang dikirimkan oleh korban. Karakteristik dari pengguna ini adalah menginginkan lokasi korban untuk memberi bantuan, mendapatkan bukti untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual, serta kemampuan untuk mengirimkan notifikasi kembali kepada korban bahwa SOS telah diterima dan bantuan sedang dalam perjalanan.* |
+| *Penyedia Layanan* | *Pengguna ini bertindak sebagai pihak yang menerima kontak dari pihak korban. Karakteristik dari pengguna ini adalah dapat menyediakan bantuan yang dibutuhkan pihak korban melalui sistem pengontakan yang dapat diandalkan untuk bekerja ketika digunakan oleh korban.* |
+
+
 Tuliskan seluruh jenis pengguna (*role*/aktor) yang terlibat dalam perangkat lunak (P/L), beserta kebutuhannya secara umum. Bagian ini dapat disalin dari 1.2 *Deskripsi Pengguna Perangkat Lunak* (dokumen Requirement Gathering) atau 3.1 *Identifikasi Aktor* (dokumen Use Case), pastikan sudah konsisten dengan aktor final yang dipakai di BAB 4.
 
 | Pengguna | Kebutuhan |
@@ -105,6 +138,11 @@ Tuliskan seluruh jenis pengguna (*role*/aktor) yang terlibat dalam perangkat lun
 | *...* | *...* |
 
 ## 2.4 Batasan Perangkat Lunak
+Aplikasi ini dibuat dengan asumsi bahwa pihak polisi setuju untuk memantau signal SOS aplikasi SafeShe. Selain itu, juga ada asumsi bahwa terdapat API yang menyediakan data lokasi rumah sakit dan konseling, termasuk kontak telepon tempat tersebut.
+
+Batasannya pada regulasi hukum legal yang diperbolehkan dalam penanganan kasus kekerasan seksual, seperti penanganan pengambilan serta penyimpanan bukti. Selain itu, aplikasi tidak dapat digunakan pada lock screen handphone, jadi pengguna perlu membuka handphonenya sebelum dapat menekan tombol SOS. Batasan lainnya terletak pada kemauan dari pihak polisi untuk merespons dengan baik ketika ada notifikasi SOS, bahkan jika SOS tersebut tidak digunakan dengan semestinya.
+
+
 Batasan yang harus dituliskan, di antaranya:
 1. *P/L harus memakai file data/API dari sistem lain (sebutkan, misal Payment Gateway dummy).*
 2. *P/L harus memakai format data yang sama dengan sistem lain.*
@@ -127,143 +165,483 @@ Spesifikasi *operating system* atau lingkungan yang dibutuhkan P/L untuk beroper
 # BAB 3: Deskripsi Kebutuhan Perangkat Lunak
 
 ## 3.1 Kebutuhan Fungsional (KF)
-Salin ulang **seluruh Kebutuhan Fungsional (KF)** versi terbaru dari BAB 2.1 dokumen *Class Diagram* (sudah versi final dan sudah memakai format EARS). Pastikan ID Kebutuhan (kolom "ID Kebutuhan") juga konsisten dengan ID pada tabel Pemetaan Kebutuhan di dokumen *Requirement Gathering*.
-
-Tabel 3.1. Kebutuhan Fungsional
-
 | ID KF | ID Kebutuhan | Penjelasan |
 | :--- | :--- | :--- |
-| *KF01* | *R01* | *Ketika pelanggan membuka halaman katalog, sistem harus menampilkan daftar produk yang tersedia.* |
-| *KF02* | *R02* | *Ketika pelanggan memilih "Tambah ke Keranjang" pada suatu produk, sistem harus menyimpan produk tersebut ke dalam keranjang pelanggan.* |
-| *KF03* | *R03* | *Ketika pelanggan menekan tombol checkout, sistem harus menampilkan pilihan metode pembayaran yang tersedia.* |
-| *KF04* | *R04* | *Ketika pelanggan memilih metode pembayaran, sistem harus mengirimkan permintaan otorisasi beserta nominal tagihan dan ID pesanan ke payment gateway (dummy).* |
-| *KF05* | *R04* | *Ketika payment gateway (dummy) mengembalikan status pembayaran berhasil, sistem harus memperbarui status pesanan menjadi "Lunas" dan menampilkan notifikasi pembayaran berhasil.* |
-| *KF06* | *R05* | *Ketika pelanggan membuka menu riwayat pesanan, sistem harus menampilkan daftar pesanan beserta statusnya.* |
-| *KFXX* | *...* | *...* |
+| *KF01* | *R01* | *Diberikan perangkat user memiliki fitur widget, ketika Peragkat Lunak diaktifkan, maka sistem menampilkan sebuah tombol one click SOS dalam bentuk widget aplikasi yang selalu ditampilkan di layar perangkat ketika perangkat aktif dan terbuka (tidak di-lock).* |
+| *KF02* | *R02* | *Ketika user melakukan pelaporan, sistem akan bekerja tanpa membuat perangkat user bersuara atau bergetar agar tidak diketahui pelaku kekerasan.* |
+| *KF03* | *R04* | *Ketika laporan awal dibuat, sistem akan mengenkripsi laporan tersebut secara end-to-end dan menyimpannya menggunakan blockchain-based timestamp.* |
+| *KF04* | *R05* | *Ketika perangkat user dalam kondisi mati atau terkunci, sistem akan menyembunyikan tombol one click SOS dalam bentuk widget aplikasi agar tidak dapat ditekan secara tidak sengaja.* |
+| *KF05* | *R06* | *Ketika user menekan tombol untuk menampilkan peta live, sistem akan menampilkan di seluruh layar sebuah peta live yang menampilkan fasilitas layanan terdekat, seperti rumah sakit, tempat konseling, dan area beresiko tinggi.* |
+| *KF06* | *R07* | *Diberikan terdapat API yang dapat menampilkan data lokasi rumah sakit dan tempat konseling, ketika sistem akan menampilkan peta live kepada user, sistem akan memanggil API tersebut untuk memperoleh data lokasi rumah sakit dan tempat konseling yang akurat.* |
+| *KF07* | *R09* | *Diberikan perangkat user memiliki sebuah mikrofon, ketika tombol one click SOS ditekan, sistem akan langsung mengaktifkan mikrofon perangkat user untuk merekam suara dalam keadaan darurat.* |
+| *KF08* | *R11* | *Ketika pihak kepolisian mengirimkan notifikasi kepada sistem sebagai wujud konfirmasi kepada korban, sistem akan menerima notifikasi tersebut dan menampilkan notifikasi tersebut di layar perangkat korban.* |
 
 ## 3.2 Kebutuhan Non-Fungsional (KNF)
-Salin ulang Kebutuhan Non-Fungsional dari BAB 2.5 dokumen *Requirement Gathering*, sesuaikan ID Kebutuhan (kolom "ID Kebutuhan") apabila terjadi perubahan penomoran pada BAB 3.1 di atas.
-
-Tabel 3.2. Kebutuhan Non-Fungsional
 
 | ID KNF | ID Kebutuhan | Parameter | Deskripsi Kebutuhan |
 | :--- | :--- | :--- | :--- |
-| *KNF01* | *R03* | *Reliability* | *Proses transaksi pembayaran harus memenuhi prinsip ACID untuk mencegah terjadinya data tersangkut (lost update) apabila terjadi kegagalan jaringan di tengah proses.* |
-| *KNF02* | *R04* | *Security* | *Sistem harus mengenkripsi PIN atau password pengguna menggunakan algoritma SHA-256 sebelum data dikirimkan ke server, serta tidak menyimpannya dalam bentuk plain-text di database.* |
-| *...* | *...* | *...* | *...* |
-
-<sub>*Silakan pilih parameter yang relevan dengan P/L kalian (Availability, Reliability, Ergonomy, Portability, Memory, Response time, Safety, Security, dsb), tidak perlu semua parameter diisi. Lihat kembali dokumen Requirement Gathering untuk penjelasan tiap parameter.*<sub>
+| *KNF01* | *R01* | *Availability* | *User harus dapat menggunakan fitur one click SOS kapan saja.* |
+| *KNF02* | *R02* | *Safety* | *Saat aktivitas pelaporan dilakukan, aktivitas tersebut tidak diketahui oleh pelaku kekerasan.* |
+| *KNF03* | *R03* | *Reliability* | *Sistem harus melibatkan pihak kepolisian.* |
+| *KNF04* | *R04* | *Security* | *Sistem harus mengamankan laporan.* |
+| *KNF05* | *R04* | *Security* | *Sistem harus memastikan keabsahan bukti dalam ranah hukum.* |
+| *KNF06* | *R08* | *Information* | *Saat user ingin melihat informasi kontak fasilitas layanan terkait, sistem akan memperlihatkan informasi yang terbaru dan relevan.*|
+| *KNF07* | *R08* | *Availability* | *Diberikan fasilitas layanan terkait tersedia, saat user ingin menghubungi kontak fasilitas layanan tersebut lewat aplikasi, sistem akan mengalihkan user ke aplikasi telepon.*|
+| *KNF08* | *R10* | *Security* | *Sistem harus mengambil dan menyimpan bukti sesuai dengan batas regulasi hukum yang berlaku.* |
+| *KNF09* | *R11* | *Responsivity* | *Polisi harus dapat mengirimkan notifikasi kembali kepada korban sebagai konfirmasi bahwa bantuan sedang dalam perjalanan.* |
 
 ---
 
 # BAB 4: Pemodelan Use Case
 
 ## 4.1 Identifikasi Aktor
-Salin ulang daftar aktor final dari BAB 3.1 dokumen *Use Case & Scenario Use Case* atau *Class Diagram*. Tambahkan ID Aktor mengikuti Aturan Penomoran pada 1.4.
+Daftarkan seluruh aktor yang terlibat dalam use case yang akan dimodelkan. Aktor berupa pengguna manusia yang berinteraksi dengan solusi. Perlu diperhatikan bahwa Admin/Developer/ Pihak Eksternal lain yang bisa diotomisasi, tidak perlu dijadikan aktor.
 
-| ID Aktor | Aktor | Deskripsi |
-| :--- | :--- | :--- |
-| *A01* | *Pelanggan* | *Pengguna yang memesan produk, mengelola keranjang, dan menyelesaikan pembayaran melalui sistem.* |
-| *...* | *...* | *...* |
+| Aktor | Deskripsi |
+| :--- | :--- |
+| *Korban* | *Pengguna ini bertindak sebagai pihak yang memerlukan bantuan karena telah mengalami kekerasan seksual. Karakteristik dari pengguna ini adalah mengutamakan keamanan, kecepatan, dan konfirmasi respons untuk bantuan dari pihak kepolisian.* |
+| *Polisi* | *Pengguna ini bertindak sebagai pihak yang memantau notifikasi SOS yang dikirimkan oleh korban. Karakteristik dari pengguna ini adalah menginginkan lokasi korban untuk memberi bantuan, mendapatkan bukti untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual, serta kemampuan untuk mengirimkan notifikasi kembali kepada korban bahwa SOS telah diterima dan bantuan sedang dalam perjalanan.* |
+| *Penyedia Layanan* | *Pengguna ini bertindak sebagai pihak yang menerima kontak dari pihak korban. Karakteristik dari pengguna ini adalah dapat menyediakan bantuan yang dibutuhkan pihak korban melalui sistem pengontakan yang dapat diandalkan untuk bekerja ketika digunakan oleh korban.* |
+
+
 
 ## 4.2 Identifikasi Use Case
-Salin ulang daftar Use Case versi terbaru dari BAB 3.2 dokumen *Class Diagram*, pastikan seluruh ID KF yang dirujuk sudah sesuai dengan tabel pada 3.1.
+Identifikasi seluruh use case yang mencakup Kebutuhan Fungsional pada BAB 2. Satu use case boleh mencakup lebih dari satu KF, dan sebaliknya satu KF boleh muncul di lebih dari satu use case bila memang relevan.
 
-| ID UC | Nama Use Case | Deskripsi Singkat | Aktor | ID KF |
+| ID UC | Nama Use Case | Deskripsi Singkat | Aktor Terlibat | ID KF Terkait |
 | :--- | :--- | :--- | :--- | :--- |
-| *UC01* | *Memesan Produk* | *Pelanggan memilih produk hingga pesanan tersimpan di sistem.* | *Pelanggan* | *KF01, KF02* |
-| *UC02* | *Melihat Keranjang* | *Pelanggan melihat daftar item yang telah dipilih sebelum checkout.* | *Pelanggan* | *KF02* |
-| *UC03* | *Melakukan Pembayaran* | *Pelanggan menyelesaikan pembayaran atas pesanan yang dibuat.* | *Pelanggan* | *KF03, KF04, KF05* |
-| *UC04* | *Memilih Metode Pembayaran* | *Pelanggan memilih metode pembayaran alternatif (kartu atau e-wallet).* | *Pelanggan* | *KF03* |
-| *UC05* | *Melihat Riwayat Pesanan* | *Pelanggan melihat daftar pesanan yang pernah dibuat beserta statusnya.* | *Pelanggan* | *KF06* |
-| *...* | *...* | *...* | *...* | *...* |
+| *UC01* | *Mengaktifkan one click SOS* | *Korban menekan tombol SOS untuk mengirimkan laporan dan lokasi dengan cepat, sistem otomatis mulai merekam suara, polisi akan mengupdate status laoran setelah menapatkan laporannya* | *Korban, Polisi* | *KF01,KF02,KF03,KF04,KF07,KF08* |
+| *UC02* | *Melihat Peta Layanan Terdekat* | *Korban membuka peta yang menampilkan fasilitas layanan terdekat* | *Korban* | *KF05, KF06* |
+| *UC03* | *Memilih Layanan Terdekat* | *Korban memilih layanan terdekat dengan menekan simbol fasilitas* | *Korban* | *KF05, KF06* |
+| *UC04* | *Menghubungi Layanan Terdekat* | *Korban melihat informasi kontak fasilitas layanan pada peta dan dapat menghubungi secara langsung melalui aplikasi* | *Korban, Penyedia layanan* | *KFxxx* |
+| *UC05* | *Membuat Laporan Kekerasan* | *Korban melakukan pelaporan tindakan kekerasan melalui form dengan opsi anonim/teridentifikasi yang kemudian diproses sistem* | *Korban, Penyedia layanan* | *KF* |
+| *UC06* | *Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* | *Sistem menyalakan mikrofon gawai korban secara otomatis ketika One Click SOS Diaktifkan* | *Korban* | *KF* |
+| *UC07* | *Mengirim Notifikasi Konfirmasi Polisi Ke Korban* | *Sistem mengirimkan notifikasi kepada korban ketika polisi menerima informasi keadaan darurat dan mengonfirmasi hal tersebut* | *Korban, Polisi* | *KF* |
 
 ## 4.3 Use Case Diagram
-Salin ulang Use Case Diagram dari BAB 3.3 dokumen *Use Case & Scenario Use Case* atau *Class Diagram* (gunakan versi paling akhir/terbaru apabila terdapat perubahan).
+<br>
+<p align="center">
+<img alt="SafeShe Use Case Diagram Diagram" src="./assets/diagram/SafeShe_Use_Case_Diagram" width="70%">
+</p>
+<p align="center">
+<i>Gambar 1. Contoh Use Case Diagram</i>
+</p>
+<br>
 
-<p align="center">
-<img alt="Contoh Use Case Diagram" src="./assets/diagram/contoh-uc-diagram.webp" width="70%">
-</p>
-<p align="center">
-<i>Gambar 2. Contoh Use Case Diagram</i>
-</p>
+Hal-hal yang perlu diperhatikan dalam pembuatan use case diagram:
+- Pastikan notasi UML use case (aktor, oval use case, garis asosiasi, *include/extend*) digambar dengan benar.
+- Seluruh aktor dan use case yang telah didefinisikan harus muncul di diagram, tidak ada yang terlewat maupun berlebih.
+- Hindari garis yang saling bersilangan tanpa alasan jelas, susun diagram agar mudah dibaca.
+- Hindari istilah solusi teknis (misalnya nama tabel database, nama endpoint API) muncul di dalam diagram use case karena use case menjelaskan *interaksi fungsional*, bukan detail implementasi.
 
 ## 4.4 Skenario Use Case
-Salin ulang skenario **setiap** use case (skenario normal dan alternatif) dari BAB 3.4 dokumen *Use Case & Scenario Use Case*, sesuaikan dengan daftar UC final pada 4.2. Jika use case melibatkan lebih dari satu aktor manusia yang benar-benar berinteraksi langsung (misalnya *Kasir* yang memverifikasi transaksi setelah *Pelanggan* membayar), tambahkan kolom aksi tersendiri untuk aktor tersebut di samping kolom "Reaksi Perangkat Lunak". Sistem eksternal otomatis seperti *payment gateway* **bukan aktor**, sehingga interaksinya cukup dituliskan sebagai bagian dari "Reaksi Perangkat Lunak", bukan kolom aktor terpisah.
+Buat skenario untuk **setiap** use case yang telah diidentifikasi pada 3.2. Setiap skenario dapat terdiri dari dua jenis alur:
+- **Skenario Normal**: alur utama (*happy path*) di mana interaksi aktor-sistem berjalan lancar tanpa kendala hingga tujuan use case tercapai.
+- **Skenario Alternatif**: alur percabangan dari skenario normal, misalnya kondisi gagal, input tidak valid, atau pilihan lain yang tersedia bagi aktor. Boleh ada lebih dari satu skenario alternatif per use case jika ada beberapa titik percabangan berbeda.
+
+Format tabel skenario: kolom **Aksi Aktor** berisi apa yang dilakukan/diinput aktor, kolom **Reaksi Perangkat Lunak** berisi respons sistem terhadap aksi tersebut secara **berurutan** (nomor langkah harus berpasangan/selaras antar dua kolom).
+
 
 ### 4.4.1 Skenario UC01
 
-**Nama Use Case:** *Memesan Produk*
+**Nama Use Case:** *Melakukan Pembayaran Digital*
 
 **Skenario Normal**
 
 | No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
-| 1 | *Pelanggan memilih produk dari katalog* | *Sistem menampilkan detail produk dan menambahkannya ke keranjang* |
-| 2 | *Pelanggan menekan tombol checkout* | *Sistem membuat pesanan baru dari isi keranjang dan menampilkan ringkasan pesanan* |
-| ... | *...* | *...* |
+| 1 | *Pelanggan memilih menu checkout* | *Sistem menampilkan ringkasan pesanan dan pilihan metode pembayaran* |
+| 2 | *Pelanggan memilih metode pembayaran (misal: e-wallet)* | *Sistem mengarahkan pelanggan ke halaman konfirmasi e-wallet* |
 
-**Skenario Alternatif 1: Produk Tidak Tersedia**
+
+
+<br>
+
+**Skenario Alternatif 1: Otorisasi Pembayaran Gagal**
+
 
 | No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
-| 1 | *Pelanggan memilih produk dari katalog* | *Sistem menampilkan pesan "Produk tidak tersedia" karena stok habis* |
-| 2 | *Pelanggan memilih produk lain* | *Sistem kembali ke langkah 1 skenario normal* |
-| ... | *...* | *...* |
+| 1 | *Korban merasa terancam dan menyalakan device untuk menekan One Click SOS aplikasi SafeShe* | *Sistem menampilkan tombol One Click SOS dalam bentuk widget aplikasi ketika gawai korban dinyalakan dan dibuka (tidak di-lock)* |
+| 2 | *Korban menekan tombol One Click SOS via widget aplikasi* | *Tanpa bersuara, sistem menampilkan animasi tombol ditekan, lalu mencoba mengirimkan informasi terkait keadaan darurat korban sekarang ke pihak berwajib, tetapi informasi gagal dikirimkan* |
+| 3 | *Korban menunggu konfirmasi kegagalan sistem* | *Sistem mengirimkan notifikasi gagal mengirimkan informasi ke pihak berwajib. Sistem kembali ke langkah 2 skenario normal* |
 
-<sub>*Lanjutkan pola 4.4.x ini untuk setiap ID UC pada 4.2, sampai seluruh use case memiliki skenarionya masing-masing.*<sub>
+
+### 4.4.2 Skenario UC02
+
+**Nama Use Case:** *Melihat Peta Layanan Terdekat*
+
+**Skenario Normal**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Korban menekan tombol peta* | *Sistem menampilkan peta live di sekitar lokasi korban* |
+| 2 | *Korban menunggu beberapa detik* | *Sistem memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban dan menampilkan lokasi akurat layanan yang tersedia melalui simbol-simbol di peta* |
+
+<br>
+
+**Skenario Alternatif 1: API Tidak Dapat Dipanggil**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Korban menekan tombol peta* | *Sistem menampilkan peta live di sekitar lokasi korban* |
+| 2 | *Korban menunggu beberapa detik* | *Sistem  memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban, tetapi API gagal untuk dipanggil* |
+| 3 | *Korban melihat peta* | *Sistem tidak menampilkan simbol-simbol layanan yang tersedia karena tidak dapat mendapatkan informasi lokasi akurat dan nomor kontak layanan* |
+
+### 4.4.3 Skenario UC03
+
+**Nama Use Case:** *Memilih Layanan Terdekat*
+
+**Skenario Normal**
+| :--- | :--- | :--- |
+| 1 | *Korban melihat layanan yang tersedia* | *Sistem memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban dan menampilkan lokasi akurat layanan yang tersedia melalui simbol-simbol di peta* |
+| 2 | *Korban  memilih sebuah layanan dengan menekan simbol* | *Sistem menampilkan informasi lokasi dan nomor kontak layanan yang ditekan* |
+
+**Skenario Alternatif 1: Informasi yang Dipanggil API Tidak Lengkap**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Korban melihat layanan yang tersedia* | *Sistem memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban dan menampilkan lokasi layanan yang tersedia melalui simbol-simbol di peta* |
+| 3 | *Korban memilih sebuah layanan dengan menekan simbol* | *Sistem menampilkan informasi layanan tetapi tidak lengkap, antara hanya informasi lokasi atau nomor kontak layanan yang tersedia* |
+
+### 4.4.4 Skenario UC04
+
+**Nama Use Case:** *Memilih Layanan Terdekat*
+
+**Skenario Normal**
+| :--- | :--- | :--- |
+| 1 | *Korban melihat layanan yang tersedia* | *Sistem memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban dan menampilkan lokasi akurat layanan yang tersedia melalui simbol-simbol di peta* |
+| 2 | *Korban  memilih sebuah layanan dengan menekan simbol* | *Sistem menampilkan informasi lokasi dan nomor kontak layanan yang ditekan* |
+
+**Skenario Alternatif 1: Informasi yang Dipanggil API Tidak Lengkap**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Korban melihat layanan yang tersedia* | *Sistem memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban dan menampilkan lokasi layanan yang tersedia melalui simbol-simbol di peta* |
+| 3 | *Korban memilih sebuah layanan dengan menekan simbol* | *Sistem menampilkan informasi layanan tetapi tidak lengkap, antara hanya informasi lokasi atau nomor kontak layanan yang tersedia* |
+
+### 4.4.5 Skenario UC05
+
+**Nama Use Case:** *Menghubungi Layanan Terdekat*
+
+**Skenario Normal**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Korban menekan tombol layanan pada peta* | *Sistem menampilkan informasi kontak layanan beserta tombol untuk menelepon* |
+| 2 | *Korban menekan tombol telepon* | *Sistem membuka aplikasi telepon pada perangkat dan mengisi nomor telepon kontak secara otomatis* |
+
+<br>
+
+**Skenario Alternatif 1: Informasi Kontak Tidak Tersedia**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Korban menekan tombol layanan yang tidak memiliki nomor kontak* | *Sistem menampilkan informasi layanan tanpa tombol telepon dan memberi keterangan "Nomor kontak pada layanan ini belum tersedia"* |
+
+
+### 4.4.6 Skenario UC06
+
+**Nama Use Case:** *Merekam Suara Otomatis Ketika One Click SOS Diaktifkan*
+
+**Skenario Normal**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Korban menekan tombol One Click SOS* | *Sistem mengikuti prosedur sesuai UC01 skenario normal* |
+| 2 | *Korban menunggu konfirmasi mikrofon sudah diaktifkan* | *Sistem menyalakan mikrofon gawai dan mengirimkan notifikasi bahwa mikrofon berhasil dinyalakan dan sedang merekam* |
+
+**Skenario Alternatif 1: Mikrofon Gawai Korban Tidak Dapat Diaktifkan**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Korban menekan tombol One Click SOS* | *Sistem mengikuti prosedur sesuai UC01 skenario normal* |
+| 2 | *Korban menunggu konfirmasi mikrofon sudah diaktifkan* | *Sistem mencoba menyalakan mikrofon gawai tetapi gagal dan menampilkan notifikasi bahwa mikrofon gagal diaktifkan* |
+
+### 4.4.7 Skenario UC07
+
+**Nama Use Case:** *Mengirim Notifikasi Konfirmasi Polisi Ke Korban*
+
+**Skenario Normal**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Polisi menunggu notifikasi informasi terkait kejadian darurat* | *Sistem mengirimkan notifikasi kepada polisi tentang kejadian darurat* |
+| 2 | *Polisi menerima infomasi, lalu mengirimkan notifikasi konfirmasi kepada korban* | *Sistem meneruskan dan menampilkan notifikasi konfirmasi tersebut di gawai korban* |
+
+**Skenario Alternatif 1: Kendala Jaringan dan Gagal Terhubung Ke Server**
+
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
+| :--- | :--- | :--- |
+| 1 | *Polisi menunggu notifikasi informasi terkait kejadian darurat* | *Sistem mengirimkan notifikasi kepada polisi tentang kejadian darurat* |
+| 2 | *Polisi menerima infomasi, lalu mengirimkan notifikasi konfirmasi kepada korban* | *Karena kendala jaringan, sistem mengirimkan notifikasi bahwa notifikasi konfirmasi gagal dikirimkan. Lalu, melajutkan langkah ke langkah 2 skenario normal* |
 
 ---
 
 # BAB 5: Pemodelan Kelas
 
 ## 5.1 Identifikasi Kelas
-Salin ulang seluruh kelas yang telah diidentifikasi dari BAB 4.1 dokumen *Class Diagram*.
+Identifikasi seluruh kelas yang diperlukan berdasarkan use case dan skenarionya. Satu kelas boleh terkait dengan lebih dari satu use case.
 
 | ID Kelas | Nama Kelas | Deskripsi Kelas | ID Use Case |
 | :--- | :--- | :--- | :--- |
-| *C01* | *Pelanggan* | *Menyimpan data akun pelanggan yang membuat pesanan.* | *UC01, UC05* |
-| *C02* | *Pesanan* | *Menyimpan data pesanan beserta status pembayarannya.* | *UC01, UC03, UC05* |
-| *C03* | *Keranjang* | *Menyimpan sementara item yang dipilih sebelum checkout.* | *UC01, UC02* |
-| *...* | *...* | *...* | *...* |
+| *C01* | *OneClickSOS* | *Mengendalikan proses penyampaian dan penerimaan signal untuk sisi pengguna* | *UC01, UC06, UC07* |
+| *C02* | *AntarmukaPolisi* | *Mengendalikan penerimaan dan penyampaian signal untuk sisi polisi* | *UC01, UC06, UC07* |
+| *C03* | *Korban* | *Menyimpan data korban yang melakukan panggilan SOS.* | *UC01, UC04, UC05, UC07* |
+| *C04* | *Peta* | *Menyediakan data peta dari lokasi di sekitar korban.* | *UC04* |
+| *C05* | *ListLayanan* | *Menyimpan kumpulan data layanan yang tersedia di sekitar lokasi korban.* | *UC04* |
+| *C06* | *Layanan* | *Menyimpan data dari sebuah layanan.* | *UC04* |
+| *C07* | *AntarmukaTelepon* | *Mengendalikan pemasukan nomor telepon ke aplikasi telepon pada handphone korban.* | *UC04* |
+| *C08* | *Polisi* | *Menyimpan data polisi yang memberikan respons ke panggilan SOS* | *UC01, UC05, UC07* |
+| *C09* | *Rekaman* | *Merekam dan menyimpan rekaman suara pada handphone korban* | *UC06* |
+| *C10* | *LaporanKekerasan* | *Menyimpan data laporan kekerasan yang dibuat korban.* | *UC05* |
 
 ## 5.2 Diagram Kelas per Use Case
-Salin ulang diagram kelas untuk setiap use case dari BAB 4.2 dokumen *Class Diagram*, lengkap dengan tabel atribut dan metode/operasinya.
+Buat diagram kelas untuk setiap use case pada 3.2.
 
 ### 5.2.1 Use Case UC01
 
-**Nama Use Case:** *Memesan Produk*
+**Nama Use Case:** *Mengaktifkan one click SOS*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C01* | *OneClickSOS* | *Mengendalikan proses penyampaian dan penerimaan signal untuk sisi pengguna* |
+| *C02* | *AntarmukaPolisi* | *Mengendalikan penerimaan dan penyampaian signal untuk sisi polisi* |
+| *C03* | *Korban* | *Menyimpan data korban yang melakukan panggilan SOS.* |
+| *C08* | *Polisi* | *Menyimpan data polisi yang memberikan respons ke panggilan SOS* |
+
+#### Diagram Kelas
 
 <p align="center">
-<img alt="Contoh Class Diagram" src="./assets/diagram/contoh-class-diagram.webp" width="70%">
+<img alt="Class Diagram UC01" src="./assets/diagram/UC01_class_diagram.png" width="70%">
 </p>
 <p align="center">
-<i>Gambar 3. Contoh Diagram Kelas Use Case UC01</i>
+<i>Gambar 2. Diagram Kelas Use Case UC01</i>
 </p>
+<br>
+
+Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
 
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
-| *C02* | *Pesanan* | *idPesanan, total, status* | *buatPesanan(), hitungTotal()* |
-| *C03* | *Keranjang* | *daftarItem* | *tambahItem(), checkout()* |
-| *...* | *...* | *...* | *...* |
+| *C01* | *OneClickSOS* | *-* | *menerimaReply(reply), signalMikrofon(), dapatLokasi(), kirimSinyal(lokasi)* |
+| *C02* | *AntarmukaPolisi* | *-* | *menerimaSinyal(signal), kirimReply()* |
+| *C03* | *Korban* | *lokasiKorban, namaKorban* | *lokasiKorbanSekarang(), panggilSOS(oneclicksos)* |
+| *C08* | *Polisi* | *lokasiPolisi, ketersediaan* | *pantauAntarmuka(antarmukaPolisi), terimaLaporan(laporanKekerasan), kirimPasukan()* |
 
-> Lanjutkan pola **5.2.x** untuk setiap use case pada 4.2.
+### 5.2.2 Use Case UC02
+
+**Nama Use Case:** *Melihat Peta Layanan Terdekat*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas | ID Use Case |
+| :--- | :--- | :--- | :--- |
+| *C03* | *Korban* | *Menyimpan data korban yang melakukan panggilan SOS.* | *UC01, UC04, UC07* |
+| *C04* | *Peta* | *Menyediakan data peta dari lokasi di sekitar korban.* | *UC04* |
+| *C05* | *ListLayanan* | *Menyimpan kumpulan data layanan yang tersedia di sekitar lokasi korban.* | *UC04* |
+| *C06* | *Layanan* | *Menyimpan data dari sebuah layanan.* | *UC04* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC02" src="./assets/diagram/UC02_class_diagram.jpeg" width="70%">
+</p>
+<p align="center">
+<i>Gambar 3. Diagram Kelas Use Case UC02</i>
+</p>
+<br>
+
+Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C03* | *Korban* | *lokasiKorban, namaKorban* | *lokasiKorbanSekarang()* |
+| *C04* | *Peta* | *lokasiPeta* | *lokasiPetaSekarang(), lokasiSekitar(korban), tampilkanLayanan(listLayanan)* |
+| *C05* | *ListLayanan* | *kumpulanLayanan* | *ambilLayananTersedia(peta)* |
+| *C06* | *Layanan* | *namaLayanan, lokasiLayanan, kontakLayanan* | *ambilDataLayanan(ListLayanan), ambilLokasi(), ambilNama()* |
+
+### 5.2.3 Use Case UC03
+
+**Nama Use Case:** *Memilih Layanan Terdekat*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C03* | *Korban* | *Menyimpan data korban yang melakukan panggilan SOS.* | *UC01, UC04, UC07* |
+| *C04* | *Peta* | *Menyediakan data peta dari lokasi di sekitar korban.* | *UC04* |
+| *C05* | *ListLayanan* | *Menyimpan kumpulan data layanan yang tersedia di sekitar lokasi korban.* | *UC04* |
+| *C06* | *Layanan* | *Menyimpan data dari sebuah layanan.* | *UC04* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC03" src="./assets/diagram/UC03_class_diagram.jpeg" width="70%">
+</p>
+<p align="center">
+<i>Gambar 4. Diagram Kelas Use Case UC03</i>
+</p>
+<br>
+
+Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C03* | *Korban* | *lokasiKorban, namaKorban* | *pilihLayanan(layanan)* |
+| *C05* | *ListLayanan* | *kumpulanLayanan* | *ambilLayananTersedia(peta)* |
+| *C06* | *Layanan* | *namaLayanan, lokasiLayanan, kontakLayanan* | *ambilDataLayanan(ListLayanan), ambilKontak(), ambilLokasi(), ambilNama()* |
+
+### 5.2.4 Use Case UC04
+
+**Nama Use Case:** *Menghubungi Layanan Terdekat*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C03* | *Korban* | *Menyimpan data korban yang melakukan panggilan SOS.* |
+| *C04* | *Peta* | *Menyediakan data peta dari lokasi di sekitar korban.* |
+| *C05* | *ListLayanan* | *Menyimpan kumpulan data layanan yang tersedia di sekitar lokasi korban.* |
+| *C06* | *Layanan* | *Menyimpan data dari sebuah layanan.* |
+| *C07* | *AntarmukaTelepon* | *Mengendalikan pemasukan nomor telepon ke aplikasi telepon pada handphone korban.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC01" src="./assets/diagram/diagram-kelas-uc04.png" width="70%">
+</p>
+<p align="center">
+<i>Gambar 5. Diagram Kelas Use Case UC04</i>
+</p>
+<br>
+
+Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C03* | *Korban* | *lokasiKorban, namaKorban* | *lokasiKorbanSekarang(), panggilSOS(oneclicksos), pilihLayanan(layanan), teleponLayanan(layanan)* |
+| *C04* | *Peta*  | *lokasiPeta* | *lokasiPetaSekarang(), lokasiSekitar(korban), tampilkanLayanan(listLayanan)* | 
+| *C05* | *ListLayanan* | *kumpulanLayanan* | *ambilLayananTersedia(peta)* |
+| *C06* | *Layanan* | *namalayanan, lokasiLayanan, kontakLayanan* | *ambilDataLayanan(ListLayanan), ambilKontak(), ambilLokasi(), ambilNama()* |
+| *C07* | *AntarmukaTelepon* | *-* | *masukkanNomorLayanan(layanan)* |
+
+### 5.2.5 Use Case UC05
+
+**Nama Use Case:** *Membuat Laporan Kekerasan*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C03* | *Korban* | *Menyimpan data korban yang melakukan panggilan SOS.* |
+| *C08* | *Polisi* | *Menyimpan data polisi yang memberikan respons ke panggilan SOS* | 
+| *C10* | *LaporanKekerasan* | *Menyimpan data laporan kekerasan yang dibuat korban.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC01" src="./assets/diagram/diagram-kelas-uc05.png" width="70%">
+</p>
+<p align="center">
+<i>Gambar 6. Diagram Kelas Use Case UC05</i>
+</p>
+<br>
+
+Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C03* | *Korban* | *lokasiKorban, namaKorban* | *lokasiKorbanSekarang(), panggilSOS(oneclicksos), pilihLayanan(layanan), teleponLayanan(layanan)* |
+| *C08* | *Polisi* | *lokasiPolisi, ketersediaan* | *pantauAntarmuka(antarmukaPolisi), terimaLaporan(laporanKekerasan), kirimPasukan()* |
+| *C10* | *LaporanKekerasan* | *deskripsiKekerasan, tanggalKekerasan, lokasiKekerasan, modePelapor* | *masukkanDeskripsi(), masukkanTanggal(), masukkanLokasi(), masukkanMode()* |
+
+### 5.2.6 Use Case UC06
+
+**Nama Use Case:** *Merekam Suara Otomatis Ketika One Click SOS Diaktifkan*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C01* | *OneClickSOS* | *Mengendalikan proses penyampaian dan penerimaan signal untuk sisi pengguna* |
+| *C03* | *Korban* | *Menyimpan data korban yang melakukan panggilan SOS.* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC06" src="./assets/diagram/UC06_class_diagram.png" width="70%">
+</p>
+<p align="center">
+<i>Gambar 7. Diagram Kelas Use Case UC06</i>
+</p>
+<br>
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C01* | *OneClickSOS* | *-* | *menerimaReply(reply), signalMikrofon(), dapatLokasi(), kirimSinyal(lokasi)* |
+| *C09* | *Rekaman* | *rekamanSuara* | *mulaiRekamanSuara(), simpanRekamanSuara()* |
+
+### 5.2.7 Use Case UC07
+
+**Nama Use Case:** *Mengirim Notifikasi Konfirmasi Polisi Ke Korban*
+
+#### Identifikasi Kelas
+
+| ID Kelas | Nama Kelas | Deskripsi Kelas |
+| :--- | :--- | :--- |
+| *C01* | *OneClickSOS* | *Mengendalikan proses penyampaian dan penerimaan signal untuk sisi pengguna* |
+| *C02* | *AntarmukaPolisi* | *Mengendalikan penerimaan dan penyampaian signal untuk sisi polisi* |
+| *C03* | *Korban* | *Menyimpan data korban yang melakukan panggilan SOS.* |
+| *C08* | *Polisi* | *Menyimpan data polisi yang memberikan respons ke panggilan SOS* |
+
+#### Diagram Kelas
+
+<p align="center">
+<img alt="Class Diagram UC07" src="./assets/diagram/UC01_class_diagram.png" width="70%">
+</p>
+<p align="center">
+<i>Gambar 8. Diagram Kelas Use Case UC07</i>
+</p>
+<br>
+
+Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
+
+| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
+| :--- | :--- | :--- | :--- |
+| *C01* | *OneClickSOS* | *-* | *menerimaReply(reply), signalMikrofon(), dapatLokasi(), kirimSinyal(lokasi)* |
+| *C02* | *AntarmukaPolisi* | *-* | *menerimaSinyal(signal), kirimReply()* |
+| *C03* | *Korban* | *lokasiKorban, namaKorban* | *lokasiKorbanSekarang(), panggilSOS(oneclicksos), pilihLayanan(layanan), teleponLayanan(layanan)* |
+| *C08* | *Polisi* | *lokasiPolisi, ketersediaan* | *pantauAntarmuka(antarmukaPolisi), terimaLaporan(laporanKekerasan), kirimPasukan()* |
 
 ## 5.3 Diagram Kelas Keseluruhan
-Gabungkan seluruh kelas dan hubungan antarkelas dari BAB 4.3 dokumen *Class Diagram* menjadi satu diagram kelas keseluruhan. Pastikan tidak ada kelas yang terduplikasi atau tertinggal.
+
+Gabungkan seluruh kelas dan hubungan antarkelas dari diagram kelas setiap use case menjadi satu diagram kelas keseluruhan. Pastikan tidak ada kelas yang terduplikasi.
 
 <p align="center">
-<img alt="Contoh Class Diagram Keseluruhan" src="./assets/diagram/contoh-class-diagram.webp" width="70%">
+<img alt="Class Diagram Keseluruhan" src="./assets/diagram/diagram-kelas-keseluruhan.webp" width="70%">
 </p>
 <p align="center">
-<i>Gambar 4. Contoh Diagram Kelas Keseluruhan</i>
+<i>Gambar 9. Diagram Kelas Keseluruhan</i>
 </p>
+<br>
 
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
-| *C01* | *Pelanggan* | *idPelanggan, nama, email* | *lihatRiwayatPesanan()* |
-| *C02* | *Pesanan* | *idPesanan, total, status* | *hitungTotal(), perbaruiStatus()* |
-| *...* | *...* | *...* | *...* |
+| *C01* | *OneClickSOS* | *-* | *menerimaReply(reply), signalMikrofon(), dapatLokasi(), kirimSinyal(lokasi)* |
+| *C02* | *AntarmukaPolisi* | *-* | *menerimaSinyal(signal), kirimReply()* |
+| *C03* | *Korban* | *lokasiKorban, namaKorban* | *lokasiKorbanSekarang(), panggilSOS(oneclicksos), pilihLayanan(layanan), teleponLayanan(layanan)* |
+| *C04* | *Peta*  | *lokasiPeta* | *lokasiPetaSekarang(), lokasiSekitar(korban), tampilkanLayanan(listLayanan)* | 
+| *C05* | *ListLayanan* | *kumpulanLayanan* | *ambilLayananTersedia(peta)* |
+| *C06* | *Layanan* | *namalayanan, lokasiLayanan, kontakLayanan* | *ambilDataLayanan(ListLayanan), ambilKontak(), ambilLokasi(), ambilNama()* |
+| *C07* | *AntarmukaTelepon* | *-* | *masukkanNomorLayanan(layanan)* |
+| *C08* | *Polisi* | *lokasiPolisi, ketersediaan* | *pantauAntarmuka(antarmukaPolisi), terimaLaporan(laporanKekerasan), kirimPasukan()* |
+| *C09* | *Rekaman* | *rekamanSuara* | *mulaiRekamanSuara(), simpanRekamanSuara()* |
+| *C10* | *LaporanKekerasan* | *deskripsiKekerasan, tanggalKekerasan, lokasiKekerasan, modePelapor* | *masukkanDeskripsi(), masukkanTanggal(), masukkanLokasi(), masukkanMode()* |
 
 ---
 
@@ -272,10 +650,16 @@ Salin ulang tabel Traceability dari BAB 5 dokumen *Class Diagram*, cocokkan seti
 
 | ID Kelas | ID Use Case | ID KF |
 | :--- | :--- | :--- |
-| *C01* | *UC01, UC05* | *KF01, KF06* |
-| *C02* | *UC01, UC03, UC05* | *KF01, KF02, KF05, KF06* |
-| *C03* | *UC01, UC02* | *KF01, KF02* |
-| *...* | *...* | *...* |
+| *C01* | *UC01, UC06, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08* |
+| *C02* | *UC01, UC06, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08* |
+| *C03* | *UC01, UC04, UC05, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08, KF12* |
+| *C04* | *UC02, UC03, UC04* | *KF05, KF06, KF12* |
+| *C05* | *UC02, UC03, UC04* | *KF05, KF06, KF12* |
+| *C06* | *UC02, UC03, UC04* | *KF05, KF06, KF12* |
+| *C07* | *UC04* | *KF12* |
+| *C08* | *UC01, UC05, UC07* | *KF01, KF02, KF03, KF04, KF07, KF08* |
+| *C09* | *UC06* | *KF07, KF11* |
+| *C10* | *UC05* | *KF03* |
 
 ---
 
