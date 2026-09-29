@@ -98,7 +98,11 @@ Setelah SOS dimatikan, pihak kepolisian juga akan menerima rekaman suara kejadia
 </p>
 
 ## 2.2 Deskripsi Umum Perangkat Lunak
-Perangkat lunak SafeShe adalah aplikasi laporan anonim yang diharapkan menjadi sebuah solusi masalah kekerasan terhadap perempuan. Laporan anonim tersebut diwujudkan dengan menggunakan fitur *one-click SOS* yang akan mengirimkan lokasi ke pihak kepolisian. Fitur ini dapat digunakan dengan lebih mudah, anonim, dan diam-diam agar lebih sulit diketahui pelaku kekerasan. Untuk semakin mempermudah akses fitur ini, tombol tersebut dapat diletakkan dalam handphone sebagai sebuah *widget*. Selain itu, handphone juga akan merekam suara selama keadaan darurat untuk mendapat bukti kekerasan yang membantu dalam membuat kasus terhadap pelaku kekerasan.
+Perangkat lunak SafeShe adalah aplikasi laporan anonim yang diharapkan menjadi sebuah solusi masalah kekerasan terhadap perempuan. SafeShe berinteraksi dengan  
+
+(Harus mengikuti template untuk format penulisannya dan dihubungkan dengan kayanya swimlane diagram deh)
+
+Laporan anonim tersebut diwujudkan dengan menggunakan fitur *one-click SOS* yang akan mengirimkan lokasi ke pihak kepolisian. Fitur ini dapat digunakan dengan lebih mudah, anonim, dan diam-diam agar lebih sulit diketahui pelaku kekerasan. Untuk semakin mempermudah akses fitur ini, tombol tersebut dapat diletakkan dalam handphone sebagai sebuah *widget*. Selain itu, handphone juga akan merekam suara selama keadaan darurat untuk mendapat bukti kekerasan yang membantu dalam membuat kasus terhadap pelaku kekerasan.
 
 Aplikasi juga akan menyediakan peta secara *real-time* untuk layanan terdekat yang berguna bagi korban, seperti rumah sakit atau konseling, serta kontak untuk menelepon layanan tersebut.
 
@@ -110,22 +114,10 @@ Diisi dengan deskripsi umum perangkat lunak untuk mendukung proses bisnis yang t
 *Contoh narasi:* "*[Nama P/L]* merupakan aplikasi *[deskripsi singkat]* yang berinteraksi dengan *Payment Gateway (dummy)* untuk memproses otorisasi pembayaran. Sistem menerima input dari *Pelanggan* melalui antarmuka aplikasi dan mengirimkan permintaan transaksi ke *Payment Gateway* setiap kali pelanggan melakukan checkout."
 
 ## 2.3 Pengguna dan Kebutuhan Pengguna Perangkat Lunak
-Saat ini, proses pelaporan dan pendampingan korban KBGtP di Indonesia masih reaktif, terpecah, dan tidak terintegrasi digital. 
-
-Sistem yang sudah ada saat ini adalah SIMFONI PPA, Layanan 129, Aplikasi SAPA, dan Layanan P2TP2A. SIMFONI PPA (Sistem Informasi Online Perlindungan Perempuan dan Anak) memiliki fungsi sebagai channel pelaporan, tetapi terbatas pada bata agregat dan belum dapat menyediakan pendampingan *real-time* berbasis lokasi. Layanan 129 (Call Center KemenPPPA) menyediakan hotline telepon, tetapi kapasitasnya terbatas dan tidak memiliki sistem triase untuk mementukan prioritas kasus. Aplikasi SAPA menyediakan channel pengaduan, tetapi belum terintegrasi dengan peta layanan terdekat dan sistem rujukan multilembaga secara otomatis. Layanan P2TP2A (Pusat Pelayanan Terpadu Pemberdayaan Perempuan dan Anak) memiliki sistem yang tersebar secara fisik dan tidak semua daerah memiliki fasilitas yang memadai.
-
-Hasil analisis dari keempat sistem yang sudah ada mengungkap beberapa masalah dari keempat sistem tersebut. Pertama, tidak adanya sistem triase yang otomatis. Petugas layanan tidak memiliki alat bantu untuk mengkategorikan urgensi kasus secara objektif dan konsisten, sehingga menyebabkan kasus darurat sering tertunda. Kedua, data dan layanan tidak memiliki sinkronisasi yang baik. Korban harus mencari sendiri informasi tentang rumah sakit rujukan, konseling psikologis, bantuan hukum, dan pendampingan. Ketiga, kurangnya peta keamanan *real-time*. Tidak ada sistem yang memetakan area berisiko tinggi atau area aman terdekat, sehingga korban sulit membuat keputusan evakuasi yang cepat dan aman. Keempat, stigma dan hambatan akses. Banyak korban terutama di daerah terpencil yang tidak mengetahui cara melapor atau merasa tidak aman melapor secara terbukan karena kurangnya opsi anonimitas yang terjamin. Terakhir, keterbatasan dokumentasi digital. Bukti digital seperti chat, foto, dan rekaman, sering tidak terdokumentasi dengan aman dan terstruktur untuk keperluan proses hukum.
-
-Dengan permasalahan dan celah yang ada dalam sistem yang ada saat ini, perangkat lunak kami akan dirancang untuk mengatasi permasalahan tersebut. Perangkat lunak kami yang disebut SafeShe akan menyediakan satu platform terpadu yang mengintegrasikan pelaporan anonim yang teridentifikasi dengan enkripsi *end-to-end*. SafeShe juga dirancang dengan triase berbasis AI untuk menentukan tingkat urgensi dan jenis layanan yang dibutuhkan, serta mapping geospasial yang menunjukkan area berisiko dan fasilitas layanan terdekat. Safeshe akan memiliki sistem rujukan otomatis ke jaringan mitra, seperti RS, psikolog, dan pengacara. Selain itu, SafeShe juga akan memiliki arsip digital terenkripsi untuk menyimpan bukti dengan *blockchain-based timestamp* untuk keabsahan hukum.
-
 | Aktor | Deskripsi |
 | :--- | :--- |
 | *Korban* | *Pengguna ini bertindak sebagai pihak yang memerlukan bantuan karena telah mengalami kekerasan seksual. Karakteristik dari pengguna ini adalah mengutamakan keamanan, kecepatan, dan konfirmasi respons untuk bantuan dari pihak kepolisian.* |
 | *Polisi* | *Pengguna ini bertindak sebagai pihak yang memantau notifikasi SOS yang dikirimkan oleh korban. Karakteristik dari pengguna ini adalah menginginkan lokasi korban untuk memberi bantuan, mendapatkan bukti untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual, serta kemampuan untuk mengirimkan notifikasi kembali kepada korban bahwa SOS telah diterima dan bantuan sedang dalam perjalanan.* |
-
-
-Tuliskan seluruh jenis pengguna (*role*/aktor) yang terlibat dalam perangkat lunak (P/L), beserta kebutuhannya secara umum. Bagian ini dapat disalin dari 1.2 *Deskripsi Pengguna Perangkat Lunak* (dokumen Requirement Gathering) atau 3.1 *Identifikasi Aktor* (dokumen Use Case), pastikan sudah konsisten dengan aktor final yang dipakai di BAB 4.
-
 
 ## 2.4 Batasan Perangkat Lunak
 Batasan yang harus dituliskan, di antaranya:
