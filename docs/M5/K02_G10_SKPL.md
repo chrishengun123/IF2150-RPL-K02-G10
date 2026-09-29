@@ -131,23 +131,12 @@ Dengan permasalahan dan celah yang ada dalam sistem yang ada saat ini, perangkat
 
 Tuliskan seluruh jenis pengguna (*role*/aktor) yang terlibat dalam perangkat lunak (P/L), beserta kebutuhannya secara umum. Bagian ini dapat disalin dari 1.2 *Deskripsi Pengguna Perangkat Lunak* (dokumen Requirement Gathering) atau 3.1 *Identifikasi Aktor* (dokumen Use Case), pastikan sudah konsisten dengan aktor final yang dipakai di BAB 4.
 
-| Pengguna | Kebutuhan |
-| :--- | :--- |
-| *Pelanggan* | *Pelanggan harus dapat memesan produk, mengelola keranjang, dan menyelesaikan pembayaran melalui sistem.* |
-| *...* | *...* |
 
 ## 2.4 Batasan Perangkat Lunak
-Aplikasi ini dibuat dengan asumsi bahwa pihak polisi setuju untuk memantau signal SOS aplikasi SafeShe. Selain itu, juga ada asumsi bahwa terdapat API yang menyediakan data lokasi rumah sakit dan konseling, termasuk kontak telepon tempat tersebut.
-
-Batasannya pada regulasi hukum legal yang diperbolehkan dalam penanganan kasus kekerasan seksual, seperti penanganan pengambilan serta penyimpanan bukti. Selain itu, aplikasi tidak dapat digunakan pada lock screen handphone, jadi pengguna perlu membuka handphonenya sebelum dapat menekan tombol SOS. Batasan lainnya terletak pada kemauan dari pihak polisi untuk merespons dengan baik ketika ada notifikasi SOS, bahkan jika SOS tersebut tidak digunakan dengan semestinya.
-
-
-Masih perlu ubah kalimat menjadi mirip seperti template
 Batasan yang harus dituliskan, di antaranya:
-1. *P/L harus memakai file data/API dari sistem lain (sebutkan, misal Payment Gateway dummy).*
-2. *P/L harus memakai format data yang sama dengan sistem lain.*
-3. *P/L harus berfungsi pada platform tertentu (misal: web browser modern, atau desktop Windows dan Linux).*
-4. *...*
+1. *P/L harus mengikuti regulasi hukum yang berlaku untuk penanganan kasus kekerasan seksual, seperti penanganan pengambilan serta penyimpanan bukti.*
+2. *P/L tidak dapat digunakan pada lock screen handphone, pengguna harus membuka handphonenya terlebih dahulu sebelum menekan tombol SOS*
+3. *P/L bergantung pada kemauan pihak polisi untuk merespons notifikasi SOS dengan baik, termasuk ketika SOS tidak digunakan sebagaimana mestinya.*
 
 ## 2.5 Lingkungan Operasi Perangkat Lunak
 Spesifikasi *operating system* atau lingkungan yang dibutuhkan P/L untuk beroperasi. Bagian ini digunakan untuk memastikan pengguna memiliki spesifikasi yang cukup untuk menjalankan P/L. Misalnya mencakup komponen server, client, OS, DBMS, tetapi tidak menutupi kemungkinan komponen lain.
@@ -175,6 +164,10 @@ Spesifikasi *operating system* atau lingkungan yang dibutuhkan P/L untuk beroper
 | *KF06* | *R07* | *Diberikan terdapat API yang dapat menampilkan data lokasi rumah sakit dan tempat konseling, ketika sistem akan menampilkan peta live kepada user, sistem akan memanggil API tersebut untuk memperoleh data lokasi rumah sakit dan tempat konseling yang akurat.* |
 | *KF07* | *R09* | *Diberikan perangkat user memiliki sebuah mikrofon, ketika tombol one click SOS ditekan, sistem akan langsung mengaktifkan mikrofon perangkat user untuk merekam suara dalam keadaan darurat.* |
 | *KF08* | *R11* | *Ketika pihak kepolisian mengirimkan notifikasi kepada sistem sebagai wujud konfirmasi kepada korban, sistem akan menerima notifikasi tersebut dan menampilkan notifikasi tersebut di layar perangkat korban.* |
+| *KF09* | *R12* | *Saat tombol one-click SOS aktif, sistem secara terus menerus akan mengirimkan data lokasi kepada pihak kepolisian hingga status SOS dinonakifkan.* |
+| *KF10* | *R13* | *Sistem otomatis menonaktifkan status SOS korban dan menghentikan pengiriman data lokasi setelah pihak kepolisian sampai dan memberikan input kepada sistem.* |
+| *KF11* | *R14* | *Sistem mengirimkan file rekaman suara darurat dari perangkat korban kepada pihak kepolisian.* |
+| *KF12* | *R08* | *Ketika pengguna memilih menghubungi layanan tertentu, sistem akan otomatis membuka aplikasi telepon bawaan pada perangkat pengguna dan mengisi nomor kontak layanan.* |
 
 ## 3.2 Kebutuhan Non-Fungsional (KNF)
 
@@ -201,7 +194,6 @@ Daftarkan seluruh aktor yang terlibat dalam use case yang akan dimodelkan. Aktor
 | :--- | :--- |
 | *Korban* | *Pengguna ini bertindak sebagai pihak yang memerlukan bantuan karena telah mengalami kekerasan seksual. Karakteristik dari pengguna ini adalah mengutamakan keamanan, kecepatan, dan konfirmasi respons untuk bantuan dari pihak kepolisian.* |
 | *Polisi* | *Pengguna ini bertindak sebagai pihak yang memantau notifikasi SOS yang dikirimkan oleh korban. Karakteristik dari pengguna ini adalah menginginkan lokasi korban untuk memberi bantuan, mendapatkan bukti untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual, serta kemampuan untuk mengirimkan notifikasi kembali kepada korban bahwa SOS telah diterima dan bantuan sedang dalam perjalanan.* |
-| *Penyedia Layanan* | *Pengguna ini bertindak sebagai pihak yang menerima kontak dari pihak korban. Karakteristik dari pengguna ini adalah dapat menyediakan bantuan yang dibutuhkan pihak korban melalui sistem pengontakan yang dapat diandalkan untuk bekerja ketika digunakan oleh korban.* |
 
 
 
