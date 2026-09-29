@@ -136,6 +136,9 @@
 | Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
 | :--- | :--- | :--- | :--- | :--- | :--- | 
 | *26-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
+| *30-09-2026* | *Mirza Aryasatya Akmal* | *Menyesuaikan SwimLane Diagram dengan Perubahan Selama Pengerjaan Milestones* | *1 jam* | *Done* | *-* | 
+
+
 | *22-09-2026* | *Ferdinand Valentino Darmawan* | ** | ** | *Done* | *-* |
 | *22-09-2026* | *Mirza Aryasatya Akmal* | ** | ** | *Done* | *-* | 
 | *22-09-2026* | *Christopher Hendrik Gunawan* | ** | ** | *Done* | *-* |
