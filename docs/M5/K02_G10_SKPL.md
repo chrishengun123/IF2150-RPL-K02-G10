@@ -110,7 +110,6 @@ Batasan yang harus dituliskan, di antaranya:
 3. *P/L bergantung pada kemauan pihak polisi untuk merespons notifikasi SOS dengan baik, termasuk ketika SOS tidak digunakan sebagaimana mestinya.*
 
 ## 2.5 Lingkungan Operasi Perangkat Lunak
-Spesifikasi *operating system* atau lingkungan yang dibutuhkan P/L untuk beroperasi. Bagian ini digunakan untuk memastikan pengguna memiliki spesifikasi yang cukup untuk menjalankan P/L. Misalnya mencakup komponen server, client, OS, DBMS, tetapi tidak menutupi kemungkinan komponen lain.
 
 | Komponen | Spesifikasi |
 | :--- | :--- |
@@ -158,7 +157,6 @@ Spesifikasi *operating system* atau lingkungan yang dibutuhkan P/L untuk beroper
 # BAB 4: Pemodelan Use Case
 
 ## 4.1 Identifikasi Aktor
-Daftarkan seluruh aktor yang terlibat dalam use case yang akan dimodelkan. Aktor berupa pengguna manusia yang berinteraksi dengan solusi. Perlu diperhatikan bahwa Admin/Developer/ Pihak Eksternal lain yang bisa diotomisasi, tidak perlu dijadikan aktor.
 
 | Aktor | Deskripsi |
 | :--- | :--- |
@@ -168,7 +166,6 @@ Daftarkan seluruh aktor yang terlibat dalam use case yang akan dimodelkan. Aktor
 
 
 ## 4.2 Identifikasi Use Case
-Identifikasi seluruh use case yang mencakup Kebutuhan Fungsional pada BAB 2. Satu use case boleh mencakup lebih dari satu KF, dan sebaliknya satu KF boleh muncul di lebih dari satu use case bila memang relevan.
 
 | ID UC | Nama Use Case | Deskripsi Singkat | Aktor Terlibat | ID KF Terkait |
 | :--- | :--- | :--- | :--- | :--- |
@@ -190,19 +187,7 @@ Identifikasi seluruh use case yang mencakup Kebutuhan Fungsional pada BAB 2. Sat
 </p>
 <br>
 
-Hal-hal yang perlu diperhatikan dalam pembuatan use case diagram:
-- Pastikan notasi UML use case (aktor, oval use case, garis asosiasi, *include/extend*) digambar dengan benar.
-- Seluruh aktor dan use case yang telah didefinisikan harus muncul di diagram, tidak ada yang terlewat maupun berlebih.
-- Hindari garis yang saling bersilangan tanpa alasan jelas, susun diagram agar mudah dibaca.
-- Hindari istilah solusi teknis (misalnya nama tabel database, nama endpoint API) muncul di dalam diagram use case karena use case menjelaskan *interaksi fungsional*, bukan detail implementasi.
-
 ## 4.4 Skenario Use Case
-Buat skenario untuk **setiap** use case yang telah diidentifikasi pada 3.2. Setiap skenario dapat terdiri dari dua jenis alur:
-- **Skenario Normal**: alur utama (*happy path*) di mana interaksi aktor-sistem berjalan lancar tanpa kendala hingga tujuan use case tercapai.
-- **Skenario Alternatif**: alur percabangan dari skenario normal, misalnya kondisi gagal, input tidak valid, atau pilihan lain yang tersedia bagi aktor. Boleh ada lebih dari satu skenario alternatif per use case jika ada beberapa titik percabangan berbeda.
-
-Format tabel skenario: kolom **Aksi Aktor** berisi apa yang dilakukan/diinput aktor, kolom **Reaksi Perangkat Lunak** berisi respons sistem terhadap aksi tersebut secara **berurutan** (nomor langkah harus berpasangan/selaras antar dua kolom).
-
 
 ### 4.4.1 Skenario UC01
 
@@ -255,6 +240,7 @@ Format tabel skenario: kolom **Aksi Aktor** berisi apa yang dilakukan/diinput ak
 **Nama Use Case:** *Memilih Layanan Terdekat*
 
 **Skenario Normal**
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
 | 1 | *Korban melihat layanan yang tersedia* | *Sistem memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban dan menampilkan lokasi akurat layanan yang tersedia melalui simbol-simbol di peta* |
 | 2 | *Korban  memilih sebuah layanan dengan menekan simbol* | *Sistem menampilkan informasi lokasi dan nomor kontak layanan yang ditekan* |
@@ -271,6 +257,7 @@ Format tabel skenario: kolom **Aksi Aktor** berisi apa yang dilakukan/diinput ak
 **Nama Use Case:** *Memilih Layanan Terdekat*
 
 **Skenario Normal**
+| No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
 | 1 | *Korban melihat layanan yang tersedia* | *Sistem memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban dan menampilkan lokasi akurat layanan yang tersedia melalui simbol-simbol di peta* |
 | 2 | *Korban  memilih sebuah layanan dengan menekan simbol* | *Sistem menampilkan informasi lokasi dan nomor kontak layanan yang ditekan* |
@@ -343,7 +330,6 @@ Format tabel skenario: kolom **Aksi Aktor** berisi apa yang dilakukan/diinput ak
 # BAB 5: Pemodelan Kelas
 
 ## 5.1 Identifikasi Kelas
-Identifikasi seluruh kelas yang diperlukan berdasarkan use case dan skenarionya. Satu kelas boleh terkait dengan lebih dari satu use case.
 
 | ID Kelas | Nama Kelas | Deskripsi Kelas | ID Use Case |
 | :--- | :--- | :--- | :--- |
@@ -360,8 +346,6 @@ Identifikasi seluruh kelas yang diperlukan berdasarkan use case dan skenarionya.
   *C11* | *APILayanan* | *Menghubungkan sistem ke API eksternal untuk mengambil data layanan terdekat dari lokasi korban.* |*UC02, UC03* |
 
 ## 5.2 Diagram Kelas per Use Case
-Buat diagram kelas untuk setiap use case pada 3.2.
-
 ### 5.2.1 Use Case UC01
 
 **Nama Use Case:** *Mengaktifkan one click SOS*
@@ -610,7 +594,6 @@ Gabungkan seluruh kelas dan hubungan antarkelas dari diagram kelas setiap use ca
 ---
 
 # BAB 6: Traceability
-Salin ulang tabel Traceability dari BAB 5 dokumen *Class Diagram*, cocokkan setiap Kebutuhan Fungsional, Use Case, dan Kelas yang saling terkait.
 
 | ID Kelas | ID Use Case | ID KF |
 | :--- | :--- | :--- |
