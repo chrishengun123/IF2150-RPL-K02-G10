@@ -142,6 +142,8 @@
 | *30-09-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram kelas seluruh perangkat lunak* | *1* | *Done* | *-* |
 | *30-09-2026* | *Natanael Chris Fabian Santoso* | *Riset lalu mengerjakan bagian 2.5* | *1 jam* | *Done* | *-* |
 | *30-09-2026* | *Natanael Chris Fabian Santoso* | *Menghapus instruksi dari template, merapikan format tabel yang rusak* | *0,5 jam* | *Done* | *-* |
+| *29-09-2026* | *Jason Hartanto* | *Mengupdate informasi menjadi lebih sesuai dengan M4 seperti KF dan penulisan 2.4 serta pelakukab beberapa perbaikan penulisan* | *1* | *Done* | *-* |
+| *30-09-2026* | *Jason Hartanto* | *Menambahkan identifikasi kelas APILayanan* | *0,5 jam* | *Done* | *-* |
 
 
 | *22-09-2026* | *Mirza Aryasatya Akmal* | ** | ** | *Done* | *-* | 
