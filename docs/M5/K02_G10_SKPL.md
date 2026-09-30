@@ -592,7 +592,7 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 Gabungkan seluruh kelas dan hubungan antarkelas dari diagram kelas setiap use case menjadi satu diagram kelas keseluruhan. Pastikan tidak ada kelas yang terduplikasi.
 
 <p align="center">
-<img alt="Class Diagram Keseluruhan" src="./assets/diagram/diagram-kelas-keseluruhan.webp" width="70%">
+<img alt="Class Diagram Keseluruhan" src="./assets/diagram/complete_class_diagram.png" width="70%">
 </p>
 <p align="center">
 <i>Gambar 9. Diagram Kelas Keseluruhan</i>
