@@ -131,7 +131,7 @@
 ---
 
 ### Milestone 5
-**Periode:** [Tanggal Mulai] - [Tanggal Selesai]
+**Periode:** 26-09-2026 - 30-09-2026
 
 | Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
 | :--- | :--- | :--- | :--- | :--- | :--- | 
