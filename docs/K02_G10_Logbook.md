@@ -140,6 +140,7 @@
 | *29-09-2026* | *Ferdinand Valentino Darmawan* | *Mengerjakan BAB 1, mengupdate nama kelas dan kelas yang digunakan di 5.2.4, mengisi bagian 2.2 dan 2.3, serta merapikan jawaban 2.1* | *2* | *Done* | *-* |
 | *29-09-2026* | *Christopher Hendrik Gunawan* | *Menyalin informasi dari semua milestone sebelum milestone 5 ke milestone 5* | *1* | *Done* | *-* |
 | *30-09-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram kelas seluruh perangkat lunak* | *1* | *Done* | *-* |
+| *30-09-2026* | *Natanael Chris Fabian Santoso* | *Riset lalu mengerjakan bagian 2.5* | *1 jam* | *Done* | *-* |
 
 
 | *22-09-2026* | *Mirza Aryasatya Akmal* | ** | ** | *Done* | *-* | 
