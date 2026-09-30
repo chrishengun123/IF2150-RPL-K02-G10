@@ -137,22 +137,14 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | 
 | *26-09-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
 | *30-09-2026* | *Mirza Aryasatya Akmal* | *Menyesuaikan SwimLane Diagram dengan Perubahan Selama Pengerjaan Milestones* | *1 jam* | *Done* | *-* | 
-| *29-09-2026* | *Ferdinand Valentino Darmawan* | *Mengerjakan BAB 1, mengupdate nama kelas dan kelas yang digunakan di 5.2.4, mengisi bagian 2.2 dan 2.3, serta merapikan jawaban 2.1* | *2* | *Done* | *-* |
-| *30-09-2026* | *Ferdinand Valentino Darmawan* | *Menghapus template yang masih ada dalam setiap bagian.* | *0,5* | *Done* | *-* |
-| *29-09-2026* | *Christopher Hendrik Gunawan* | *Menyalin informasi dari semua milestone sebelum milestone 5 ke milestone 5* | *1* | *Done* | *-* |
-| *30-09-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram kelas seluruh perangkat lunak* | *1* | *Done* | *-* |
+| *29-09-2026* | *Ferdinand Valentino Darmawan* | *Mengerjakan BAB 1, mengupdate nama kelas dan kelas yang digunakan di 5.2.4, mengisi bagian 2.2 dan 2.3, serta merapikan jawaban 2.1* | *2 jam* | *Done* | *-* |
+| *30-09-2026* | *Ferdinand Valentino Darmawan* | *Menghapus template yang masih ada dalam setiap bagian.* | *0,5 jam* | *Done* | *-* |
+| *29-09-2026* | *Christopher Hendrik Gunawan* | *Menyalin informasi dari semua milestone sebelum milestone 5 ke milestone 5* | *1 jam* | *Done* | *-* |
+| *30-09-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram kelas seluruh perangkat lunak* | *1 jam* | *Done* | *-* |
 | *30-09-2026* | *Natanael Chris Fabian Santoso* | *Riset lalu mengerjakan bagian 2.5* | *1 jam* | *Done* | *-* |
 | *30-09-2026* | *Natanael Chris Fabian Santoso* | *Menghapus instruksi dari template, merapikan format tabel yang rusak* | *0,5 jam* | *Done* | *-* |
-| *29-09-2026* | *Jason Hartanto* | *Mengupdate informasi menjadi lebih sesuai dengan M4 seperti KF dan penulisan 2.4 serta pelakukab beberapa perbaikan penulisan* | *1* | *Done* | *-* |
+| *29-09-2026* | *Jason Hartanto* | *Mengupdate informasi menjadi lebih sesuai dengan M4 seperti KF dan penulisan 2.4 serta pelakukab beberapa perbaikan penulisan* | *1 jam* | *Done* | *-* |
 | *30-09-2026* | *Jason Hartanto* | *Menambahkan identifikasi kelas APILayanan* | *0,5 jam* | *Done* | *-* |
-
-
-| *22-09-2026* | *Mirza Aryasatya Akmal* | ** | ** | *Done* | *-* | 
-| *22-09-2026* | *Christopher Hendrik Gunawan* | ** | ** | *Done* | *-* |
-| *22-09-2026* | *Natanael Chris Fabian Santoso* | ** | ** | *Done* | *-* |
-
-
-
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 4:**
