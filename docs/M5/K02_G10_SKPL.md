@@ -71,7 +71,7 @@ Tabel 1.4. Aturan Penomoran
 | *Requirement* | *RXX* | |
 
 ## 1.5 Referensi
-Diagram swimlane SafeShe berasal dari Milestone 1, diagram keseluruhan use case SafeShe berasal dari Milestone 3, diagram kelas setiap skenario use case dari SafeShe berasal dari Milestone 4. 
+Diagram swimlane SafeShe di BAB 2.1 dibuat dari diagram swimlane SafeShe awal yang dari Milestone 1, diagram keseluruhan use case SafeShe berasal dari Milestone 3, diagram kelas setiap skenario use case dari SafeShe berasal dari Milestone 4. 
 
 ## 1.6 Deskripsi Umum Dokumen (Ikhtisar)
 BAB 1 membahas pendahuluan dokumen berupa informasi umum dari dokumen, BAB 2 membahas deskripsi umum P/L, BAB 3 membahas kebutuhan fungsional dan non-fungsional, BAB 4 membahas use case serta skenario yang dimilikinya, BAB 5 membahas diagram kelas setiap use case, dan BAB 6 membahas traceability dari setiap diagram kelas dengan use case dan kebutuhan fungsional yang berkaitan.
