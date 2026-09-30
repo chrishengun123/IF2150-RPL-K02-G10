@@ -37,13 +37,14 @@ Dipersiapkan oleh:
 # BAB 1: Pendahuluan
 
 ## 1.1 Tujuan Penulisan Dokumen
+
 Dokumen SKPL ini dibuat untuk medeskripsikan dengan detail mengenai berbagai aspek dari perangkat lunak SafeShe agar semuanya memiliki spesifikasi yang jelas sebelum dikembangkan. Dokumen ini diperuntukkan untuk para pengembang perangkat lunak SafeShe dan asisten sebagai salah satu pemangku kepentingan dari pengimplementasian perangkat lunak yang dilakukan oleh para pengembang.
 
 ## 1.2 Lingkup Masalah
+
 Aplikasi SafeShe adalah aplikasi yang menyediakan pelaporan kekerasan seksual yang dialami perempuan secara anonim. Aplikasi ini dibuat agar menjadi salah satu solusi untuk mengatasi proses pelaporan dan pendampingan korban dari kekerasan seksual di Indonesia yang masih reaktif dan tidak terintegrasi secara digital. SafeShe akan menyediakan fitur pelaporan anonim yang terenkripsi *end-to-end* dan memiliki peta *real-time* untuk menampilkan fasilitas layanan yang dapat dibutuhkan korban, seperti fasilitas rumah sakit dan konseling. SafeShe juga menyediakan fitur *one-click SOS* untuk memudahkan korban dalam meminta bantuan secara diam-diam dengan konfirmasi balik yang tidak mudah diketahui orang lain ketika bantuan sedang dalam perjalanan menuju lokasi korban. Selain itu, SafeShe akan merekam audio di sekitar korban setelah *one-click SOS* dipencet yang dapat membantu dalam memberikan bukti konkret untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual.
 
 ## 1.3 Definisi, Istilah, dan Singkatan
-Tabel 1.3. Definisi Istilah dan Singkatan
 
 | Singkatan, Akronim, atau Istilah | Penjelasan |
 | :--- | :--- |
@@ -55,7 +56,6 @@ Tabel 1.3. Definisi Istilah dan Singkatan
 | *EARS* | *Easy Approach to Requirements Syntax, yaitu pola penulisan kebutuhan agar konsisten dan mudah diuji.* |
 
 ## 1.4 Aturan Penomoran
-Tabel 1.4. Aturan Penomoran
 
 | Hal/Bagian | Penomoran | Keterangan |
 | :--- | :--- | :--- |
@@ -68,9 +68,11 @@ Tabel 1.4. Aturan Penomoran
 | *Requirement* | *RXX* | |
 
 ## 1.5 Referensi
+
 Diagram swimlane SafeShe di BAB 2.1 dibuat dari diagram swimlane SafeShe awal yang dari Milestone 1, diagram keseluruhan use case SafeShe berasal dari Milestone 3, diagram kelas setiap skenario use case dari SafeShe berasal dari Milestone 4. 
 
 ## 1.6 Deskripsi Umum Dokumen (Ikhtisar)
+
 BAB 1 membahas pendahuluan dokumen berupa informasi umum dari dokumen, BAB 2 membahas deskripsi umum P/L, BAB 3 membahas kebutuhan fungsional dan non-fungsional, BAB 4 membahas use case serta skenario yang dimilikinya, BAB 5 membahas diagram kelas setiap use case, dan BAB 6 membahas traceability dari setiap diagram kelas dengan use case dan kebutuhan fungsional yang berkaitan.
 
 ---
@@ -95,15 +97,18 @@ Setelah SOS dimatikan, pihak kepolisian juga akan menerima rekaman suara kejadia
 </p>
 
 ## 2.2 Deskripsi Umum Perangkat Lunak
+
 Perangkat lunak SafeShe adalah aplikasi laporan anonim yang diharapkan menjadi sebuah solusi masalah kekerasan terhadap perempuan. SafeShe berinteraksi dengan *One-click SOS* untuk mengirimkan informasi waktu dan lokasi *Korban* ke *Polisi* serta untuk menyalakan perekaman suara. SafeShe akan menerima konfirmasi SOS telah diterima dan bantuan telah dikirim dari *Polisi* dan akan menampilkan notifikasinya kepada *Korban*. Setelah *Polisi* mematikan penerimaan informasi live korban, SafeShe akan mengirimkan *Rekaman Suara* yang telah dikirim ke pihak *Polisi* sebagai sebuah bukti dari kejadian kekerasan seksual yang telah terjadi. SafeShe juga berinteraksi dengan *Sistem Pelaporan* untuk menyediakan pelaporan kekerasan seksual yang dialami *Korban* yang diamankan dengan *Enkripsi End-to-end* setiap kali laporan dibuat yang diteruskan ke *Polisi*. SafeShe dapat berinteraksi dengan *Peta Real-time* untuk menampilkan lokasi live dari *Korban* mengenai berbagai *Fasilitas Lyananan* yang tersedia di sekitarnya. Lalu, SafeShe dapat berinteraksi dengan sebuah *Fasilitas Layanan* untuk menampilkan informasi lokasi dan kontak layanan tersebut, serta agar *Korban* dapat menghubunginya melalui *Aplikasi Telepon* yang terdapat pada handphone *Korban*.
 
 ## 2.3 Pengguna dan Kebutuhan Pengguna Perangkat Lunak
+
 | Aktor | Deskripsi |
 | :--- | :--- |
 | *Korban* | *Pengguna ini bertindak sebagai pihak yang memerlukan bantuan karena telah mengalami kekerasan seksual. Karakteristik dari pengguna ini adalah mengutamakan keamanan, kecepatan, dan konfirmasi respons untuk bantuan dari pihak kepolisian.* |
 | *Polisi* | *Pengguna ini bertindak sebagai pihak yang memantau notifikasi SOS yang dikirimkan oleh korban. Karakteristik dari pengguna ini adalah menginginkan lokasi korban untuk memberi bantuan, mendapatkan bukti untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual, serta kemampuan untuk mengirimkan notifikasi kembali kepada korban bahwa SOS telah diterima dan bantuan sedang dalam perjalanan.* |
 
 ## 2.4 Batasan Perangkat Lunak
+
 Batasan yang harus dituliskan, di antaranya:
 1. *P/L harus mengikuti regulasi hukum yang berlaku untuk penanganan kasus kekerasan seksual, seperti penanganan pengambilan serta penyimpanan bukti.*
 2. *P/L tidak dapat digunakan pada lock screen handphone, pengguna harus membuka handphonenya terlebih dahulu sebelum menekan tombol SOS*
@@ -123,6 +128,7 @@ Batasan yang harus dituliskan, di antaranya:
 # BAB 3: Deskripsi Kebutuhan Perangkat Lunak
 
 ## 3.1 Kebutuhan Fungsional (KF)
+
 | ID KF | ID Kebutuhan | Penjelasan |
 | :--- | :--- | :--- |
 | *KF01* | *R01* | *Diberikan perangkat user memiliki fitur widget, ketika Peragkat Lunak diaktifkan, maka sistem menampilkan sebuah tombol one click SOS dalam bentuk widget aplikasi yang selalu ditampilkan di layar perangkat ketika perangkat aktif dan terbuka (tidak di-lock).* |
@@ -178,14 +184,16 @@ Batasan yang harus dituliskan, di antaranya:
 | *UC07* | *Mengirim Notifikasi Konfirmasi Polisi Ke Korban* | *Sistem mengirimkan notifikasi kepada korban ketika polisi menerima informasi keadaan darurat dan mengonfirmasi hal tersebut* | *Korban, Polisi* | *KF08* |
 
 ## 4.3 Use Case Diagram
+
 <br>
 <p align="center">
 <img alt="SafeShe Use Case Diagram Diagram" src="./assets/diagram/SafeShe_Use_Case_Diagram.png" width="70%">
 </p>
 <p align="center">
-<i>Gambar 1. Contoh Use Case Diagram</i>
+<i>Gambar 2. SafeShe Use Case Diagram</i>
 </p>
 <br>
+
 
 ## 4.4 Skenario Use Case
 
@@ -200,12 +208,9 @@ Batasan yang harus dituliskan, di antaranya:
 | 1 | *Pelanggan memilih menu checkout* | *Sistem menampilkan ringkasan pesanan dan pilihan metode pembayaran* |
 | 2 | *Pelanggan memilih metode pembayaran (misal: e-wallet)* | *Sistem mengarahkan pelanggan ke halaman konfirmasi e-wallet* |
 
-
-
 <br>
 
 **Skenario Alternatif 1: Otorisasi Pembayaran Gagal**
-
 
 | No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
@@ -240,7 +245,6 @@ Batasan yang harus dituliskan, di antaranya:
 **Nama Use Case:** *Memilih Layanan Terdekat*
 
 **Skenario Normal**
-| No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
 | 1 | *Korban melihat layanan yang tersedia* | *Sistem memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban dan menampilkan lokasi akurat layanan yang tersedia melalui simbol-simbol di peta* |
 | 2 | *Korban  memilih sebuah layanan dengan menekan simbol* | *Sistem menampilkan informasi lokasi dan nomor kontak layanan yang ditekan* |
@@ -257,7 +261,6 @@ Batasan yang harus dituliskan, di antaranya:
 **Nama Use Case:** *Memilih Layanan Terdekat*
 
 **Skenario Normal**
-| No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
 | 1 | *Korban melihat layanan yang tersedia* | *Sistem memanggil API yang berisi informasi layanan yang tersedia di sekitar lokasi korban dan menampilkan lokasi akurat layanan yang tersedia melalui simbol-simbol di peta* |
 | 2 | *Korban  memilih sebuah layanan dengan menekan simbol* | *Sistem menampilkan informasi lokasi dan nomor kontak layanan yang ditekan* |
@@ -287,7 +290,6 @@ Batasan yang harus dituliskan, di antaranya:
 | No | Aksi Aktor | Reaksi Perangkat Lunak |
 | :--- | :--- | :--- |
 | 1 | *Korban menekan tombol layanan yang tidak memiliki nomor kontak* | *Sistem menampilkan informasi layanan tanpa tombol telepon dan memberi keterangan "Nomor kontak pada layanan ini belum tersedia"* |
-
 
 ### 4.4.6 Skenario UC06
 
@@ -330,6 +332,7 @@ Batasan yang harus dituliskan, di antaranya:
 # BAB 5: Pemodelan Kelas
 
 ## 5.1 Identifikasi Kelas
+Identifikasi seluruh kelas yang diperlukan berdasarkan use case dan skenarionya. Satu kelas boleh terkait dengan lebih dari satu use case.
 
 | ID Kelas | Nama Kelas | Deskripsi Kelas | ID Use Case |
 | :--- | :--- | :--- | :--- |
@@ -346,6 +349,7 @@ Batasan yang harus dituliskan, di antaranya:
   *C11* | *APILayanan* | *Menghubungkan sistem ke API eksternal untuk mengambil data layanan terdekat dari lokasi korban.* |*UC02, UC03* |
 
 ## 5.2 Diagram Kelas per Use Case
+
 ### 5.2.1 Use Case UC01
 
 **Nama Use Case:** *Mengaktifkan one click SOS*
@@ -365,11 +369,9 @@ Batasan yang harus dituliskan, di antaranya:
 <img alt="Class Diagram UC01" src="./assets/diagram/UC01_class_diagram.png" width="70%">
 </p>
 <p align="center">
-<i>Gambar 2. Diagram Kelas Use Case UC01</i>
+<i>Gambar 3. Diagram Kelas Use Case UC01</i>
 </p>
 <br>
-
-Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
 
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
@@ -398,11 +400,9 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 <img alt="Class Diagram UC02" src="./assets/diagram/UC02_class_diagram.jpeg" width="70%">
 </p>
 <p align="center">
-<i>Gambar 3. Diagram Kelas Use Case UC02</i>
+<i>Gambar 4. Diagram Kelas Use Case UC02</i>
 </p>
 <br>
-
-Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
 
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
@@ -432,14 +432,10 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 <img alt="Class Diagram UC03" src="./assets/diagram/UC03_class_diagram.jpeg" width="70%">
 </p>
 <p align="center">
-<i>Gambar 4. Diagram Kelas Use Case UC03</i>
+<i>Gambar 5. Diagram Kelas Use Case UC03</i>
 </p>
 <br>
 
-Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
-
-| ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
-| :--- | :--- | :--- | :--- |
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
 | *C03* | *Korban* | *lokasiKorban, namaKorban* | *pilihLayanan(layanan)* |
@@ -465,11 +461,9 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 <img alt="Class Diagram UC01" src="./assets/diagram/diagram-kelas-uc04.png" width="70%">
 </p>
 <p align="center">
-<i>Gambar 5. Diagram Kelas Use Case UC04</i>
+<i>Gambar 6. Diagram Kelas Use Case UC04</i>
 </p>
 <br>
-
-Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
 
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
@@ -495,11 +489,9 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 <img alt="Class Diagram UC01" src="./assets/diagram/diagram-kelas-uc05.png" width="70%">
 </p>
 <p align="center">
-<i>Gambar 6. Diagram Kelas Use Case UC05</i>
+<i>Gambar 7. Diagram Kelas Use Case UC05</i>
 </p>
 <br>
-
-Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
 
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
@@ -524,7 +516,7 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 <img alt="Class Diagram UC06" src="./assets/diagram/UC06_class_diagram.png" width="70%">
 </p>
 <p align="center">
-<i>Gambar 7. Diagram Kelas Use Case UC06</i>
+<i>Gambar 8. Diagram Kelas Use Case UC06</i>
 </p>
 <br>
 
@@ -552,11 +544,9 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 <img alt="Class Diagram UC07" src="./assets/diagram/UC01_class_diagram.png" width="70%">
 </p>
 <p align="center">
-<i>Gambar 8. Diagram Kelas Use Case UC07</i>
+<i>Gambar 9. Diagram Kelas Use Case UC07</i>
 </p>
 <br>
-
-Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi milik setiap kelas dapat dituliskan pada tabel di bawah ini. Pastikan hubungan antarkelas menggunakan jenis relasi yang sesuai (asosiasi, agregasi, komposisi, generalisasi, atau dependensi).
 
 | ID Kelas | Nama Kelas | Atribut | Metode/Operasi |
 | :--- | :--- | :--- | :--- |
@@ -567,13 +557,11 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 
 ## 5.3 Diagram Kelas Keseluruhan
 
-Gabungkan seluruh kelas dan hubungan antarkelas dari diagram kelas setiap use case menjadi satu diagram kelas keseluruhan. Pastikan tidak ada kelas yang terduplikasi.
-
 <p align="center">
 <img alt="Class Diagram Keseluruhan" src="./assets/diagram/complete_class_diagram.png" width="70%">
 </p>
 <p align="center">
-<i>Gambar 9. Diagram Kelas Keseluruhan</i>
+<i>Gambar 10. Diagram Kelas Keseluruhan</i>
 </p>
 <br>
 
