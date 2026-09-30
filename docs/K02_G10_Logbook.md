@@ -141,6 +141,7 @@
 | *29-09-2026* | *Christopher Hendrik Gunawan* | *Menyalin informasi dari semua milestone sebelum milestone 5 ke milestone 5* | *1* | *Done* | *-* |
 | *30-09-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram kelas seluruh perangkat lunak* | *1* | *Done* | *-* |
 | *30-09-2026* | *Natanael Chris Fabian Santoso* | *Riset lalu mengerjakan bagian 2.5* | *1 jam* | *Done* | *-* |
+| *30-09-2026* | *Natanael Chris Fabian Santoso* | *Menghapus instruksi dari template, merapikan format tabel yang rusak* | *0,5 jam* | *Done* | *-* |
 
 
 | *22-09-2026* | *Mirza Aryasatya Akmal* | ** | ** | *Done* | *-* | 
