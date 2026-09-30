@@ -30,10 +30,7 @@ Dipersiapkan oleh:
 
 | Revisi | Deskripsi |
 | :--- | :--- |
-| *A* | *Deskripsikan perubahan yang dilakukan dari dokumen sebelumnya pada dokumen ini. Jika tidak terdapat perubahan, harap kosongkan tabel.* |
-| *B* |  |
-| *C* |  |
-| ... |  |
+| *A* | *Mengubah diagram swimlane agar sesuai dengan fitur-fitur yang sudah direncanakan di 2.1* |
 
 <br>
 
@@ -99,8 +96,6 @@ Setelah SOS dimatikan, pihak kepolisian juga akan menerima rekaman suara kejadia
 
 ## 2.2 Deskripsi Umum Perangkat Lunak
 Perangkat lunak SafeShe adalah aplikasi laporan anonim yang diharapkan menjadi sebuah solusi masalah kekerasan terhadap perempuan. SafeShe berinteraksi dengan *One-click SOS* untuk mengirimkan informasi waktu dan lokasi *Korban* ke *Polisi* serta untuk menyalakan perekaman suara. SafeShe akan menerima konfirmasi SOS telah diterima dan bantuan telah dikirim dari *Polisi* dan akan menampilkan notifikasinya kepada *Korban*. Setelah *Polisi* mematikan penerimaan informasi live korban, SafeShe akan mengirimkan *Rekaman Suara* yang telah dikirim ke pihak *Polisi* sebagai sebuah bukti dari kejadian kekerasan seksual yang telah terjadi. SafeShe juga berinteraksi dengan *Sistem Pelaporan* untuk menyediakan pelaporan kekerasan seksual yang dialami *Korban* yang diamankan dengan *Enkripsi End-to-end* setiap kali laporan dibuat yang diteruskan ke *Polisi*. SafeShe dapat berinteraksi dengan *Peta Real-time* untuk menampilkan lokasi live dari *Korban* mengenai berbagai *Fasilitas Lyananan* yang tersedia di sekitarnya. Lalu, SafeShe dapat berinteraksi dengan sebuah *Fasilitas Layanan* untuk menampilkan informasi lokasi dan kontak layanan tersebut, serta agar *Korban* dapat menghubunginya melalui *Aplikasi Telepon* yang terdapat pada handphone *Korban*.
-(Harus mengikuti template untuk format penulisannya dan dihubungkan dengan kayanya swimlane diagram deh)
-
 
 ## 2.3 Pengguna dan Kebutuhan Pengguna Perangkat Lunak
 | Aktor | Deskripsi |
@@ -123,7 +118,6 @@ Spesifikasi *operating system* atau lingkungan yang dibutuhkan P/L untuk beroper
 | *Client* | *React Native, penyimpanan lokal dengan SQLite* |
 | *DBMS* | *PostgreSQL* |
 | *OS* | *Cross-platform Android dan iOS* |
-| *...* | *...* |
 
 ---
 
