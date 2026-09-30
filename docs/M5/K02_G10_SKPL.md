@@ -363,6 +363,7 @@ Identifikasi seluruh kelas yang diperlukan berdasarkan use case dan skenarionya.
 | *C08* | *Polisi* | *Menyimpan data polisi yang memberikan respons ke panggilan SOS* | *UC01, UC05, UC07* |
 | *C09* | *Rekaman* | *Merekam dan menyimpan rekaman suara pada handphone korban* | *UC06* |
 | *C10* | *LaporanKekerasan* | *Menyimpan data laporan kekerasan yang dibuat korban.* | *UC05* |
+  *C11* | *APILayanan* | *Menghubungkan sistem ke API eksternal untuk mengambil data layanan terdekat dari lokasi korban.* |*UC02, UC03* |
 
 ## 5.2 Diagram Kelas per Use Case
 Buat diagram kelas untuk setiap use case pada 3.2.
@@ -411,6 +412,7 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 | *C04* | *Peta* | *Menyediakan data peta dari lokasi di sekitar korban.* | *UC04* |
 | *C05* | *ListLayanan* | *Menyimpan kumpulan data layanan yang tersedia di sekitar lokasi korban.* | *UC04* |
 | *C06* | *Layanan* | *Menyimpan data dari sebuah layanan.* | *UC04* |
+  *C11* | *APILayanan* | *Menghubungkan sistem ke API eksternal untuk mengambil data layanan terdekat dari lokasi korban.* |*UC02, UC03* |
 
 #### Diagram Kelas
 
@@ -430,6 +432,7 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 | *C04* | *Peta* | *lokasiPeta* | *lokasiPetaSekarang(), lokasiSekitar(korban), tampilkanLayanan(listLayanan)* |
 | *C05* | *ListLayanan* | *kumpulanLayanan* | *ambilLayananTersedia(peta)* |
 | *C06* | *Layanan* | *namaLayanan, lokasiLayanan, kontakLayanan* | *ambilDataLayanan(ListLayanan), ambilLokasi(), ambilNama()* |
+| *C11* | *APILayanan* | *urlAPI* | *ambilDataLayanan(peta)* |
 
 ### 5.2.3 Use Case UC03
 
@@ -443,7 +446,8 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 | *C04* | *Peta* | *Menyediakan data peta dari lokasi di sekitar korban.* | *UC04* |
 | *C05* | *ListLayanan* | *Menyimpan kumpulan data layanan yang tersedia di sekitar lokasi korban.* | *UC04* |
 | *C06* | *Layanan* | *Menyimpan data dari sebuah layanan.* | *UC04* |
-
+  *C11* | *APILayanan* | *Menghubungkan sistem ke API eksternal untuk mengambil data layanan terdekat dari lokasi korban.* |*UC02, UC03* |
+  
 #### Diagram Kelas
 
 <p align="center">
@@ -463,6 +467,7 @@ Pada diagram kelas, cukup tampilkan nama kelas saja. Atribut dan metode/operasi 
 | *C03* | *Korban* | *lokasiKorban, namaKorban* | *pilihLayanan(layanan)* |
 | *C05* | *ListLayanan* | *kumpulanLayanan* | *ambilLayananTersedia(peta)* |
 | *C06* | *Layanan* | *namaLayanan, lokasiLayanan, kontakLayanan* | *ambilDataLayanan(ListLayanan), ambilKontak(), ambilLokasi(), ambilNama()* |
+| *C11* | *APILayanan* | *urlAPI* | *ambilDataLayanan(peta)* |
 
 ### 5.2.4 Use Case UC04
 
@@ -606,6 +611,7 @@ Gabungkan seluruh kelas dan hubungan antarkelas dari diagram kelas setiap use ca
 | *C08* | *Polisi* | *lokasiPolisi, ketersediaan* | *pantauAntarmuka(antarmukaPolisi), terimaLaporan(laporanKekerasan), kirimPasukan()* |
 | *C09* | *Rekaman* | *rekamanSuara* | *mulaiRekamanSuara(), simpanRekamanSuara()* |
 | *C10* | *LaporanKekerasan* | *deskripsiKekerasan, tanggalKekerasan, lokasiKekerasan, modePelapor* | *masukkanDeskripsi(), masukkanTanggal(), masukkanLokasi(), masukkanMode()* |
+| *C11* | *APILayanan* | *urlAPI* | *ambilDataLayanan(peta)* |
 
 ---
 
