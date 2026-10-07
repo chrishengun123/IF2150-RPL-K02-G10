@@ -159,9 +159,11 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | 
 | *02-10-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
 | *-2026* | *Mirza Aryasatya Akmal* | ** | *1 jam* | *Done* | *-* | 
-| *07-10-2026* | *Christopher Hendrik Gunawan* | *Membuat draft bab 2* | *2 jam* | *Done* | *-* |
-| *-2026* | *Natanael Chris Fabian Santoso* | ** | *1 jam* | *Done* | *-* |
+| *07-10-2026* | *Christopher Hendrik Gunawan* | *Membuat bab 2* | *2 jam* | *Done* | *-* |
+| *07-10-2026* | *Natanael Chris Fabian Santoso* | *Mencari ide dan menulis bab 1* | *2,5 jam* | *Done* | *-* |
 | *07-10-2026* | *Jason Hartanto* | *Mengisi penjelasan ditabel 2.1* | *1 jam* | *Done* | *-* |
+| *07-10-2026* | *Ferdinand Valentino Darmawan* | *Membuat diagram logical view 3.1* | *1,5 jam* | *Done* | *-* |
+
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 5:**
