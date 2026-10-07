@@ -70,7 +70,7 @@ Silakan catat penggunaan AI yang berdampak signifikan pada pengerjaan tugas (mis
 ### Milestone 6
 | Tool AI | Tujuan Penggunaan | Contoh Prompt Utama | Modifikasi & Validasi Manusia |
 | :--- | :--- | :--- | :--- |
-| *[Nama AI]* | *[Sertakan Tujuan Penggunaan]* | *[Tuliskan Prompt Utama]* | *[Tuliskan Keputusan Hasil Validasi]* |
+| *Codex* | *Membuat draft awal bab 2* | *Make a draft of M6 chapter 2* | *Draft tabel bab 2 dibuat, kolom penjelasan saya hapuskan untuk isi manual* |
 | | | | | |
 | | | | | |
 
