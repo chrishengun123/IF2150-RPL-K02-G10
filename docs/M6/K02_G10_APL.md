@@ -111,7 +111,13 @@ Ketentuan pengisian BAB 3:
 
 ## 3.1 Logical View
 
-Logical view dipilih sebagai model arsitektur untuk SafeShe karena sistem perlu menunjukkan hubungan kerjanya antarkompenen dan komponen dengan server dengan jelas.  
+Logical View sebagai model arsitektur perangkat lunak yang lebih berfokus pada kebutuhan fungsional dari sistem mampu mendeskripsikan layanan atau fungsionalitas-fungsionalitas yang diberikan sistem kepada user. Model Logical View mampu menjabarkan kebutuhan sistem kepada user yang berbentuk komponen-komponen teknis (class, object, API, module). Logical View juga dapat direpresentasikan menggunakan Class Diagram, Sequence Diagram, atau Diagram Komunikasi.
+
+Alasan Logical View dipilih untuk rancangan perangkat lunak SafeShe diantaranya:
+1. Logical View mampu memapping fungsionalitas dari sistem menjadi modul-modul yang terpisah secara jelas dan saling berkaitan.
+2. Logical View berfokus kepada use case dan bergantung pada aksi dari aktor utamanya (korban dan polisi).
+3. Logical View mampu mendukung analisis keamanan dan privasi data dengan struktur internal yang tidak terikat infrastruktur fisik.
+4. Logical View selaras dengan rancangan spek dan desain SafeShe yang sebagian besar sudah menggunakan Class Diagram.  
 
 <p align="center">
 <img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/logical-view.png" width="100%">
