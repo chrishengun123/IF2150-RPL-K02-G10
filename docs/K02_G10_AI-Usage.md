@@ -71,8 +71,7 @@ Silakan catat penggunaan AI yang berdampak signifikan pada pengerjaan tugas (mis
 | Tool AI | Tujuan Penggunaan | Contoh Prompt Utama | Modifikasi & Validasi Manusia |
 | :--- | :--- | :--- | :--- |
 | *Codex* | *Membuat draft awal bab 2* | *Make a draft of M6 chapter 2* | *Draft tabel bab 2 dibuat, kolom penjelasan saya hapuskan untuk isi manual* |
-| | | | | |
-| | | | | |
+| *Gemini* | *Mencari ide untuk style arsitektur P/L* | *Which architecture style would be best for an app designed to report cases of sexual harrassment for women?* | *Ide diberikan, saya memilih style terbaik menurut kebutuhan P/L* || | | | | |
 
 ---
 ### Pernyataan Integritas dan Persetujuan
