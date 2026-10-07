@@ -74,23 +74,23 @@ Tabel 2.1. Identifikasi Komponen/Modul/Subsistem
 | :---------------------------- | :-------------------- | :------------------------------------------------------------------------------------------------------------------- |
 | *AntarmukaSOS* | *View* | *Menampilkan interface SOS SafeShe* |
 | *AntarmukaPetaLayanan* | *View* | *Menampilkan peta dengan lokasi layanan* |
-| *AntarmukaLaporan* | *View* | ** |
+| *AntarmukaLaporan* | *View* | *Menampilkan detail formulir laporan kekerasan dan meneruskannya ke LaporanController* |
 | *SOSController* | *Controller* | *Mengendalikan proses pengiriman signal SOS* |
 | *PetaLayananController* | *Controller* | *Mengendalikan backend peta* |
-| *LaporanController* | *Controller* | ** |
+| *LaporanController* | *Controller* | *Mengendalikan proses pembuatan laporan kekerasan dimulai dari menerima input dari AntarmukaLaporan, memeriksanya melalui ValidasiLaporan, lalu meneruskan laporan ke Polisi* |
 | *OneClickSOS* | *Model* | *Fitur utama dari SafeShe* |
-| *Korban* | *Model* | *Representasi pengguna* |
-| *Polisi* | *Model* | *Representasi pihak polisi* |
+| *Korban* | *Model* | *Representasi data korban, seperti nama dan lokasi* |
+| *Polisi* | *Model* | *Representasi data pihak polisi yang merespons SOS, seperti lokasi dan ketersediaan* |
 | *Rekaman* | *Model* | *Data audio yang terekam* |
-| *Peta* | *Model* | *Representasi fitur peta* |
-| *ListLayanan* | *Model* | *Representasi data yang didapatkan dari database layanan* |
+| *Peta* | *Model* | *Representasi data peta disekitar korban* |
+| *ListLayanan* | *Model* | *Representasi layanan-layanan terdekat yang diperoleh dari API layanan* |
 | *Layanan* | *Model* | *Representasi layanan yang ada di database* |
-| *LaporanKekerasan* | *Model* | ** |
-| *ValidasiLaporan* | *Pendukung* | ** |
+| *LaporanKekerasan* | *Model* | *Representasi detail laporan kekerasan* |
+| *ValidasiLaporan* | *Pendukung* | *Memvalidasi input formulir laporan sebelum diproses oleh LaporanController* |
 | *PenyimpananLokal* | *Penyimpanan Data* | *Menyimpan rekaman secara lokal di device* |
-| *SafeSheAPI* | *Komponen Backend* | ** |
+| *SafeSheAPI* | *Komponen Backend* | *Backend FastAPI yang menghubungkan aplikasi dengan database dan sistem polisi* |
 | *AntarmukaTelepon* | *Integrasi Perangkat* | *Representasi dari perangkat lunak telepon yang ada di device* |
-| *SistemPolisi* | *Sistem Eksternal* | ** |
+| *SistemPolisi* | *Sistem Eksternal* | *Sistem sisi kepolisian yang menerima SOS, lokasi, dan rekaman, serta mengirim konfirmasi ke korban* |
 
 Ketentuan pengisian Tabel 2.1:
 1. Kolom **Jenis** mengikuti pengelompokan pada *style/pattern* di BAB 1. Untuk MVC, jenisnya adalah *Model*, *View*, dan *Controller*. Jenis lain boleh ditambahkan, misalnya *Pendukung* untuk komponen bantu yang dipakai bersama, atau *Integrasi Eksternal* untuk penghubung ke sistem di luar P/L yang disebutkan pada subbab 2.2 dokumen SKPL. Kolom ini juga boleh diisi dengan *Subsistem*, *Modul*, atau *Komponen* apabila komponen dikelompokkan berdasarkan fungsinya. Tuliskan subsistem terlebih dahulu, lalu komponen penyusunnya di baris-baris berikutnya.
