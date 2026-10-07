@@ -161,7 +161,7 @@
 | *-2026* | *Mirza Aryasatya Akmal* | ** | *1 jam* | *Done* | *-* | 
 | *-2026* | *Christopher Hendrik Gunawan* | ** | *1 jam* | *Done* | *-* |
 | *-2026* | *Natanael Chris Fabian Santoso* | ** | *1 jam* | *Done* | *-* |
-| *-2026* | *Jason Hartanto* | ** | *1 jam* | *Done* | *-* |
+| *07-10-2026* | *Jason Hartanto* | *Mengisi penjelasan ditabel 2.1* | *1 jam* | *Done* | *-* |
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 5:**
