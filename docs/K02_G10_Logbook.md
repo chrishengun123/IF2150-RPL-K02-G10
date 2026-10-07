@@ -152,16 +152,16 @@
 
 ---
 
-### Milestone 5
-**Periode:** 02-10-2026 - xx-10-2026
+### Milestone 6
+**Periode:** 02-10-2026 - 07-10-2026
 
 | Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
 | :--- | :--- | :--- | :--- | :--- | :--- | 
 | *02-10-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
-| *30-09-2026* | *Mirza Aryasatya Akmal* | *Menyesuaikan SwimLane Diagram dengan Perubahan Selama Pengerjaan Milestones* | *1 jam* | *Done* | *-* | 
-| *29-09-2026* | *Christopher Hendrik Gunawan* | *Menyalin informasi dari semua milestone sebelum milestone 5 ke milestone 5* | *1 jam* | *Done* | *-* |
-| *30-09-2026* | *Natanael Chris Fabian Santoso* | *Riset lalu mengerjakan bagian 2.5* | *1 jam* | *Done* | *-* |
-| *29-09-2026* | *Jason Hartanto* | *Mengupdate informasi menjadi lebih sesuai dengan M4 seperti KF dan penulisan 2.4 serta pelakukab beberapa perbaikan penulisan* | *1 jam* | *Done* | *-* |
+| *-2026* | *Mirza Aryasatya Akmal* | ** | *1 jam* | *Done* | *-* | 
+| *-2026* | *Christopher Hendrik Gunawan* | ** | *1 jam* | *Done* | *-* |
+| *-2026* | *Natanael Chris Fabian Santoso* | ** | *1 jam* | *Done* | *-* |
+| *-2026* | *Jason Hartanto* | ** | *1 jam* | *Done* | *-* |
 | | | | | | | |
 
 **Catatan/Evaluasi Milestone 5:**
