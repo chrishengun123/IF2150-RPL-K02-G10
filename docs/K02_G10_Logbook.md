@@ -166,11 +166,26 @@
 
 | | | | | | | |
 
-**Catatan/Evaluasi Milestone 5:**
+**Catatan/Evaluasi Milestone 6:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
 ---
 
+### Milestone 7
+**Periode:** 09-10-2026 - XX-10-2026
+
+| Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
+| :--- | :--- | :--- | :--- | :--- | :--- | 
+| *029-10-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
+| *-10-2026* | *Mirza Aryasatya Akmal* | *Membuat deskripsi untuk 3.1* | *0,5 jam* | *Done* | *-* | 
+| *-10-2026* | *Christopher Hendrik Gunawan* | *Membuat bab 2* | *2 jam* | *Done* | *-* |
+| *-10-2026* | *Natanael Chris Fabian Santoso* | *Mencari ide dan menulis bab 1* | *2,5 jam* | *Done* | *-* |
+| *-10-2026* | *Jason Hartanto* | *Mengisi penjelasan ditabel 2.1* | *1 jam* | *Done* | *-* |
+
+| | | | | | | |
+
+**Catatan/Evaluasi Milestone 5:**
+* *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
 
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``

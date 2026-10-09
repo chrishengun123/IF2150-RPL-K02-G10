@@ -28,7 +28,7 @@
 | --- |
 | 1. *Bab 1 bisa dicopas dari dokumen SKPL kemarin jika tidak ada perubahan. Lalu bab 1 bagian akhirnya itu paragraf 1 saja, mengenai milestone ini.*  |
 | 2. *Bab 2 bagian 2 awal bisa copas dari milestone sebelumnya.* |
-| 3. *Kelas perancagan itu nama kelas nanti waktu implementasi, kalau analisis itu yang kemarin dipake di diagram sebelumnya. Lalu nama antara perasncangan dan analisis boleh sama maupun beda.* |
+| 3. *Kelas perancagan itu nama kelas nanti waktu implementasi, kalau analisis itu yang kemarin dipake di diagram sebelumnya. Lalu nama antara perancangan dan analisis boleh sama maupun beda.* |
 | 4. *Atribut dan method yang dimasukkan ke di diagram itu cukup yang dipake untuk use case tersebut. Karena di diagram akan dicantumkan atribut dan method nya maka tidak perlu membuat tabel lagi untuk setiap use case. Ini untuk bagian 3.1.3.* |
 | 5. *Ada 6 notasi yang harus dipake di dalam diagramnya. Untuk setiap notasi dan penjelasannya ada di PPT asistensi akbar.* |
 | 6. *Ada 10 macam message yang dapat digunakan dalam sequence diagram, untuk penjelasannya ada di PPT asistensi akbar.* |
