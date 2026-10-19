@@ -101,7 +101,7 @@ Sebutkan *operating system*, DBMS, *development tools*, *filing system*, dan bah
 | Komponen | Spesifikasi |
 | :--- | :--- |
 | *Server* | *Lingkungan Linux (Docker) yang dihosting pada layanan cloud (AWS/Google Cloud/Azure). Bahasa Python (FastAPI) dengan API Gateway* |
-| *Client* | *React Native, penyimpanan lokal dengan SQLite* |
+| *Client* | *React Native, penyimpanan lokal dengan SQLite, react-native-fs library* |
 | *DBMS* | *PostgreSQL* |
 | *OS* | *Cross-platform Android dan iOS* |
 
