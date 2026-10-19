@@ -51,7 +51,9 @@ Dipersiapkan oleh:
 # BAB 1: Pendahuluan
 
 ## 1.1 Tujuan Penulisan Dokumen
-Tuliskan dengan ringkas tujuan dokumen DPPL ini dibuat dan siapa saja yang akan menggunakan dokumen ini.
+
+Dokumen DPPL ini dibuat untuk medeskripsikan dengan detail mengenai berbagai aspek dari perangkat lunak SafeShe agar semuanya memiliki spesifikasi yang jelas sebelum dikembangkan. Dokumen ini diperuntukkan untuk para pengembang perangkat lunak SafeShe dan asisten sebagai salah satu pemangku kepentingan dari pengimplementasian perangkat lunak yang dilakukan oleh para pengembang.
+
 
 ## 1.2 Lingkup Masalah
 
@@ -81,10 +83,11 @@ Aplikasi SafeShe adalah aplikasi yang menyediakan pelaporan kekerasan seksual ya
 | *Requirement* | *RXX* | |
 
 ## 1.5 Referensi
-Cantumkan dokumentasi P/L yang dirujuk oleh dokumen ini, **minimal dokumen SKPL dan APL**. Tambahkan buku, panduan, atau dokumentasi lain apabila digunakan.
+
+Mayoritas dari BAB 1 berasal dari dokumen SKPL, BAB 2 berasal dari dokumen APL, BAB 3 menggunakan dokumen SKPL sebagai rancangan awal dari apa saja yang perlu dibuat di dalamnya, serta BAB 4 dan 5 berasal dari dokumen SKPL.
 
 ## 1.6 Deskripsi Umum Dokumen (Ikhtisar)
-Tuliskan sistematika pembahasan dokumen ini secara ringkas dan runut, dengan maksimal 1 paragraf.
+BAB 1 membahas pendahuluan dokumen berupa informasi umum dari dokumen, BAB 2 membahas perancangan arsitektur yang digunakan untuk pengembangan SafeShe, BAB 3 membahas rincian dari setiap use case yang disertai dengan diagram kelas dan sequence diagramnya, BAB 4 membahas diagram kelas dari keseluruhan use case, dan BAB 5 membahas Kerunutan dari setiap kelas yang ada dengan use case yang berkaitan.
 
 <br>
 
@@ -103,7 +106,6 @@ Sebutkan *operating system*, DBMS, *development tools*, *filing system*, dan bah
 | *OS* | *Cross-platform Android dan iOS* |
 
 ## 2.2 Style/Pattern Arsitektur Acuan
-
 
 *Architectural Style* yang dipilih berdasarkan karakteristik P/L kami adalah **Decoupled Client-Server**, dengan model **Offline-First** pada *client* dan **Layered Modular** pada server.
 
