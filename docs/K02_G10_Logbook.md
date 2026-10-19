@@ -178,6 +178,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | 
 | *09-10-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
 | *19-10-2026* | *Ferdinand Valentino Darmawan* | *Menyalin informasi dari semua milestone sebelum milestone 7 ke milestone 7* | *1,6 jam* | *Done* | *-* |
+| *19-10-2026* | *Christopher Hendrik Gunawan* | *Menambahkan file system library react native di bab 2.1* | *0.1 jam* | *Done* | *-* |
 | *-10-2026* | *Mirza Aryasatya Akmal* | * | * jam* | *Done* | *-* | 
 | *-10-2026* | *Christopher Hendrik Gunawan* | ** | * jam* | *Done* | *-* |
 | *-10-2026* | *Natanael Chris Fabian Santoso* | ** | * jam* | *Done* | *-* |
