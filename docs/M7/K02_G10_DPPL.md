@@ -605,7 +605,7 @@ Pada diagram, pastikan:
 **Bagian ini diisi dengan diagram kelas keseluruhan.**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-class_diargam.png" width="35%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/complete_class_diagram.png" width="35%">
 </p>
 <p align="center">
 <i>Gambar 25. Diagram Kelas Perancangan Keseluruhan SafeShe</i>
