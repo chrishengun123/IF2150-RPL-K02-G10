@@ -549,19 +549,17 @@ Tabel 3.7. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[Nama kelas perancangan]* | *OneClickSOS* |
-| 2 | *[Nama kelas perancangan]* | *AntarmukaPolisi* |
-| 3 | *[Nama kelas perancangan]* | *Korban* | 
-| 4 | *[Nama kelas perancangan]* | *Polisi* |
+| 1 | *[OneClickSOS]* | *OneClickSOS* |
+| 2 | *[PoliceInterface]* | *AntarmukaPolisi* |
+| 3 | *[User]* | *Korban* | 
+| 4 | *[Police]* | *Polisi* |
 
 ### 3.7.2 Sequence Diagram
-
-Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario normal dan alternatif pada subbab 4.4 SKPL. Diagram melibatkan kelas-kelas yang telah diidentifikasi pada SKPL. 
 
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/uc01_class_diagram.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 22. Sequence Diagram UC07</i>
@@ -570,7 +568,7 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 - **Skenario Alternatif 1: Kendala Jaringan dan Gagal Terhubung Ke Server**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/uc01_class_diagram.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 23. Sequence Diagram UC07 - Kendala Jaringan dan Gagal Terhubung Ke Server</i>
