@@ -74,13 +74,13 @@ Aplikasi SafeShe adalah aplikasi yang menyediakan pelaporan kekerasan seksual ya
 
 | Hal/Bagian | Penomoran | Keterangan |
 | :--- | :--- | :--- |
-| *Kebutuhan Fungsional* | *KFXX* | |
-| *Kebutuhan Non-Fungsional* | *KNFXX* | |
-| *Aktor* | *AXX* | |
-| *Use Case* | *UCXX* | |
-| *Kelas* | *CXX* | |
-| *User* | *US-XX* | |
-| *Requirement* | *RXX* | |
+| *Kebutuhan Fungsional* | *KFXX* | *"KF" dilanjutkan dengan nomor id* |
+| *Kebutuhan Non-Fungsional* | *KNFXX* | *"KNF" dilanjutkan dengan nomor id* |
+| *Aktor* | *AXX* | *"A" dilanjutkan dengan nomor id* |
+| *Use Case* | *UCXX* | *"UC" dilanjutkan dengan nomor id* |
+| *Kelas* | *CXX* | *"C" dilanjutkan nomor id* |
+| *User* | *US-XX* | *"US-" dilanjutkan dengan nomor id* |
+| *Requirement* | *RXX* | *"R" dilanjutkan dengan nomor id* |
 
 ## 1.5 Referensi
 
