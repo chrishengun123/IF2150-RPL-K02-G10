@@ -195,10 +195,10 @@ Tabel 3.1. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[Nama kelas perancangan]* | *OneClickSOS* |
-| 2 | *[Nama kelas perancangan]* | *AntarmukaPolisi* |
-| 3 | *[Nama kelas perancangan]* | *Korban* | 
-| 4 | *[Nama kelas perancangan]* | *Polisi* |
+| 1 | *[OneClickSOS]* | *OneClickSOS* |
+| 2 | *[PoliceInterface]* | *AntarmukaPolisi* |
+| 3 | *[User]* | *Korban* | 
+| 4 | *[Police]* | *Polisi* |
 
 ### 3.1.2 Sequence Diagram
 
