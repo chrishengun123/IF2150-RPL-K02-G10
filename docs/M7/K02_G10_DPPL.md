@@ -182,7 +182,7 @@ Alasan Logical View dipilih untuk rancangan perangkat lunak SafeShe diantaranya:
 
 # BAB 3: Realisasi Use Case
 
-## 3.1 Use Case Mengaktifkan one click SOS
+## 3.1 Use Case Mengaktifkan One-Click SOS
 
 **ID Use Case:** *UC01*  
 **Nama Use Case:** *Mengaktifkan one click SOS*
@@ -202,12 +202,10 @@ Tabel 3.1. Identifikasi Kelas Use Case UC01
 
 ### 3.1.2 Sequence Diagram
 
-Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario normal dan alternatif pada subbab 4.4 SKPL. Diagram melibatkan kelas-kelas yang telah diidentifikasi pada SKPL. 
-
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Sequence Diagram Skenario Normal UC01" src="./assets/diagram/UC01_class_diagram.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 3. Sequence Diagram UC01</i>
@@ -216,7 +214,7 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 - **Skenario Alternatif 1: One Click SOS Tidak Dapat Ditampilkan Sebagai Widget Aplikasi**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Sequence Diagram Skenario Alternatif 1 UC01" src="./assets/diagram/UC01_class_diagram.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 4. Sequence Diagram UC01 - One Click SOS Tidak Dapat Ditampilkan Sebagai Widget Aplikasi</i>
@@ -225,7 +223,7 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 - **Skenario Alternatif 2: One Click SOS Tidak Berhasil Mengirimkan Informasi Keadaan Ke Pihak Berwajib**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Sequence Diagram Skenario Alternatif 2 UC01" src="./assets/diagram/UC01_class_diagram.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 5. Sequence Diagram UC01 - One Click SOS Tidak Berhasil Mengirimkan Informasi Keadaan Ke Pihak Berwajib</i>
@@ -236,7 +234,7 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
+<img alt="Diagram Kelas UC01" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
 </p>
 <p align="center">
 <i>Gambar 6. Diagram Kelas Mengaktifkan one click SOS</i>
