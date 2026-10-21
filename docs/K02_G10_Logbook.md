@@ -180,6 +180,8 @@
 | *19-10-2026* | *Ferdinand Valentino Darmawan* | *Menyalin informasi dari semua milestone sebelum milestone 7 ke milestone 7* | *1,6 jam* | *Done* | *-* |
 | *19-10-2026* | *Christopher Hendrik Gunawan* | *Menambahkan file system library react native di bab 2.1* | *0.1 jam* | *Done* | *-* |
 | *19-10-2026* | *Christopher Hendrik Gunawan* | *Melengkapi bab 1.4 dengan keterangan* | *0.1 jam* | *Done* | *-* |
+| *19-10-2026* | *Christopher Hendrik Gunawan* | *Mengisi bab 3.1 dan 3.7* | *2 jam* | *Done* | *-* |
+| *19-10-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram kelas dan menambahkannya ke bab 3.1 dan 3.7* | *1 jam* | *Done* | *-* |
 | *-10-2026* | *Mirza Aryasatya Akmal* | * | * jam* | *Done* | *-* | 
 | *-10-2026* | *Christopher Hendrik Gunawan* | ** | * jam* | *Done* | *-* |
 | *-10-2026* | *Natanael Chris Fabian Santoso* | ** | * jam* | *Done* | *-* |
