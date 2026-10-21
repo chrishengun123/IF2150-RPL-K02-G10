@@ -335,7 +335,7 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 <i>Gambar 10. Sequence Diagram UC03</i>
 </p>
 
-- **Skenario Alternatif 1: One Click SOS Tidak Dapat Ditampilkan Sebagai Widget Aplikasi**
+- **Skenario Alternatif 1:Informasi yang Dipanggil API Tidak Lengkap**
 
 <p align="center">
 <img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/SeqUC03ALT1.png" width="50%">
