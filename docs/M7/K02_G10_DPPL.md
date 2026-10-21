@@ -205,7 +205,7 @@ Tabel 3.1. Identifikasi Kelas Use Case UC01
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Sequence Diagram Skenario Normal UC01" src="./assets/diagram/UC01_class_diagram.png" width="50%">
+<img alt="Sequence Diagram Skenario Normal UC01" src="./assets/diagram/sequence_diagram_UC1_normal.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 3. Sequence Diagram UC01</i>
@@ -214,24 +214,20 @@ Tabel 3.1. Identifikasi Kelas Use Case UC01
 - **Skenario Alternatif 1: One Click SOS Tidak Dapat Ditampilkan Sebagai Widget Aplikasi**
 
 <p align="center">
-<img alt="Sequence Diagram Skenario Alternatif 1 UC01" src="./assets/diagram/UC01_class_diagram.png" width="50%">
-</p>
-<p align="center">
 <i>Gambar 4. Sequence Diagram UC01 - One Click SOS Tidak Dapat Ditampilkan Sebagai Widget Aplikasi</i>
+<i>Tidak ada diagram karena sistem tidak dapat diinteraksikan</i>
 </p>
 
 - **Skenario Alternatif 2: One Click SOS Tidak Berhasil Mengirimkan Informasi Keadaan Ke Pihak Berwajib**
 
 <p align="center">
-<img alt="Sequence Diagram Skenario Alternatif 2 UC01" src="./assets/diagram/UC01_class_diagram.png" width="50%">
+<img alt="Sequence Diagram Skenario Alternatif 2 UC01" src="./assets/diagram/sequence_diagram_UC1_alt_2.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 5. Sequence Diagram UC01 - One Click SOS Tidak Berhasil Mengirimkan Informasi Keadaan Ke Pihak Berwajib</i>
 </p>
 
 ### 3.1.3 Diagram Kelas
-
-Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
 
 <p align="center">
 <img alt="Diagram Kelas UC01" src="./assets/diagram/UC01_detailed_class_diagram.png" width="35%">
@@ -559,7 +555,7 @@ Tabel 3.7. Identifikasi Kelas Use Case UC01
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/uc01_class_diagram.png" width="50%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/sequence_diagram_UC7_normal.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 22. Sequence Diagram UC07</i>
@@ -568,15 +564,13 @@ Tabel 3.7. Identifikasi Kelas Use Case UC01
 - **Skenario Alternatif 1: Kendala Jaringan dan Gagal Terhubung Ke Server**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/uc01_class_diagram.png" width="50%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/sequence_diagram_UC7_alt_1.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 23. Sequence Diagram UC07 - Kendala Jaringan dan Gagal Terhubung Ke Server</i>
 </p>
 
 ### 3.7.3 Diagram Kelas
-
-Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
 
 <p align="center">
 <img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/UC07_detailed_class_diagram.png" width="35%">
