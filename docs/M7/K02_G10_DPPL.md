@@ -373,7 +373,7 @@ Tabel 3.5. Identifikasi Kelas Use Case UC01
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Diagram Sekuens UC05" src="./assets/diagram/diagram_sekuens_UC05_normal.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 16. Sequence Diagram UC05</i>
@@ -382,7 +382,7 @@ Tabel 3.5. Identifikasi Kelas Use Case UC01
 - **Skenario Alternatif 1: Formulir tidak lengkap**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Diagram Sekuens UC05 alt-1" src="./assets/diagram/diagram_sekuens_UC05_alt-1.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 17. Sequence Diagram UC05 - Formulir tidak lengkap</i>
@@ -416,7 +416,7 @@ Tabel 3.6. Identifikasi Kelas Use Case UC01
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Diagram Sekuens UC06" src="./assets/diagram/diagram_sekuens_UC06_normal.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 19. Sequence Diagram UC06</i>
@@ -425,10 +425,10 @@ Tabel 3.6. Identifikasi Kelas Use Case UC01
 - **Skenario Alternatif 1: Mikrofon Gawai Korban Tidak Dapat Diaktifkan**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/diagram_sekuens_UC06_alt-1.png" width="50%">
 </p>
 <p align="center">
-<i>Gambar 20. Sequence Diagram UC06 - Merekam Suara Otomatis Ketika One Click SOS Diaktifkan</i>
+<i>Gambar 20. Sequence Diagram UC06 - Mikrofon Gawai Korban Tidak Dapat Diaktifkan</i>
 </p>
 
 ### 3.6.3 Diagram Kelas
