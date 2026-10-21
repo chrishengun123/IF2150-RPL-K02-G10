@@ -392,7 +392,7 @@ Tabel 3.5. Identifikasi Kelas Use Case UC01
 ### 3.5.3 Diagram Kelas
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
+<img alt="Diagram Kelas Membuat Laporan Kekerasan" src="./assets/diagram/diagram_kelas_lengkap_UC05.png" width="35%">
 </p>
 <p align="center">
 <i>Gambar 18. Diagram Kelas Membuat Laporan Kekerasan</i>
@@ -435,10 +435,10 @@ Tabel 3.6. Identifikasi Kelas Use Case UC01
 ### 3.6.3 Diagram Kelas
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
+<img alt="Diagram Kelas Merekam Suara Otomatis Ketika One Click SOS Diaktifkan" src="./assets/diagram/diagram_kelas_lengkap_UC06.png" width="35%">
 </p>
 <p align="center">
-<i>Gambar 21. Diagram Kelas [Nama Uce Case]</i>
+<i>Gambar 21. Diagram Kelas Merekam Suara Otomatis Ketika One Click SOS Diaktifkan</i>
 </p>
 
 ## 3.7 Mengirim Notifikasi Konfirmasi Polisi Ke Korban
