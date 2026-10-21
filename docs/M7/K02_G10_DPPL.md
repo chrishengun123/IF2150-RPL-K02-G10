@@ -182,7 +182,7 @@ Tabel 3.1. Identifikasi Kelas Use Case UC01
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Sequence Diagram Skenario Normal UC01" src="./assets/diagram/sequence_diagram_UC1_normal.png" width="50%">
+<img alt="Sequence Diagram Skenario Normal UC01" src="./assets/diagram/sequence_diagram_UC01_normal.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 3. Sequence Diagram UC01</i>
@@ -191,14 +191,15 @@ Tabel 3.1. Identifikasi Kelas Use Case UC01
 - **Skenario Alternatif 1: One Click SOS Tidak Dapat Ditampilkan Sebagai Widget Aplikasi**
 
 <p align="center">
+<img alt="Sequence Diagram Skenario Normal UC01" src="./assets/diagram/sequence_diagram_UC01_alt_1.png" width="50%">
+<p align="center">
 <i>Gambar 4. Sequence Diagram UC01 - One Click SOS Tidak Dapat Ditampilkan Sebagai Widget Aplikasi</i>
-<i>Tidak ada diagram karena sistem tidak dapat diinteraksikan</i>
 </p>
 
 - **Skenario Alternatif 2: One Click SOS Tidak Berhasil Mengirimkan Informasi Keadaan Ke Pihak Berwajib**
 
 <p align="center">
-<img alt="Sequence Diagram Skenario Alternatif 2 UC01" src="./assets/diagram/sequence_diagram_UC1_alt_2.png" width="50%">
+<img alt="Sequence Diagram Skenario Alternatif 2 UC01" src="./assets/diagram/sequence_diagram_UC01_alt_2.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 5. Sequence Diagram UC01 - One Click SOS Tidak Berhasil Mengirimkan Informasi Keadaan Ke Pihak Berwajib</i>
@@ -461,7 +462,7 @@ Tabel 3.7. Identifikasi Kelas Use Case UC01
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/sequence_diagram_UC7_normal.png" width="50%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/sequence_diagram_UC07_normal.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 22. Sequence Diagram UC07</i>
@@ -470,7 +471,7 @@ Tabel 3.7. Identifikasi Kelas Use Case UC01
 - **Skenario Alternatif 1: Kendala Jaringan dan Gagal Terhubung Ke Server**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/sequence_diagram_UC7_alt_1.png" width="50%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/sequence_diagram_UC07_alt_1.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 23. Sequence Diagram UC07 - Kendala Jaringan dan Gagal Terhubung Ke Server</i>
