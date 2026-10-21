@@ -260,7 +260,7 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
 
 <p align="center">
-<img alt="Class Diagram UC02" src="./assets/diagram/UC02_ClassDiagram" width="35%">
+<img alt="Class Diagram UC02" src="./assets/diagram/UC02_ClassDiagram.png" width="35%">
 </p>
 <p align="center">
 <i>Gambar 9. Diagram Kelas Melihat Peta Layanan Terdekat</i>
