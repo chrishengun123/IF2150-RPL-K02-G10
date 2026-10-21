@@ -185,8 +185,9 @@
 | *19-10-2026* | *Christopher Hendrik Gunawan* | *Memperbaiki diagram di bab 3.1 dan 3.7* | *1 jam* | *Done* | *-* |
 | *21-10-2026* | *Mirza Aryasatya Akmal* | *Membuat Class Diagram UC02* | *1 jam* | *Done* | *-* | 
 | *21-10-2026* | *Mirza Aryasatya Akmal* | *Membuat Sequence Diagram UC02 dan alternatifnya* | *1 jam* | *Done* | *-* 
-| *-10-2026* | *Christopher Hendrik Gunawan* | ** | * jam* | *Done* | *-* |
-| *-10-2026* | *Natanael Chris Fabian Santoso* | ** | * jam* | *Done* | *-* |
+| *21-10-2026* | *Ferdinand Valentino Darmawan* | *Membuat sequence diagram UC04 dan alternatifnya dan menghapus template yang tersisa* | *3 jam* | *Done* | *-* |
+| *21-10-2026* | *Ferdinand Valentino Darmawan* | *Membuat class diagram UC04* | *1,5 jam* | *Done* | *-* |
+| *21-10-2026* | *Natanael Chris Fabian Santoso* | ** | * jam* | *Done* | *-* |
 | *21-10-2026* | *Jason Hartanto* | *Membuat diagram sequence UC03 dan diagram sequence untuk alternatifnya dan diagram kelasnya* | *3 jam* | *Done* | *-* |
 
 | | | | | | | |
