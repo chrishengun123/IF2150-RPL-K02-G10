@@ -227,10 +227,11 @@ Tabel 3.2. Identifikasi Kelas Use Case UC02
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
 | 1 | *Korban* | *Korban* |
-| 2 | *Peta* | *Peta* |
-| 3 | *ListLayanan* | *ListLayanan* | 
-| 4 | *Layanan* | *Layanan* |
-| 5 | *APILayanan* | *APILayanan* |
+| 2 | *AntarmukaPetaLayanan* | *AntarmukaPetaLayanan* |
+| 3 | *Peta* | *Peta* |
+| 4 | *ListLayanan* | *ListLayanan* | 
+| 5 | *Layanan* | *Layanan* |
+| 6 | *APILayanan* | *APILayanan* |
 
 ### 3.2.2 Sequence Diagram
 
@@ -239,7 +240,7 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Sequence Diagram UC02" src="./assets/diagram/UC02_SequenceDiagram.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 7. Sequence Diagram UC02</i>
@@ -248,7 +249,7 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 - **Skenario Alternatif 1: API Tidak Dapat Dipanggil**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Sequence Diagram Alternatif UC02" src="./assets/diagram/UC02_SequenceDiagramAlt.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 8. Sequence Diagram UC02 - API Tidak Dapat Dipanggil</i>
@@ -259,7 +260,7 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
+<img alt="Class Diagram UC02" src="./assets/diagram/UC02_ClassDiagram" width="35%">
 </p>
 <p align="center">
 <i>Gambar 9. Diagram Kelas Melihat Peta Layanan Terdekat</i>
