@@ -513,7 +513,7 @@ Tabel 4.1. Daftar Kelas Perancangan Keseluruhan
 | *C07* | *AntarmukaTelepon* | *-* | *masukkanNomorLayanan(layanan)* |
 | *C08* | *Polisi* | *lokasiPolisi, ketersediaan* | *pantauAntarmuka(antarmukaPolisi), terimaLaporan(laporanKekerasan), kirimPasukan()* |
 | *C09* | *Rekaman* | *rekamanSuara* | *mulaiRekamanSuara(), simpanRekamanSuara()* |
-| *C10* | *LaporanKekerasan* | *deskripsiKekerasan, tanggalKekerasan, lokasiKekerasan, modePelapor* | *masukkanDeskripsi(), masukkanTanggal(), masukkanLokasi(), masukkanMode()* |
+| *C10* | *LaporanKekerasan* | *deskripsiKekerasan, tanggalKekerasan, lokasiKekerasan, modePelapor* | *masukkanDeskripsi(), masukkanTanggal(), masukkanLokasi(), masukkanMode(), cekKelengkapan()* |
 | *C11* | *APILayanan* | *urlAPI* | *ambilDataLayanan(peta)* |
 | *C12* | *AntarmukaPetaLayanan* | *-* | *tampilkanPeta(), renderSimbolLayanan(listLayanan: ListLayanan)* |
 
