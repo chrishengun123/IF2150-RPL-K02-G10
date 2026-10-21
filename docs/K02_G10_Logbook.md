@@ -186,7 +186,7 @@
 | *-10-2026* | *Mirza Aryasatya Akmal* | * | * jam* | *Done* | *-* | 
 | *-10-2026* | *Christopher Hendrik Gunawan* | ** | * jam* | *Done* | *-* |
 | *-10-2026* | *Natanael Chris Fabian Santoso* | ** | * jam* | *Done* | *-* |
-| *-10-2026* | *Jason Hartanto* | ** | * jam* | *Done* | *-* |
+| *21-10-2026* | *Jason Hartanto* | *Membuat diagram sequence UC03 dan diagram sequence untuk alternatifnya dan diagram kelasnya* | *3 jam* | *Done* | *-* |
 
 | | | | | | | |
 
