@@ -234,7 +234,7 @@ Tabel 3.1. Identifikasi Kelas Use Case UC01
 Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
 
 <p align="center">
-<img alt="Diagram Kelas UC01" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
+<img alt="Diagram Kelas UC01" src="./assets/diagram/UC01_detailed_class_diagram.png" width="35%">
 </p>
 <p align="center">
 <i>Gambar 6. Diagram Kelas Mengaktifkan one click SOS</i>
@@ -579,7 +579,7 @@ Tabel 3.7. Identifikasi Kelas Use Case UC01
 Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/UC07_detailed_class_diagram.png" width="35%">
 </p>
 <p align="center">
 <i>Gambar 24. Diagram Kelas Mengirim Notifikasi Konfirmasi Polisi Ke Korban</i>
