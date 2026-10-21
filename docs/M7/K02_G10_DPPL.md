@@ -37,17 +37,6 @@ Dipersiapkan oleh:
 
 ---
 
-<br>
-
-> **Petunjuk pengerjaan:** *[Silahkan hapus bagian ini setelah selesai mengerjakan]*
->
-> Dokumen ini melanjutkan **Spesifikasi Kebutuhan Perangkat Lunak (SKPL)** dan **Arsitektur Perangkat Lunak (APL)**. Gunakan nama, ID, kebutuhan, dan use case yang konsisten dengan kedua dokumen tersebut. Contoh pola ID baru di bawah dapat disesuaikan dengan kesepakatan kelompok, ID yang sudah ada tetap dipertahankan.
-
-<br>
-
----
-
-
 # BAB 1: Pendahuluan
 
 ## 1.1 Tujuan Penulisan Dokumen
@@ -97,7 +86,6 @@ BAB 1 membahas pendahuluan dokumen berupa informasi umum dari dokumen, BAB 2 mem
 
 ## 2.1 Rancangan Lingkungan Implementasi
 
-Sebutkan *operating system*, DBMS, *development tools*, *filing system*, dan bahasa pemrograman yang digunakan. (Do we still need to add filing system?)
 | Komponen | Spesifikasi |
 | :--- | :--- |
 | *Server* | *Lingkungan Linux (Docker) yang dihosting pada layanan cloud (AWS/Google Cloud/Azure). Bahasa Python (FastAPI) dengan API Gateway* |
@@ -123,10 +111,6 @@ Style yang dipilih memikirkan juga bawaan style dari teknologi yang dipakai. Con
 </p>
 
 ## 2.3 Identifikasi Komponen / Modul / Subsistem
-
-Identifikasi komponen, modul, atau subsistem penyusun aplikasi berdasarkan *pattern* yang telah ditetapkan. Jelaskan tanggung jawab masing-masing komponen. Pengelompokan dapat mengikuti lapisan arsitektur atau fungsi/peran komponen dalam sistem.
-
-Ambil dari **Tabel 2.1 dokumen APL**, lalu kelompokkan berdasarkan lapisan (Model/View/Controller). Kolom **Jenis** diisi sesuai pattern, misalnya View, Controller, Model, Service, Repository. Satu komponen merepresentasikan saatu tanggung jawab utama yang jelas,
 
 Tabel 2.3. Identifikasi Komponen/Modul/Subsistem
 
@@ -154,10 +138,6 @@ Tabel 2.3. Identifikasi Komponen/Modul/Subsistem
 
 ## 2.4 Model Arsitektur Perangkat Lunak
 
-Buat model arsitektur dalam bentuk satu atau lebih *view* yang memperlihatkan interaksi dan kolaborasi komponen, modul, serta subsistem dalam menjalankan fungsi sistem. Pilih notasi yang sesuai. Contoh *view*: *Logical View*, *Process View*, *Development View*, dan *Physical View*.
-
-Gunakan hasil **BAB 3 Model Arsitektur Perangkat Lunak pada dokumen APL**. 
-
 ## 2.4.1 Logical View
 
 Logical View sebagai model arsitektur perangkat lunak yang lebih berfokus pada kebutuhan fungsional dari sistem mampu mendeskripsikan layanan atau fungsionalitas-fungsionalitas yang diberikan sistem kepada user. Model Logical View mampu menjabarkan kebutuhan sistem kepada user yang berbentuk komponen-komponen teknis (class, object, API, module). Logical View juga dapat direpresentasikan menggunakan Class Diagram, Sequence Diagram, atau Diagram Komunikasi.
@@ -179,7 +159,6 @@ Alasan Logical View dipilih untuk rancangan perangkat lunak SafeShe diantaranya:
 
 ---
 
-
 # BAB 3: Realisasi Use Case
 
 ## 3.1 Use Case Mengaktifkan One-Click SOS
@@ -189,16 +168,14 @@ Alasan Logical View dipilih untuk rancangan perangkat lunak SafeShe diantaranya:
 
 ### 3.1.1 Identifikasi Kelas
 
-Identifikasi kelas yang terkait dengan use case tersebut. Kelas di tahap perancangan dapat berbeda dengan dengan kelas di tahap analisis. Dapat menggunakan tabel di bawah:
-
 Tabel 3.1. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[OneClickSOS]* | *OneClickSOS* |
-| 2 | *[PoliceInterface]* | *AntarmukaPolisi* |
-| 3 | *[User]* | *Korban* | 
-| 4 | *[Police]* | *Polisi* |
+| 1 | *OneClickSOS* | *OneClickSOS* |
+| 2 | *AntarmukaPolisi* | *AntarmukaPolisi* |
+| 3 | *Korban* | *Korban* | 
+| 4 | *Polisi* | *Polisi* |
 
 ### 3.1.2 Sequence Diagram
 
@@ -236,13 +213,6 @@ Tabel 3.1. Identifikasi Kelas Use Case UC01
 <i>Gambar 6. Diagram Kelas Mengaktifkan one click SOS</i>
 </p>
 
-Pada diagram, pastikan:
-- Atribut dituliskan beserta visibilitas dan tipe datanya, misalnya `- email: String`.
-- Operasi dituliskan beserta visibilitas, parameter, dan tipe kembaliannya, misalnya `+ login(email: String, password: String): Boolean`.
-- Relasi antarkelas (asosiasi, agregasi, komposisi, generalisasi, dan dependensi) digambarkan lengkap dengan multiplisitas.
-- Semua operasi yang dipanggil pada sequence diagram 3.1.2 (skenario normal dan alternatif) ada pada kelas yang bersangkutan.
-- Kelas yang sama dengan kelas di use case lain memakai nama, atribut, dan metode yang konsisten.
-
 ## 3.2 Use Case 
 
 **ID Use Case:** *UC02*  
@@ -256,11 +226,11 @@ Tabel 3.2. Identifikasi Kelas Use Case UC02
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[Nama kelas perancangan]* | *Korban* |
-| 2 | *[Nama kelas perancangan]* | *Peta* |
-| 3 | *[Nama kelas perancangan]* | *ListLayanan* | 
-| 4 | *[Nama kelas perancangan]* | *Layanan* |
-| 5 | *[Nama kelas perancangan]* | *APILayanan* |
+| 1 | *Korban* | *Korban* |
+| 2 | *Peta* | *Peta* |
+| 3 | *ListLayanan* | *ListLayanan* | 
+| 4 | *Layanan* | *Layanan* |
+| 5 | *APILayanan* | *APILayanan* |
 
 ### 3.2.2 Sequence Diagram
 
@@ -309,22 +279,18 @@ Pada diagram, pastikan:
 
 ### 3.3.1 Identifikasi Kelas
 
-Identifikasi kelas yang terkait dengan use case tersebut. Kelas di tahap perancangan dapat berbeda dengan dengan kelas di tahap analisis. Dapat menggunakan tabel di bawah:
-
 Tabel 3.3. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[Nama kelas perancangan]* | *Korban* |
-| 2 | *[Nama kelas perancangan]* | *Peta* |
-| 3 | *[Nama kelas perancangan]* | *ListLayanan* | 
-| 4 | *[Nama kelas perancangan]* | *Layanan* |
-| 5 | *[Nama kelas perancangan]* | *APILayanan* |
+| 1 | *Korban* | *Korban* |
+| 2 | *Peta* | *Peta* |
+| 3 | *ListLayanan* | *ListLayanan* | 
+| 4 | *Layanan* | *Layanan* |
+| 5 | *APILayanan* | *APILayanan* |
 
 
 ### 3.3.2 Sequence Diagram
-
-Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario normal dan alternatif pada subbab 4.4 SKPL. Diagram melibatkan kelas-kelas yang telah diidentifikasi pada SKPL. 
 
 - **Skenario Normal**
 
@@ -346,21 +312,12 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 
 ### 3.3.3 Diagram Kelas
 
-Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
-
 <p align="center">
 <img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/ClassUC03.png" width="35%">
 </p>
 <p align="center">
 <i>Gambar 12. Diagram Kelas Memilih Layanan Terdekat</i>
 </p>
-
-Pada diagram, pastikan:
-- Atribut dituliskan beserta visibilitas dan tipe datanya, misalnya `- email: String`.
-- Operasi dituliskan beserta visibilitas, parameter, dan tipe kembaliannya, misalnya `+ login(email: String, password: String): Boolean`.
-- Relasi antarkelas (asosiasi, agregasi, komposisi, generalisasi, dan dependensi) digambarkan lengkap dengan multiplisitas.
-- Semua operasi yang dipanggil pada sequence diagram 3.1.2 (skenario normal dan alternatif) ada pada kelas yang bersangkutan.
-- Kelas yang sama dengan kelas di use case lain memakai nama, atribut, dan metode yang konsisten.
 
 ## 3.4 Use Case 
 
@@ -369,41 +326,37 @@ Pada diagram, pastikan:
 
 ### 3.4.1 Identifikasi Kelas
 
-Identifikasi kelas yang terkait dengan use case tersebut. Kelas di tahap perancangan dapat berbeda dengan dengan kelas di tahap analisis. Dapat menggunakan tabel di bawah:
-
 Tabel 3.4. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[Nama kelas perancangan]* | *Korban* |
-| 2 | *[Nama kelas perancangan]* | *Layanan* |
-| 3 | *[Nama kelas perancangan]* | *AntarmukaTelepon* | 
+| 1 | *Korban* | *Korban* |
+| 2 | *Layanan* | *Layanan* |
+| 3 | *AntarmukaTelepon* | *AntarmukaTelepon* | 
+| 4 | *ListLayanan* | *ListLayanan* |
+| 5 | *APILayanan* | *APILayanan* |
 
 ### 3.4.2 Sequence Diagram
-
-Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario normal dan alternatif pada subbab 4.4 SKPL. Diagram melibatkan kelas-kelas yang telah diidentifikasi pada SKPL. 
 
 - **Skenario Normal**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/sequence-diagram-3.4-normal.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 13. Sequence Diagram UC04</i>
 </p>
 
-- **Skenario Alternatif 1: One Click SOS Tidak Dapat Ditampilkan Sebagai Widget Aplikasi**
+- **Skenario Alternatif 1: Informasi Kontak Tidak Tersedia**
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-sequence_diagram.png" width="50%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/sequence-diagram-3.4-alt1.png" width="50%">
 </p>
 <p align="center">
 <i>Gambar 14. Sequence Diagram UC04 - Informasi Kontak Tidak Tersedia</i>
 </p>
 
 ### 3.4.3 Diagram Kelas
-
-Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
 
 <p align="center">
 <img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
@@ -412,13 +365,6 @@ Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.
 <i>Gambar 15. Diagram Kelas Menghubungi Layanan Terdekat</i>
 </p>
 
-Pada diagram, pastikan:
-- Atribut dituliskan beserta visibilitas dan tipe datanya, misalnya `- email: String`.
-- Operasi dituliskan beserta visibilitas, parameter, dan tipe kembaliannya, misalnya `+ login(email: String, password: String): Boolean`.
-- Relasi antarkelas (asosiasi, agregasi, komposisi, generalisasi, dan dependensi) digambarkan lengkap dengan multiplisitas.
-- Semua operasi yang dipanggil pada sequence diagram 3.1.2 (skenario normal dan alternatif) ada pada kelas yang bersangkutan.
-- Kelas yang sama dengan kelas di use case lain memakai nama, atribut, dan metode yang konsisten.
-
 ## 3.5 Use Case 
 
 **ID Use Case:** *UC05*  
@@ -426,19 +372,15 @@ Pada diagram, pastikan:
 
 ### 3.5.1 Identifikasi Kelas
 
-Identifikasi kelas yang terkait dengan use case tersebut. Kelas di tahap perancangan dapat berbeda dengan dengan kelas di tahap analisis. Dapat menggunakan tabel di bawah:
-
 Tabel 3.5. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[Korban]* | *Korban* |
-| 2 | *[Polisi]* | *Polisi* |
-| 3 | *[LaporanKekerasan]* | *LaporanKekerasan* | 
+| 1 | *Korban* | *Korban* |
+| 2 | *Polisi* | *Polisi* |
+| 3 | *LaporanKekerasan* | *LaporanKekerasan* | 
 
 ### 3.5.2 Sequence Diagram
-
-Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario normal dan alternatif pada subbab 4.4 SKPL. Diagram melibatkan kelas-kelas yang telah diidentifikasi pada SKPL. 
 
 - **Skenario Normal**
 
@@ -460,21 +402,12 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 
 ### 3.5.3 Diagram Kelas
 
-Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
-
 <p align="center">
 <img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
 </p>
 <p align="center">
 <i>Gambar 18. Diagram Kelas Membuat Laporan Kekerasan</i>
 </p>
-
-Pada diagram, pastikan:
-- Atribut dituliskan beserta visibilitas dan tipe datanya, misalnya `- email: String`.
-- Operasi dituliskan beserta visibilitas, parameter, dan tipe kembaliannya, misalnya `+ login(email: String, password: String): Boolean`.
-- Relasi antarkelas (asosiasi, agregasi, komposisi, generalisasi, dan dependensi) digambarkan lengkap dengan multiplisitas.
-- Semua operasi yang dipanggil pada sequence diagram 3.1.2 (skenario normal dan alternatif) ada pada kelas yang bersangkutan.
-- Kelas yang sama dengan kelas di use case lain memakai nama, atribut, dan metode yang konsisten.
 
 ## 3.6 Use Case Merekam Suara Otomatis Ketika One Click SOS Diaktifkan
 
@@ -483,18 +416,14 @@ Pada diagram, pastikan:
 
 ### 3.6.1 Identifikasi Kelas
 
-Identifikasi kelas yang terkait dengan use case tersebut. Kelas di tahap perancangan dapat berbeda dengan dengan kelas di tahap analisis. Dapat menggunakan tabel di bawah:
-
 Tabel 3.6. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[OneClickSOS]* | *OneClickSOS* |
-| 2 | *[Rekaman]* | *Rekaman* |
+| 1 | *OneClickSOS* | *OneClickSOS* |
+| 2 | *Rekaman* | *Rekaman* |
 
 ### 3.6.2 Sequence Diagram
-
-Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario normal dan alternatif pada subbab 4.4 SKPL. Diagram melibatkan kelas-kelas yang telah diidentifikasi pada SKPL. 
 
 - **Skenario Normal**
 
@@ -516,21 +445,12 @@ Buat *sequence diagram* untuk **setiap skenario use case**, mencakup skenario no
 
 ### 3.6.3 Diagram Kelas
 
-Buatlah diagram kelas untuk use case ini yang terdiri atas kelas-kelas dari 3.1.1. **Setiap kelas pada diagram wajib menampilkan atribut dan metode/operasi langsung di dalam kotak kelasnya**, sehingga tidak perlu membuat tabel daftar atribut dan metode per kelas pada subbab ini. Daftar lengkap atribut dan metode seluruh kelas disajikan pada Tabel 4.1 (Bab 4).
-
 <p align="center">
 <img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
 </p>
 <p align="center">
 <i>Gambar 21. Diagram Kelas [Nama Uce Case]</i>
 </p>
-
-Pada diagram, pastikan:
-- Atribut dituliskan beserta visibilitas dan tipe datanya, misalnya `- email: String`.
-- Operasi dituliskan beserta visibilitas, parameter, dan tipe kembaliannya, misalnya `+ login(email: String, password: String): Boolean`.
-- Relasi antarkelas (asosiasi, agregasi, komposisi, generalisasi, dan dependensi) digambarkan lengkap dengan multiplisitas.
-- Semua operasi yang dipanggil pada sequence diagram 3.1.2 (skenario normal dan alternatif) ada pada kelas yang bersangkutan.
-- Kelas yang sama dengan kelas di use case lain memakai nama, atribut, dan metode yang konsisten.
 
 ## 3.7 Mengirim Notifikasi Konfirmasi Polisi Ke Korban
 
@@ -539,16 +459,14 @@ Pada diagram, pastikan:
 
 ### 3.7.1 Identifikasi Kelas
 
-Identifikasi kelas yang terkait dengan use case tersebut. Kelas di tahap perancangan dapat berbeda dengan dengan kelas di tahap analisis. Dapat menggunakan tabel di bawah:
-
 Tabel 3.7. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[OneClickSOS]* | *OneClickSOS* |
-| 2 | *[PoliceInterface]* | *AntarmukaPolisi* |
-| 3 | *[User]* | *Korban* | 
-| 4 | *[Police]* | *Polisi* |
+| 1 | *OneClickSOS* | *OneClickSOS* |
+| 2 | *AntarmukaPolisi* | *AntarmukaPolisi* |
+| 3 | *Korban* | *Korban* | 
+| 4 | *Polisi* | *Polisi* |
 
 ### 3.7.2 Sequence Diagram
 
@@ -579,13 +497,6 @@ Tabel 3.7. Identifikasi Kelas Use Case UC01
 <i>Gambar 24. Diagram Kelas Mengirim Notifikasi Konfirmasi Polisi Ke Korban</i>
 </p>
 
-Pada diagram, pastikan:
-- Atribut dituliskan beserta visibilitas dan tipe datanya, misalnya `- email: String`.
-- Operasi dituliskan beserta visibilitas, parameter, dan tipe kembaliannya, misalnya `+ login(email: String, password: String): Boolean`.
-- Relasi antarkelas (asosiasi, agregasi, komposisi, generalisasi, dan dependensi) digambarkan lengkap dengan multiplisitas.
-- Semua operasi yang dipanggil pada sequence diagram 3.1.2 (skenario normal dan alternatif) ada pada kelas yang bersangkutan.
-- Kelas yang sama dengan kelas di use case lain memakai nama, atribut, dan metode yang konsisten.
-
 <br>
 
 ---
@@ -593,8 +504,6 @@ Pada diagram, pastikan:
 # BAB 4: Diagram Kelas Keseluruhan
 
 ## 4.1 Diagram Kelas
-
-**Bagian ini diisi dengan diagram kelas keseluruhan.**
 
 <p align="center">
 <img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/complete_class_diagram.png" width="35%">
@@ -624,8 +533,6 @@ Tabel 4.1. Daftar Kelas Perancangan Keseluruhan
 ---
 
 # BAB 5: Matriks Kerunutan
-
-Petakan kelas perancangan dengan use case yang terkait. Gunakan **BAB 6 Traceability pada dokumen SKPL** sebagai acuan keterkaitan kelas analisis dan use case, lalu sesuaikan dengan realisasi use case dan kelas perancangan pada BAB 3–BAB 5 DPPL.
 
 Tabel 5.1. Matriks Kerunutan Kelas terhadap Use Case
 
