@@ -190,6 +190,7 @@
 | *21-10-2026* | *Ferdinand Valentino Darmawan* | *Membuat class diagram UC04* | *1,5 jam* | *Done* | *-* |
 | *21-10-2026* | *Natanael Chris Fabian Santoso* | ** | * jam* | *Done* | *-* |
 | *21-10-2026* | *Jason Hartanto* | *Membuat diagram sequence UC03 dan diagram sequence untuk alternatifnya dan diagram kelasnya* | *3 jam* | *Done* | *-* |
+| *21-10-2026* | *Natanael Chris Fabian Santoso* | *Membuat diagram sequence UC05 & UC06, dan diagram kelas UC05 & UC06* | *4 jam* | *Done* | *-* |
 
 | | | | | | | |
 
