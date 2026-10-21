@@ -515,6 +515,7 @@ Tabel 4.1. Daftar Kelas Perancangan Keseluruhan
 | *C09* | *Rekaman* | *rekamanSuara* | *mulaiRekamanSuara(), simpanRekamanSuara()* |
 | *C10* | *LaporanKekerasan* | *deskripsiKekerasan, tanggalKekerasan, lokasiKekerasan, modePelapor* | *masukkanDeskripsi(), masukkanTanggal(), masukkanLokasi(), masukkanMode()* |
 | *C11* | *APILayanan* | *urlAPI* | *ambilDataLayanan(peta)* |
+| *C12* | *AntarmukaPetaLayanan* | *-* | *tampilkanPeta(), renderSimbolLayanan(listLayanan: ListLayanan)* |
 
 <br>
 
@@ -534,5 +535,7 @@ Tabel 5.1. Matriks Kerunutan Kelas terhadap Use Case
 | *C06 - Layanan* | *UC02 - Melihat Peta Layanan Terdekat, UC03 - Memilih Layanan Terdekat, UC04 - Menghubungi Layanan Terdekat* | 
 | *C07 - AntarmukaTelepon* | *UC04 - Menghubungi Layanan Terdekat* | 
 | *C08 - Polisi* | *UC01 - Mengaktifkan one click SOS, UC05 - Membuat Laporan Kekerasan, UC07 - Mengirim Notifikasi Konfirmasi Polisi Ke Korban* | 
-| *C09 - LaporanKekerasan* | *UC06 - Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* | 
-| *C10 - APILayanan* | *UC05 - Membuat Laporan Kekerasan* |
+| *C09 - Rekaman* | *UC06 - Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* |
+| *C10 - LaporanKekerasan* | *UC06 - Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* | 
+| *C11 - APILayanan* | *UC05 - Membuat Laporan Kekerasan* |
+| *C12 - AntarmukaPetaLayanan* | *UC02 - Melihat Peta Layanan Terdekat* |
