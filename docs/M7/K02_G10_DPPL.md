@@ -360,7 +360,7 @@ Tabel 3.4. Identifikasi Kelas Use Case UC01
 ### 3.4.3 Diagram Kelas
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh_class-diagram2.jpg" width="35%">
+<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/class-diagram-3.4.png" width="35%">
 </p>
 <p align="center">
 <i>Gambar 15. Diagram Kelas Menghubungi Layanan Terdekat</i>
