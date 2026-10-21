@@ -181,8 +181,9 @@
 | *19-10-2026* | *Christopher Hendrik Gunawan* | *Menambahkan file system library react native di bab 2.1* | *0.1 jam* | *Done* | *-* |
 | *19-10-2026* | *Christopher Hendrik Gunawan* | *Melengkapi bab 1.4 dengan keterangan* | *0.1 jam* | *Done* | *-* |
 | *19-10-2026* | *Christopher Hendrik Gunawan* | *Mengisi bab 3.1 dan 3.7* | *2 jam* | *Done* | *-* |
-| *19-10-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram kelas dan menambahkannya ke bab 3.1 dan 3.7* | *1 jam* | *Done* | *-* |
-| *19-10-2026* | *Christopher Hendrik Gunawan* | *Memperbaiki diagram di bab 3.1 dan 3.7* | *1 jam* | *Done* | *-* |
+| *21-10-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram kelas dan menambahkannya ke bab 3.1 dan 3.7* | *1 jam* | *Done* | *-* |
+| *21-10-2026* | *Christopher Hendrik Gunawan* | *Memperbaiki diagram di bab 3.1 dan 3.7* | *1 jam* | *Done* | *-* |
+| *21-10-2026* | *Christopher Hendrik Gunawan* | *Revisi akhir* | *3 jam* | *Done* | *-* |
 | *21-10-2026* | *Mirza Aryasatya Akmal* | *Membuat Class Diagram UC02* | *1 jam* | *Done* | *-* | 
 | *21-10-2026* | *Mirza Aryasatya Akmal* | *Membuat Sequence Diagram UC02 dan alternatifnya* | *1 jam* | *Done* | *-* 
 | *21-10-2026* | *Ferdinand Valentino Darmawan* | *Membuat sequence diagram UC04 dan alternatifnya dan menghapus template yang tersisa* | *3 jam* | *Done* | *-* |
