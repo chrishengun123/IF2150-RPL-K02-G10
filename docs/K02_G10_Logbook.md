@@ -182,6 +182,7 @@
 | *19-10-2026* | *Christopher Hendrik Gunawan* | *Melengkapi bab 1.4 dengan keterangan* | *0.1 jam* | *Done* | *-* |
 | *19-10-2026* | *Christopher Hendrik Gunawan* | *Mengisi bab 3.1 dan 3.7* | *2 jam* | *Done* | *-* |
 | *19-10-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram kelas dan menambahkannya ke bab 3.1 dan 3.7* | *1 jam* | *Done* | *-* |
+| *19-10-2026* | *Christopher Hendrik Gunawan* | *Memperbaiki diagram di bab 3.1 dan 3.7* | *1 jam* | *Done* | *-* |
 | *-10-2026* | *Mirza Aryasatya Akmal* | * | * jam* | *Done* | *-* | 
 | *-10-2026* | *Christopher Hendrik Gunawan* | ** | * jam* | *Done* | *-* |
 | *-10-2026* | *Natanael Chris Fabian Santoso* | ** | * jam* | *Done* | *-* |
