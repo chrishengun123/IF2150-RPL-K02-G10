@@ -432,9 +432,9 @@ Tabel 3.5. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[Nama kelas perancangan]* | *Korban* |
-| 2 | *[Nama kelas perancangan]* | *Polisi* |
-| 3 | *[Nama kelas perancangan]* | *LaporanKekerasan* | 
+| 1 | *[Korban]* | *Korban* |
+| 2 | *[Polisi]* | *Polisi* |
+| 3 | *[LaporanKekerasan]* | *LaporanKekerasan* | 
 
 ### 3.5.2 Sequence Diagram
 
@@ -489,8 +489,8 @@ Tabel 3.6. Identifikasi Kelas Use Case UC01
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 |:--- | :--- | :--- |
-| 1 | *[Nama kelas perancangan]* | *OneClickSOS* |
-| 2 | *[Nama kelas perancangan]* | *Rekaman* |
+| 1 | *[OneClickSOS]* | *OneClickSOS* |
+| 2 | *[Rekaman]* | *Rekaman* |
 
 ### 3.6.2 Sequence Diagram
 
