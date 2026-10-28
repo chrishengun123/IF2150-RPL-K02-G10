@@ -8,7 +8,7 @@ DESKRIPSI PERANCANGAN PERANGKAT LUNAK (DPPL)
 <br>
 
 ## *SafeShe*
-### *[Logo Perangkat Lunak]*
+<img alt="Logo SafeShe" src="./assets/safeshe_logo.png" width="100%">
 
 ### Untuk: *Aurelia Jennifer Gunawan*
 
@@ -37,14 +37,6 @@ Dipersiapkan oleh:
 | ... |  |
 
 ---
-
-<br>
-
-> **Petunjuk pengerjaan:** *[Silahkan hapus bagian ini setelah selesai mengerjakan]*
->
-> Dokumen ini melanjutkan **Deskripsi Perancangan Perangkat Lunak**. Gunakan nama, ID, kebutuhan, dan use case yang konsisten dengan kedua dokumen tersebut. Contoh pola ID baru di bawah dapat disesuaikan dengan kesepakatan kelompok, ID yang sudah ada tetap dipertahankan.
-
-<br>
 
 ---
 
@@ -122,10 +114,10 @@ Style yang dipilih dalam sisi server mengutamakan keistimewaan FastAPI dalam des
 Style yang dipilih memikirkan juga bawaan style dari teknologi yang dipakai. Contohnya, FastAPI secara bawaan mendukung *asynchronous programming*. Hal tersebut memungkinkan server secara cepat menerima dan memproses laporan yang baru saja dibuat oleh pengguna dan mengirimkan status ```202 Accepted``` ke *client* tanpa terganggu proses di latar belakang (*background processes*).
 
 <p align="center">
-<img alt="Contoh Arsitektur MVC" src="./assets/diagram/contoh-arsitektur-mvc.webp" width="40%">
+<img alt="Rencana Arsitektur Aplikasi SafeShe" src="./assets/diagram/m6_diagram_style_arsitektur.png" width="40%">
 </p>
 <p align="center">
-<i>Gambar 1. Contoh Arsitektur MVC</i>
+<i>Gambar 1. Rencana Arsitektur Aplikasi SafeShe</i>
 </p>
 
 ## 2.3 Identifikasi Komponen / Modul / Subsistem
@@ -590,24 +582,19 @@ Tabel 5.1.2. Atribut Kelas OneClickSOS
 
 ### 5.1.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
-**Nama Kelas:** *OneClickSOS*  
-**Nama Operasi:** *[Signature operasi]*  
-**ID Algoritma:** *[Algo-001]*
+**Nama Kelas:** *OneClickSOS*
+**Nama Operasi:** *kirimSignal*
+**ID Algoritma:** *Algo-001*
 
 ```text
-[Tuliskan pseudocode algoritma operasi di sini.]
+procedure kirimSignal(input nama: String, input lokasi: Coordinate)
+{ Mengirim signal ke polisi. }
+    terkoneksi <- tungguKoneksi(0)
+    while not terkoneksi do
+        terkoneksi <- tungguKoneksi(1)
+    target <- connectToNearest()
+    target.terimaSignal(nama, lokasi)
 ```
-
-Jika operasi mengacu pada query tertentu, lengkapi tabel berikut. 
-
-Tabel 5.1.1. Query Operasi [Nama Operasi]
-
-| No Query | Query | Keterangan |
-| :--- | :--- | :--- |
-| *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
-| *...* | *...* | *...* |
 
 
 ### 5.1.2 Algoritma/Query
@@ -639,22 +626,18 @@ Tabel 5.2.2. Atribut Kelas AntarmukaPolisi
 Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
 
 **Nama Kelas:** *AntarmukaPolisi*  
-**Nama Operasi:** *[Signature operasi]*  
-**ID Algoritma:** *[Algo-001]*
+**Nama Operasi:** *kirimReply*  
+**ID Algoritma:** *Algo-002*
 
 ```text
-[Tuliskan pseudocode algoritma operasi di sini.]
+procedure kirimReply(input reply: Reply)
+{ Mengirim reply ke korban }
+    terkoneksi <- tungguKoneksi(0)
+    while not terkoneksi do
+        terkoneksi <- tungguKoneksi(1)
+    target <- connectToNearest()
+    target.terimaReply(reply)
 ```
-
-Jika operasi mengacu pada query tertentu, lengkapi tabel berikut. 
-
-Tabel 5.1.1. Query Operasi [Nama Operasi]
-
-| No Query | Query | Keterangan |
-| :--- | :--- | :--- |
-| *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
-| *...* | *...* | *...* |
-
 
 ### 5.2.2 Algoritma/Query
 
@@ -732,11 +715,19 @@ Tabel 5.4.2. Atribut Kelas Peta
 Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
 
 **Nama Kelas:** *Peta*  
-**Nama Operasi:** *[Signature operasi]*  
+**Nama Operasi:** *tampilkanLayanan*  
 **ID Algoritma:** *[Algo-001]*
 
 ```text
-[Tuliskan pseudocode algoritma operasi di sini.]
+procedure tampilkanLayanan(input listLayanan: ListLayanan)
+{ Menampilkan layanan yang ada }
+    list <- ambilLayananTersedia(peta)
+    if isEmpty(list) then
+        output("Tidak ada layanan yang tersedia")
+    else
+        i iterate [0..list.nEff-1]
+            output(list.contents[i].namaLayanan)
+            output(list.contents[i].kontakLayanan)
 ```
 
 Jika operasi mengacu pada query tertentu, lengkapi tabel berikut. 
