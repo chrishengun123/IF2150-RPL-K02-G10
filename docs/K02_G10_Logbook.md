@@ -49,8 +49,6 @@
 | *02-09-2026* | *Natanael Chris Fabian Santoso* | *Lanjut merevisi bab 1, dilanjutkan merevisi bab 2 sesuai masukan dari asisten* | *2 jam* | *Done* | *-* | 
 | *02-09-2026* | *Mirza Aryasatya Akmal* | *Membuat diagram untuk bab 3* | *1 jam* | *Done* | *-* |
 
-| | | | | | | |
-
 **Catatan/Evaluasi Milestone 1:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
@@ -75,8 +73,6 @@
 | *09-09-2026* | *Mirza Aryasatya Akmal* | *Merapikan template RG.md* | *10 menit* | *Done* | *-* |
 | *09-09-2026* | *Ferdinand Valentino Darmawan* | *Menambahkan subba 1.1* | *1 jam* | *Done* | *-* | 
 
-| | | | | | | |
-
 **Catatan/Evaluasi Milestone 1:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
@@ -93,8 +89,6 @@
 | *16-09-2026* | *Jason Hartanto* | *Membuat bagian 3.2 dan 3.4.3* | *1,5 jam* | *Done* | *-* |  
 | *16-09-2026* | *Natanael Chris Fabian Santoso* | *Menambahkan UC01, UC05, UC06, Menghapus instruksi template* | *3 jam* | *Done* | - |
 | *15-09-2026* | *Christopher Hendrik Gunawan* | *Membuat diagram* | *1 jam* | *Done* | - |
-
-| | | | | | | |
 
 **Catatan/Evaluasi Milestone 1:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
@@ -123,8 +117,6 @@
 | *22-09-2026* | *Ferdinand Valentino Darmawan* | *Mengerjakan 4.2.5, melengkapi deskripsi revisi di daftar perubahan, dan memastikan setiap kelas memiliki atribut dan metode yang sama* | *1 jam* | *Done* | *-* |
 
 
-| | | | | | | |
-
 **Catatan/Evaluasi Milestone 4:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
@@ -145,7 +137,6 @@
 | *30-09-2026* | *Natanael Chris Fabian Santoso* | *Menghapus instruksi dari template, merapikan format tabel yang rusak* | *0,5 jam* | *Done* | *-* |
 | *29-09-2026* | *Jason Hartanto* | *Mengupdate informasi menjadi lebih sesuai dengan M4 seperti KF dan penulisan 2.4 serta pelakukab beberapa perbaikan penulisan* | *1 jam* | *Done* | *-* |
 | *30-09-2026* | *Jason Hartanto* | *Menambahkan identifikasi kelas APILayanan* | *0,5 jam* | *Done* | *-* |
-| | | | | | | |
 
 **Catatan/Evaluasi Milestone 4:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
@@ -163,8 +154,6 @@
 | *07-10-2026* | *Natanael Chris Fabian Santoso* | *Mencari ide dan menulis bab 1* | *2,5 jam* | *Done* | *-* |
 | *07-10-2026* | *Jason Hartanto* | *Mengisi penjelasan ditabel 2.1* | *1 jam* | *Done* | *-* |
 | *07-10-2026* | *Ferdinand Valentino Darmawan* | *Membuat diagram logical view 3.1* | *1,5 jam* | *Done* | *-* |
-
-| | | | | | | |
 
 **Catatan/Evaluasi Milestone 6:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
@@ -192,10 +181,19 @@
 | *21-10-2026* | *Jason Hartanto* | *Membuat diagram sequence UC03 dan diagram sequence untuk alternatifnya dan diagram kelasnya* | *3 jam* | *Done* | *-* |
 | *21-10-2026* | *Natanael Chris Fabian Santoso* | *Membuat diagram sequence UC05 & UC06, dan diagram kelas UC05 & UC06* | *4 jam* | *Done* | *-* |
 
-| | | | | | | |
-
 **Catatan/Evaluasi Milestone 7:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
+---
+
+### Milestone 8
+**Periode:** 09-10-2026 - 21-10-2026
+
+| Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
+| :--- | :--- | :--- | :--- | :--- | :--- | 
+| *27-10-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
+
+**Catatan/Evaluasi Milestone 8:**
+* *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``
