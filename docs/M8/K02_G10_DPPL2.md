@@ -657,6 +657,15 @@ Tabel 7.1. Matriks Kerunutan Kelas terhadap Use Case
 
 | Kelas | Use Case Terkait |
 | :--- | :--- |
-| *[ID kelas - Nama kelas]* | *[ID UC - Nama use case; tuliskan seluruh use case terkait]* |
-| *[ID kelas - Nama kelas]* | *[ID UC - Nama use case]* |
-| *...* | *...* |
+| *C01 - OneClickSOS* | *UC01 - Mengaktifkan one click SOS, UC06 - Merekam Suara Otomatis Ketika One Click SOS Diaktifkan, UC07 - Mengirim Notifikasi Konfirmasi Polisi Ke Korban* | 
+| *C02 - AntarmukaPolisi* | *UC01 - Mengaktifkan one click SOS, UC06 - Merekam Suara Otomatis Ketika One Click SOS Diaktifkan, UC07 - Mengirim Notifikasi Konfirmasi Polisi Ke Korban* | 
+| *C03 - Korban* | *UC01 - Mengaktifkan one click SOS, UC04 - Menghubungi Layanan Terdekat, UC05 - Membuat Laporan Kekerasan, UC07 - Mengirim Notifikasi Konfirmasi Polisi Ke Korban* | 
+| *C04 - Peta* | *UC02 - Melihat Peta Layanan Terdekat, UC03 - Memilih Layanan Terdekat, UC04 - Menghubungi Layanan Terdekat* | 
+| *C05 - ListLayanan* | *UC02 - Melihat Peta Layanan Terdekat, UC03 - Memilih Layanan Terdekat, UC04 - Menghubungi Layanan Terdekat* | 
+| *C06 - Layanan* | *UC02 - Melihat Peta Layanan Terdekat, UC03 - Memilih Layanan Terdekat, UC04 - Menghubungi Layanan Terdekat* | 
+| *C07 - AntarmukaTelepon* | *UC04 - Menghubungi Layanan Terdekat* | 
+| *C08 - Polisi* | *UC01 - Mengaktifkan one click SOS, UC05 - Membuat Laporan Kekerasan, UC07 - Mengirim Notifikasi Konfirmasi Polisi Ke Korban* | 
+| *C09 - Rekaman* | *UC06 - Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* |
+| *C10 - LaporanKekerasan* | *UC06 - Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* | 
+| *C11 - APILayanan* | *UC05 - Membuat Laporan Kekerasan* |
+| *C12 - AntarmukaPetaLayanan* | *UC02 - Melihat Peta Layanan Terdekat* |
