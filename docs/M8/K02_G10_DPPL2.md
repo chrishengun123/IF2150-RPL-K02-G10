@@ -539,8 +539,6 @@ Tabel 4.1. Daftar Kelas Perancangan Keseluruhan
 
 # BAB 5: Perancangan Rinci Kelas
 
-Bagian ini diisi dengan daftar seluruh kelas dalam tabel berikut:
-
 Tabel 5.1. Daftar Kelas Perancangan dan Kelas Analisis Terkait
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
