@@ -1102,7 +1102,7 @@ Tabel 6.3. Spesifikasi Objek Antarmuka I-03
 <i>Gambar 6.4. Rancangan Antarmuka I-04 - Status Bantuan Samar</i>
 </p>
 
-Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+Tabel 6.4. Spesifikasi Objek Antarmuka I-04
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -1110,19 +1110,19 @@ Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 | *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
 | *...* | *...* | *...* | *...* |
 
-## 6.1 Rancangan Antarmuka [ID Layar 1]
+## 6.5 Rancangan Antarmuka [ID Layar 5]
 
-**Antarmuka:** *I-01*  
-**Nama Layar:** *Layar Utama*
+**Antarmuka:** *I-05*  
+**Nama Layar:** *Pembuatan laporan*
 
 <p align="center">
-<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+<img src="./assets/diagram/pembuatan-laporan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/pembuatan-laporan2.png" alt="Contoh Desain" width="400">
 </p>
 <p align="center">
-<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+<i>Gambar 6.5. Rancangan Antarmuka I-05 - Pembuatan laporan</i>
 </p>
 
-Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+Tabel 6.5. Spesifikasi Objek Antarmuka I-05
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -1130,19 +1130,19 @@ Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 | *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
 | *...* | *...* | *...* | *...* |
 
-## 6.1 Rancangan Antarmuka [ID Layar 1]
+## 6.6 Rancangan Antarmuka [ID Layar 6]
 
-**Antarmuka:** *I-01*  
-**Nama Layar:** *Layar Utama*
+**Antarmuka:** *I-06*  
+**Nama Layar:** *Laporan Sedang Dikirim*
 
 <p align="center">
-<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+<img src="./assets/diagram/laporan-sedang-dikirim1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/laporan-sedang-dikirim2.png" alt="Contoh Desain" width="400">
 </p>
 <p align="center">
-<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+<i>Gambar 6.6. Rancangan Antarmuka I-06 - Laporan Sedang Dikirim</i>
 </p>
 
-Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+Tabel 6.6. Spesifikasi Objek Antarmuka I-06
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -1150,19 +1150,19 @@ Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 | *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
 | *...* | *...* | *...* | *...* |
 
-## 6.1 Rancangan Antarmuka [ID Layar 1]
+## 6.7 Rancangan Antarmuka [ID Layar 7]
 
-**Antarmuka:** *I-01*  
-**Nama Layar:** *Layar Utama*
+**Antarmuka:** *I-07*  
+**Nama Layar:** *Konfirmasi Laporan*
 
 <p align="center">
-<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+<img src="./assets/diagram/konfirmasi-laporan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/konfirmasi-laporan2.png" alt="Contoh Desain" width="400">
 </p>
 <p align="center">
-<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+<i>Gambar 6.7. Rancangan Antarmuka I-07 - Konfirmasi Laporan</i>
 </p>
 
-Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+Tabel 6.7. Spesifikasi Objek Antarmuka I-07
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -1170,19 +1170,19 @@ Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 | *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
 | *...* | *...* | *...* | *...* |
 
-## 6.1 Rancangan Antarmuka [ID Layar 1]
+## 6.8 Rancangan Antarmuka [ID Layar 8]
 
-**Antarmuka:** *I-01*  
-**Nama Layar:** *Layar Utama*
+**Antarmuka:** *I-08*  
+**Nama Layar:** *Respons Petugas - SOS Terkirim*
 
 <p align="center">
-<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+<img src="./assets/diagram/respons-petugas-sos-terkirim1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-sos-terkirim2.png" alt="Contoh Desain" width="400"> 
 </p>
 <p align="center">
-<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+<i>Gambar 6.8. Rancangan Antarmuka I-08 - Respons Petugas - SOS Terkirim</i>
 </p>
 
-Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+Tabel 6.8. Spesifikasi Objek Antarmuka I-08
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -1190,19 +1190,19 @@ Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 | *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
 | *...* | *...* | *...* | *...* |
 
-## 6.1 Rancangan Antarmuka [ID Layar 1]
+## 6.9 Rancangan Antarmuka [ID Layar 9]
 
-**Antarmuka:** *I-01*  
-**Nama Layar:** *Layar Utama*
+**Antarmuka:** *I-09*  
+**Nama Layar:** *Respons Petugas - Bantuan Menuju Lokasi*
 
 <p align="center">
-<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+<img src="./assets/diagram/respons-petugas-bantuan-menuju-lokasi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-bantuan-menuju-lokasi2.png" alt="Contoh Desain" width="400">
 </p>
 <p align="center">
-<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+<i>Gambar 6.9. Rancangan Antarmuka I-09 - Respons Petugas - Bantuan Menuju Lokasi</i>
 </p>
 
-Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+Tabel 6.9. Spesifikasi Objek Antarmuka I-09
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -1210,19 +1210,19 @@ Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 | *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
 | *...* | *...* | *...* | *...* |
 
-## 6.1 Rancangan Antarmuka [ID Layar 1]
+## 6.10 Rancangan Antarmuka [ID Layar 10]
 
-**Antarmuka:** *I-01*  
-**Nama Layar:** *Layar Utama*
+**Antarmuka:** *I-010*  
+**Nama Layar:** *Respons Petugas - SOS Menunggu Koneksi*
 
 <p align="center">
-<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+<img src="./assets/diagram/respons-petugas-sos-menunggu-koneksi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-sos-menunggu-koneksi2.png" alt="Contoh Desain" width="400">
 </p>
 <p align="center">
-<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+<i>Gambar 6.10. Rancangan Antarmuka I-010 - Respons Petugas - SOS Menunggu Koneksi</i>
 </p>
 
-Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+Tabel 6.10. Spesifikasi Objek Antarmuka I-010
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -1230,19 +1230,19 @@ Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 | *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
 | *...* | *...* | *...* | *...* |
 
-## 6.1 Rancangan Antarmuka [ID Layar 1]
+## 6.11 Rancangan Antarmuka [ID Layar 11]
 
-**Antarmuka:** *I-01*  
-**Nama Layar:** *Layar Utama*
+**Antarmuka:** *I-011*  
+**Nama Layar:** *SafeShe - Pusat Respons Polisi*
 
 <p align="center">
-<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+<img src="./assets/diagram/safeshe-pusat-respons-polisi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/safeshe-pusat-respons-polisi2.png" alt="Contoh Desain" width="400">
 </p>
 <p align="center">
-<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+<i>Gambar 6.11. Rancangan Antarmuka I-011 - SafeShe - Pusat Respons Polisi</i>
 </p>
 
-Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+Tabel 6.11. Spesifikasi Objek Antarmuka I-011
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -1250,11 +1250,11 @@ Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 | *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
 | *...* | *...* | *...* | *...* |
 
-## 6.Y Rancangan Antarmuka Keseluruhan
+## 6.12 Rancangan Antarmuka Keseluruhan
 
 Tuliskan daftar gambar seluruh antarmuka. Berikan ID unik untuk setiap tampilan dan gunakan ID yang sama pada subbab perancangan antarmuka masing-masing.
 
-Tabel 6.Y. Rancangan Antarmuka Keseluruhan
+Tabel 6.12. Rancangan Antarmuka Keseluruhan
 
 | No | Tampilan Antarmuka |
 | :--- | :--- |
