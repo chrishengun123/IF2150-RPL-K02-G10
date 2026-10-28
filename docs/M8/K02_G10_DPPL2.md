@@ -721,7 +721,8 @@ procedure tampilkanLayanan(input listLayanan: ListLayanan)
         output("Tidak ada layanan yang tersedia")
     else
         i iterate [0..list.nEff-1]
-            output(list.contents[i])
+            output(list.contents[i].namaLayanan)
+            output(list.contents[i].kontakLayanan)
 ```
 
 Jika operasi mengacu pada query tertentu, lengkapi tabel berikut. 
