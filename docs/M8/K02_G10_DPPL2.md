@@ -1050,10 +1050,28 @@ Tabel 5.12.1. Query Operasi [Nama Operasi]
 
 ## 6.1 Rancangan Antarmuka [ID Layar 1]
 
-Masukkan versi awal prototipe antarmuka, dimana untuk setiap antarmuka/layar, tuliskan spesifikasi rinci objek yang ditampilkan dan reaksi sistem terhadap interaksi pengguna.
+**Antarmuka:** *I-01*  
+**Nama Layar:** *Layar Utama*
 
-**Antarmuka:** *[ID layar]*  
-**Nama Layar:** *[Nama layar]*
+<p align="center">
+<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400"> 
+</p>
+<p align="center">
+<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+</p>
+
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.2 Rancangan Antarmuka [ID Layar 2]
+
+**Antarmuka:** *I-02*  
+**Nama Layar:** *Peta Layanan Terdekat*
 
 <p align="center">
 <img src="./assets/diagram/peta-layanan-terdekat1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/peta-layanan-terdekat2.png" alt="Contoh Desain" width="400">
