@@ -545,8 +545,18 @@ Tabel 5.1. Daftar Kelas Perancangan dan Kelas Analisis Terkait
 
 | No | Nama Kelas Perancangan | Nama Kelas Analisis Terkait |
 | :--- | :--- | :--- |
-| 1 | *[Nama kelas perancangan]* | *[Nama kelas analisis pada SKPL atau -]* |
-| 2 | *[Nama kelas perancangan]* | *[Nama kelas analisis pada SKPL atau -]* |
+| 1 | *OneClickSOS* | *OneClickSOS* |
+| 2 | *AntarmukaPolisi* | *AntarmukaPolisi* |
+| 3 | *Korban* | *Korban* |
+| 4 | *Peta* | *Peta* |
+| 5 | *ListLayanan* | *ListLayanan* |
+| 6 | *Layanan* | *Layanan* |
+| 7 | *AntarmukaTelepon* | *AntarmukaTelepon* |
+| 8 | *Polisi* | *Polisi* |
+| 9 | *Rekaman* | *Rekaman* |
+| 10 | *LaporanKekerasan* | *LaporanKekerasan* |
+| 11 | *APILayanan* | *APILayanan* |
+| 12 | *AntarmukaPetaLayanan* | *AntarmukaPetaLayanan* |
 | ... | *...* | *...* |
 
 Untuk **setiap kelas**, identifikasi operasi berdasarkan tanggung jawab kelas beserta *visibility*-nya, serta atribut beserta *visibility* dan tipenya. Buat subbab tersendiri untuk setiap kelas.
