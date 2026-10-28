@@ -585,8 +585,6 @@ Tabel 5.1.2. Atribut Kelas OneClickSOS
 
 ### 5.1.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *OneClickSOS*
 **Nama Operasi:** *kirimSignal*
 **ID Algoritma:** *Algo-001*
@@ -643,16 +641,6 @@ procedure kirimReply(input reply: Reply)
     target <- connectToNearest()
     target.terimaReply(reply)
 ```
-
-Jika operasi mengacu pada query tertentu, lengkapi tabel berikut. 
-
-Tabel 5.1.1. Query Operasi [Nama Operasi]
-
-| No Query | Query | Keterangan |
-| :--- | :--- | :--- |
-| *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
-| *...* | *...* | *...* |
-
 
 ### 5.2.2 Algoritma/Query
 
