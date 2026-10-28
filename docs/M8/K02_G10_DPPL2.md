@@ -592,10 +592,10 @@ Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Al
 **ID Algoritma:** *Algo-001*
 
 ```text
-procedure kirimSignal(nama: String, lokasi: Coordinate)
+procedure kirimSignal(input nama: String, input lokasi: Coordinate)
 { Mengirim signal ke polisi. }
-    terkoneksi = false
-    while not terkoneksi do:
+    terkoneksi <- tungguKoneksi(0)
+    while not terkoneksi do
         terkoneksi <- tungguKoneksi(1)
     target <- connectToNearest()
     target.terimaSignal(nama, lokasi)
@@ -631,11 +631,17 @@ Tabel 5.2.2. Atribut Kelas AntarmukaPolisi
 Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
 
 **Nama Kelas:** *AntarmukaPolisi*  
-**Nama Operasi:** *[Signature operasi]*  
-**ID Algoritma:** *[Algo-001]*
+**Nama Operasi:** *kirimReply*  
+**ID Algoritma:** *Algo-002*
 
 ```text
-[Tuliskan pseudocode algoritma operasi di sini.]
+procedure kirimReply(input reply: Reply)
+{ Mengirim reply ke korban }
+    terkoneksi <- tungguKoneksi(0)
+    while not terkoneksi do
+        terkoneksi <- tungguKoneksi(1)
+    target <- connectToNearest()
+    target.terimaReply(reply)
 ```
 
 Jika operasi mengacu pada query tertentu, lengkapi tabel berikut. 
