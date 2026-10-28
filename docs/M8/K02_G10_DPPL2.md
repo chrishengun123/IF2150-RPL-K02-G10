@@ -84,6 +84,11 @@ Tabel 1.4. Aturan Penomoran
 | *Kelas* | *CXX* | *"C" dilanjutkan nomor id* |
 | *User* | *US-XX* | *"US-" dilanjutkan dengan nomor id* |
 | *Requirement* | *RXX* | *"R" dilanjutkan dengan nomor id* |
+| *Algoritma* | *Algo-XX* | *"Algo" dilanjutkan dengan nomor id* |
+| *Query* | *Q-XX* | *"Q" dilanjutkan dengan nomor id* | 
+| *Objek* | *O-XX* | *"O" dilanjutkan dengan nomor id* | 
+| *Tampilan Antarmuka* | *I-XX* | *"I" dilanjutkan dengan nomor id* | 
+
 
 ## 1.5 Referensi
 Mayoritas dari BAB 1 berasal dari dokumen SKPL, BAB 2 berasal dari dokumen APL, BAB 3 menggunakan dokumen SKPL sebagai rancangan awal dari apa saja yang perlu dibuat di dalamnya, serta BAB 4 dan 5 berasal dari dokumen SKPL.
@@ -1164,9 +1169,18 @@ Tabel 6.Y. Rancangan Antarmuka Keseluruhan
 
 | No | Tampilan Antarmuka |
 | :--- | :--- |
-| *[I-01]* | <img src="./assets/diagram/contoh-design.png" alt="Contoh Desain" width="400"> |
-| *[I-02]* | *[Sisipkan gambar antarmuka I-02]* |
-| *[I-XX]* | *[Sisipkan gambar antarmuka berikutnya]* |
+| *[I-01]* | <img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400"> |
+| *[I-02]* | <img src="./assets/diagram/peta-layanan-terdekat1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/peta-layanan-terdekat2.png" alt="Contoh Desain" width="400"> |
+| *[I-03]* | <img src="./assets/diagram/detail-layanan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/detail-layanan2.png" alt="Contoh Desain" width="400"> |
+| *[I-04]* | <img src="./assets/diagram/pembuatan-laporan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/pembuatan-laporan2.png" alt="Contoh Desain" width="400"> |
+| *[I-05]* | <img src="./assets/diagram/status-bantuan-samar1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/status-bantuan-samar2.png" alt="Contoh Desain" width="400"> |
+| *[I-06]* | <img src="./assets/diagram/konfirmasi-laporan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/konfirmasi-laporan2.png" alt="Contoh Desain" width="400"> |
+| *[I-07]* | <img src="./assets/diagram/respons-petugas-sos-terkirim1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-sos-terkirim2.png" alt="Contoh Desain" width="400"> |
+| *[I-08]* | <img src="./assets/diagram/respons-petugas-bantuan-menuju-lokasi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-bantuan-menuju-lokasi2.png" alt="Contoh Desain" width="400"> |
+| *[I-09]* | <img src="./assets/diagram/respons-petugas-sos-menunggu-koneksi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-sos-menunggu-koneksi2.png" alt="Contoh Desain" width="400"> |
+| *[I-10]* | <img src="./assets/diagram/safeshe-pusat-respons-polisi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/safeshe-pusat-respons-polisi2.png" alt="Contoh Desain" width="400"> |
+| *[I-11]* | <img src="./assets/diagram/design-layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/design-layar-utama2.png" alt="Contoh Desain" width="400"> |
+
 
 <br>
 
