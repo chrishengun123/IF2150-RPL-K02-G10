@@ -1136,7 +1136,7 @@ Tabel 6.5. Spesifikasi Objek Antarmuka I-05
 **Nama Layar:** *Laporan Sedang Dikirim*
 
 <p align="center">
-<img src="./assets/diagram/laporan-sedang-dikirim1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/laporan-sedang-dikirim2.png" alt="Contoh Desain" width="400">
+<img src="./assets/diagram/tampilan6.6.jpeg" alt="Contoh Desain" width="400">  <img src="./assets/diagram/laporan-sedang-dikirim2.png" alt="Contoh Desain" width="400">
 </p>
 <p align="center">
 <i>Gambar 6.6. Rancangan Antarmuka I-06 - Laporan Sedang Dikirim</i>
