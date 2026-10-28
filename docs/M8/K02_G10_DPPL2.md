@@ -8,7 +8,7 @@ DESKRIPSI PERANCANGAN PERANGKAT LUNAK (DPPL)
 <br>
 
 ## *SafeShe*
-### *[Logo Perangkat Lunak]*
+<img alt="Logo SafeShe" src="./assets/safeshe_logo.png" width="100%">
 
 ### Untuk: *Aurelia Jennifer Gunawan*
 
