@@ -718,11 +718,17 @@ Tabel 5.4.2. Atribut Kelas Peta
 Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
 
 **Nama Kelas:** *Peta*  
-**Nama Operasi:** *[Signature operasi]*  
+**Nama Operasi:** *tampilkanLayanan*  
 **ID Algoritma:** *[Algo-001]*
 
 ```text
-[Tuliskan pseudocode algoritma operasi di sini.]
+procedure tampilkanLayanan(input listLayanan: ListLayanan)
+{ Menampilkan layanan yang ada }
+    if isEmpty(listLayanan) then
+        output("Tidak ada layanan yang tersedia")
+    else
+        i iterate [0..listLayanan.nEff-1]
+            output(listLayanan.contents[i])
 ```
 
 Jika operasi mengacu pada query tertentu, lengkapi tabel berikut. 
