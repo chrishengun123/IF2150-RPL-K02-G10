@@ -109,10 +109,10 @@ Style yang dipilih dalam sisi server mengutamakan keistimewaan FastAPI dalam des
 Style yang dipilih memikirkan juga bawaan style dari teknologi yang dipakai. Contohnya, FastAPI secara bawaan mendukung *asynchronous programming*. Hal tersebut memungkinkan server secara cepat menerima dan memproses laporan yang baru saja dibuat oleh pengguna dan mengirimkan status ```202 Accepted``` ke *client* tanpa terganggu proses di latar belakang (*background processes*).
 
 <p align="center">
-<img alt="Contoh Arsitektur MVC" src="./assets/diagram/contoh-arsitektur-mvc.webp" width="40%">
+<img alt="Rencana Arsitektur Aplikasi SafeShe" src="./assets/diagram/m6_diagram_style_arsitektur.png" width="40%">
 </p>
 <p align="center">
-<i>Gambar 1. Contoh Arsitektur MVC</i>
+<i>Gambar 1. Rencana Arsitektur Aplikasi SafeShe</i>
 </p>
 
 ## 2.3 Identifikasi Komponen / Modul / Subsistem
