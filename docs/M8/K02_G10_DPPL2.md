@@ -1127,19 +1127,17 @@ Tabel 5.12.1. Query Operasi [Nama Operasi]
 
 ## 6.1 Rancangan Antarmuka [ID Layar 1]
 
-Masukkan versi awal prototipe antarmuka, dimana untuk setiap antarmuka/layar, tuliskan spesifikasi rinci objek yang ditampilkan dan reaksi sistem terhadap interaksi pengguna.
-
-**Antarmuka:** *[ID layar]*  
-**Nama Layar:** *[Nama layar]*
+**Antarmuka:** *I-01*  
+**Nama Layar:** *Layar Utama*
 
 <p align="center">
-<img alt="Contoh Logical View pada P/L E-Commerce" src="./assets/diagram/contoh-design.png" width="50%">
+<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
 </p>
 <p align="center">
-<i>Gambar 6.1. Rancangan Antarmuka [ID Layar] - [Nama Layar]</i>
+<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
 </p>
 
-Tabel 6.1. Spesifikasi Objek Antarmuka [ID Layar]
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
@@ -1148,9 +1146,205 @@ Tabel 6.1. Spesifikasi Objek Antarmuka [ID Layar]
 | *...* | *...* | *...* | *...* |
 
 
-## 6.X Rancangan Antarmuka [ID Layar X]
+## 6.2 Rancangan Antarmuka [ID Layar 2]
 
-*[Ulangi pola 6.1 untuk layar berikutnya sampai semua layar teridentifikasi]*
+**Antarmuka:** *I-02*  
+**Nama Layar:** *Peta Layanan Terdekat*
+
+<p align="center">
+<img src="./assets/diagram/peta-layanan-terdekat1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/peta-layanan-terdekat2.png" alt="Contoh Desain" width="400">
+</p>
+<p align="center">
+<i>Gambar 6.2. Rancangan Antarmuka I-02 - Peta Layanan Terdekat</i>
+</p>
+
+Tabel 6.2. Spesifikasi Objek Antarmuka I-02
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.3 Rancangan Antarmuka [ID Layar 3]
+
+**Antarmuka:** *I-03*  
+**Nama Layar:** *Detail Layanan*
+
+<p align="center">
+<img src="./assets/diagram/detail-layanan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/detail-layanan2.png" alt="Contoh Desain" width="400">
+</p>
+<p align="center">
+<i>Gambar 6.3. Rancangan Antarmuka I-03 - Detail Layanan</i>
+</p>
+
+Tabel 6.3. Spesifikasi Objek Antarmuka I-03
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.4 Rancangan Antarmuka [ID Layar 4]
+
+**Antarmuka:** *I-04*  
+**Nama Layar:** *Status Bantuan Samar*
+
+<p align="center">
+<img src="./assets/diagram/status-bantuan-samar1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/status-bantuan-samar2.png" alt="Contoh Desain" width="400">  
+</p>
+<p align="center">
+<i>Gambar 6.4. Rancangan Antarmuka I-04 - Status Bantuan Samar</i>
+</p>
+
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.1 Rancangan Antarmuka [ID Layar 1]
+
+**Antarmuka:** *I-01*  
+**Nama Layar:** *Layar Utama*
+
+<p align="center">
+<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+</p>
+<p align="center">
+<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+</p>
+
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.1 Rancangan Antarmuka [ID Layar 1]
+
+**Antarmuka:** *I-01*  
+**Nama Layar:** *Layar Utama*
+
+<p align="center">
+<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+</p>
+<p align="center">
+<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+</p>
+
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.1 Rancangan Antarmuka [ID Layar 1]
+
+**Antarmuka:** *I-01*  
+**Nama Layar:** *Layar Utama*
+
+<p align="center">
+<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+</p>
+<p align="center">
+<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+</p>
+
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.1 Rancangan Antarmuka [ID Layar 1]
+
+**Antarmuka:** *I-01*  
+**Nama Layar:** *Layar Utama*
+
+<p align="center">
+<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+</p>
+<p align="center">
+<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+</p>
+
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.1 Rancangan Antarmuka [ID Layar 1]
+
+**Antarmuka:** *I-01*  
+**Nama Layar:** *Layar Utama*
+
+<p align="center">
+<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+</p>
+<p align="center">
+<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+</p>
+
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.1 Rancangan Antarmuka [ID Layar 1]
+
+**Antarmuka:** *I-01*  
+**Nama Layar:** *Layar Utama*
+
+<p align="center">
+<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+</p>
+<p align="center">
+<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+</p>
+
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
+
+## 6.1 Rancangan Antarmuka [ID Layar 1]
+
+**Antarmuka:** *I-01*  
+**Nama Layar:** *Layar Utama*
+
+<p align="center">
+<img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400">
+</p>
+<p align="center">
+<i>Gambar 6.1. Rancangan Antarmuka I-01 - Layar Utama</i>
+</p>
+
+Tabel 6.1. Spesifikasi Objek Antarmuka I-01
+
+| Id_Objek | Jenis | Konten | Keterangan |
+| :--- | :--- | :--- | :--- |
+| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
+| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *...* | *...* | *...* | *...* |
 
 ## 6.Y Rancangan Antarmuka Keseluruhan
 
@@ -1163,14 +1357,15 @@ Tabel 6.Y. Rancangan Antarmuka Keseluruhan
 | *[I-01]* | <img src="./assets/diagram/layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/layar-utama2.png" alt="Contoh Desain" width="400"> |
 | *[I-02]* | <img src="./assets/diagram/peta-layanan-terdekat1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/peta-layanan-terdekat2.png" alt="Contoh Desain" width="400"> |
 | *[I-03]* | <img src="./assets/diagram/detail-layanan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/detail-layanan2.png" alt="Contoh Desain" width="400"> |
-| *[I-04]* | <img src="./assets/diagram/pembuatan-laporan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/pembuatan-laporan2.png" alt="Contoh Desain" width="400"> |
-| *[I-05]* | <img src="./assets/diagram/status-bantuan-samar1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/status-bantuan-samar2.png" alt="Contoh Desain" width="400"> |
-| *[I-06]* | <img src="./assets/diagram/konfirmasi-laporan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/konfirmasi-laporan2.png" alt="Contoh Desain" width="400"> |
-| *[I-07]* | <img src="./assets/diagram/respons-petugas-sos-terkirim1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-sos-terkirim2.png" alt="Contoh Desain" width="400"> |
-| *[I-08]* | <img src="./assets/diagram/respons-petugas-bantuan-menuju-lokasi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-bantuan-menuju-lokasi2.png" alt="Contoh Desain" width="400"> |
-| *[I-09]* | <img src="./assets/diagram/respons-petugas-sos-menunggu-koneksi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-sos-menunggu-koneksi2.png" alt="Contoh Desain" width="400"> |
-| *[I-10]* | <img src="./assets/diagram/safeshe-pusat-respons-polisi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/safeshe-pusat-respons-polisi2.png" alt="Contoh Desain" width="400"> |
-| *[I-11]* | <img src="./assets/diagram/design-layar-utama1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/design-layar-utama2.png" alt="Contoh Desain" width="400"> |
+| *[I-04]* | <img src="./assets/diagram/status-bantuan-samar1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/status-bantuan-samar2.png" alt="Contoh Desain" width="400"> |
+| *[I-05]* | <img src="./assets/diagram/pembuatan-laporan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/pembuatan-laporan2.png" alt="Contoh Desain" width="400"> |
+| *[I-06]* | <img src="./assets/diagram/laporan-sedang-dikirim1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/laporan-sedang-dikirim2.png" alt="Contoh Desain" width="400"> |
+| *[I-07]* | <img src="./assets/diagram/konfirmasi-laporan1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/konfirmasi-laporan2.png" alt="Contoh Desain" width="400"> |
+| *[I-08]* | <img src="./assets/diagram/respons-petugas-sos-terkirim1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-sos-terkirim2.png" alt="Contoh Desain" width="400"> |
+| *[I-09]* | <img src="./assets/diagram/respons-petugas-bantuan-menuju-lokasi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-bantuan-menuju-lokasi2.png" alt="Contoh Desain" width="400"> |
+| *[I-10]* | <img src="./assets/diagram/respons-petugas-sos-menunggu-koneksi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/respons-petugas-sos-menunggu-koneksi2.png" alt="Contoh Desain" width="400"> |
+| *[I-11]* | <img src="./assets/diagram/safeshe-pusat-respons-polisi1.png" alt="Contoh Desain" width="400">  <img src="./assets/diagram/safeshe-pusat-respons-polisi2.png" alt="Contoh Desain" width="400"> |
+
 
 
 <br>
