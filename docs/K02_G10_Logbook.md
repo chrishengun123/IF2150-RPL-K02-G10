@@ -192,6 +192,8 @@
 | Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
 | :--- | :--- | :--- | :--- | :--- | :--- | 
 | *27-10-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
+| *28-10-2026* | *Natanael Chris Fabian Santoso* | *Mengisi tabel 5.1 dan bab 7 berdasarkan informasi dari milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
+| *27-10-2026* | *Natanael Chris Fabian Santoso* | *Mengisi bab 5 bagian tabel metode/operasi dan atribut dari seluruh kelas* | *3 jam* | *Done* | *-* |
 
 **Catatan/Evaluasi Milestone 8:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
