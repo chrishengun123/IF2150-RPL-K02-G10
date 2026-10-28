@@ -1064,8 +1064,8 @@ Tabel 6.1. Spesifikasi Objek Antarmuka I-01
 
 | Id_Objek | Jenis | Konten | Keterangan |
 | :--- | :--- | :--- | :--- |
-| *[ID objek]* | *[Jenis objek, misalnya Button, RTF Box, dll]* | *[String yang tampil pada layar]* | *[Reaksi sistem, layar tujuan, tautan, atau ID algoritma yang dijalankan]* |
-| *[ID objek]* | *[Jenis objek]* | *[Konten yang ditampilkan]* | *[Reaksi sistem atau nama file terkait beserta deskripsi ringkasnya]* |
+| *O-01* | *Button* | *SOS BANTUAN CEPAT* | *Mengaktifkan OneClickSOS* |
+| *O-02* | *Button* | *Hubungi* | *Menghubungi layanan yang ditampilkan* |
 | *...* | *...* | *...* | *...* |
 
 ## 6.2 Rancangan Antarmuka [ID Layar 2]
