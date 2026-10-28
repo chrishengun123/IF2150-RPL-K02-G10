@@ -554,7 +554,6 @@ Tabel 5.1. Daftar Kelas Perancangan dan Kelas Analisis Terkait
 | 12 | *AntarmukaPetaLayanan* | *AntarmukaPetaLayanan* |
 | ... | *...* | *...* |
 
-Untuk **setiap kelas**, identifikasi operasi berdasarkan tanggung jawab kelas beserta *visibility*-nya, serta atribut beserta *visibility* dan tipenya. Buat subbab tersendiri untuk setiap kelas.
 
 ## 5.1 Kelas OneClickSOS
 
@@ -596,11 +595,6 @@ procedure kirimSignal(input nama: String, input lokasi: Coordinate)
     target.terimaSignal(nama, lokasi)
 ```
 
-
-### 5.1.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
-
 ## 5.2 Kelas AntarmukaPolisi
 
 **Nama Kelas:** *AntarmukaPolisi*  
@@ -623,8 +617,6 @@ Tabel 5.2.2. Atribut Kelas AntarmukaPolisi
 
 ### 5.2.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *AntarmukaPolisi*  
 **Nama Operasi:** *kirimReply*  
 **ID Algoritma:** *Algo-002*
@@ -638,10 +630,6 @@ procedure kirimReply(input reply: Reply)
     target <- connectToNearest()
     target.terimaReply(reply)
 ```
-
-### 5.2.2 Algoritma/Query
-
-*[Ulangi pola 5.2.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
 
 ## 5.3 Kelas Korban
 
@@ -665,8 +653,6 @@ Tabel 5.3.2. Atribut Kelas OneClickSOS
 
 ### 5.3.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *Korban*  
 **Nama Operasi:** *[Signature operasi]*  
 **ID Algoritma:** *[Algo-001]*
@@ -684,10 +670,6 @@ Tabel 5.3.1. Query Operasi [Nama Operasi]
 | *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
 | *...* | *...* | *...* |
 
-
-### 5.3.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
 
 ## 5.4 Kelas Peta
 
@@ -711,8 +693,6 @@ Tabel 5.4.2. Atribut Kelas Peta
 | *...* | *...* | *...* |
 
 ### 5.4.1 Algoritma/Query
-
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
 
 **Nama Kelas:** *Peta*  
 **Nama Operasi:** *tampilkanLayanan*  
@@ -739,11 +719,6 @@ Tabel 5.4.1. Query Operasi [Nama Operasi]
 | *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
 | *...* | *...* | *...* |
 
-
-### 5.4.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
-
 ## 5.5 Kelas ListLayanan
 
 **Nama Kelas:** *ListLayanan*  
@@ -765,8 +740,6 @@ Tabel 5.5.2. Atribut Kelas ListLayanan
 
 ### 5.5.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *ListLayanan*  
 **Nama Operasi:** *[Signature operasi]*  
 **ID Algoritma:** *[Algo-001]*
@@ -783,11 +756,6 @@ Tabel 5.5.1. Query Operasi [Nama Operasi]
 | :--- | :--- | :--- |
 | *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
 | *...* | *...* | *...* |
-
-
-### 5.5.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
 
 ## 5.6 Kelas Layanan
 
@@ -815,8 +783,6 @@ Tabel 5.6.2. Atribut Kelas Layanan
 
 ### 5.6.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *Layanan*  
 **Nama Operasi:** *[Signature operasi]*  
 **ID Algoritma:** *[Algo-001]*
@@ -833,11 +799,6 @@ Tabel 5.6.1. Query Operasi [Nama Operasi]
 | :--- | :--- | :--- |
 | *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
 | *...* | *...* | *...* |
-
-
-### 5.6.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
 
 ## 5.7 Kelas AntarmukaTelepon
 
@@ -860,8 +821,6 @@ Kelas ini tidak memiliki atribut.
 
 ### 5.7.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *AntarmukaTelepon*  
 **Nama Operasi:** *[Signature operasi]*  
 **ID Algoritma:** *[Algo-001]*
@@ -879,10 +838,6 @@ Tabel 5.7.1. Query Operasi [Nama Operasi]
 | *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
 | *...* | *...* | *...* |
 
-
-### 5.7.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
 
 ## 5.8 Kelas Polisi
 
@@ -907,8 +862,6 @@ Tabel 5.8.2. Atribut Kelas Polisi
 
 ### 5.8.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *Polisi*  
 **Nama Operasi:** *[Signature operasi]*  
 **ID Algoritma:** *[Algo-001]*
@@ -926,10 +879,6 @@ Tabel 5.8.1. Query Operasi [Nama Operasi]
 | *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
 | *...* | *...* | *...* |
 
-
-### 5.8.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
 
 ## 5.9 Kelas Rekaman
 
@@ -953,8 +902,6 @@ Tabel 5.9.2. Atribut Kelas Rekaman
 
 ### 5.9.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *Rekaman*  
 **Nama Operasi:** *[Signature operasi]*  
 **ID Algoritma:** *[Algo-001]*
@@ -972,10 +919,6 @@ Tabel 5.9.1. Query Operasi [Nama Operasi]
 | *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
 | *...* | *...* | *...* |
 
-
-### 5.9.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
 
 ## 5.10 Kelas LaporanKekerasan
 
@@ -1005,8 +948,6 @@ Tabel 5.10.2. Atribut Kelas LaporanKekerasan
 
 ### 5.10.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *LaporanKekerasan*  
 **Nama Operasi:** *[Signature operasi]*  
 **ID Algoritma:** *[Algo-001]*
@@ -1023,11 +964,6 @@ Tabel 5.10.1. Query Operasi [Nama Operasi]
 | :--- | :--- | :--- |
 | *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
 | *...* | *...* | *...* |
-
-
-### 5.10.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
 
 ## 5.11 Kelas APILayanan
 
@@ -1050,8 +986,6 @@ Tabel 5.11.2. Atribut Kelas APILayanan
 
 ### 5.11.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *APILayanan*  
 **Nama Operasi:** *[Signature operasi]*  
 **ID Algoritma:** *[Algo-001]*
@@ -1068,11 +1002,6 @@ Tabel 5.11.1. Query Operasi [Nama Operasi]
 | :--- | :--- | :--- |
 | *[Q-001]* | *[Tuliskan query]* | *[Fungsi query]* |
 | *...* | *...* | *...* |
-
-
-### 5.11.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
 
 ## 5.12 Kelas AntarmukaPetaLayanan
 
@@ -1095,8 +1024,6 @@ Tabel 5.12.2. Atribut Kelas AntarmukaPetaLayanan
 
 ### 5.12.1 Algoritma/Query
 
-Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Algoritma dapat dituliskan sebagai *pseudocode*. Implementasi *skeleton code* juga dapat digunakan untuk kelas yang sudah terdefinisi pada bahasa pemrograman tertentu.
-
 **Nama Kelas:** *AntarmukaPetaLayanan*  
 **Nama Operasi:** *[Signature operasi]*  
 **ID Algoritma:** *[Algo-001]*
@@ -1115,10 +1042,6 @@ Tabel 5.12.1. Query Operasi [Nama Operasi]
 | *...* | *...* | *...* |
 
 
-### 5.12.2 Algoritma/Query
-
-*[Ulangi pola 5.1.1 untuk operasi penting berikutnya pada kelas yang sama, jika ada.]*
-
 <br>
 
 ---
@@ -1126,8 +1049,6 @@ Tabel 5.12.1. Query Operasi [Nama Operasi]
 # BAB 6: Perancangan Antarmuka
 
 ## 6.1 Rancangan Antarmuka [ID Layar 1]
-
-Masukkan versi awal prototipe antarmuka, dimana untuk setiap antarmuka/layar, tuliskan spesifikasi rinci objek yang ditampilkan dan reaksi sistem terhadap interaksi pengguna.
 
 **Antarmuka:** *[ID layar]*  
 **Nama Layar:** *[Nama layar]*
