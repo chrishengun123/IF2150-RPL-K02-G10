@@ -568,14 +568,19 @@ Tabel 5.1.1. Operasi Kelas OneClickSOS
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *menerimaReply(reply: Reply): void* | *Public* | *Menerima balasan yang dikirimkan oleh pihak polisi kepada korban* |
+| *kirimSinyal(nama: String, lokasi: Coordinate): void* | *Public* | *Mengirimkan sinyal berisi nama korban dan lokasi kejadian ke antarmuka polisi.* |
+| *tungguKoneksi(Interval: Real): void* | *Public* | *Menunggu sampai gawai terhubung ke jaringan internet.* |
+| *sinyalMikrofon(): void* | *Public* | *Memberikan sinyal ke Rekaman untuk mulai merekam.* |
+| *dapatLokasi(): Boolean* | *Public* | *Mengonfirmasi apakah mendapatkan lokasi atau tidak.* |
 | *...* | *...* | *...* |
+
 
 Tabel 5.1.2. Atribut Kelas OneClickSOS
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *terkoneksi* | *Private* | *Boolean* |
 | *...* | *...* | *...* |
 
 ### 5.1.1 Algoritma/Query
@@ -613,14 +618,15 @@ Tabel 5.2.1. Operasi Kelas AntarmukaPolisi
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
-| *...* | *...* | *...* |
+| *terimaSinyal(nama: String, lokasi: Coordinate): void* | *Public* | *Menerima sinyal berisi nama korban dan lokasi kejadian dari OneClickSOS* |
+| *kirimReply(reply: Reply): void* | *Public* | *Mengirimkan balasan dari polisi ke korban.* |
+| *tungguKoneksi(Interval: Real): void* | *Public* | *Menunggu sampai terdapat koneksi jaringan internet.* |
 
 Tabel 5.2.2. Atribut Kelas AntarmukaPolisi
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *terkoneksi* | *Private* | *Boolean* |
 | *...* | *...* | *...* |
 
 ### 5.2.1 Algoritma/Query
@@ -658,14 +664,15 @@ Tabel 5.3.1. Operasi Kelas Korban
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *lokasiKorbanSekarang(): Coordinate* | *Public* | *Mengembalikan lokasi dari korban dalam bentuk koordinat.* |
 | *...* | *...* | *...* |
 
 Tabel 5.3.2. Atribut Kelas OneClickSOS
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *lokasiKorban* | *Private* | *Coordinate* |
+| *namaKorban* | *Private* | *String* |
 | *...* | *...* | *...* |
 
 ### 5.3.1 Algoritma/Query
@@ -703,14 +710,16 @@ Tabel 5.4.1. Operasi Kelas Peta
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *lokasiPetaSekarang(): Coordinate* | *Public* | *Mengembalikan lokasi dari peta dalam bentuk koordinat.* |
+| *lokasiSekitar(korban: Korban): Coordinate* | *Public* | *Mengembalikan lokasi di sekitar lokasi (koordinat) korban.* |
+| *tampilkanLayanan(listLayanan: ListLayanan): void* | *Public* | *Menampilkan daftar layanan yang ada.* |
 | *...* | *...* | *...* |
 
 Tabel 5.4.2. Atribut Kelas Peta
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *lokasiPeta* | *Private* | *Coordinate* |
 | *...* | *...* | *...* |
 
 ### 5.4.1 Algoritma/Query
@@ -748,14 +757,14 @@ Tabel 5.5.1. Operasi Kelas ListLayanan
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *ambilLayananTersedia(peta: Peta): List of Layanan* | *Public* | *Mengambil layanan yang tersedia, berdasarkan layanan yang ditampilkan di peta.* |
 | *...* | *...* | *...* |
 
 Tabel 5.5.2. Atribut Kelas ListLayanan
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *kumpulanLayanan* | *Private* | *List of Layanan* |
 | *...* | *...* | *...* |
 
 ### 5.5.1 Algoritma/Query
@@ -793,14 +802,19 @@ Tabel 5.6.1. Operasi Kelas Layanan
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *ambilDataLayanan(listLayanan: ListLayanan): void* | *Public* | *Mengambil data layanan dari list layanan yang tersedia.* |
+| *ambilLokasi(): Coordinate* | *Public* | *Mengembalikan lokasi layanan dalam bentuk koordinat.* |
+| *ambilNama(): String* | *Public* | *Mengembalikan nama layanan.* |
+| *ambilKontak(): String* | *Public* | *Mengembalikan kontak dari layanan.* |
 | *...* | *...* | *...* |
 
 Tabel 5.6.2. Atribut Kelas Layanan
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *namaLayanan* | *Private* | *String* |
+| *lokasiLayanan* | *Private* | *Coordinate* |
+| *kontakLayanan* | *Private* | *String* |
 | *...* | *...* | *...* |
 
 ### 5.6.1 Algoritma/Query
@@ -838,15 +852,15 @@ Tabel 5.7.1. Operasi Kelas AntarmukaTelepon
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *masukkanNomorLayanan(layanan: Layanan): void* | *Public* | *Memasukkan nomor dari layanan yang tersedia.* |
 | *...* | *...* | *...* |
 
 Tabel 5.7.2. Atribut Kelas AntarmukaTelepon
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
 | *...* | *...* | *...* |
+Kelas ini tidak memiliki atribut.
 
 ### 5.7.1 Algoritma/Query
 
@@ -883,14 +897,16 @@ Tabel 5.8.1. Operasi Kelas Polisi
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *terimaSinyal(nama: String, lokasi: Coordinate)* | *Public* | *Menerima sinyal berisi nama korban dan lokasi kejadian dari OneClickSOS melalui AntarmukaPolisi.* |
+| *terimaLaporan(laporanKekerasan: LaporanKekerasan): void* | *Public* | *Menerima laporan kekerasan yang dikirimkan oleh korban.* |
 | *...* | *...* | *...* |
 
 Tabel 5.8.2. Atribut Kelas Polisi
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *lokasiPolisi* | *Private* | *Coordinate* |
+| *ketersediaan* | *Private* | *Boolean* |
 | *...* | *...* | *...* |
 
 ### 5.8.1 Algoritma/Query
@@ -928,14 +944,15 @@ Tabel 5.9.1. Operasi Kelas Rekaman
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *mulaiRekamanSuara(): void* | *Public* | *Saat OneClickSOS diaktifkan, operasi bertugas menyalakan mikrofon dan memulai rekaman suara* |
+| *simpanRekamanSuara(): void* | *Public* | *Menyimpan rekaman suara ke penyimpanan gawai korban* |
 | *...* | *...* | *...* |
 
 Tabel 5.9.2. Atribut Kelas Rekaman
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *rekamanSuara* | *Private* | *File (.mp3)* |
 | *...* | *...* | *...* |
 
 ### 5.9.1 Algoritma/Query
@@ -973,14 +990,21 @@ Tabel 5.10.1. Operasi Kelas LaporanKekerasan
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *masukkanDeskripsi(): void* | *Public* | *Memasukkan input pengguna berupa deskripsi kekerasan.* |
+| *masukkanTanggal(): void* | *Public* | *Memasukkan input pengguna berupa tanggal kejadian kekerasan.* |
+| *masukkanLokasi(): void* | *Public* | *Memasukkan input pengguna berupa lokasi kejadian kekerasan dalam bentuk koordinat.* |
+| *masukkanMode(): void* | *Public* | *Memasukkan input pengguna berupa mode pelaporan kekerasan.* |
+| *cekKelengkapan(): Boolean* | *Public* | *Memeriksa kelengkapan dari input pengguna terkait laporan kekerasan.* |
 | *...* | *...* | *...* |
 
 Tabel 5.10.2. Atribut Kelas LaporanKekerasan
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *deskripsiKekerasan* | *Private* | *String* |
+| *tanggalKekerasan* | *Private* | *Date* |
+| *lokasiKekerasan* | *Private* | *Coordinate* |
+| *modePelapor* | *Private* | *String* |
 | *...* | *...* | *...* |
 
 ### 5.10.1 Algoritma/Query
@@ -1018,14 +1042,14 @@ Tabel 5.11.1. Operasi Kelas APILayanan
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *ambilDataLayanan(peta: Peta): ListLayanan* | *Public* | *Mengambil data dari layanan berdasarkan layanan yang ditampilkan di peta.* |
 | *...* | *...* | *...* |
 
 Tabel 5.11.2. Atribut Kelas APILayanan
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
+| *urlAPI* | *Private* | *String* |
 | *...* | *...* | *...* |
 
 ### 5.11.1 Algoritma/Query
@@ -1063,14 +1087,14 @@ Tabel 5.12.1. Operasi Kelas AntarmukaPetaLayanan
 
 | Nama Operasi | Visibility (private, public) | Keterangan |
 | :--- | :--- | :--- |
-| *[Signature operasi, termasuk parameter dan tipe kembalian]* | *[Visibility]* | *[Tanggung jawab operasi]* |
+| *tampilkanPeta(): void* | *Public* | *Menampilkan peta.* |
+| *renderSimbolLayanan(lisLayanan: ListLayanan): void* | *Public* | *Menampilkan simbol layanan yang tersedia pada peta.* |
 | *...* | *...* | *...* |
 
 Tabel 5.12.2. Atribut Kelas AntarmukaPetaLayanan
 
 | Nama Atribut | Visibility (private, public) | Tipe |
 | :--- | :--- | :--- |
-| *[Nama atribut]* | *[Visibility]* | *[Tipe sesuai bahasa pemrograman yang digunakan]* |
 | *...* | *...* | *...* |
 
 ### 5.12.1 Algoritma/Query
