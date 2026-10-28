@@ -197,6 +197,8 @@
 | *27-10-2026* | *Natanael Chris Fabian Santoso* | *Mengisi bab 5 bagian tabel metode/operasi dan atribut dari seluruh kelas* | *3 jam* | *Done* | *-* |
 | *28-10-2026* | *Christopher Hendrik Gunawan* | *Logo dan algoritma* | *1 jam* | *Done* | *-* |
 | *28-10-2026* | *Jason Hartanto* | *Membuat UI korban* | *2,5 jam* | *Done* | *-* |
+| *28-10-2026* | *Ferdinand Valentino Darmawan* | *Mengisi template bab 6 dan beberapa pengisian tabel dari bab 6* | *1,5 jam* | *Done* | *-* |
+
 
 **Catatan/Evaluasi Milestone 8:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
