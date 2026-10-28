@@ -73,6 +73,11 @@ Silakan catat penggunaan AI yang berdampak signifikan pada pengerjaan tugas (mis
 | *Codex* | *Membuat draft awal bab 2* | *Make a draft of M6 chapter 2* | *Draft tabel bab 2 dibuat, kolom penjelasan saya hapuskan untuk isi manual* |
 | *Gemini* | *Mencari ide untuk style arsitektur P/L* | *Which architecture style would be best for an app designed to report cases of sexual harrassment for women?* | *Ide diberikan, saya memilih style terbaik menurut kebutuhan P/L* || | | | | |
 
+### Milestone 8
+| Tool AI | Tujuan Penggunaan | Contoh Prompt Utama | Modifikasi & Validasi Manusia |
+| :--- | :--- | :--- | :--- |
+| *Google stitch* | *Membuat UI untuk BAB 6* | *buat desain UI aplikasi SafeShe (5 layar mobile dan 1 dasbor web polisi) sesuai spesifikasi antarmuka pada DPPL, untuk diekspor ke Figma.* | *penyesuaian design dan pembenaran beberapa kengawuran AI* || | | | | |
+
 ---
 ### Pernyataan Integritas dan Persetujuan
 
