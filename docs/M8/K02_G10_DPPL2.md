@@ -716,11 +716,12 @@ Bagian ini diisi untuk kerangka algoritma proses yang dianggap cukup penting. Al
 ```text
 procedure tampilkanLayanan(input listLayanan: ListLayanan)
 { Menampilkan layanan yang ada }
-    if isEmpty(listLayanan) then
+    list <- ambilLayananTersedia(peta)
+    if isEmpty(list) then
         output("Tidak ada layanan yang tersedia")
     else
-        i iterate [0..listLayanan.nEff-1]
-            output(listLayanan.contents[i])
+        i iterate [0..list.nEff-1]
+            output(list.contents[i])
 ```
 
 Jika operasi mengacu pada query tertentu, lengkapi tabel berikut. 
