@@ -69,7 +69,7 @@ Tabel B.2. Bukti Best Practices
 | *Branching* | *<img alt="Contoh Branching" src="./assets/bukti_best_practices/branching.png" width="40%">* | *Contoh dari Branching, misal `feat/database` dan `feat/frontend`* |
 | *Semantic commit* | *<img alt="Contoh Semantic Commit" src="./assets/bukti_best_practices/semantic_commit.png" width="40%">* | *Contoh dari semantic commit, dengan format `<type>/<description>`* |
 | *Track tasks* | *[ISI: tautan Issues/Projects]* | *[ISI: jumlah issue dan pembagian]* |
-| *Pull request dan review* | *[ISI: tautan 2-3 PR]* | *[ISI: siapa me-review siapa]* |
+| *Pull request dan review* | *PR 1: <img src="./assets/bukti PR 1.png" width="400"> <img src="./assets/bukti PR 1 reviewer.png" width="400">  - PR 2: <img src="./assets/bukti PR 2.png" width="400">* | *PR 1 direview oleh Christopher Hendrik Gunawan - PR 2 direview oleh Natanael Chris Fabian Santoso* |
 | *Pengujian* | *`src/tests/test_api.py`; jalankan `python -m pytest tests -v` dari `src/`* | *16 tes lolos: haversine, urutan dan radius layanan, filter jenis, kontak kosong, alur SOS lengkap (idempoten, autentikasi polisi, rekaman, balasan disamarkan), SOS tanpa lokasi, laporan tidak lengkap, validasi tanggal/identitas, enkripsi dan mode anonim, teks balasan dan waktu pada status SOS, unit terdekat untuk polisi, alamat dan fasilitas layanan, tindak lanjut laporan, pelapor cek status lewat kode tanpa kebocoran data, migrasi database lama* |
 
 ### B.2.1 Profiling dan Optimasi
@@ -108,10 +108,10 @@ Tabel B.4. Kontribusi Anggota
 | NIM | Nama | Modul / Fitur yang Dikerjakan | Persentase Kontribusi |
 | :--- | :--- | :--- | :--- |
 | *13525083* | *Natanael Chris Fabian Santoso* | *Membuat database dan enkripsi* | *20%* |
-| *13525131* | *Mirza Aryasatya Akmal* | *[ISI]* | *[ISI]* |
+| *13525131* | *Mirza Aryasatya Akmal* | *Membuat frontend* | *20%* |
 | *13525149* | *Ferdinand Valentino Darmawan* | *profiling waktu pengambilan layanan terdekat* | *20%* |
 | *13525050* | *Jason Hartanto* | *api testing* | *20%* |
-| *13525065* | *Christopher Hendrik Gunawan* | *[ISI]* | *[ISI]* |
+| *13525065* | *Christopher Hendrik Gunawan* | *Membuat backend* | *20%* |
 
 Modul yang tersedia untuk dibagi: SOS dan balasan polisi (UC01, UC07); rekaman suara (UC06); peta dan layanan (UC02-UC04); laporan kekerasan (UC05); dashboard polisi, basis data, dan uji.
 
@@ -121,15 +121,15 @@ Tabel B.5. Traceability Kelas Perancangan ke Implementasi
 
 | ID Kelas | Nama Kelas Perancangan | Bentuk Implementasi | Lokasi (File dan Nama) | Keterangan |
 | :--- | :--- | :--- | :--- | :--- |
-| *C01* | *OneClickSOS* | *Kelas + handler klien + route* | *`src/backend/domain/sos.py` - `OneClickSOS`; `src/frontend/app.js` - handler `#sosBtn`, `startRecording`, `flush`; `POST /api/sos`, `GET /api/sos/{id}/status` di `src/backend/main.py`* | *`dapatLokasi`, `kirimSinyal`, `menerimaReply` menjadi metode kelas; `panggilSOS` menjadi handler tombol; `signalMikrofon` menjadi `startRecording` (respons `rekam: true`); `tungguKoneksi` menjadi `flush` dan antrean offline* |
-| *C02* | *AntarmukaPolisi* | *Route + halaman web* | *`src/backend/main.py` - `/api/polisi/*`; `src/frontend/police.html`* | *`menerimaSinyal` menjadi `GET /api/polisi/sos` dan tabel dashboard; `kirimReply` menjadi `POST /api/polisi/sos/{id}/reply`* |
-| *C03* | *Korban* | *Kelas + fungsi klien* | *`src/backend/domain/sos.py` - `Korban`; `src/frontend/app.js` - `getPos`, `pilih`* | *Atribut `namaKorban`, `lokasiKorban` menjadi atribut kelas; `lokasiKorbanSekarang` menjadi `getPos` di klien; `pilihLayanan` menjadi `pilih`; `teleponLayanan` menjadi tautan `tel:`* |
-| *C04* | *Peta* | *Kelas* | *`src/backend/domain/layanan.py` - `Peta`* | *`lokasiPeta` atribut; `lokasiPetaSekarang`, `lokasiSekitar` metode; `tampilkanLayanan` ditangani C12* |
-| *C05* | *ListLayanan* | *Kelas* | *`src/backend/domain/layanan.py` - `ListLayanan`* | *`kumpulanLayanan` atribut; `ambilLayananTersedia(peta)` mengambil data via C11, menghitung jarak, mengurutkan, dan membatasi* |
-| *C06* | *Layanan* | *Kelas + route* | *`src/backend/domain/layanan.py` - `Layanan`; `GET /api/layanan/{id}` di `main.py`* | *Atribut nama, lokasi, kontak; `ambilNama`, `ambilLokasi`, `ambilKontak`; `ambilDataLayanan` menjadi metode statis* |
-| *C07* | *AntarmukaTelepon* | *Elemen antarmuka* | *`src/frontend/app.js` - `pilih()` (tautan `tel:`)* | *`masukkanNomorLayanan` diwujudkan dengan membuka aplikasi telepon bawaan perangkat lewat `tel:`* |
-| *C08* | *Polisi* | *Kelas* | *`src/backend/domain/sos.py` - `Polisi`; tabel `polisi` di `db.py`* | *`pantauAntarmuka`, `kirimPasukan` menjadi metode statis; `lokasiPolisi`, `ketersediaan` menjadi kolom tabel; `terdekat` tambahan* |
-| *C09* | *Rekaman* | *Kelas + fungsi klien + route* | *`src/backend/domain/sos.py` - `Rekaman`; `src/frontend/app.js` - `startRecording`, `uploadPending`; `POST /api/sos/{id}/recording`* | *`mulaiRekamanSuara` menjadi `startRecording` (MediaRecorder); `simpanRekamanSuara` menjadi `Rekaman.simpanRekamanSuara`; `rekamanSuara` menjadi berkas di `data/uploads` + tabel `rekaman`* |
-| *C10* | *LaporanKekerasan* | *Kelas + form klien + route* | *`src/backend/domain/laporan.py` - `LaporanKekerasan`; form di `index.html`/`app.js`; `POST /api/laporan`* | *Atribut menjadi atribut kelas; `masukkan*` menjadi parameter konstruktor dan kolom form; `cekKelengkapan` menjadi validasi 422* |
-| *C11* | *APILayanan* | *Kelas + route* | *`src/backend/domain/layanan.py` - `APILayanan`; `GET /api/layanan/nearby`* | *`urlAPI` atribut; `ambilDataLayanan(peta)` menjalankan kueri bounding box berindeks* |
-| *C12* | *AntarmukaPetaLayanan* | *Fungsi/komponen klien* | *`src/frontend/app.js` - `loadLayanan`, `renderLayanan`; `index.html` - `#tab-peta`* | *`tampilkanPeta` memakai Leaflet; `renderSimbolLayanan` menjadi penanda peta dan daftar layanan* |
+| *C01* | *OneClickSOS* | Kelas, handler klien, route | *`backend/domain/sos.py` — `OneClickSOS`* | Menangani pengiriman SOS dan balasan. |
+| *C02* | *AntarmukaPolisi* | Route, halaman web | *`frontend/police.html`* | Halaman menampilkan sinyal SOS dan menyediakan balasan polisi. |
+| *C03* | *Korban* | Kelas, fungsi klien | *`backend/domain/sos.py` — `Korban`* | Menyimpan data korban dan mendukung pemilihan serta panggilan layanan. |
+| *C04* | *Peta* | Kelas | *`backend/domain/layanan.py` — `Peta`* | Mengelola lokasi peta dan pencarian area sekitar. |
+| *C05* | *ListLayanan* | Kelas | *`backend/domain/layanan.py` — `ListLayanan`* | Mengambil dan mengurutkan layanan berdasarkan jarak. |
+| *C06* | *Layanan* | Kelas, route | *`backend/domain/layanan.py` — `Layanan`* | Menyimpan informasi layanan dan menyediakan datanya. |
+| *C07* | *AntarmukaTelepon* | Elemen antarmuka | *`frontend/index.html`* | Elemen antarmuka membuka aplikasi telepon untuk menghubungi layanan. |
+| *C08* | *Polisi* | Kelas | *`backend/domain/sos.py` — `Polisi`* | Mengelola informasi polisi dan penanganan sinyal SOS. |
+| *C09* | *Rekaman* | Kelas, fungsi klien, route | *`backend/domain/sos.py` — `Rekaman`* | Mengelola penyimpanan rekaman suara. |
+| *C10* | *LaporanKekerasan* | Kelas, form klien, route | *`backend/domain/laporan.py` — `LaporanKekerasan`* | Menyimpan dan memvalidasi laporan kekerasan. |
+| *C11* | *APILayanan* | Kelas, route | *`backend/domain/layanan.py` — `APILayanan`* | Mengambil data layanan dari API. |
+| *C12* | *AntarmukaPetaLayanan* | Fungsi/komponen klien | *`frontend/index.html`* | Antarmuka menampilkan peta dan penanda layanan. |
