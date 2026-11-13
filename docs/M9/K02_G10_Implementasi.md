@@ -229,30 +229,19 @@ Tabel B.4. Kontribusi Anggota
 
 ## B.5 Traceability Kelas Perancangan ke Implementasi
 
-Pemetaan dari **setiap kelas perancangan** pada DPPL (Tabel 4.1) ke wujud implementasinya. Bentuk implementasi bebas (kelas, fungsi, komponen, *route/handler*, *stored procedure*, skrip, dsb.), tetapi tiap kelas perancangan harus muncul pada tabel ini. Jika implementasi berupa kelas dengan nama yang sama, tetap dicantumkan.
-
 Tabel B.5. Traceability Kelas Perancangan ke Implementasi
 
 | ID Kelas | Nama Kelas Perancangan | Bentuk Implementasi | Lokasi (File dan Nama) | Keterangan |
 | :--- | :--- | :--- | :--- | :--- |
-| *C01* | *OneClickSOS* | ** | ** | ** |
-| *C02* | *AntarmukaPolisi* | ** | ** | ** |
-| *C03* | *Korban* | ** | ** | ** |
-| *C04* | *Peta* | ** | ** | ** |
-| *C05* | *ListLayanan* | ** | ** | ** |
-| *C06* | *Layanan* | ** | ** | ** |
-| *C07* | *AntarmukaTelepon* | ** | ** | ** |
-| *C08* | *Polisi* | ** | ** | ** |
-| *C09* | *Rekaman* | ** | ** | ** |
-| *C10* | *LaporanKekerasan* | ** | ** | ** |
-| *C11* | *APILayanan* | ** | ** | ** |
-| *C12* | *AntarmukaPetaLayanan* | ** | ** | ** |
-
-| *[C01]* | *[Nama kelas pada DPPL]* | *[mis. Kelas / Fungsi / Komponen / Route / Tabel]* | *[mis. `src/models/user.py` - `User`]* | *[Cara atribut dan operasi kelas diwujudkan; "-" jika tidak ada penjelasan tambahan]* |
-| *[C02]* | *[Nama kelas pada DPPL]* | *[Bentuk implementasi]* | *[mis. `src/components/LoginForm.tsx` - `LoginForm`]* | *[mis. atribut menjadi *state*, operasi menjadi *handler*]* |
-| *[C03]* | *[Nama kelas pada DPPL]* | *[Bentuk implementasi]* | *[mis. `src/routes/auth.js` - `POST /login`]* | *[Keterangan]* |
-| *...* | *...* | *...* | *...* | *...* |
-
-Catatan:
-- Satu kelas perancangan boleh diwujudkan oleh beberapa file/unit, dan satu file/unit boleh mewujudkan beberapa kelas perancangan. Tuliskan semuanya.
-- Kelas perancangan yang **tidak diimplementasikan** atau **digabung/dipecah** tetap dicantumkan, dan alasannya dicatat di Bagian B.1.
+| *C01* | *OneClickSOS* | Kelas, handler klien, route | *`backend/domain/sos.py` — `OneClickSOS`* | Menangani pengiriman SOS dan balasan. |
+| *C02* | *AntarmukaPolisi* | Route, halaman web | *`frontend/police.html`* | Halaman menampilkan sinyal SOS dan menyediakan balasan polisi. |
+| *C03* | *Korban* | Kelas, fungsi klien | *`backend/domain/sos.py` — `Korban`* | Menyimpan data korban dan mendukung pemilihan serta panggilan layanan. |
+| *C04* | *Peta* | Kelas | *`backend/domain/layanan.py` — `Peta`* | Mengelola lokasi peta dan pencarian area sekitar. |
+| *C05* | *ListLayanan* | Kelas | *`backend/domain/layanan.py` — `ListLayanan`* | Mengambil dan mengurutkan layanan berdasarkan jarak. |
+| *C06* | *Layanan* | Kelas, route | *`backend/domain/layanan.py` — `Layanan`* | Menyimpan informasi layanan dan menyediakan datanya. |
+| *C07* | *AntarmukaTelepon* | Elemen antarmuka | *`frontend/index.html`* | Elemen antarmuka membuka aplikasi telepon untuk menghubungi layanan. |
+| *C08* | *Polisi* | Kelas | *`backend/domain/sos.py` — `Polisi`* | Mengelola informasi polisi dan penanganan sinyal SOS. |
+| *C09* | *Rekaman* | Kelas, fungsi klien, route | *`backend/domain/sos.py` — `Rekaman`* | Mengelola penyimpanan rekaman suara. |
+| *C10* | *LaporanKekerasan* | Kelas, form klien, route | *`backend/domain/laporan.py` — `LaporanKekerasan`* | Menyimpan dan memvalidasi laporan kekerasan. |
+| *C11* | *APILayanan* | Kelas, route | *`backend/domain/layanan.py` — `APILayanan`* | Mengambil data layanan dari API. |
+| *C12* | *AntarmukaPetaLayanan* | Fungsi/komponen klien | *`frontend/index.html`* | Antarmuka menampilkan peta dan penanda layanan. |
