@@ -213,11 +213,13 @@
 | *02-11-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,5 jam* | *Done* | *-* |
 | *12-11-2026* | *Natanael Chris Fabian Santoso* | *Membuat config dan init database* | *2 jam* | *Done* | *-* |
 | *12-11-2026* | *Ferdinand Valentino Darmawan* | *Membuat profiling pengecekan total waktu dalam pengambilan layanan terdekat* | *2 jam* | *Done* | *-* |
+| *12-11-2026* | *Mirza Aryasatya Akmal* | *Membuat frontend* | *2,5 jam* | *Done* | *-* |
 | *13-11-2026* | *Natanael Chris Fabian Santoso* | *Membuat enkripsi dan seed untuk daftar layanan fiktif* | *1,5 jam* | *Done* | *-* |
 | *13-11-2026* | *Ferdinand Valentino Darmawan* | *Mengerjakan bagian track tasks serta pull request dan review di B.2.* | *1 jam* | *Done* | *-* |
 | *13-11-2026* | *Christopher Hendrik Gunawan* | *Membuat backend* | *1 jam* | *Done* | *-* |
 | *13-11-2026* | *Christopher Hendrik Gunawan* | *Review pull request database* | *0,5 jam* | *Done* | *-* |
 | *13-11-2026* | *Christopher Hendrik Gunawan* | *Mengisi tabel B.5* | *1 jam* | *Done* | *-* |
+| *13-11-2026* | *Mirza Aryasatya Akmal* | *Membuat Frontend aplikasi* | *3 jam* | *Done* | *-* |
 
 
 **Catatan/Evaluasi Milestone 9:**
