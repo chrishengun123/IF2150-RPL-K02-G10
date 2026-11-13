@@ -108,7 +108,7 @@ Tabel B.4. Kontribusi Anggota
 | NIM | Nama | Modul / Fitur yang Dikerjakan | Persentase Kontribusi |
 | :--- | :--- | :--- | :--- |
 | *13525083* | *Natanael Chris Fabian Santoso* | *Membuat database dan enkripsi* | *20%* |
-| *13525131* | *Mirza Aryasatya Akmal* | *[ISI]* | *[ISI]* |
+| *13525131* | *Mirza Aryasatya Akmal* | *Membuat frontend* | *20%* |
 | *13525149* | *Ferdinand Valentino Darmawan* | *profiling waktu pengambilan layanan terdekat* | *20%* |
 | *13525050* | *Jason Hartanto* | *api testing* | *20%* |
 | *13525065* | *Christopher Hendrik Gunawan* | *Membuat backend* | *20%* |
