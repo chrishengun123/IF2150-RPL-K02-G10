@@ -66,7 +66,7 @@ Tabel B.2. Bukti Best Practices
 
 | Praktik | Bukti | Keterangan |
 | :--- | :--- | :--- |
-| *Branching* | *[ISI: tautan daftar branch / graph commit]* | *[ISI: skema yang dipakai, mis. `feat/<fitur>`]* |
+| *Branching* | *<img alt="Contoh Branching" src="./assets/bukti_best_practices/branching.png" width="40%">* | *Contoh dari Branching, misal `feat/database` dan `feat/frontend`* |
 | *Semantic commit* | *<img alt="Contoh Semantic Commit" src="./assets/bukti_best_practices/semantic_commit.png" width="40%">* | *Contoh dari semantic commit, dengan format `<type>/<description>`* |
 | *Track tasks* | *[ISI: tautan Issues/Projects]* | *[ISI: jumlah issue dan pembagian]* |
 | *Pull request dan review* | *[ISI: tautan 2-3 PR]* | *[ISI: siapa me-review siapa]* |
