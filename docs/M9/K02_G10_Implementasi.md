@@ -67,7 +67,7 @@ Tabel B.2. Bukti Best Practices
 | Praktik | Bukti | Keterangan |
 | :--- | :--- | :--- |
 | *Branching* | *[ISI: tautan daftar branch / graph commit]* | *[ISI: skema yang dipakai, mis. `feat/<fitur>`]* |
-| *Semantic commit* | *[ISI: tautan riwayat commit]* | *[ISI: ringkasan]* |
+| *Semantic commit* | *<img alt="Contoh Semantic Commit" src="./assets/bukti_best_practices/semantic_commit.png" width="40%">* | *Contoh dari semantic commit, dengan format `<type>/<description>`* |
 | *Track tasks* | *[ISI: tautan Issues/Projects]* | *[ISI: jumlah issue dan pembagian]* |
 | *Pull request dan review* | *[ISI: tautan 2-3 PR]* | *[ISI: siapa me-review siapa]* |
 | *Pengujian* | *`src/tests/test_api.py`; jalankan `python -m pytest tests -v` dari `src/`* | *16 tes lolos: haversine, urutan dan radius layanan, filter jenis, kontak kosong, alur SOS lengkap (idempoten, autentikasi polisi, rekaman, balasan disamarkan), SOS tanpa lokasi, laporan tidak lengkap, validasi tanggal/identitas, enkripsi dan mode anonim, teks balasan dan waktu pada status SOS, unit terdekat untuk polisi, alamat dan fasilitas layanan, tindak lanjut laporan, pelapor cek status lewat kode tanpa kebocoran data, migrasi database lama* |
