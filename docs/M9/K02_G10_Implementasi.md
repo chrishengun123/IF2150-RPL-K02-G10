@@ -16,7 +16,7 @@ Dipersiapkan oleh:
 | Informasi | Keterangan |
 | --- | --- |
 | Kelas | *K2* |
-| Kelompok | *10*  |
+| Kelompok | *10* |
 
 | NIM | Nama |
 |---|---|
@@ -27,166 +27,38 @@ Dipersiapkan oleh:
 | *13525065* | *Christopher Hendrik Gunawan* |
 ---
 
-> **Petunjuk pengerjaan:** *[Silahkan hapus bagian ini setelah selesai mengerjakan]*
->
-> Dokumen ini adalah **spesifikasi sekaligus template laporan singkat** Tugas 9. Bagian **Ketentuan Implementasi** (Bagian A) adalah aturan yang harus kalian ikuti, boleh dihapus dari laporan akhir. Bagian **Laporan Implementasi** (Bagian B) adalah yang **wajib kalian isi**. Gunakan nama, ID, kebutuhan, use case, dan kelas yang konsisten dengan SKPL, APL, dan DPPL.
-
----
-
-# BAGIAN A: Ketentuan Implementasi
-
-## A.1 Deskripsi Tugas
-
-Pada tugas ini, kalian mengimplementasikan perangkat lunak yang telah dirancang pada tugas-tugas sebelumnya (SKPL, APL, DPPL) menjadi aplikasi yang **dapat dijalankan**. Platform bebas (web, desktop, atau mobile) selama aplikasi dapat dijalankan ulang oleh asisten mengikuti petunjuk kalian.
-
-Ketentuan umum:
-- Setiap anggota bertanggung jawab atas **minimal satu fitur atau modul** dan harus terlihat jelas di riwayat commit/PR.
-- Implementasi harus **mengacu pada DPPL**. Jika ada yang berubah (kelas, layar, basis data, dsb.), catat di Bagian B.1. Perubahan itu wajar, tetapi harus tercatat dan beralasan.
-- Implementasi **tidak harus berupa kelas** (misalnya fungsi, komponen, *route/handler*, *stored procedure*, atau skrip). Namun, setiap kelas perancangan pada DPPL **wajib dapat ditelusuri** ke implementasinya, dan penelusuran ini dicatat di Bagian B.5.
-- Seluruh use case pada SKPL **diprioritaskan** untuk diimplementasikan. Status tiap use case akan dilaporkan pada HIUPL (Tugas 10).
-- Seluruh mahasiswa **wajib** mengikuti asistensi akbar.
-
-## A.2 Platform, Bahasa, dan Teknologi
-
-Kalian **bebas** memilih bahasa, framework, library, dan basis data, dengan syarat:
-
-1. **Dapat dijalankan ulang** oleh asisten pada mesin biasa dengan mengikuti README. Versi bahasa/runtime dan seluruh dependensi harus tertulis jelas.
-2. **Dependensi dikelola lewat file standar**, misalnya `package.json` + lockfile, `requirements.txt`/`pyproject.toml`, `pom.xml`/`build.gradle`, `composer.json`, `pubspec.yaml`, dan sejenisnya. Jangan meng-commit folder hasil instalasi (`node_modules/`, `venv/`, `build/`, dll.).
-3. **Jika memakai layanan eksternal** (basis data cloud, API pihak ketiga, auth, dll.), sediakan cara menjalankan tanpa akun pribadi kalian, atau sediakan data/akun uji pada README. Basis data **sangat disarankan** dapat dijalankan lokal (SQLite, atau Docker Compose untuk PostgreSQL/MySQL/MongoDB).
-4. **Arsitektur sesuai DPPL.** Pola arsitektur yang kalian pilih di APL/DPPL (MVC, layered, client-server, dll.) harus terlihat pada struktur kode.
-
-Ketentuan tambahan per platform:
-
-| Platform | Ketentuan |
-| :--- | :--- |
-| **Web** | Berjalan lokal lewat satu-dua perintah yang terdokumentasi. Boleh juga di-*deploy*; jika ya, cantumkan URL, tetapi **tetap wajib bisa dijalankan lokal** (URL deploy bisa mati). |
-| **Desktop** | Berjalan dari source lewat perintah yang terdokumentasi. Build/installer opsional. |
-| **Mobile** | Berjalan di emulator/simulator atau perangkat. Sertakan langkah menjalankan, dan **sangat disarankan** melampirkan APK/build di Release. |
-
-## A.3 Keamanan Repository
-
-Repo fork kelompok bersifat **public**, sehingga:
-
-- **Dilarang** meng-commit password, API key, token, `.env` asli, sertifikat/private key, atau data pribadi. Hal ini dapat mengurangi nilai.
-- Sediakan `.env.example` berisi nama variabel tanpa nilai rahasia, dan masukkan `.env` ke `.gitignore`.
-- Jika sudah terlanjur ter-commit, **cabut/ganti** kredensial tersebut. Menghapus commit saja tidak cukup.
-- Data uji/seed harus berupa data fiktif.
-
-## A.4 Struktur Folder
-
-Seluruh kode ditempatkan di `src/` pada repo fork. Jangan mengubah folder milestone lama.
-
-```
-src/                              # SELURUH kode implementasi
-	README.md                     # dokumentasi utama aplikasi (lihat A.5)
-	.env.example                  # jika memakai environment variable
-	<struktur kode kalian>        # bebas, mengikuti pola arsitektur DPPL
-	tests/                        # test case (jika ada)
-docs/
-	M9/
-		KXX_GYY_Implementasi.md   # laporan ini (Bagian B)
-		KXX_GYY_Form-Asistensi.md
-```
-
-Catatan:
-- `README.md` aplikasi diletakkan di **`src/README.md`**, bukan di root repo.
-- Jika kerangka kerja kalian mewajibkan struktur tertentu (misalnya Maven `src/main/java`, Flutter `lib/`, monorepo `frontend/` dan `backend/`), letakkan semuanya **di dalam `src/`**.
-- Nama file dan folder pada `docs/M9/` mengikuti aturan penamaan milestone sebelumnya (`KXX_GYY_...`).
-
-## A.5 Isi Minimal `src/README.md`
-
-README harus cukup bagi orang yang belum pernah melihat proyek kalian untuk menjalankan aplikasi dari nol. Minimal berisi:
-
-1. **Deskripsi singkat** aplikasi.
-2. **Teknologi yang digunakan** beserta versi (bahasa, framework, basis data).
-3. **Prasyarat dan instalasi** (software yang harus ada, perintah instalasi dependensi).
-4. **Konfigurasi** (environment variable, setup basis data, migrasi/seed) dan langkah demi langkah menjalankannya.
-5. **Cara menjalankan aplikasi** (dan cara menjalankan test, jika ada).
-6. **Akun/data uji** untuk mencoba tiap peran pengguna (jika ada login).
-7. **Daftar modul/fitur yang diimplementasi** beserta pembagian anggota.
-8. **Daftar tabel/koleksi basis data** beserta atributnya (atau tautan ke skema/ERD).
-
-## A.6 Best Practices
-
-Kalian dianjurkan menerapkan praktik berikut. Bukti penerapannya dirangkum pada Bagian B.2.
-
-### 1. Branching
-Sesuai aturan umum di README repository, `main` fork kelompok dijaga agar tetap bisa menerima sync dari asisten. Pada tugas ini **sangat disarankan** memakai branch per fitur dengan format `<tipe>/<nama-fitur>` (contoh: `feat/login-page`, `fix/null-cart`), lalu digabungkan ke `main` melalui Pull Request. Skema Gitflow penuh (dengan `develop`) boleh dipakai, tetapi tidak diwajibkan.
-
-### 2. Semantic Commit
-Gunakan format `<tipe>(<scope>): <deskripsi>`, misalnya `feat(auth): tambah validasi email`.
-
-| Tipe | Kegunaan |
-| :--- | :--- |
-| `feat` | Menambahkan fitur baru |
-| `fix` | Memperbaiki bug |
-| `docs` | Mengubah dokumentasi |
-| `style` | Perubahan format/spasi, tanpa mengubah logika |
-| `refactor` | Perubahan kode yang tidak menambah fitur atau memperbaiki bug |
-| `test` | Menambah/memperbaiki pengujian |
-| `chore` | Tugas rutin (build, dependensi, konfigurasi) |
-
-### 3. Track Tasks
-Gunakan **GitHub Issues** (dan opsional GitHub Projects) untuk membagi tugas dan melacak progres.
-- Pecah fitur besar menjadi issue yang lebih kecil dan tetapkan penanggung jawabnya.
-- Hubungkan PR dengan issue (`Closes #12`) dan tutup issue ketika selesai.
-
-### 4. Pull Request dan Code Review
-- Setiap PR berisi penjelasan deskriptif tentang apa yang dikerjakan, beserta bukti (tangkapan layar/rekaman/hasil test).
-- Setiap PR di-*review* minimal **1 anggota lain**, dengan komentar konstruktif atau approval.
-
-### 5. Pengujian dan Optimasi Performa
-- Tulis pengujian untuk logika inti (unit test dan/atau pengujian alur utama). Cakupan penuh tidak diwajibkan, tetapi pengujian pada logika utama dinilai.
-- Lakukan **profiling** pada setidaknya satu fitur yang berat (query besar, proses pengolahan data, render list panjang, dsb.), lalu catat temuan dan perbaikannya. Contoh alat:
-
-| Platform | Contoh alat |
-| :--- | :--- |
-| Web (frontend) | Chrome DevTools (Performance/Network), Lighthouse |
-| Web (backend) | Profiler bawaan bahasa, `EXPLAIN` pada query basis data, logging waktu respons |
-| Python | `cProfile`, `PyInstrument` |
-| Java | VisualVM, JProfiler |
-| Mobile | Android Studio Profiler, Flutter DevTools, Xcode Instruments |
-
-### 6. Penggunaan AI
-Penggunaan AI **tetap harus dicatat** pada `docs/KXX_GYY_AI-Usage.md` sesuai ketentuan yang sudah berlaku.
-
-## A.7 Pengumpulan
-
-Pengumpulan dinilai dari **tag release**, bukan commit terakhir.
-
-1. Pastikan seluruh pekerjaan sudah di-*commit* dan di-*push* ke `main` fork kelompok.
-2. Buat release dengan tag **`v9.0`** (revisi berikutnya `v9.1`, `v9.2`, dst.) dengan target branch `main`.
-3. Yang dinilai adalah **tag terakhir yang dibuat sebelum deadline**.
-
-## A.8 Aturan Tanya Jawab
-
-Agar semua kelompok mendapat jawaban yang sama, pertanyaan dibagi menjadi dua jalur:
-
-| Jenis Pertanyaan | Jalur |
-| :--- | :--- |
-| **Ketentuan tugas**, misalnya teknologi yang diperbolehkan, struktur folder, format pengumpulan, dan penilaian | **Sheets QnA:** *[tautan sheets QnA]* |
-| **Kendala teknis kelompok sendiri**, misalnya error, setup, dan penggunaan git | Grup kelompok bersama asisten masing-masing |
-
-Ketentuan:
-1. Pertanyaan tentang ketentuan tugas **wajib** diajukan melalui Sheets QnA. Periksa terlebih dahulu apakah pertanyaan serupa sudah dijawab.
-2. Jika pertanyaan tentang ketentuan tugas tetap diajukan langsung kepada asisten kelompok, asisten **berhak menolak menjawab** dan meminta kelompok memasukkan pertanyaannya ke Sheets QnA.
-3. Jika pertanyaan di Sheets QnA **belum dijawab dalam 24 jam**, kelompok boleh menghubungi asisten kelompok masing-masing. Cantumkan pertanyaan yang sudah diajukan di sheets tersebut.
-4. Jawaban pada Sheets QnA berlaku untuk **seluruh kelompok** dan menjadi acuan jika terjadi perbedaan pemahaman.
-
----
-
 # BAGIAN B: Laporan Implementasi
 
 ## B.1 Perubahan dari DPPL
-
-Catat semua perbedaan antara perancangan (DPPL) dan implementasi akhir. Jika tidak ada perubahan, tuliskan "Tidak ada perubahan".
 
 Tabel B.1. Perubahan dari DPPL
 
 | No | Bagian DPPL | Rancangan Awal | Implementasi Akhir | Alasan |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | *[mis. Kelas C05, layar I-03, tabel `orders`]* | *[Yang direncanakan]* | *[Yang dibuat]* | *[Alasan perubahan]* |
-| *...* | *...* | *...* | *...* | *...* |
+| *1* | *Tabel 2.1 Client* | *React Native + SQLite lokal + react-native-fs* | *Aplikasi web (HTML/JavaScript) dengan antrean offline di `localStorage`* | *Harus dapat dijalankan asisten tanpa emulator atau build mobile; pola offline-first tetap dipertahankan* |
+| *2* | *Tabel 2.1 DBMS* | *PostgreSQL* | *SQLite* | *Syarat tugas: dapat dijalankan lokal tanpa akun atau Docker* |
+| *3* | *Bab 2.2 Server* | *Layered modular dengan beberapa lapisan microservice dan API Gateway* | *Satu aplikasi FastAPI modular (`backend/main.py` + `backend/domain/`)* | *Skala tugas tidak membutuhkan pemisahan layanan; lapisan rute, domain, dan data tetap terpisah* |
+| *4* | *Tabel 2.3 Komponen* | *`SOSController`, `PetaLayananController`, `LaporanController`, `ValidasiLaporan`, `AntarmukaSOS`, `AntarmukaLaporan`, `PenyimpananLokal`, `SafeSheAPI`, `SistemPolisi`* | *Controller menjadi route handler di `main.py`; `ValidasiLaporan` menjadi `LaporanKekerasan.cekKelengkapan()`; antarmuka menjadi bagian `index.html`/`app.js`; `PenyimpananLokal` menjadi antrean `localStorage`; `SistemPolisi` disimulasikan oleh dashboard `police.html`* | *Komponen tersebut tidak termasuk kelas perancangan Tabel 4.1; fungsinya diwujudkan tanpa kelas tersendiri* |
+| *5* | *Bab 1.2 Enkripsi* | *Laporan terenkripsi end-to-end* | *Enkripsi sisi server (Fernet) pada data tersimpan; kunci di `data/.key` atau `SAFESHE_DATA_KEY`* | *E2E sungguhan membutuhkan manajemen kunci polisi yang di luar cakupan tugas* |
+| *6* | *UC07 Konfirmasi* | *Konfirmasi balik "tidak mudah diketahui orang lain"* | *Status polisi ditampilkan sebagai pesan pesanan netral ("Pesanan Anda sedang dalam pengiriman.")* | *Mewujudkan kerahasiaan konfirmasi* |
+| *7* | *UC06 Rekaman* | *Merekam audio setelah SOS* | *Rekaman dipotong per segmen 15 detik, maksimal 5 menit, dan diunggah per segmen* | *Setiap segmen dapat diputar sendiri dan tidak hilang jika koneksi terputus di tengah* |
+| *8* | *Operasi `tungguKoneksi`, `teleponLayanan`, `masukkanNomorLayanan`* | *Operasi pada kelas* | *Fungsi JavaScript (`flush`, tautan `tel:`)* | *Dikerjakan di klien web; nomor dikirim ke aplikasi telepon bawaan perangkat* |
+| *9* | *Antarmuka klien (semua layar)* | *Belum dirinci per layar* | *UI mengikuti desain Figma "SafeShe UI": Beranda, Layanan Terdekat, Detail Layanan, Buat Laporan, Konfirmasi Laporan, Respons Petugas, Status samar (tampilan catatan), Panduan, dan dashboard polisi* | *Desain final dari tim; hanya mode terang yang diimplementasi* |
+| *10* | *UC01 One-Click SOS* | *Satu ketukan* | *Tombol ditahan 1,5 detik (cincin progres terisi); ketukan singkat tidak mengirim* | *Mengikuti desain Figma; mencegah SOS tidak sengaja. Tombol tetap siap dipakai lagi setelah terkirim, dan pengiriman ganda dalam 10 detik ditolak* |
+| *11* | *Lembar status SOS* | *Tombol "Batalkan" pada desain* | *Tombol "Tutup"* | *Permintaan sudah dikirim ke server dan tidak dapat ditarik, sehingga "Batalkan" menyesatkan* |
+| *12* | *Teks privasi pada desain* | *"Tidak ada jejak riwayat lokal" dan "anonim murni"* | *"Tidak ada salinan yang tersisa di perangkat setelah terkirim" dan "nama dan kontak tidak disimpan"* | *Teks asli tidak benar: antrean offline memang tersimpan di perangkat sampai terkirim, dan server tetap melihat alamat IP* |
+| *13* | *Bukti tambahan pada form laporan* | *Kotak lampiran bukti* | *Tidak diimplementasikan* | *Di luar use case SKPL dan tidak ada tabel penyimpanannya* |
+| *14* | *Label navigasi bawah* | *Lima tab tanpa label tertulis pada ekspor* | *Beranda, Lapor, Layanan, Panduan, Status* | *Label disimpulkan dari urutan dan isi layar* |
+| *15* | *Dashboard polisi (C02)* | *Antarmuka sederhana* | *Dashboard tiga kolom: antrean, detail kasus + unit terdekat + rekaman, penyusun balasan* | *Mengikuti desain Figma; unit terdekat dihitung server dari tabel `polisi`* |
+| *16* | *Tabel `layanan`* | *nama, jenis, lokasi, kontak* | *Ditambah `alamat` dan `fasilitas`* | *Dibutuhkan layar Detail Layanan* |
+| *17* | *Tab Status (tampilan catatan)* | *Tampilan statis* | *Catatan berfungsi: tambah, ubah, hapus, filter kategori (Belanja, Jadwal, Resep), dan pencarian. Catatan status SOS selalu tampil di bagian atas* | *Agar tampilan penyamaran meyakinkan jika dibuka orang lain. Pada tab ini header SafeShe dan menu bawah disembunyikan, judul tab peramban menjadi "Catatan", dan jalan keluarnya hanya ketuk dua kali tombol + (dijelaskan di Panduan). Penyamaran penuh melampaui desain Figma, yang masih menampilkan header dan menu* |
+| *18* | *Tabel `laporan` dan dashboard polisi* | *Laporan hanya dibaca* | *Ditambah kolom `status` (baru, ditinjau, ditindaklanjuti, selesai) dan `catatan`; endpoint `POST /api/polisi/laporan/{token}/tindak`* | *Agar petugas dapat membuka laporan dan mencatat tindak lanjut* |
+| *19* | *Basis data* | *Dibuat dari nol* | *Migrasi otomatis saat server mulai (`ALTER TABLE` bila kolom belum ada)* | *Database dari versi sebelumnya tetap dapat dipakai tanpa dihapus* |
+| *20* | *UC05 Laporan (umpan balik ke pelapor)* | *Pelapor hanya menerima konfirmasi* | *Pelapor dapat memeriksa status lewat kode laporan (layar Status laporan) dan membaca pesan singkat dari petugas; endpoint `GET /api/laporan/{token}/status`; kolom `pesan_pelapor` dan `updated_at`* | *Mode anonim tidak punya akun, sehingga kode laporan menjadi satu-satunya jalur umpan balik. Endpoint hanya mengembalikan status dan pesan, tidak pernah isi laporan, nama, atau catatan internal* |
+| *21* | *Header dan Beranda* | *Tombol info (kanan atas header) dan tombol perisai (kanan atas Beranda)* | *Kedua tombol dihapus; Panduan tetap dapat dibuka dari menu bawah* | *Tombol perisai tidak memberi fungsi yang jelas (diganti Panduan), dan keduanya menambah kekacauan visual* |
+| *22* | *UC06 Rekaman suara* | *Rekaman berjalan sampai selesai* | *Tombol "Hentikan rekaman suara" di Beranda dan di lembar status SOS; mikrofon dilepas dan segmen terakhir tetap diunggah* | *Korban perlu kendali untuk mematikan mikrofon setelah SOS* |
+| *23* | *Tab Status (halaman samar)* | *Jalan keluar hanya ketuk dua kali tombol + tanpa penjelasan* | *Petunjuk sekali tampil dengan tombol + berkedip; jalan keluar kedua lewat ketuk dua kali judul "Catatan"; target tombol 48 px; petunjuk dapat dilihat lagi dari Panduan* | *Fitur tersembunyi harus dapat ditemukan pengguna. Petunjuk hanya muncul sampai dikonfirmasi satu kali (flag di `localStorage`), setelah itu tampilan samar bersih* |
+| *24* | *Dashboard polisi, balasan SOS* | *Panel detail digambar ulang tiap data berubah* | *Peta, daftar rekaman, dan kotak balasan diperbarui terpisah; draf balasan disimpan per SOS dan rekaman baru ditambahkan tanpa menghentikan pemutar* | *Ketikan petugas sebelumnya terhapus saat ada rekaman baru dari korban* |
 
 ## B.2 Bukti Penerapan Best Practices
 
@@ -194,29 +66,40 @@ Tabel B.2. Bukti Best Practices
 
 | Praktik | Bukti | Keterangan |
 | :--- | :--- | :--- |
-| Branching | *[Tautan ke daftar branch / graph commit]* | *[Skema yang dipakai]* |
-| Semantic commit | *[Tautan ke riwayat commit]* | *[Ringkasan]* |
-| Track tasks | *[Tautan ke Issues/Projects]* | *[Jumlah issue, pembagian]* |
-| Pull request dan review | *[Tautan ke 2-3 PR representatif]* | *[Siapa me-review siapa]* |
-| Pengujian | *[Tautan ke `src/tests/` dan hasil test]* | *[Apa yang diuji, cara menjalankan]* |
+| *Branching* | *[ISI: tautan daftar branch / graph commit]* | *[ISI: skema yang dipakai, mis. `feat/<fitur>`]* |
+| *Semantic commit* | *[ISI: tautan riwayat commit]* | *[ISI: ringkasan]* |
+| *Track tasks* | *[ISI: tautan Issues/Projects]* | *[ISI: jumlah issue dan pembagian]* |
+| *Pull request dan review* | *[ISI: tautan 2-3 PR]* | *[ISI: siapa me-review siapa]* |
+| *Pengujian* | *`src/tests/test_api.py`; jalankan `python -m pytest tests -v` dari `src/`* | *16 tes lolos: haversine, urutan dan radius layanan, filter jenis, kontak kosong, alur SOS lengkap (idempoten, autentikasi polisi, rekaman, balasan disamarkan), SOS tanpa lokasi, laporan tidak lengkap, validasi tanggal/identitas, enkripsi dan mode anonim, teks balasan dan waktu pada status SOS, unit terdekat untuk polisi, alamat dan fasilitas layanan, tindak lanjut laporan, pelapor cek status lewat kode tanpa kebocoran data, migrasi database lama* |
 
 ### B.2.1 Profiling dan Optimasi
 
-Pilih minimal satu fitur yang diprofil.
-
 | Informasi | Keterangan |
 | :--- | :--- |
-| Fitur / proses yang diprofil | *[Nama fitur]* |
-| Alat | *[mis. Chrome DevTools, cProfile, EXPLAIN]* |
-| Temuan (sebelum) | *[Bottleneck yang ditemukan, sertakan angka/tangkapan layar]* |
-| Perbaikan | *[Yang diubah]* |
-| Hasil (sesudah) | *[Perbandingan dengan sebelumnya]* |
+| *Fitur / proses yang diprofil* | *Pencarian layanan terdekat (UC02), `GET /api/layanan/nearby`* |
+| *Alat* | *`cProfile`, `EXPLAIN QUERY PLAN` SQLite, pengukuran waktu (`src/tests/profile_nearby.py`, 50.000 layanan fiktif, rerata 30 permintaan, radius 10 km)* |
+| *Temuan (sebelum)* | *Rata-rata 89,06 ms/permintaan. `EXPLAIN`: `SCAN layanan`. Profil: seluruh baris dibaca (`fetchall`) lalu `haversine_km` dipanggil 50.000 kali per permintaan (0,66 dari 1,10 detik pada 5 permintaan)* |
+| *Perbaikan* | *Menambah indeks `idx_layanan_lat_lon(lat, lon)` dan menyaring dengan bounding box di SQL sebelum menghitung jarak haversine* |
+| *Hasil (sesudah)* | *3,17 ms/permintaan (sekitar 28 kali lebih cepat). `EXPLAIN`: `SEARCH layanan USING INDEX idx_layanan_lat_lon`* |
 
-Jika tidak ada perbaikan yang perlu dilakukan, jelaskan hasil profiling dan alasan kenapa fitur tersebut sudah memadai.
+Angka diukur pada mesin pengembangan penulis; hasil pada mesin lain akan berbeda tetapi rasionya serupa.
 
 ## B.3 Kendala dan Catatan Penting
 
-Tuliskan kendala yang ditemui, fitur yang belum sempurna (*known issues*), serta hal yang perlu diketahui asisten saat menjalankan atau menilai aplikasi (misalnya akun uji khusus, urutan menjalankan, atau batasan).
+- **Menjalankan:** ikuti `src/README.md`. Dashboard polisi memakai API key demo `polisi-demo`. Basis data dan data fiktif dibuat otomatis saat server pertama berjalan.
+- Geolokasi dan mikrofon hanya aktif di `localhost` atau HTTPS. Font Inter, Leaflet, dan tile peta dimuat dari internet; tanpa itu tampilan memakai font sistem dan daftar layanan tetap berfungsi.
+- **Known issues:**
+  - Antrean offline di `localStorage` tidak terenkripsi; item dihapus setelah berhasil terkirim.
+  - Segmen rekaman yang belum terunggah disimpan di memori, sehingga hilang jika tab ditutup sebelum ada koneksi.
+  - Konfirmasi polisi memakai *polling* tiap 5 detik, bukan *push notification*.
+  - Autentikasi dashboard polisi hanya API key bersama; tidak ada akun per petugas.
+  - Enkripsi bersifat sisi server, bukan E2E (lihat B.1 nomor 5).
+  - `SistemPolisi` disimulasikan; tidak ada integrasi nyata ke sistem kepolisian.
+  - Pengujian otomatis mencakup API dan logika domain. Klien juga diuji di DOM tiruan (jsdom) terhadap server asli: tahan-untuk-kirim, anti-ganda, perpindahan layar, layanan, detail, dan laporan. Tampilan visual, geolokasi, mikrofon, dan peta belum dicoba di peramban sungguhan dan perlu dicek manual.
+  - Status laporan dapat dilihat siapa pun yang memegang kode laporan (64 bit acak). Pesan petugas harus ditulis netral, dan dashboard memberi peringatan itu. Kode tidak disimpan di perangkat; pelapor perlu menyimpannya sendiri.
+  - Penyamaran hanya menutupi tampilan layar dan judul tab. Riwayat peramban, alamat `localhost`, dan data di penyimpanan peramban tetap dapat memperlihatkan aplikasi ini jika perangkat diperiksa.
+  - Catatan buatan pengguna di tab Status disimpan di `localStorage` perangkat tanpa enkripsi. Isinya hanya penyamaran, jadi jangan menulis informasi sensitif di sana.
+  - Balasan petugas tampil eksplisit di layar Respons Petugas (sesuai desain). Hanya tab Status yang disamarkan, jadi orang yang memegang ponsel dapat membacanya jika layar itu terbuka. Tombol Keluar membantu menutupnya.
 
 ## B.4 Kontribusi Anggota
 
@@ -224,35 +107,29 @@ Tabel B.4. Kontribusi Anggota
 
 | NIM | Nama | Modul / Fitur yang Dikerjakan | Persentase Kontribusi |
 | :--- | :--- | :--- | :--- |
-| *[NIM 1]* | *[Nama]* | *[Modul/fitur]* | *[%]* |
-| *...* | *...* | *...* | *...* |
+| *13525083* | *Natanael Chris Fabian Santoso* | *[ISI]* | *[ISI]* |
+| *13525131* | *Mirza Aryasatya Akmal* | *[ISI]* | *[ISI]* |
+| *13525149* | *Ferdinand Valentino Darmawan* | *[ISI]* | *[ISI]* |
+| *13525050* | *Jason Hartanto* | *api tetsing* | *20%* |
+| *13525065* | *Christopher Hendrik Gunawan* | *[ISI]* | *[ISI]* |
+
+Modul yang tersedia untuk dibagi: SOS dan balasan polisi (UC01, UC07); rekaman suara (UC06); peta dan layanan (UC02-UC04); laporan kekerasan (UC05); dashboard polisi, basis data, dan uji.
 
 ## B.5 Traceability Kelas Perancangan ke Implementasi
-
-Pemetaan dari **setiap kelas perancangan** pada DPPL (Tabel 4.1) ke wujud implementasinya. Bentuk implementasi bebas (kelas, fungsi, komponen, *route/handler*, *stored procedure*, skrip, dsb.), tetapi tiap kelas perancangan harus muncul pada tabel ini. Jika implementasi berupa kelas dengan nama yang sama, tetap dicantumkan.
 
 Tabel B.5. Traceability Kelas Perancangan ke Implementasi
 
 | ID Kelas | Nama Kelas Perancangan | Bentuk Implementasi | Lokasi (File dan Nama) | Keterangan |
 | :--- | :--- | :--- | :--- | :--- |
-| *C01* | *OneClickSOS* | ** | ** | ** |
-| *C02* | *AntarmukaPolisi* | ** | ** | ** |
-| *C03* | *Korban* | ** | ** | ** |
-| *C04* | *Peta* | ** | ** | ** |
-| *C05* | *ListLayanan* | ** | ** | ** |
-| *C06* | *Layanan* | ** | ** | ** |
-| *C07* | *AntarmukaTelepon* | ** | ** | ** |
-| *C08* | *Polisi* | ** | ** | ** |
-| *C09* | *Rekaman* | ** | ** | ** |
-| *C10* | *LaporanKekerasan* | ** | ** | ** |
-| *C11* | *APILayanan* | ** | ** | ** |
-| *C12* | *AntarmukaPetaLayanan* | ** | ** | ** |
-
-| *[C01]* | *[Nama kelas pada DPPL]* | *[mis. Kelas / Fungsi / Komponen / Route / Tabel]* | *[mis. `src/models/user.py` - `User`]* | *[Cara atribut dan operasi kelas diwujudkan; "-" jika tidak ada penjelasan tambahan]* |
-| *[C02]* | *[Nama kelas pada DPPL]* | *[Bentuk implementasi]* | *[mis. `src/components/LoginForm.tsx` - `LoginForm`]* | *[mis. atribut menjadi *state*, operasi menjadi *handler*]* |
-| *[C03]* | *[Nama kelas pada DPPL]* | *[Bentuk implementasi]* | *[mis. `src/routes/auth.js` - `POST /login`]* | *[Keterangan]* |
-| *...* | *...* | *...* | *...* | *...* |
-
-Catatan:
-- Satu kelas perancangan boleh diwujudkan oleh beberapa file/unit, dan satu file/unit boleh mewujudkan beberapa kelas perancangan. Tuliskan semuanya.
-- Kelas perancangan yang **tidak diimplementasikan** atau **digabung/dipecah** tetap dicantumkan, dan alasannya dicatat di Bagian B.1.
+| *C01* | *OneClickSOS* | *Kelas + handler klien + route* | *`src/backend/domain/sos.py` - `OneClickSOS`; `src/frontend/app.js` - handler `#sosBtn`, `startRecording`, `flush`; `POST /api/sos`, `GET /api/sos/{id}/status` di `src/backend/main.py`* | *`dapatLokasi`, `kirimSinyal`, `menerimaReply` menjadi metode kelas; `panggilSOS` menjadi handler tombol; `signalMikrofon` menjadi `startRecording` (respons `rekam: true`); `tungguKoneksi` menjadi `flush` dan antrean offline* |
+| *C02* | *AntarmukaPolisi* | *Route + halaman web* | *`src/backend/main.py` - `/api/polisi/*`; `src/frontend/police.html`* | *`menerimaSinyal` menjadi `GET /api/polisi/sos` dan tabel dashboard; `kirimReply` menjadi `POST /api/polisi/sos/{id}/reply`* |
+| *C03* | *Korban* | *Kelas + fungsi klien* | *`src/backend/domain/sos.py` - `Korban`; `src/frontend/app.js` - `getPos`, `pilih`* | *Atribut `namaKorban`, `lokasiKorban` menjadi atribut kelas; `lokasiKorbanSekarang` menjadi `getPos` di klien; `pilihLayanan` menjadi `pilih`; `teleponLayanan` menjadi tautan `tel:`* |
+| *C04* | *Peta* | *Kelas* | *`src/backend/domain/layanan.py` - `Peta`* | *`lokasiPeta` atribut; `lokasiPetaSekarang`, `lokasiSekitar` metode; `tampilkanLayanan` ditangani C12* |
+| *C05* | *ListLayanan* | *Kelas* | *`src/backend/domain/layanan.py` - `ListLayanan`* | *`kumpulanLayanan` atribut; `ambilLayananTersedia(peta)` mengambil data via C11, menghitung jarak, mengurutkan, dan membatasi* |
+| *C06* | *Layanan* | *Kelas + route* | *`src/backend/domain/layanan.py` - `Layanan`; `GET /api/layanan/{id}` di `main.py`* | *Atribut nama, lokasi, kontak; `ambilNama`, `ambilLokasi`, `ambilKontak`; `ambilDataLayanan` menjadi metode statis* |
+| *C07* | *AntarmukaTelepon* | *Elemen antarmuka* | *`src/frontend/app.js` - `pilih()` (tautan `tel:`)* | *`masukkanNomorLayanan` diwujudkan dengan membuka aplikasi telepon bawaan perangkat lewat `tel:`* |
+| *C08* | *Polisi* | *Kelas* | *`src/backend/domain/sos.py` - `Polisi`; tabel `polisi` di `db.py`* | *`pantauAntarmuka`, `kirimPasukan` menjadi metode statis; `lokasiPolisi`, `ketersediaan` menjadi kolom tabel; `terdekat` tambahan* |
+| *C09* | *Rekaman* | *Kelas + fungsi klien + route* | *`src/backend/domain/sos.py` - `Rekaman`; `src/frontend/app.js` - `startRecording`, `uploadPending`; `POST /api/sos/{id}/recording`* | *`mulaiRekamanSuara` menjadi `startRecording` (MediaRecorder); `simpanRekamanSuara` menjadi `Rekaman.simpanRekamanSuara`; `rekamanSuara` menjadi berkas di `data/uploads` + tabel `rekaman`* |
+| *C10* | *LaporanKekerasan* | *Kelas + form klien + route* | *`src/backend/domain/laporan.py` - `LaporanKekerasan`; form di `index.html`/`app.js`; `POST /api/laporan`* | *Atribut menjadi atribut kelas; `masukkan*` menjadi parameter konstruktor dan kolom form; `cekKelengkapan` menjadi validasi 422* |
+| *C11* | *APILayanan* | *Kelas + route* | *`src/backend/domain/layanan.py` - `APILayanan`; `GET /api/layanan/nearby`* | *`urlAPI` atribut; `ambilDataLayanan(peta)` menjalankan kueri bounding box berindeks* |
+| *C12* | *AntarmukaPetaLayanan* | *Fungsi/komponen klien* | *`src/frontend/app.js` - `loadLayanan`, `renderLayanan`; `index.html` - `#tab-peta`* | *`tampilkanPeta` memakai Leaflet; `renderSimbolLayanan` menjadi penanda peta dan daftar layanan* |
