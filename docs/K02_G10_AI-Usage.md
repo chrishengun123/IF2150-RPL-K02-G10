@@ -79,6 +79,11 @@ Silakan catat penggunaan AI yang berdampak signifikan pada pengerjaan tugas (mis
 | *Google stitch* | *Membuat UI untuk BAB 6* | *buat desain UI aplikasi SafeShe (5 layar mobile dan 1 dasbor web polisi) sesuai spesifikasi antarmuka pada DPPL, untuk diekspor ke Figma.* | *penyesuaian design dan pembenaran beberapa kengawuran AI* || | | | | |
 | *Codex* | *Membuat UI di Figma* | *prioritize the accessibility of the sos button and add a police interface.* | *modifikasi layar sos dan penambahan antarmuka polisi.* || | | | | |
 
+### Milestone 9
+| Tool AI | Tujuan Penggunaan | Contoh Prompt Utama | Modifikasi & Validasi Manusia |
+| :--- | :--- | :--- | :--- |
+| *Claude* | *Membantu pembuatan program* | *saya mengupload file dppl dan meminta tolong claude untuk membantu membuatkan garis besar program* | *penyesuaian dengan rancangan design awal, dan perbaikan beberapa major bug* || | | | | |
+
 ---
 ### Pernyataan Integritas dan Persetujuan
 
