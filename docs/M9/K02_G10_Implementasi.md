@@ -66,9 +66,9 @@ Tabel B.2. Bukti Best Practices
 
 | Praktik | Bukti | Keterangan |
 | :--- | :--- | :--- |
-| *Branching* | *[ISI: tautan daftar branch / graph commit]* | *[ISI: skema yang dipakai, mis. `feat/<fitur>`]* |
-| *Semantic commit* | *[ISI: tautan riwayat commit]* | *[ISI: ringkasan]* |
-| *Track tasks* | *[ISI: tautan Issues/Projects]* | *[ISI: jumlah issue dan pembagian]* |*
+| *Branching* | *<img alt="Contoh Branching" src="./assets/bukti_best_practices/branching.png" width="40%">* | *Contoh dari Branching, misal `feat/database` dan `feat/frontend`* |
+| *Semantic commit* | *<img alt="Contoh Semantic Commit" src="./assets/bukti_best_practices/semantic_commit.png" width="40%">* | *Contoh dari semantic commit, dengan format `<type>/<description>`* |
+| *Track tasks* | *[ISI: tautan Issues/Projects]* | *[ISI: jumlah issue dan pembagian]* |
 | *Pull request dan review* | *PR 1: <img src="./assets/bukti PR 1.png" width="400"> <img src="./assets/bukti PR 1 reviewer.png" width="400">  - PR 2: <img src="./assets/bukti PR 2.png" width="400">* | *PR 1 direview oleh Christopher Hendrik Gunawan - PR 2 direview oleh Natanael Chris Fabian Santoso* |
 | *Pengujian* | *`src/tests/test_api.py`; jalankan `python -m pytest tests -v` dari `src/`* | *16 tes lolos: haversine, urutan dan radius layanan, filter jenis, kontak kosong, alur SOS lengkap (idempoten, autentikasi polisi, rekaman, balasan disamarkan), SOS tanpa lokasi, laporan tidak lengkap, validasi tanggal/identitas, enkripsi dan mode anonim, teks balasan dan waktu pada status SOS, unit terdekat untuk polisi, alamat dan fasilitas layanan, tindak lanjut laporan, pelapor cek status lewat kode tanpa kebocoran data, migrasi database lama* |
 
@@ -107,7 +107,7 @@ Tabel B.4. Kontribusi Anggota
 
 | NIM | Nama | Modul / Fitur yang Dikerjakan | Persentase Kontribusi |
 | :--- | :--- | :--- | :--- |
-| *13525083* | *Natanael Chris Fabian Santoso* | *[ISI]* | *[ISI]* |
+| *13525083* | *Natanael Chris Fabian Santoso* | *Membuat database dan enkripsi* | *20%* |
 | *13525131* | *Mirza Aryasatya Akmal* | *[ISI]* | *[ISI]* |
 | *13525149* | *Ferdinand Valentino Darmawan* | *profiling waktu pengambilan layanan terdekat* | *20%* |
 | *13525050* | *Jason Hartanto* | *api testing* | *20%* |
