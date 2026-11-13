@@ -68,8 +68,8 @@ Tabel B.2. Bukti Best Practices
 | :--- | :--- | :--- |
 | *Branching* | *[ISI: tautan daftar branch / graph commit]* | *[ISI: skema yang dipakai, mis. `feat/<fitur>`]* |
 | *Semantic commit* | *[ISI: tautan riwayat commit]* | *[ISI: ringkasan]* |
-| *Track tasks* | *[ISI: tautan Issues/Projects]* | *[ISI: jumlah issue dan pembagian]* |
-| *Pull request dan review* | *[ISI: tautan 2-3 PR]* | *[ISI: siapa me-review siapa]* |
+| *Track tasks* | *[ISI: tautan Issues/Projects]* | *[ISI: jumlah issue dan pembagian]* |*
+| *Pull request dan review* | *PR 1: <img src="./assets/bukti PR 1.png" width="400"> <img src="./assets/bukti PR 1 reviewer.png" width="400">  - PR 2: <img src="./assets/bukti PR 2.png" width="400">* | *PR 1 direview oleh Christopher Hendrik Gunawan - PR 2 direview oleh Natanael Chris Fabian Santoso* |
 | *Pengujian* | *`src/tests/test_api.py`; jalankan `python -m pytest tests -v` dari `src/`* | *16 tes lolos: haversine, urutan dan radius layanan, filter jenis, kontak kosong, alur SOS lengkap (idempoten, autentikasi polisi, rekaman, balasan disamarkan), SOS tanpa lokasi, laporan tidak lengkap, validasi tanggal/identitas, enkripsi dan mode anonim, teks balasan dan waktu pada status SOS, unit terdekat untuk polisi, alamat dan fasilitas layanan, tindak lanjut laporan, pelapor cek status lewat kode tanpa kebocoran data, migrasi database lama* |
 
 ### B.2.1 Profiling dan Optimasi
