@@ -111,7 +111,7 @@ Tabel B.4. Kontribusi Anggota
 | *13525131* | *Mirza Aryasatya Akmal* | *[ISI]* | *[ISI]* |
 | *13525149* | *Ferdinand Valentino Darmawan* | *profiling waktu pengambilan layanan terdekat* | *20%* |
 | *13525050* | *Jason Hartanto* | *api testing* | *20%* |
-| *13525065* | *Christopher Hendrik Gunawan* | *[ISI]* | *[ISI]* |
+| *13525065* | *Christopher Hendrik Gunawan* | *Membuat backend* | *20%* |
 
 Modul yang tersedia untuk dibagi: SOS dan balasan polisi (UC01, UC07); rekaman suara (UC06); peta dan layanan (UC02-UC04); laporan kekerasan (UC05); dashboard polisi, basis data, dan uji.
 
