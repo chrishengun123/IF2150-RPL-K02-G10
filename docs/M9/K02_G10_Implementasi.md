@@ -109,8 +109,8 @@ Tabel B.4. Kontribusi Anggota
 | :--- | :--- | :--- | :--- |
 | *13525083* | *Natanael Chris Fabian Santoso* | *[ISI]* | *[ISI]* |
 | *13525131* | *Mirza Aryasatya Akmal* | *[ISI]* | *[ISI]* |
-| *13525149* | *Ferdinand Valentino Darmawan* | *[ISI]* | *[ISI]* |
-| *13525050* | *Jason Hartanto* | *api tetsing* | *20%* |
+| *13525149* | *Ferdinand Valentino Darmawan* | *profiling waktu pengambilan layanan terdekat* | *20%* |
+| *13525050* | *Jason Hartanto* | *api testing* | *20%* |
 | *13525065* | *Christopher Hendrik Gunawan* | *[ISI]* | *[ISI]* |
 
 Modul yang tersedia untuk dibagi: SOS dan balasan polisi (UC01, UC07); rekaman suara (UC06); peta dan layanan (UC02-UC04); laporan kekerasan (UC05); dashboard polisi, basis data, dan uji.
