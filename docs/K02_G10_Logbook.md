@@ -225,4 +225,14 @@
 **Catatan/Evaluasi Milestone 9:**
 * *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
 
+### Milestone 10
+**Periode:** 16-11-2026 - 20-11-2026
+
+| Tanggal | Nama Anggota | Deskripsi Pekerjaan | Durasi (Jam) | Status | Kendala / *Blocker* | 
+| :--- | :--- | :--- | :--- | :--- | :--- | 
+| *16-11-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,8 jam* | *Done* | *-* |
+
+**Catatan/Evaluasi Milestone 10:**
+* *(Isi jika ada catatan khusus untuk asisten atau evaluasi singkat kerja tim)*
+
 ``Gunakan format penulisan Logbook yang sama untuk setiap Milestone dan pastikan pembuatan Daftar Isi juga sudah sesuai sebelum Logbook dikumpulkan. ``
