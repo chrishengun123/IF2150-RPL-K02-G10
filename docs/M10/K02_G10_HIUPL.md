@@ -7,24 +7,24 @@ HASIL IMPLEMENTASI DAN UJI PERANGKAT LUNAK (HIUPL)
 </h1>
 <br>
 
-## *Nama Perangkat Lunak*
-### *[Logo Perangkat Lunak]*
+## *SafeShe*
+<img alt="Logo SafeShe" src="assets/safeshe_logo.png" width="100%">
 
-### Untuk: *[Nama Asisten]*
+### Untuk: *Aurelia Jennifer Gunawan*
 
 Dipersiapkan oleh:
 | Informasi | Keterangan |
 | --- | --- |
-| Kelas | *\[Kelas\]* |
-| Kelompok | *\[Nomor Kelompok\]*  |
+| Kelas | *K2* |
+| Kelompok | *10*  |
 
 | NIM | Nama |
 |---|---|
-| *[NIM 1]* | *[Nama Anggota 1]* |
-| *[NIM 2]* | *[Nama Anggota 2]* |
-| *[NIM 3]* | *[Nama Anggota 3]* |
-| *[NIM 4]* | *[Nama Anggota 4]* |
-| *[NIM 5]* | *[Nama Anggota 5]* |
+| *13525083* | *Natanael Chris Fabian Santoso* |
+| *13525131* | *Mirza Aryasatya Akmal* |
+| *13525149* | *Ferdinand Valentino Darmawan* |
+| *13525050* | *Jason Hartanto* |
+| *13525065* | *Christopher Hendrik Gunawan* |
 
 ---
 
@@ -58,23 +58,23 @@ Dipersiapkan oleh:
 
 | Revisi | Deskripsi |
 | :--- | :--- |
-| *A* | *Deskripsikan perubahan yang dilakukan dari dokumen sebelumnya pada dokumen ini. Jika tidak terdapat perubahan, harap kosongkan tabel.* |
+| *A* |  |
 | *B* |  |
 | *C* |  |
-| ... |  |
+
 
 ---
 
 # BAB 1: Pendahuluan
 
 ## 1.1 Tujuan Penulisan Dokumen
-Tuliskan uraian ringkas mengenai isi dokumen, tujuan pembuatan dokumen HIUPL ini, dan siapa saja target pembacanya.
+Dokumen HIUPL ini merangkum lingkungan dan modul SafeShe yang diimplementasikan serta hasil pengujian yang tersedia. Dokumen ini menjadi acuan bagi tim pengembang dan asisten untuk meninjau keterlacakan kebutuhan dari SKPL, rancangan DPPL, implementasi, dan pengujian.
 
 ## 1.2 Lingkup Masalah
-Tuliskan lingkup masalah, yaitu membangun perangkat lunak *[nama perangkat lunak]*. Jelaskan dengan singkat dan jelas deskripsi aplikasi serta keterkaitannya dengan perangkat lunak atau sistem lain (jika ada). Bagian ini maksimal berisi satu paragraf, dapat diambil dari SKPL/DPPL.
+Aplikasi SafeShe adalah aplikasi yang menyediakan pelaporan kekerasan seksual yang dialami perempuan secara anonim. Aplikasi ini dibuat agar menjadi salah satu solusi untuk mengatasi proses pelaporan dan pendampingan korban dari kekerasan seksual di Indonesia yang masih reaktif dan tidak terintegrasi secara digital. SafeShe akan menyediakan fitur pelaporan anonim yang terenkripsi *end-to-end* dan memiliki peta *real-time* untuk menampilkan fasilitas layanan yang dapat dibutuhkan korban, seperti fasilitas rumah sakit dan konseling. SafeShe juga menyediakan fitur *one-click SOS* untuk memudahkan korban dalam meminta bantuan secara diam-diam dengan konfirmasi balik yang tidak mudah diketahui orang lain ketika bantuan sedang dalam perjalanan menuju lokasi korban. Selain itu, SafeShe akan merekam audio di sekitar korban setelah *one-click SOS* dipencet yang dapat membantu dalam memberikan bukti konkret untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual.
 
 ## 1.3 Definisi, Istilah, dan Singkatan
-Semua definisi dan singkatan yang digunakan dalam dokumen ini beserta penjelasannya.
+Istilah dan singkatan yang digunakan dalam dokumen HIUPL SafeShe dijelaskan berikut.
 
 Tabel 1.3. Definisi Istilah dan Singkatan
 
@@ -92,10 +92,12 @@ Tabel 1.3. Definisi Istilah dan Singkatan
 | *INT* | *Singkatan dari Integration Test, yaitu test case yang menguji interaksi antarkomponen.* |
 | *Boundary* | *Kasus uji pada nilai batas masukan, misalnya nilai minimum, maksimum, atau tepat di ambang aturan.* |
 | *Coverage* | *Persentase baris/cabang kode yang dieksekusi oleh pengujian.* |
-| *...* | *...* |
+| *SQLite* | *Sistem manajemen basis data relasional yang digunakan SafeShe.* |
+| *Fernet* | *Skema enkripsi simetris dari pustaka `cryptography` untuk mengenkripsi payload laporan.* |
+| *API* | *Application Programming Interface, antarmuka komunikasi antarkomponen perangkat lunak.* |
 
 ## 1.4 Aturan Penomoran
-Tuliskan aturan penomoran (ID) yang digunakan dalam dokumen ini. Gunakan pola ID yang **sama** dengan yang sudah dipakai pada dokumen-dokumen sebelumnya (SKPL, APL, DPPL), kecuali untuk ID pengujian yang baru diperkenalkan pada dokumen ini.
+Dokumen ini memakai ID KF, KNF, UC, dan kelas sesuai SKPL/DPPL; ID test case mengikuti pola HIUPL yang tercantum pada tabel berikut.
 
 Tabel 1.4. Aturan Penomoran
 
@@ -110,13 +112,16 @@ Tabel 1.4. Aturan Penomoran
 | *Test Case Integrasi* | *INT-TCYY* | *YY adalah nomor urut test case integrasi* |
 | *Test Case Use Case* | *UCXX-TCYY* | *XX adalah nomor use case, YY adalah nomor urut test case pada use case tersebut* |
 | *Test Case KNF* | *KNFXX-TCYY* | *XX adalah nomor KNF, YY adalah nomor urut test case pada KNF tersebut* |
-| *...* | *...* | *...* |
 
 ## 1.5 Referensi
-Cantumkan daftar buku, panduan, atau dokumentasi lain yang dirujuk dalam pembuatan dokumen dan pengembangan P/L, **minimal dokumen SKPL, APL, DPPL, dan Implementasi (Tugas 9)**. Tambahkan dokumentasi *framework*/*library*/*testing tool* atau referensi lain apabila digunakan.
+1. [SKPL M5](../M5/K02_G10_SKPL.md)
+2. [APL M6](../M6/K02_G10_APL.md)
+3. [DPPL M8](../M8/K02_G10_DPPL2.md)
+4. [Implementasi M9](../M9/K02_G10_Implementasi.md)
+5. [README dan dependensi implementasi](../../src/README.md), termasuk FastAPI, Uvicorn, SQLite, cryptography/Fernet, pytest, dan httpx.
 
 ## 1.6 Deskripsi Umum Dokumen (Ikhtisar)
-Tuliskan sistematika pembahasan dokumen ini secara ringkas dan runut bab demi bab, dengan maksimal 1 paragraf.
+Bab 1 menjelaskan tujuan, lingkup, istilah, penomoran, dan referensi; Bab 2 memberi gambaran SafeShe dan konteks sistem; Bab 3 mencatat lingkungan serta modul dan antarmuka yang diimplementasikan; Bab 4 merangkum strategi dan hasil pengujian yang tersedia; Bab 5 menghubungkan kebutuhan fungsional dengan implementasi dan pengujian.
 
 <br>
 
@@ -124,15 +129,13 @@ Tuliskan sistematika pembahasan dokumen ini secara ringkas dan runut bab demi ba
 
 # BAB 2: Deskripsi Umum Perangkat Lunak
 
-Bagian ini diisi dengan *System Overview*, dalam bentuk gambar dan narasi yang memberikan gambaran tentang aplikasi dan konteksnya. **Batasan dan keterkaitan** antara sistem yang dibangun dengan sistem lain di luarnya harus jelas. Deskripsi umum sistem perlu dilengkapi dengan pemodelan kasus yang dihadapi, seperti *use case diagram*. Berikan narasi yang jelas untuk setiap gambar yang ditampilkan.
-
-Bagian ini dapat menyalin atau meringkas dari dokumen SKPL atau DPPL.
+SafeShe melayani Korban melalui aplikasi web dan menyediakan dashboard bagi Polisi. Aplikasi mencakup SOS, peta dan kontak layanan, pelaporan, serta status penanganan. Integrasi nyata dengan sistem kepolisian dan API layanan belum tersedia; aplikasi menggunakan data layanan lokal/seed dan dashboard polisi demo.
 
 <p align="center">
-<img alt="System Overview / Use Case Diagram" src="./assets/contoh-uc-diagram.webp" width="90%">
+<img alt="Use Case Diagram SafeShe" src="assets/diagram/SafeShe_Use_Case_Diagram.png" width="90%">
 </p>
 <p align="center">
-<i>Gambar 2.1. Use Case Diagram [Nama P/L]</i>
+<i>Gambar 2.1. Use Case Diagram SafeShe</i>
 </p>
 
 <br>
@@ -145,19 +148,19 @@ Bagian ini diisi dengan informasi tentang elemen P/L yang dikembangkan (*executa
 
 ## 3.1 Lingkungan Implementasi
 
-Tuliskan *hardware* dan *software* yang digunakan untuk implementasi, mencakup *operating system*, bahasa pemrograman beserta versinya, *framework*/*library*, DBMS, *development tools*, dan *version control*. Lingkungan ini harus konsisten dengan **Subbab 2.1 DPPL**; jelaskan jika ada perubahan. Cantumkan juga *framework* dan alat pengujian yang dipakai.
+Implementasi menggunakan klien web HTML/JavaScript dan SQLite, serta server FastAPI modular yang dijalankan secara lokal, menggantikan rancangan React Native dan PostgreSQL. Rincian perangkat keras, sistem operasi, dan IDE tidak tersedia.
 
 Tabel 3.1. Lingkungan Implementasi
 
 | Aspek | Keterangan |
 | :--- | :--- |
-| *Hardware* | *[Spesifikasi perangkat keras]* |
-| *Operating System* | *[Nama dan versi OS]* |
-| *Bahasa Pemrograman* | *[Bahasa dan versi]* |
-| *Framework/Library* | *[Daftar framework/library beserta versi]* |
-| *DBMS* | *[Nama dan versi DBMS]* |
-| *Development Tools* | *[IDE, version control, tools lain]* |
-| *Testing Tools* | *[Framework unit test, alat ukur performa, alat coverage]* |
+| *Hardware* |  |
+| *Operating System* |  |
+| *Bahasa Pemrograman* | *Python 3.12, HTML, JavaScript, CSS* |
+| *Framework/Library* | *FastAPI 0.115.6, Uvicorn 0.34.0, python-multipart 0.0.20, cryptography 44.0.0; Leaflet 1.9.4 via CDN* |
+| *DBMS* | *SQLite* |
+| *Development Tools* | *Git/GitHub, vscode, nvim* |
+| *Testing Tools* | *pytest 8.3.4, httpx 0.28.1, cProfile, SQLite `EXPLAIN QUERY PLAN`* |
 
 ## 3.2 Implementasi Modul
 
@@ -167,9 +170,18 @@ Tabel 3.2. Implementasi Modul
 
 | No | ID Kelas | Nama Modul/Kelas | Nama File Fisik | Nama File Executable |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | *[C01]* | *[Nama modul/kelas]* | *[path/ke/file]* | *[Nama file executable, atau - jika tidak ada]* |
-| 2 | *[C02]* | *[Nama modul/kelas]* | *[path/ke/file]* | *[...]* |
-| ... | *...* | *...* | *...* | *...* |
+| 1 | *C01* | *OneClickSOS* | *`src/backend/domain/sos.py`* | *-* |
+| 2 | *C02* | *AntarmukaPolisi* | *`src/frontend/police.html`, `src/backend/main.py`* | *`police.html`* |
+| 3 | *C03* | *Korban* | *`src/backend/domain/sos.py`* | *-* |
+| 4 | *C04* | *Peta* | *`src/backend/domain/layanan.py`* | *-* |
+| 5 | *C05* | *ListLayanan* | *`src/backend/domain/layanan.py`* | *-* |
+| 6 | *C06* | *Layanan* | *`src/backend/domain/layanan.py`* | *-* |
+| 7 | *C07* | *AntarmukaTelepon* | *`src/frontend/index.html`, `src/frontend/app.js`* | *-* |
+| 8 | *C08* | *Polisi* | *`src/backend/domain/sos.py`* | *-* |
+| 9 | *C09* | *Rekaman* | *`src/backend/domain/sos.py`* | *-* |
+| 10 | *C10* | *LaporanKekerasan* | *`src/backend/domain/laporan.py`* | *-* |
+| 11 | *C11* | *APILayanan* | *`src/backend/domain/layanan.py`* | *-* |
+| 12 | *C12* | *AntarmukaPetaLayanan* | *`src/frontend/index.html`, `src/frontend/app.js`* | *-* |
 
 ## 3.3 Implementasi Antarmuka
 
@@ -179,9 +191,17 @@ Tabel 3.3. Implementasi Antarmuka
 
 | No | ID Antarmuka | Nama Antarmuka | Nama File Fisik | Nama File Executable |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | *[I-01]* | *[Nama layar]* | *[path/ke/file]* | *[Nama file executable, atau - jika tidak ada]* |
-| 2 | *[I-02]* | *[Nama layar]* | *[path/ke/file]* | *[...]* |
-| ... | *...* | *...* | *...* | *...* |
+| 1 | *I-01* | *Layar Utama* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 2 | *I-02* | *Peta Layanan Terdekat* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 3 | *I-03* | *Detail Layanan* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 4 | *I-04* | *Status Bantuan Samar / Catatan* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 5 | *I-05* | *Pembuatan Laporan* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 6 | *I-06* | *Laporan Sedang Dikirim* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 7 | *I-07* | *Konfirmasi Laporan* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 8 | *I-08* | *Respons Petugas - SOS Terkirim* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 9 | *I-09* | *Respons Petugas - Bantuan Menuju Lokasi* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 10 | *I-010* | *Respons Petugas - SOS Menunggu Koneksi* | *`src/frontend/index.html`, `src/frontend/app.js`* | *`index.html`* |
+| 11 | *I-011* | *Pusat Respons Polisi* | *`src/frontend/police.html`* | *`police.html`* |
 
 ## 3.4 File Lain
 
@@ -191,8 +211,12 @@ Tabel 3.4. File Lain
 
 | No | Nama File | Keterangan |
 | :--- | :--- | :--- |
-| 1 | *[Nama file]* | *[Fungsi file]* |
-| ... | *...* | *...* |
+| 1 | *`src/backend/main.py`* | *Route API dan penyajian halaman web.* |
+| 2 | *`src/backend/db.py`, `seed.py`* | *Koneksi, skema, migrasi, dan data awal SQLite.* |
+| 3 | *`src/backend/config.py`, `crypto.py`* | *Konfigurasi dan enkripsi payload laporan.* |
+| 4 | *`src/frontend/style.css`, `icons.svg`* | *Gaya antarmuka dan ikon.* |
+| 5 | *`src/tests/test_api.py`* | *Pengujian otomatis API dan logika domain.* |
+| 6 | *`src/tests/profile_nearby.py`* | *Profiling pencarian layanan terdekat.* |
 
 <br>
 
@@ -200,140 +224,88 @@ Tabel 3.4. File Lain
 
 # BAB 4: Hasil Pengujian
 
-Bab ini melaporkan hasil pengujian P/L pada level unit, integrasi, dan sistem. Pengujian dilakukan pada tag release terakhir Tugas 9. Hasil aktual diisi berdasarkan pengamatan saat pengujian. Kesimpulan diisi `Pass` atau `Fail`, dan untuk `Fail` dilengkapi penyebab serta usulan perbaikan.
+Bab ini merangkum hasil pengujian yang tersedia. Enam belas tes otomatis lolos dan mencakup beberapa kelompok fungsi; hasil individual per test case HIUPL tidak tersedia, sehingga tabel berikut menyajikan hasil secara agregat.
 
 ## 4.1 Strategi dan Kedalaman Pengujian Kelas
 
-Setiap kelas perancangan pada Tabel 4.1 DPPL diklasifikasikan ke dalam tiga tingkat kedalaman pengujian. Tingkat **Mendalam** diberikan pada kelas yang memuat logika bisnis, perhitungan, validasi, aturan status, algoritma, integrasi eksternal, atau keamanan. Tingkat **Sedang** diberikan pada kelas yang hanya mengoordinasikan atau mendelegasikan proses. Tingkat **Tidak perlu** diberikan pada kelas tanpa logika, seperti *entity/DTO* dan kelas konfigurasi, yang teruji secara tidak langsung melalui test case use case. Seluruh kelas wajib dicantumkan beserta alasan penentuan tingkatnya.
+Pengujian otomatis mencakup API dan logika domain. Tabel berikut mengklasifikasikan tingkat pengujian kelas berdasarkan fungsinya pada DPPL dan implementasi.
 
 Tabel 4.1.1. Identifikasi Tingkat Pengujian Kelas
 
 | ID Kelas | Nama Kelas | Tingkat | Alasan | Test Case Terkait |
 | :--- | :--- | :--- | :--- | :--- |
-| *C02* | *Pesanan* | *Mendalam* | *Memuat `hitungTotal()` dan transisi status pembayaran* | *C02-UT01 s.d. C02-UT08* |
-| *C03* | *Keranjang* | *Sedang* | *Delegasi sederhana ke Produk dan Pesanan* | *C03-UT01 s.d. C03-UT03, INT-TC02* |
-| *C01* | *Pelanggan* | *Tidak perlu* | *Hanya menyimpan data akun, tanpa logika* | *-* |
-| *[CXX]* | *[Nama kelas]* | *[Mendalam/Sedang/Tidak perlu]* | *[Alasan penentuan tingkat pengujian]* | *[ID test case atau -]* |
-| *...* | *...* | *...* | *...* | *...* |
+| *C01* | *OneClickSOS* | *Mendalam* | *Mengelola alur SOS, idempotensi, status, dan balasan* |  |
+| *C02* | *AntarmukaPolisi* | *Sedang* | *Antarmuka dashboard dan route polisi* |  |
+| *C03* | *Korban* | *Sedang* | *Menghubungkan data korban dengan layanan dan SOS* |  |
+| *C04* | *Peta* | *Sedang* | *Menyediakan pencarian lokasi sekitar* |  |
+| *C05* | *ListLayanan* | *Mendalam* | *Mengurutkan dan menyaring layanan berdasarkan jarak/radius* |  |
+| *C06* | *Layanan* | *Sedang* | *Menyediakan data, alamat, fasilitas, dan kontak layanan* |  |
+| *C07* | *AntarmukaTelepon* | *Tidak perlu* | *Tautan telepon pada antarmuka; tidak ada logika domain kelas tersendiri* | *-* |
+| *C08* | *Polisi* | *Sedang* | *Mengelola respons polisi dan unit terdekat* |  |
+| *C09* | *Rekaman* | *Sedang* | *Mengelola unggahan dan penyimpanan segmen audio* |  |
+| *C10* | *LaporanKekerasan* | *Mendalam* | *Memvalidasi, mengenkripsi, menyimpan, dan mengatur status laporan* |  |
+| *C11* | *APILayanan* | *Sedang* | *Mengambil dan menyaring data layanan* |  |
+| *C12* | *AntarmukaPetaLayanan* | *Sedang* | *Menyajikan peta dan penanda layanan pada klien* |  |
 
 ## 4.2 Pengujian Unit Kelas
 
-Pengujian unit dilakukan pada kelas bertingkat Mendalam dan Sedang. Kelas Mendalam diuji pada seluruh operasi public dengan kasus normal, batas, dan negatif, serta mencapai *coverage* minimal 70%. Kelas Sedang diuji minimal dengan satu kasus normal dan satu kasus gagal pada operasi public utama.
+Terdapat 16 tes otomatis yang dijalankan melalui pytest pada `src/tests/test_api.py`, mencakup haversine, urutan/radius dan filter layanan, kontak kosong, alur SOS (idempotensi, autentikasi polisi, rekaman dan balasan), SOS tanpa lokasi, validasi laporan, enkripsi dan mode anonim, status SOS, unit polisi terdekat, detail layanan, tindak lanjut laporan, status publik pelapor, serta migrasi database lama. Seluruh 16 tes lolos.
 
-Cara menjalankan unit test: *[tuliskan perintah, mis. `pytest src/tests/`]*.
-
-Lokasi file test: *[path, mis. `src/tests/`]*.
-
-### 4.2.1 Kelas [Nama Kelas 1]
-
-**ID Kelas:** *[C02]*  
-**Nama Kelas:** *[Pesanan]*  
-**Tingkat:** *[Mendalam]*
-
-Tabel 4.2.1. Hasil Pengujian Unit Kelas [C02]
-
-| ID Pengujian | Operasi yang Diuji | Jenis Kasus | Prosedur/Masukan | Hasil yang Diharapkan | Hasil Pengujian | Kesimpulan |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| *C02-UT01* | *`hitungTotal(): Decimal`* | *Normal* | *Pesanan berisi 2 item: 10.000 x 2 dan 5.000 x 1* | *Total = 25.000* | *[Hasil aktual]* | *Pass/Fail* |
-| *C02-UT02* | *`hitungTotal(): Decimal`* | *Batas* | *Pesanan berisi tepat 1 item dengan jumlah 1* | *Total = harga item tersebut* | *[...]* | *Pass/Fail* |
-| *C02-UT03* | *`hitungTotal(): Decimal`* | *Negatif* | *Pesanan tanpa item* | *Total = 0 atau melempar kesalahan sesuai rancangan* | *[...]* | *Pass/Fail* |
-| *...* | *...* | *...* | *...* | *...* | *...* | *...* |
-
-Khusus kelas **Mendalam**:
-
-Tabel 4.2.1b. Ringkasan Cakupan Kelas [C02]
-
-| Informasi | Keterangan |
-| :--- | :--- |
-| Daftar operasi public pada DPPL | *[op1(), op2(), ...]* |
-| Operasi yang diuji | *[op1(), op2(), ...]* |
-| ID Algoritma yang tercakup | *[Algo-001, ...]* |
-| Coverage (wajib ≥ 70%) | *[% baris / % cabang, alat dan bukti pada 4.6]* |
-
-### 4.2.2 Kelas [Nama Kelas 2]
-
-*[Ulangi pola 4.2.1 untuk setiap kelas bertingkat Mendalam atau Sedang.]*
-
-<br>
+Perintah test: `cd src && python -m pytest tests -v`. Lokasi: `src/tests/test_api.py`.
 
 ## 4.3 Pengujian Integrasi
 
-Pengujian integrasi memeriksa interaksi antarkomponen yang melewati batas, yaitu *Controller* ke *Model*, aplikasi ke basis data, dan aplikasi ke sistem eksternal. Daftar antarmuka mengacu pada dokumen DPPL, dengan minimal satu test case untuk setiap antarmuka. Pengujian memakai komponen nyata, bukan *mock*. Apabila ada antarmuka tambahan yang belum didaftarkan pada dokumen DPPL, cantumkan juga.
+Terdapat tes API yang memeriksa alur lintas route, logika domain, dan SQLite, termasuk simpan/ambil status, enkripsi laporan, migrasi, serta dashboard polisi. 16 tes otomatis lolos secara keseluruhan.
 
 Tabel 4.3.1. Daftar Antarmuka Antarkomponen
 
 | ID Antarmuka | Komponen Asal | Komponen Tujuan | Jenis Batas | Test Case |
 | :--- | :--- | :--- | :--- | :--- |
-| *I-01* | *KeranjangController* | *Keranjang (Model)* | *Controller - Model* | *INT-TC01, INT-TC02* |
-| *I-02* | *Pesanan (Model)* | *Database* | *Aplikasi - Basis data* | *INT-TC03* |
-| *I-03* | *PaymentGatewayAdapter* | *Payment Gateway (dummy)* | *Aplikasi - Sistem eksternal* | *INT-TC04, INT-TC05* |
-| *[I-XX]* | *[Komponen asal]* | *[Komponen tujuan]* | *[Jenis batas]* | *[ID test case]* |
-| *...* | *...* | *...* | *...* | *...* |
-
-Tabel 4.3.2. Hasil Pengujian Integrasi
-
-| ID Pengujian | ID Antarmuka | Skenario | Prosedur/Masukan | Hasil yang Diharapkan | Hasil Pengujian | Kesimpulan |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| *INT-TC01* | *I-01* | *Normal: tambah item ke keranjang* | *Panggil `tambahItem()` melalui KeranjangController dengan produk valid* | *Item tersimpan pada Keranjang dan tampil pada daftar item* | *[Hasil aktual]* | *Pass/Fail* |
-| *INT-TC03* | *I-02* | *Normal: simpan pesanan* | *Buat pesanan, lalu baca ulang langsung dari basis data* | *Baris pesanan ada dengan nilai total dan status yang sama* | *[...]* | *Pass/Fail* |
-| *INT-TC05* | *I-03* | *Gagal: gateway mengembalikan status gagal* | *Kirim otorisasi dengan saldo dummy tidak cukup* | *Status pesanan tidak berubah menjadi "Lunas", pesan gagal diteruskan ke pengguna* | *[...]* | *Pass/Fail* |
-| *...* | *...* | *...* | *...* | *...* | *...* | *...* |
-
-<br>
+| *Tambahan HIUPL* | *FastAPI routes* | *Domain SOS, layanan, laporan* | *Route - domain* | *Tercakup dalam suite API* |
+| *Tambahan HIUPL* | *Backend* | *SQLite* | *Aplikasi - basis data* | *Tercakup dalam suite API* |
+| *Tambahan HIUPL* | *Aplikasi* | *Sistem kepolisian eksternal* | *Aplikasi - sistem eksternal* |  |
 
 ## 4.4 Pengujian Use Case
 
-Pengujian use case dilakukan pada seluruh skenario normal dan alternatif sesuai Subbab 4.4 SKPL, dengan minimal satu test case untuk setiap skenario. Kolom ID KF menunjukkan KF yang diverifikasi oleh test case tersebut.
+Terdapat tujuh use case. Tes otomatis mencakup beberapa alur SOS, layanan, laporan, dan respons polisi; hasil per skenario use case tidak tersedia.
 
-### 4.4.1 Use Case [Nama Use Case 1]
-
-**ID Use Case:** *[UC01 sesuai SKPL]*  
-**Nama Use Case:** *[Nama use case sesuai SKPL]*
-
-Tabel 4.4.1. Hasil Pengujian Use Case [UC01]
-
-| ID Pengujian | ID KF | Skenario | Prosedur Pengujian | Masukan | Hasil yang Diharapkan | Hasil Pengujian | Kesimpulan |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| *UC01-TC01* | *KF01* | *Normal* | *1. Buka halaman login.<br>2. Masukkan kredensial.<br>3. Klik tombol "Login".* | *User: rpl@gmail.com<br>Pass: 123456* | *Pengguna diarahkan ke Halaman Dashboard.* | *Pengguna diarahkan ke Halaman Dashboard sesuai hasil yang diharapkan.* | *Pass* |
-| *UC01-TC02* | *KF01* | *Alternatif 1: [Nama skenario]* | *[Langkah-langkah pengujian]* | *[Data masukan]* | *[Hasil yang diharapkan]* | *[Hasil aktual]* | *[Pass/Fail. Jika Fail: penjelasan dan solusi]* |
-| *...* | *...* | *...* | *...* | *...* | *...* | *...* | *...* |
-
-### 4.4.2 Use Case [Nama Use Case 2]
-
-*[Lanjutkan untuk seluruh use case dengan pola yang sama, hingga 4.4.N.]*
-
-<br>
+| ID Use Case | Nama Use Case (SKPL) | Bukti pengujian |
+| :--- | :--- | :--- |
+| *UC01* | *Mengaktifkan one click SOS* |  |
+| *UC02* | *Melihat Peta Layanan Terdekat* |  |
+| *UC03* | *Memilih Layanan Terdekat* |  |
+| *UC04* | *Menghubungi Layanan Terdekat* |  |
+| *UC05* | *Membuat Laporan Kekerasan* |  |
+| *UC06* | *Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* |  |
+| *UC07* | *Mengirim Notifikasi Konfirmasi Polisi Ke Korban* |  |
 
 ## 4.5 Pengujian Kebutuhan Non-Fungsional (KNF)
 
-Setiap KNF pada Tabel 3.2 SKPL diuji secara terukur berdasarkan parameter yang telah didefinisikan. Setiap pengujian memuat target terukur, metode dan alat yang sesuai dengan parameter (misalnya Chrome DevTools untuk *response time* dan inspeksi basis data untuk *security*), serta hasil aktual berupa angka atau data. KNF yang belum dipenuhi atau tidak diimplementasikan dicantumkan beserta alasan dan rencana perbaikan.
-
-Tabel 4.5. Hasil Pengujian KNF
+Pengujian terukur untuk KNF belum dilakukan. Profiling layanan nearby merupakan optimasi performa, bukan pengukuran terhadap target waktu respons KNF. Hasil pengukuran formal KNF masih perlu diverifikasi.
 
 | ID Pengujian | ID KNF | Parameter | Target Terukur | Metode dan Alat | Hasil Aktual | Kesimpulan |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| *KNF01-TC01* | *KNF01* | *Reliability* | *Tidak ada data hilang/ganda saat jaringan putus di tengah transaksi* | *Simulasi putus koneksi saat bayar, lalu cek status di DB* | *[Hasil aktual]* | *Pass/Fail* |
-| *KNF02-TC01* | *KNF02* | *Security* | *Password tersimpan sebagai hash, bukan plain-text* | *Inspeksi tabel pengguna di DB* | *[...]* | *Pass/Fail* |
-| *KNFXX-TC01* | *KNFXX* | *Response time* | *Halaman tampil ≤ 4 detik* | *Chrome DevTools, 5 kali ukur, ambil rata-rata* | *[Rata-rata ... detik, maks ... detik]* | *Pass/Fail* |
-| *...* | *...* | *...* | *...* | *...* | *...* | *...* |
-
-<br>
+|  | *KNF01* | *Availability* | *SOS dapat digunakan kapan saja* |  |  | *Belum diuji* |
+|  | *KNF02* | *Safety* | *Pelaporan tidak diketahui pelaku* |  | *Batasan penyamaran dan data peramban* | *Belum diuji* |
+|  | *KNF03* | *Reliability* | *Sistem melibatkan polisi* | *Dashboard polisi disimulasikan* |  | *Tidak terpenuhi sebagai integrasi nyata* |
+|  | *KNF04* | *Security* | *Laporan diamankan* | *Tes enkripsi* | *Enkripsi sisi server, bukan E2E* | *Teruji sebagian; berbeda dari rancangan* |
+|  | *KNF05* | *Security* | *Keabsahan bukti terjamin* |  |  | *Belum terpenuhi* |
+|  | *KNF06* | *Information* | *Informasi layanan terbaru dan relevan* | *Data layanan lokal/seed* |  | *Belum diuji* |
+|  | *KNF07* | *Availability* | *Pengalihan ke aplikasi telepon bila layanan tersedia* | *Tautan `tel:` diimplementasikan* |  | *Belum diuji* |
+|  | *KNF08* | *Security* | *Bukti diambil/disimpan sesuai regulasi* |  |  | *Belum diuji* |
+|  | *KNF09* | *Responsivity* | *Polisi dapat mengirim konfirmasi* | *Balasan dashboard dan polling diimplementasikan* |  | *Terimplementasi; belum diukur* |
 
 ## 4.6 Tangkapan Layar dan Bukti Hasil Pengujian
 
-Bukti pengujian dilampirkan sesuai ID Pengujian pada Subbab 4.2 sampai 4.5, berupa tangkapan layar aplikasi, keluaran *test runner*, laporan *coverage* untuk setiap kelas Mendalam, atau hasil alat ukur.
-
-Tabel 4.6. Bukti Hasil Pengujian
+Enam belas tes otomatis lolos dan profiling layanan nearby telah dilakukan. Keluaran pytest, laporan coverage, tangkapan layar pengujian use case, dan bukti pengukuran KNF belum tersedia.
 
 | ID Pengujian | Bukti Hasil Pengujian |
 | :--- | :--- |
-| *C02-UT01 – C02-UT08* | *[Sisipkan hasil keluaran unit test]* |
-| *C02 (coverage)* | *[Sisipkan laporan coverage kelas C02]* |
-| *INT-TC01* | *[Sisipkan bukti pengujian integrasi]* |
-| *UC01-TC01* | *[Sisipkan tangkapan layar UC01-TC01 sesuai prosedur pengujian]* |
-| *UC01-TC02* | *[Sisipkan tangkapan layar UC01-TC02 sesuai prosedur pengujian]* |
-| *KNF01-TC01* | *[Sisipkan bukti pengukuran parameter KNF01-TC01]* |
-| *...* | *...* |
+| *Suite API, 16 tes lolos* | *`src/tests/test_api.py`* |
+| *Profiling layanan nearby* | *`src/tests/profile_nearby.py`; rerata 89,06 ms menjadi 3,17 ms pada dataset 50.000 layanan tes* |
+| *Coverage per kelas* |  |
+| *Tangkapan layar pengujian use case* |  |
+| *Bukti pengukuran KNF* |  |
 
 <br>
 
@@ -347,16 +319,29 @@ Tabel 5.1. Matriks Kerunutan KF terhadap Implementasi dan Pengujian
 
 | KF ID | KNF Terkait | Use Case ID | Kelas Terkait | Implementasi File Terkait | Test Case (UC) | Test Case (Unit/Integrasi/KNF) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| *KF05* | *KNF01* | *UC03* | *C02 - Pesanan* | *`src/...`* | *UC03-TC01* | *C02-UT05, INT-TC04, KNF01-TC01* |
-| *KF01* | *-* | *UC01<br>UC02* | *[C01 - Nama kelas]<br>[C02 - Nama kelas]* | *[path/ke/file1]<br>[path/ke/file2]* | *UC01-TC01, UC01-TC02<br>UC02-TC01* | *-* |
-| *KF02* | *[KNFXX atau -]* | *[UCXX]* | *[CXX - Nama kelas]* | *[path/ke/file]* | *[UCXX-TCYY]* | *[CXX-UTYY, INT-TCYY, KNFXX-TCYY atau -]* |
-| *KFXX* | *-* | *[UCXX atau -]* | *[CXX - Nama kelas atau -]* | *Tidak diimplementasikan: [alasan]* | *-* | *-* |
-| *...* | *...* | *...* | *...* | *...* | *...* | *...* |
+| *KF01* | *KNF01* | *UC01* | *C01 OneClickSOS, C03 Korban* | *`src/backend/domain/sos.py`, `src/frontend/app.js`* |  | *Suite API (agregat)* |
+| *KF02* | *KNF02* | *UC01, UC05* | *C01 OneClickSOS, C10 LaporanKekerasan* | *`src/backend/domain/sos.py`, `src/backend/domain/laporan.py`* |  | *Suite API (agregat)* |
+| *KF03* | *KNF04, KNF05* | *UC01, UC05* | *C01 OneClickSOS, C10 LaporanKekerasan* | *`src/backend/domain/laporan.py`, `src/backend/crypto.py`* |  | *Tes enkripsi disebut pada suite API; blockchain tidak diimplementasikan* |
+| *KF04* | *KNF01* | *UC01* | *C01 OneClickSOS* | *`src/frontend/app.js`* |  |  |
+| *KF05* | *KNF06* | *UC02, UC03* | *C04 Peta, C05 ListLayanan, C06 Layanan, C12 AntarmukaPetaLayanan* | *`src/backend/domain/layanan.py`, `src/frontend/app.js`* |  | *Suite API mencakup pencarian layanan (agregat)* |
+| *KF06* | *KNF06* | *UC02, UC03* | *C05 ListLayanan, C11 APILayanan* | *`src/backend/domain/layanan.py`* |  | *Data layanan lokal/seed* |
+| *KF07* | *KNF02* | *UC01, UC06* | *C01 OneClickSOS, C09 Rekaman* | *`src/frontend/app.js`, `src/backend/domain/sos.py`* |  | *Endpoint rekaman diuji* |
+| *KF08* | *KNF09* | *UC01, UC07* | *C01 OneClickSOS, C02 AntarmukaPolisi, C08 Polisi* | *`src/backend/domain/sos.py`, `src/frontend/police.html`, `src/frontend/app.js`* |  | *Tes balasan/status disebut dalam suite API* |
+| *KF09* | *KNF03* | *UC01* | *C01 OneClickSOS, C03 Korban* | *`src/backend/domain/sos.py`, `src/frontend/app.js`* |  |  |
+| *KF10* | *KNF03* | *UC01* | *C01 OneClickSOS, C08 Polisi* | *`src/backend/domain/sos.py`, `src/frontend/police.html`* |  | *Perubahan status diuji melalui simulasi; tidak ada integrasi nyata* |
+| *KF11* | *KNF05, KNF08* | *UC06* | *C09 Rekaman, C08 Polisi* | *`src/backend/domain/sos.py`, `src/frontend/police.html`* |  | *Tes unggah rekaman tercakup agregat; kepatuhan bukti tidak diuji* |
+| *KF12* | *KNF06, KNF07* | *UC04* | *C03 Korban, C06 Layanan, C07 AntarmukaTelepon* | *`src/backend/domain/layanan.py`, `src/frontend/index.html`, `src/frontend/app.js`* |  |  |
 
 Tabel 5.2. Matriks Kerunutan KNF terhadap Pengujian
 
 | ID KNF | Parameter | KF/UC Terkait | Test Case |
 | :--- | :--- | :--- | :--- |
-| *KNF01* | *Reliability* | *KF05 / UC03* | *KNF01-TC01* |
-| *KNFXX* | *[Parameter]* | *[KFXX / UCXX atau -]* | *[KNFXX-TCYY]* |
-| *...* | *...* | *...* | *...* |
+| *KNF01* | *Availability* | *KF01, KF04 / UC01* |  |
+| *KNF02* | *Safety* | *KF02, KF07 / UC01, UC05, UC06* |  |
+| *KNF03* | *Reliability* | *KF09, KF10 / UC01* |  |
+| *KNF04* | *Security* | *KF03 / UC01, UC05* | *Tes enkripsi agregat pada suite API* |
+| *KNF05* | *Security* | *KF03, KF11 / UC01, UC05, UC06* |  |
+| *KNF06* | *Information* | *KF05, KF06, KF12 / UC02, UC03, UC04* | *Tes layanan agregat* |
+| *KNF07* | *Availability* | *KF12 / UC04* |  |
+| *KNF08* | *Security* | *KF11 / UC06* |  |
+| *KNF09* | *Responsivity* | *KF08 / UC01, UC07* | *Tes balasan agregat* |
