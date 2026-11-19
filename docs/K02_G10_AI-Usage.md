@@ -84,6 +84,11 @@ Silakan catat penggunaan AI yang berdampak signifikan pada pengerjaan tugas (mis
 | :--- | :--- | :--- | :--- |
 | *Claude* | *Membantu pembuatan program* | *saya mengupload file dppl dan meminta tolong claude untuk membantu membuatkan garis besar program* | *penyesuaian dengan rancangan design awal, dan perbaikan beberapa major bug* || | | | | |
 
+### Milestone 10
+| Tool AI | Tujuan Penggunaan | Contoh Prompt Utama | Modifikasi & Validasi Manusia |
+| :--- | :--- | :--- | :--- |
+| *Codex* | *Menyalin info dari semua milestone sebelumnya* | *Copy the data from all the previous milestones into M10* | *Pengecekan kebenaran info dan penggunaan format* || | | | | |
+
 ---
 ### Pernyataan Integritas dan Persetujuan
 
