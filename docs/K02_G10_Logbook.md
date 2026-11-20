@@ -233,6 +233,7 @@
 | *16-11-2026* | *Ferdinand Valentino Darmawan* | *Mengisi catatan asistensi dan menyalin informasi awal dari Milestone sebelumnya* | *0,8 jam* | *Done* | *-* |
 | *19-11-2026* | *Christopher Hendrik Gunawan* | *Menyalin informasi lanjut dari dari Milestone sebelumnya* | *1 jam* | *Done* | *-* |
 | *20-11-2026* | *Natanael Chris Fabian Santoso* | *Merapikan penggunaan bahasa yang dipakai dalam HIUPL* | *0,5 jam* | *Done* | *-* |
+| *20-11-2026* | *Ferdinand Valentino Darmawan* | *Merapikan dokumen agar menggunakan penulisan seperti Milestone sebelumnya dan menghapus template tersisa* | *0,5 jam* | *Done* | *-* |
 
 
 **Catatan/Evaluasi Milestone 10:**
