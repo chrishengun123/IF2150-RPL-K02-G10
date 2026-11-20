@@ -271,11 +271,11 @@ Terdapat tujuh use case. Tes otomatis mencakup beberapa alur SOS, layanan, lapor
 
 | ID Use Case | Nama Use Case (SKPL) | Bukti pengujian |
 | :--- | :--- | :--- |
-| *UC01* | *Mengaktifkan one click SOS* |  |
-| *UC02* | *Melihat Peta Layanan Terdekat* |  |
-| *UC03* | *Memilih Layanan Terdekat* |  |
+| *UC01* | *Mengaktifkan one click SOS* | <img alt="Aktifkan SOS" src="assets/AktifkanSOS.png" width="100%"> |
+| *UC02* | *Melihat Peta Layanan Terdekat* | <img alt="Lihat Layanan" src="assets/LihatLayanan.png" width="100%"> |
+| *UC03* | *Memilih Layanan Terdekat* | <img alt="Pilih Layanan" src="assets/PilihLayanan.png" width="100%"> |
 | *UC04* | *Menghubungi Layanan Terdekat* |  |
-| *UC05* | *Membuat Laporan Kekerasan* |  |
+| *UC05* | *Membuat Laporan Kekerasan* | <img alt="Buat Laporan" src="assets/BuatLaporan1.png" width="100%"> |
 | *UC06* | *Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* |  |
 | *UC07* | *Mengirim Notifikasi Konfirmasi Polisi Ke Korban* |  |
 
