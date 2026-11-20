@@ -158,11 +158,11 @@ Tabel 3.1. Lingkungan Implementasi
 | *Framework/Library* | *FastAPI 0.115.6, Uvicorn 0.34.0, python-multipart 0.0.20, cryptography 44.0.0; Leaflet 1.9.4 via CDN* |
 | *DBMS* | *SQLite* |
 | *Development Tools* | *Git/GitHub, VSCode, Neovim* |
-| *Testing Tools* | *pytest 8.3.4, httpx 0.28.1, cProfile, SQLite `EXPLAIN QUERY PLAN`* |
+| *Testing Tools* | *pytest 8.3.4, httpx 0.28.1, cProfile, SQLite* |
 
 ## 3.2 Implementasi Modul
 
-Daftar modul/kelas yang **TELAH** diimplementasikan. Gunakan nama dan ID kelas yang sama dengan DPPL, dan konsisten dengan Tabel B.5 pada dokumen Implementasi (Tugas 9).
+Daftar modul/kelas yang **telah** diimplementasikan. Gunakan nama dan ID kelas yang sama dengan DPPL, dan konsisten dengan Tabel B.5 pada dokumen Implementasi (Tugas 9).
 
 Tabel 3.2. Implementasi Modul
 
@@ -222,7 +222,7 @@ Tabel 3.4. File Lain
 
 # BAB 4: Hasil Pengujian
 
-Bab ini merangkum hasil pengujian yang tersedia. Enam belas tes otomatis lolos dan mencakup beberapa kelompok fungsi; hasil individual per test case HIUPL tidak tersedia, sehingga tabel berikut menyajikan hasil secara agregat.
+Bab ini merangkum hasil pengujian yang tersedia. 16 tes otomatis lolos dan mencakup beberapa kelompok fungsi. Hasil individual per test case HIUPL tidak tersedia, sehingga tabel berikut menyajikan hasil secara keseluruhan.
 
 ## 4.1 Strategi dan Kedalaman Pengujian Kelas
 
@@ -247,7 +247,7 @@ Tabel 4.1.1. Identifikasi Tingkat Pengujian Kelas
 
 ## 4.2 Pengujian Unit Kelas
 
-Terdapat 16 tes otomatis yang dijalankan melalui pytest pada `src/tests/test_api.py`, mencakup haversine, urutan/radius dan filter layanan, kontak kosong, alur SOS (idempotensi, autentikasi polisi, rekaman dan balasan), SOS tanpa lokasi, validasi laporan, enkripsi dan mode anonim, status SOS, unit polisi terdekat, detail layanan, tindak lanjut laporan, status publik pelapor, serta migrasi database lama. Seluruh 16 tes lolos.
+Terdapat 16 tes otomatis yang dijalankan melalui pytest pada `src/tests/test_api.py`, mencakup haversine, urutan/radius dan filter layanan, kontak kosong, alur SOS (*idempotency*, autentikasi polisi, rekaman dan balasan), SOS tanpa lokasi, validasi laporan, enkripsi dan mode anonim, status SOS, unit polisi terdekat, detail layanan, tindak lanjut laporan, status publik pelapor, serta migrasi database lama. Aplikasi lolos dalam semua 16 tes.
 
 Perintah test: `cd src && python -m pytest tests -v`. Lokasi: `src/tests/test_api.py`.
 
@@ -265,7 +265,7 @@ Tabel 4.3.1. Daftar Antarmuka Antarkomponen
 
 ## 4.4 Pengujian Use Case
 
-Terdapat tujuh use case. Tes otomatis mencakup beberapa alur SOS, layanan, laporan, dan respons polisi; hasil per skenario use case tidak tersedia.
+Terdapat 7 use case. Tes otomatis mencakup beberapa alur SOS, layanan, laporan, dan respons polisi. Hasil per skenario use case tidak tersedia.
 
 | ID Use Case | Nama Use Case (SKPL) | Bukti pengujian |
 | :--- | :--- | :--- |
@@ -295,7 +295,7 @@ Pengujian terukur untuk KNF belum dilakukan. Profiling layanan nearby merupakan 
 
 ## 4.6 Tangkapan Layar dan Bukti Hasil Pengujian
 
-Enam belas tes otomatis lolos dan profiling layanan nearby telah dilakukan. Keluaran pytest, laporan coverage, tangkapan layar pengujian use case, dan bukti pengukuran KNF belum tersedia.
+16 tes otomatis lolos dan profiling layanan *nearby* telah dilakukan. Keluaran pytest, laporan coverage, tangkapan layar pengujian use case, dan bukti pengukuran KNF belum tersedia.
 
 | ID Pengujian | Bukti Hasil Pengujian |
 | :--- | :--- |
