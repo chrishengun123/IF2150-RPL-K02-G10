@@ -8,7 +8,7 @@ HASIL IMPLEMENTASI DAN UJI PERANGKAT LUNAK (HIUPL)
 <br>
 
 ## *SafeShe*
-<img alt="Logo SafeShe" src="assets/safeshe_logo.png" width="100%">
+<img alt="Logo SafeShe" src="assets/safeshe_logo.png" width="30%">
 
 ### Untuk: *Aurelia Jennifer Gunawan*
 
@@ -132,7 +132,7 @@ Bab 1 menjelaskan tujuan, lingkup, istilah, penomoran, dan referensi. Bab 2 memb
 SafeShe melayani Korban melalui aplikasi web dan menyediakan dashboard bagi Polisi. Aplikasi mencakup SOS, peta dan kontak layanan, pelaporan, serta status penanganan. Integrasi nyata dengan sistem kepolisian dan API layanan belum tersedia, sehingga aplikasi menggunakan data layanan lokal/seed dan dashboard polisi demo.
 
 <p align="center">
-<img alt="Use Case Diagram SafeShe" src="assets/diagram/SafeShe_Use_Case_Diagram.png" width="90%">
+<img alt="Use Case Diagram SafeShe" src="assets/diagram/SafeShe_Use_Case_Diagram.png" width="60%">
 </p>
 <p align="center">
 <i>Gambar 2.1. Use Case Diagram SafeShe</i>
@@ -269,11 +269,11 @@ Terdapat 7 use case. Tes otomatis mencakup beberapa alur SOS, layanan, laporan, 
 
 | ID Use Case | Nama Use Case (SKPL) | Bukti pengujian |
 | :--- | :--- | :--- |
-| *UC01* | *Mengaktifkan one click SOS* | <img alt="Aktifkan SOS" src="assets/AktifkanSOS.png" width="100%"> |
-| *UC02* | *Melihat Peta Layanan Terdekat* | <img alt="Lihat Layanan" src="assets/LihatLayanan.png" width="100%"> |
-| *UC03* | *Memilih Layanan Terdekat* | <img alt="Pilih Layanan" src="assets/PilihLayanan.png" width="100%"> |
+| *UC01* | *Mengaktifkan one click SOS* | <img alt="Aktifkan SOS" src="assets/AktifkanSOS.png" width="70%"> |
+| *UC02* | *Melihat Peta Layanan Terdekat* | <img alt="Lihat Layanan" src="assets/LihatLayanan.png" width="40%"> |
+| *UC03* | *Memilih Layanan Terdekat* | <img alt="Pilih Layanan" src="assets/PilihLayanan.png" width="40%"> |
 | *UC04* | *Menghubungi Layanan Terdekat* |  |
-| *UC05* | *Membuat Laporan Kekerasan* | <img alt="Buat Laporan" src="assets/BuatLaporan1.png" width="100%"> |
+| *UC05* | *Membuat Laporan Kekerasan* | <img alt="Buat Laporan" src="assets/BuatLaporan1.png" width="40%"> |
 | *UC06* | *Merekam Suara Otomatis Ketika One Click SOS Diaktifkan* |  |
 | *UC07* | *Mengirim Notifikasi Konfirmasi Polisi Ke Korban* |  |
 
