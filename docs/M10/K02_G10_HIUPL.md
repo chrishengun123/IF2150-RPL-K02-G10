@@ -71,7 +71,7 @@ Dipersiapkan oleh:
 Dokumen HIUPL ini merangkum lingkungan dan modul SafeShe yang diimplementasikan serta hasil pengujian yang tersedia. Dokumen ini menjadi acuan bagi tim pengembang dan asisten untuk meninjau keterlacakan kebutuhan dari SKPL, rancangan DPPL, implementasi, dan pengujian.
 
 ## 1.2 Lingkup Masalah
-Aplikasi SafeShe adalah aplikasi yang menyediakan pelaporan kekerasan seksual yang dialami perempuan secara anonim. Aplikasi ini dibuat agar menjadi salah satu solusi untuk mengatasi proses pelaporan dan pendampingan korban dari kekerasan seksual di Indonesia yang masih reaktif dan tidak terintegrasi secara digital. SafeShe akan menyediakan fitur pelaporan anonim yang terenkripsi *end-to-end* dan memiliki peta *real-time* untuk menampilkan fasilitas layanan yang dapat dibutuhkan korban, seperti fasilitas rumah sakit dan konseling. SafeShe juga menyediakan fitur *one-click SOS* untuk memudahkan korban dalam meminta bantuan secara diam-diam dengan konfirmasi balik yang tidak mudah diketahui orang lain ketika bantuan sedang dalam perjalanan menuju lokasi korban. Selain itu, SafeShe akan merekam audio di sekitar korban setelah *one-click SOS* dipencet yang dapat membantu dalam memberikan bukti konkret untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual.
+Aplikasi SafeShe adalah aplikasi yang menyediakan pelaporan kekerasan seksual yang dialami perempuan secara anonim. Aplikasi ini dibuat agar menjadi salah satu solusi untuk mengatasi proses pelaporan dan pendampingan korban dari kekerasan seksual di Indonesia yang masih reaktif dan tidak terintegrasi secara digital. SafeShe akan menyediakan fitur pelaporan anonim yang terenkripsi *end-to-end* dan memiliki peta *real-time* untuk menampilkan fasilitas layanan yang dapat dibutuhkan korban, seperti fasilitas rumah sakit dan konseling. SafeShe juga menyediakan fitur *one-click SOS* untuk memudahkan korban dalam meminta bantuan secara diam-diam dengan konfirmasi balik yang tidak mudah diketahui orang lain ketika bantuan sedang dalam perjalanan menuju lokasi korban. Selain itu, SafeShe akan merekam audio di sekitar korban setelah *one-click SOS* ditekan yang dapat membantu dalam memberikan bukti konkret untuk membantu pembuatan kasus terhadap pelaku kekerasan seksual.
 
 ## 1.3 Definisi, Istilah, dan Singkatan
 Istilah dan singkatan yang digunakan dalam dokumen HIUPL SafeShe dijelaskan berikut.
@@ -97,7 +97,7 @@ Tabel 1.3. Definisi Istilah dan Singkatan
 | *API* | *Application Programming Interface, antarmuka komunikasi antarkomponen perangkat lunak.* |
 
 ## 1.4 Aturan Penomoran
-Dokumen ini memakai ID KF, KNF, UC, dan kelas sesuai SKPL/DPPL; ID test case mengikuti pola HIUPL yang tercantum pada tabel berikut.
+Dokumen ini memakai ID KF, KNF, UC, dan kelas sesuai SKPL/DPPL. ID test case mengikuti pola HIUPL yang tercantum pada tabel berikut.
 
 Tabel 1.4. Aturan Penomoran
 
@@ -121,7 +121,7 @@ Tabel 1.4. Aturan Penomoran
 5. [README dan dependensi implementasi](../../src/README.md), termasuk FastAPI, Uvicorn, SQLite, cryptography/Fernet, pytest, dan httpx.
 
 ## 1.6 Deskripsi Umum Dokumen (Ikhtisar)
-Bab 1 menjelaskan tujuan, lingkup, istilah, penomoran, dan referensi; Bab 2 memberi gambaran SafeShe dan konteks sistem; Bab 3 mencatat lingkungan serta modul dan antarmuka yang diimplementasikan; Bab 4 merangkum strategi dan hasil pengujian yang tersedia; Bab 5 menghubungkan kebutuhan fungsional dengan implementasi dan pengujian.
+Bab 1 menjelaskan tujuan, lingkup, istilah, penomoran, dan referensi. Bab 2 memberi gambaran SafeShe dan konteks sistem. Bab 3 mencatat lingkungan serta modul dan antarmuka yang diimplementasikan. Bab 4 merangkum strategi dan hasil pengujian yang tersedia. Bab 5 menghubungkan kebutuhan fungsional dengan implementasi dan pengujian.
 
 <br>
 
@@ -129,7 +129,7 @@ Bab 1 menjelaskan tujuan, lingkup, istilah, penomoran, dan referensi; Bab 2 memb
 
 # BAB 2: Deskripsi Umum Perangkat Lunak
 
-SafeShe melayani Korban melalui aplikasi web dan menyediakan dashboard bagi Polisi. Aplikasi mencakup SOS, peta dan kontak layanan, pelaporan, serta status penanganan. Integrasi nyata dengan sistem kepolisian dan API layanan belum tersedia; aplikasi menggunakan data layanan lokal/seed dan dashboard polisi demo.
+SafeShe melayani Korban melalui aplikasi web dan menyediakan dashboard bagi Polisi. Aplikasi mencakup SOS, peta dan kontak layanan, pelaporan, serta status penanganan. Integrasi nyata dengan sistem kepolisian dan API layanan belum tersedia, sehingga aplikasi menggunakan data layanan lokal/seed dan dashboard polisi demo.
 
 <p align="center">
 <img alt="Use Case Diagram SafeShe" src="assets/diagram/SafeShe_Use_Case_Diagram.png" width="90%">
@@ -144,8 +144,6 @@ SafeShe melayani Korban melalui aplikasi web dan menyediakan dashboard bagi Poli
 
 # BAB 3: Implementasi
 
-Bagian ini diisi dengan informasi tentang elemen P/L yang dikembangkan (*executable files*, *configuration files*, *data files*, dan sebagainya) serta perubahannya terhadap rancangan pada DPPL (jika ada).
-
 ## 3.1 Lingkungan Implementasi
 
 Implementasi menggunakan klien web HTML/JavaScript dan SQLite, serta server FastAPI modular yang dijalankan secara lokal, menggantikan rancangan React Native dan PostgreSQL. Rincian perangkat keras, sistem operasi, dan IDE tidak tersedia.
@@ -154,12 +152,12 @@ Tabel 3.1. Lingkungan Implementasi
 
 | Aspek | Keterangan |
 | :--- | :--- |
-| *Hardware* |  |
-| *Operating System* |  |
+| *Hardware* | - |
+| *Operating System* | *Android dan iOS* |
 | *Bahasa Pemrograman* | *Python 3.12, HTML, JavaScript, CSS* |
 | *Framework/Library* | *FastAPI 0.115.6, Uvicorn 0.34.0, python-multipart 0.0.20, cryptography 44.0.0; Leaflet 1.9.4 via CDN* |
 | *DBMS* | *SQLite* |
-| *Development Tools* | *Git/GitHub, vscode, nvim* |
+| *Development Tools* | *Git/GitHub, VSCode, Neovim* |
 | *Testing Tools* | *pytest 8.3.4, httpx 0.28.1, cProfile, SQLite `EXPLAIN QUERY PLAN`* |
 
 ## 3.2 Implementasi Modul
