@@ -28,32 +28,6 @@ Dipersiapkan oleh:
 
 ---
 
-## Daftar Isi
-
-- [BAB 1: Pendahuluan](#bab-1-pendahuluan)
-  - [1.1 Tujuan Penulisan Dokumen](#11-tujuan-penulisan-dokumen)
-  - [1.2 Lingkup Masalah](#12-lingkup-masalah)
-  - [1.3 Definisi, Istilah, dan Singkatan](#13-definisi-istilah-dan-singkatan)
-  - [1.4 Aturan Penomoran](#14-aturan-penomoran)
-  - [1.5 Referensi](#15-referensi)
-  - [1.6 Deskripsi Umum Dokumen (Ikhtisar)](#16-deskripsi-umum-dokumen-ikhtisar)
-- [BAB 2: Deskripsi Umum Perangkat Lunak](#bab-2-deskripsi-umum-perangkat-lunak)
-- [BAB 3: Implementasi](#bab-3-implementasi)
-  - [3.1 Lingkungan Implementasi](#31-lingkungan-implementasi)
-  - [3.2 Implementasi Modul](#32-implementasi-modul)
-  - [3.3 Implementasi Antarmuka](#33-implementasi-antarmuka)
-  - [3.4 File Lain](#34-file-lain)
-- [BAB 4: Hasil Pengujian](#bab-4-hasil-pengujian)
-  - [4.1 Strategi dan Kedalaman Pengujian Kelas](#41-strategi-dan-kedalaman-pengujian-kelas)
-  - [4.2 Pengujian Unit Kelas](#42-pengujian-unit-kelas)
-  - [4.3 Pengujian Integrasi](#43-pengujian-integrasi)
-  - [4.4 Pengujian Use Case](#44-pengujian-use-case)
-  - [4.5 Pengujian Kebutuhan Non-Fungsional (KNF)](#45-pengujian-kebutuhan-non-fungsional-knf)
-  - [4.6 Tangkapan Layar dan Bukti Hasil Pengujian](#46-tangkapan-layar-dan-bukti-hasil-pengujian)
-- [BAB 5: Traceability](#bab-5-traceability)
-
----
-
 ## Daftar Perubahan
 
 | Revisi | Deskripsi |
@@ -114,11 +88,7 @@ Tabel 1.4. Aturan Penomoran
 | *Test Case KNF* | *KNFXX-TCYY* | *XX adalah nomor KNF, YY adalah nomor urut test case pada KNF tersebut* |
 
 ## 1.5 Referensi
-1. [SKPL M5](../M5/K02_G10_SKPL.md)
-2. [APL M6](../M6/K02_G10_APL.md)
-3. [DPPL M8](../M8/K02_G10_DPPL2.md)
-4. [Implementasi M9](../M9/K02_G10_Implementasi.md)
-5. [README dan dependensi implementasi](../../src/README.md), termasuk FastAPI, Uvicorn, SQLite, cryptography/Fernet, pytest, dan httpx.
+Mayoritas dari Bab 1 berasal dari dokumen DPPL2, Bab 2 berasal dari dokumen SKPL, Bab 3 menggunakan dokumen Implementasi sebagai bahan awal dari pembahasannya, Bab 4 menggunakan dokumen DPPL2 dan SKPL sebagai bahan awal dari pembahasannya, serta Bab 5 menggunakan dokumen SKPL sebagai bahan awal dari pembahasannya.
 
 ## 1.6 Deskripsi Umum Dokumen (Ikhtisar)
 Bab 1 menjelaskan tujuan, lingkup, istilah, penomoran, dan referensi. Bab 2 memberi gambaran SafeShe dan konteks sistem. Bab 3 mencatat lingkungan serta modul dan antarmuka yang diimplementasikan. Bab 4 merangkum strategi dan hasil pengujian yang tersedia. Bab 5 menghubungkan kebutuhan fungsional dengan implementasi dan pengujian.
@@ -162,8 +132,6 @@ Tabel 3.1. Lingkungan Implementasi
 
 ## 3.2 Implementasi Modul
 
-Daftar modul/kelas yang **telah** diimplementasikan. Gunakan nama dan ID kelas yang sama dengan DPPL, dan konsisten dengan Tabel B.5 pada dokumen Implementasi (Tugas 9).
-
 Tabel 3.2. Implementasi Modul
 
 | No | ID Kelas | Nama Modul/Kelas | Nama File Fisik | Nama File Executable |
@@ -183,8 +151,6 @@ Tabel 3.2. Implementasi Modul
 
 ## 3.3 Implementasi Antarmuka
 
-Daftar antarmuka yang telah diimplementasikan. Gunakan ID dan nama layar yang sama dengan ID dan nama layar pada tugas DPPL.
-
 Tabel 3.3. Implementasi Antarmuka
 
 | No | ID Antarmuka | Nama Antarmuka | Nama File Fisik | Nama File Executable |
@@ -202,8 +168,6 @@ Tabel 3.3. Implementasi Antarmuka
 | 11 | *I-011* | *Pusat Respons Polisi* | *`src/frontend/police.html`* | *`police.html`* |
 
 ## 3.4 File Lain
-
-Daftar file lain yang dibuat selain file kelas dan antarmuka, misalnya file *utility*, *configuration*, *database schema/seed*, *file test*, atau *data*.
 
 Tabel 3.4. File Lain
 
@@ -311,24 +275,22 @@ Pengujian terukur untuk KNF belum dilakukan. Profiling layanan nearby merupakan 
 
 # BAB 5: Traceability
 
-Petakan setiap KF ke KNF, use case, kelas perancangan, file implementasi, dan test case. Tabel traceability berikut akan menjadi sarana verifikasi KF. Setiap KF memiliki minimal satu test case dan dinyatakan terpenuhi apabila **seluruh** test case terkaitnya berkesimpulan `Pass`. KF yang tidak diimplementasikan tetap dicantumkan beserta alasannya.
-
 Tabel 5.1. Matriks Kerunutan KF terhadap Implementasi dan Pengujian
 
 | KF ID | KNF Terkait | Use Case ID | Kelas Terkait | Implementasi File Terkait | Test Case (UC) | Test Case (Unit/Integrasi/KNF) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| *KF01* | *KNF01* | *UC01* | *C01 OneClickSOS, C03 Korban* | *`src/backend/domain/sos.py`, `src/frontend/app.js`* |  | *Suite API (agregat)* |
-| *KF02* | *KNF02* | *UC01, UC05* | *C01 OneClickSOS, C10 LaporanKekerasan* | *`src/backend/domain/sos.py`, `src/backend/domain/laporan.py`* |  | *Suite API (agregat)* |
-| *KF03* | *KNF04, KNF05* | *UC01, UC05* | *C01 OneClickSOS, C10 LaporanKekerasan* | *`src/backend/domain/laporan.py`, `src/backend/crypto.py`* |  | *Tes enkripsi disebut pada suite API; blockchain tidak diimplementasikan* |
-| *KF04* | *KNF01* | *UC01* | *C01 OneClickSOS* | *`src/frontend/app.js`* |  |  |
-| *KF05* | *KNF06* | *UC02, UC03* | *C04 Peta, C05 ListLayanan, C06 Layanan, C12 AntarmukaPetaLayanan* | *`src/backend/domain/layanan.py`, `src/frontend/app.js`* |  | *Suite API mencakup pencarian layanan (agregat)* |
-| *KF06* | *KNF06* | *UC02, UC03* | *C05 ListLayanan, C11 APILayanan* | *`src/backend/domain/layanan.py`* |  | *Data layanan lokal/seed* |
-| *KF07* | *KNF02* | *UC01, UC06* | *C01 OneClickSOS, C09 Rekaman* | *`src/frontend/app.js`, `src/backend/domain/sos.py`* |  | *Endpoint rekaman diuji* |
-| *KF08* | *KNF09* | *UC01, UC07* | *C01 OneClickSOS, C02 AntarmukaPolisi, C08 Polisi* | *`src/backend/domain/sos.py`, `src/frontend/police.html`, `src/frontend/app.js`* |  | *Tes balasan/status disebut dalam suite API* |
-| *KF09* | *KNF03* | *UC01* | *C01 OneClickSOS, C03 Korban* | *`src/backend/domain/sos.py`, `src/frontend/app.js`* |  |  |
-| *KF10* | *KNF03* | *UC01* | *C01 OneClickSOS, C08 Polisi* | *`src/backend/domain/sos.py`, `src/frontend/police.html`* |  | *Perubahan status diuji melalui simulasi; tidak ada integrasi nyata* |
-| *KF11* | *KNF05, KNF08* | *UC06* | *C09 Rekaman, C08 Polisi* | *`src/backend/domain/sos.py`, `src/frontend/police.html`* |  | *Tes unggah rekaman tercakup agregat; kepatuhan bukti tidak diuji* |
-| *KF12* | *KNF06, KNF07* | *UC04* | *C03 Korban, C06 Layanan, C07 AntarmukaTelepon* | *`src/backend/domain/layanan.py`, `src/frontend/index.html`, `src/frontend/app.js`* |  |  |
+| *KF01* | *KNF01* | *UC01* | *C01 - OneClickSOS, C03 - Korban* | *`src/backend/domain/sos.py`, `src/frontend/app.js`* |  | *Suite API (agregat)* |
+| *KF02* | *KNF02* | *UC01, UC05* | *C01 - OneClickSOS, C10 - LaporanKekerasan* | *`src/backend/domain/sos.py`, `src/backend/domain/laporan.py`* |  | *Suite API (agregat)* |
+| *KF03* | *KNF04, KNF05* | *UC01, UC05* | *C01 - OneClickSOS, C10 - LaporanKekerasan* | *`src/backend/domain/laporan.py`, `src/backend/crypto.py`* |  | *Tes enkripsi disebut pada suite API; blockchain tidak diimplementasikan* |
+| *KF04* | *KNF01* | *UC01* | *C01 - OneClickSOS* | *`src/frontend/app.js`* |  |  |
+| *KF05* | *KNF06* | *UC02, UC03* | *C04 - Peta, C05 - ListLayanan, C06 - Layanan, C12 - AntarmukaPetaLayanan* | *`src/backend/domain/layanan.py`, `src/frontend/app.js`* |  | *Suite API mencakup pencarian layanan (agregat)* |
+| *KF06* | *KNF06* | *UC02, UC03* | *C05 - ListLayanan, C11 - APILayanan* | *`src/backend/domain/layanan.py`* |  | *Data layanan lokal/seed* |
+| *KF07* | *KNF02* | *UC01, UC06* | *C01 - OneClickSOS, C09 - Rekaman* | *`src/frontend/app.js`, `src/backend/domain/sos.py`* |  | *Endpoint rekaman diuji* |
+| *KF08* | *KNF09* | *UC01, UC07* | *C01 - OneClickSOS, C02 - AntarmukaPolisi, C08 - Polisi* | *`src/backend/domain/sos.py`, `src/frontend/police.html`, `src/frontend/app.js`* |  | *Tes balasan/status disebut dalam suite API* |
+| *KF09* | *KNF03* | *UC01* | *C01 - OneClickSOS, C03 - Korban* | *`src/backend/domain/sos.py`, `src/frontend/app.js`* |  |  |
+| *KF10* | *KNF03* | *UC01* | *C01 - OneClickSOS, C08 - Polisi* | *`src/backend/domain/sos.py`, `src/frontend/police.html`* |  | *Perubahan status diuji melalui simulasi; tidak ada integrasi nyata* |
+| *KF11* | *KNF05, KNF08* | *UC06* | *C09 - Rekaman, C08 - Polisi* | *`src/backend/domain/sos.py`, `src/frontend/police.html`* |  | *Tes unggah rekaman tercakup agregat; kepatuhan bukti tidak diuji* |
+| *KF12* | *KNF06, KNF07* | *UC04* | *C03 - Korban, C06 - Layanan, C07 - AntarmukaTelepon* | *`src/backend/domain/layanan.py`, `src/frontend/index.html`, `src/frontend/app.js`* |  |  |
 
 Tabel 5.2. Matriks Kerunutan KNF terhadap Pengujian
 
